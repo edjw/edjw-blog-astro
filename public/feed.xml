@@ -1,0 +1,1826 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+      <title>Ed Johnson-Williams</title>
+      <link href="https://edjohnsonwilliams.co.uk" rel="self"/>
+      <description>Ed Johnson-Williams' website</description>
+      <language>en</language>
+      <updated>2021-01-13T00:00:00.000Z</updated>
+      <author>
+        <name>Ed Johnson-Williams</name>
+      </author>
+      
+    <entry>
+      <title>Re-written website: Get YouTube Thumbnails</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2021-01-13-re-written-website-get-youtube-thumbnails"/>
+      <updated>Wed, 13 Jan 2021 00:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>A few years ago, I made a tool called Get YouTube Thumbnails. <a href="/blog/2018-08-26-new-website-making-it-easy-to-get-thumbnails-of-youtube-videos">See my original blog post about it</a>.</p>
+<p>This is what it did.</p>
+<blockquote>
+<p>When you submit a YouTube URL, you get back the image, a link to that image, and the original height and width of that image (even if it's scaled down on your screen size).</p>
+<p>You can also download the image with a YouTube play logo overlaid on the top.</p>
+</blockquote>
+<p>Anyway, that site broke and I didn't remember enough about how it worked to fix it. So I rebuilt <a href="https://getyoutubethumbnails.netlify.app">Get YouTube Thumbnails</a></p>
+<p>It does exactly the same thing. It's possibly a bit rough around the edges but it works.</p>
+<p><a href="https://github.com/edjw/get-youtube-thumbnails-svelte">See the code for the site</a>. It uses Svelte and Netlify functions this time around and still uses Cloudinary for the image processing.</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>New website: Find the nearest Tailwind Colour</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2021-01-02-new-website-find-the-nearest-tailwind-colour"/>
+      <updated>Sat, 02 Jan 2021 00:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>I've made a new tool called <strong><a href="https://find-nearest-tailwind-colour.netlify.app/">Find the nearest Tailwind colour</a></strong>.</p>
+<p>Enter any hex colour code like #FFFFFF and it willl find the nearest colour in <a href="https://tailwindcss.com/">Tailwind CSS</a>'s full colour palette for you.</p>
+<p>It's useful when you want to quickly use a colour that's close to another (similar) colour but you don't want to <a href="https://tailwindcss.com/docs/customizing-colors#extending-the-defaults">extend Tailwind's colour palette</a>.</p>
+<p>(<a href="https://svelte.dev/">Svelte</a> was handy again here.)</p>
+<p><a href="https://find-nearest-tailwind-colour.netlify.app/">Take a look at the tool</a>.</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>New website: First Draft – Don't let editing slow down your first draft</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2020-10-01-new-website-first-draft-dont-let-editing-slow-down-your-first-draft"/>
+      <updated>Wed, 30 Sep 2020 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>Do you ever find yourself writing a first draft of something but you keep getting bogged down by making little edits?</p>
+<p><strong><a href="https://firstdraft.page/">First Draft</a></strong> is a text editor I've created that stops editing from slowing you down. It's at <strong><a href="https://firstdraft.page/">firstdraft.page</a></strong>.</p>
+<p>With <em>First Draft</em>, you can type text. But you can't remove any characters you type.</p>
+<p>No deleting. No backspace. No selecting text to overwrite it. No cutting. No replacing text with spellcheck.</p>
+<p>It takes a tiny bit of getting used to. But it really helps you get over writer's block and procrastination.</p>
+<p>When you've got your typo-ridden first draft out of your brain and onto your computer, copy your text over into another text editor to clean it up.</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>New website: Coffee recipes app to learn Svelte</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2020-09-07-new-website-coffee-recipes-app-to-learn-svelte"/>
+      <updated>Sun, 06 Sep 2020 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>I've made a very small website of coffee recipes. To be clear, there is <a href="https://coffee-coach.netlify.app/v60-by-james-hoffman">one recipe</a> on there.</p>
+<p>I've called it <a href="https://coffee-coach.netlify.app/">Coffee Coach</a> – which is way too grandiose.</p>
+<p>Basically it just does the calculations for how much coffee or water I need and how much water to pour when I'm making my pourover coffee. There are other bits to a coffee recipe. I haven't mentioned those. This just stops me needing to open my calculator app.</p>
+<p>It's been a good way of learning a bit about what <a href="https://svelte.dev/">Svelte</a> and <a href="https://sapper.svelte.dev/">Sapper</a> can do as reactive UI and app tools.</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>Websites and allotments: why do I write code?</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2020-05-17-websites-and-allotments-why-do-i-write-code"/>
+      <updated>Sat, 16 May 2020 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>I am not a professional web developer. Why do I write code?</p>
+<p>My answer is, farmers don't have allotments. Let me explain.</p>
+<blockquote>
+<p>Aside (21-5-20): Since I published this, I've come across people talking about digital gardening. This seems to mean publishing open iterations of your learning on your website and not worrying about being judged. It's not quite what I mean here despite the metaphor of allotment as website being similar.</p>
+</blockquote>
+<p>Making my personal website and <a href="/tags/new-website">my sideprojects</a> are a hobby.</p>
+<p>It's taken me a long time to understand this. My wife was very surprised when I said the other day that I had only just realised this.</p>
+<p>It's nice to have your own website. It's good to have an online space where you can put your stuff on your own terms.</p>
+<p>As with most hobbies, having the free time to put a website together is a privilege. Lots of people who might want to do this just don't have that free time. Fortunately for me, I have had the time to learn how to make a website for myself.</p>
+<p>Writing blogposts is a great way to work out what you think. Sometimes people read what you write and thank you for it. Sometimes, it's just <a href="/blog/2020-04-18-on-the-whataboutery-around-the-takeover-of-newcastle-united">a good way of getting something out of your system</a>.</p>
+<p>But if all I wanted was a place to publish writing that wasn't Facebook, I could use a blogging platform like <span>Wordpress.com</span>. If I didn't mind using a social media platform, I could publish writing on Facebook Posts or do threads on Twitter. I would spend much less time fitting the pieces of a website together, adjusting the layout, and adding new pages.</p>
+<p>I could write blogposts without writing code. It is not necessary to build a personal website with <a href="https://11ty.dev">Eleventy</a>, host it on <a href="https://www.netlify.com">Netlify</a>, and keep the code on <a href="https://github.com">Github</a> to have an online place to put my stuff.</p>
+<p>Clearly, I enjoy making the platform as much as the content.</p>
+<p>When you make your own website, you can also try out new things like publishing the articles I've got in <a href="/reading-list">my reading list</a>. <span>Wordpress.com</span> or Facebook Posts aren't flexible enough to let you do that.</p>
+<p>Making your own personal website in this way is a bit like keeping <a href="https://en.wikipedia.org/wiki/Allotment_(gardening)">an allotment</a>.</p>
+<p>Most people with an allotment don't need to grow fruit and vegetables for survival. Mostly, they don't sell what they grow and can afford to buy food.</p>
+<p>But like me and my website, people with allotments enjoy tending to the plot, making it look nice, deciding what to plant, borrowing ideas from other people, and trying new things.</p>
+<p>Farmers and professional web developers have different priorities and pressures to people who keep an allotment or a personal website as a hobby. And that's ok.</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>New website: Hammer keys. Get trains.</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2020-04-30-new-website-hammer-keys-get-trains"/>
+      <updated>Wed, 29 Apr 2020 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<h3>User story</h3>
+<p>As a 3-year old,</p>
+<p>I want to press any and all the keys on my dad's keyboard,</p>
+<p>So I can see trains.</p>
+<h3>Acceptance criteria</h3>
+<p>It's done when my son can press any key on a keyboard and see a new train.</p>
+<h3>Resulting website</h3>
+<p><strong><a href="https://hammer-keys-get-trains.netlify.app">Hammer keys. Get trains.</a></strong></p>
+<p><a href="https://github.com/edjw/hammer-keys-get-trains">See the code for the site on Github</a>. I used <a href="https://github.com/alpinejs/alpine/">Alpine.js</a> to learn a bit about that and declarative approaches Javascript.</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>On the whataboutery around the Saudi takeover of Newcastle United</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2020-04-18-on-the-whataboutery-around-the-takeover-of-newcastle-united"/>
+      <updated>Fri, 17 Apr 2020 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>Saudi Arabia wants to buy 80% of Newcastle United Football Club to make itself look good.</p>
+<p>I'm a Newcastle fan. I'm appalled by the idea of Saudi Arabia buying the club. Saudi Arabia is using the club to improve its terrible and well-deserved image. Saudi Arabia has a disgraceful human rights record. It also plays a leading role in the world's addiction to oil.</p>
+<p>Countries should not buy football clubs. Especially countries that abuse people like Saudi Arabia does.</p>
+<p>We're unlikely to get to the point that football's authorities deal with this properly. They should. It’s their responsibility.</p>
+<p>But as fans, let's not try to make ourselves feel better about Saudi Arabia buying Newcastle United. Pointing out other bad things does not stop Saudi Arabia's actions being worse.</p>
+<p>People are understandably desperate to get rid of Mike Ashley and move on to a different owner. I am too.</p>
+<p>But the reasons, the whataboutery, some people are using to make it seem like it's fine for Saudi Arabia to own the club are getting ridiculous.</p>
+<p>Here is some of the whataboutery I've seen people engaging in over the last few days.</p>
+<ul>
+<li><a href="#1-whatabout-mike-ashley">1. Whatabout Mike Ashley?</a></li>
+<li><a href="#2-whatabout-saudi-arabia-investing-in-other-clubs">2. Whatabout Saudi Arabia investing in other clubs?</a></li>
+<li><a href="#3-whatabout-the-uks-arms-sales-to-saudi-arabia">3. Whatabout the UK's arms sales to Saudi Arabia?</a></li>
+<li><a href="#4-whatabout-the-fans-dont-they-deserve-some-success">4. Whatabout the fans? Don’t they deserve some success?</a></li>
+<li><a href="#5-whatabout-you-dont-criticise-the-deal-if-you-do-unethical-things-too">5. Whatabout you? Don’t criticise the deal if you do unethical things too</a></li>
+<li><a href="#6-whatabout-the-queenprince-williamprince-charlesdonald-trumpboris-johnson">6. Whatabout the Queen/Prince William/Prince Charles/Donald Trump/Boris Johnson?</a></li>
+<li><a href="#7-whatabout-other-owners">7. Whatabout other owners?</a></li>
+<li><a href="#8-whatabout-what-journalists-diddid-not-say-in-the-past">8. Whatabout what journalists did/did not say in the past?</a></li>
+</ul>
+<p><a id="markdown-1-whatabout-mike-ashley" name="1-whatabout-mike-ashley"></a></p>
+<h3>1. Whatabout Mike Ashley?</h3>
+<p>Yes. Mike Ashley is a bad boss. His company Sports Direct treats its workers terribly. Mike Ashley has treated the club terribly. But, unlike Saudi Arabia, Mike Ashley does not:</p>
+<ul>
+<li>murder journalists <sup id="fnref-1"><a href="#fn-1" class="footnote-ref">1</a></sup></li>
+<li>behead people <sup id="fnref-2"><a href="#fn-2" class="footnote-ref">2</a></sup></li>
+<li>lead wars that kill civilians <sup id="fnref-3"><a href="#fn-3" class="footnote-ref">3</a></sup></li>
+<li>put people in prison for saying that men and women are equal <sup id="fnref-4"><a href="#fn-4" class="footnote-ref">4</a></sup></li>
+</ul>
+<p><a id="markdown-2-whatabout-saudi-arabia-investing-in-other-clubs" name="2-whatabout-saudi-arabia-investing-in-other-clubs"></a></p>
+<h3>2. Whatabout Saudi Arabia investing in other clubs?</h3>
+<p>This one is often followed up with something about how the media didn't cover Saudi Arabia having interest in other clubs.</p>
+<p>Yes. It is bad that Saudi Arabia has invested indirectly in other clubs to try to improve its image.</p>
+<p>And while we're here…Yes, it is also bad that Saudi Arabia paid social media influencers to go to a music festival in Saudi Arabia and <a href="https://www.theguardian.com/world/2019/dec/23/shameless-influencers-face-backlash-for-promoting-saudi-arabia-music-festival">post about a 'cultural revolution'</a>.</p>
+<p>Some people seem to think that anyone who criticises the Saudi takeover is holding Newcastle to a higher moral standard than other clubs. I don't fully understand why some people think this.</p>
+<p><a href="https://www.theguardian.com/football/2019/feb/15/sportswashing-europes-biggest-clubs-champions-league-owners-sponsors-uefa">Journalists have covered Saudi Arabia investing in</a> or being interested in buying other clubs in the past. How else would any of us have heard about it happening if journalists had not covered it?</p>
+<p><a id="markdown-3-whatabout-the-uks-arms-sales-to-saudi-arabia" name="3-whatabout-the-uks-arms-sales-to-saudi-arabia"></a></p>
+<h3>3. Whatabout the UK's arms sales to Saudi Arabia?</h3>
+<p>Yes. This is also very bad. The UK should not sell arms to Saudi Arabia. That Saudi Arabia buys so many arms for its war in Yemen is a reason why Newcastle United should not be involved with them.</p>
+<p><a id="markdown-4-whatabout-the-fans-dont-they-deserve-some-success" name="4-whatabout-the-fans-dont-they-deserve-some-success"></a></p>
+<h3>4. Whatabout the fans? Don’t they deserve some success?</h3>
+<p>It would be great for Newcastle to have success. Supporting Newcastle under Mike Ashley has often been rubbish. But if Newcastle does have success using Saudi Arabia's money, it will be hollow.</p>
+<p>Sidenote: Does any team actually <em>deserve</em> success more or less than other teams?</p>
+<p><a id="markdown-5-whatabout-you-dont-criticise-the-deal-if-you-do-unethical-things-too" name="5-whatabout-you-dont-criticise-the-deal-if-you-do-unethical-things-too"></a></p>
+<h3>5. Whatabout you? Don’t criticise the deal if you do unethical things too</h3>
+<p>This is the worst one.</p>
+<p>The thinking goes like this. If you use oil to drive or pay money to a company like Uber (another Saudi investment), then it’s hypocritical to criticise the Saudi takeover of Newcastle.</p>
+<p>You’ve got to wonder whether people saying this have been criticising Mike Ashley over the last few years while paying money to Newcastle United, Sports Direct, House of Fraser or any of his other businesses.</p>
+<p>I suspect some people find this argument effective though. The sort of person who criticises a country for committing torture probably also feels a bit guilty about using oil for transport. But any guilt we feel for that should not stop us criticising the Saudi state.</p>
+<p>Another way of making this odd argument is,</p>
+<blockquote>
+<p>Hey! How dare you condemn that person for murdering their kids? Yesterday you parked with half a wheel in the next parking space along!</p>
+</blockquote>
+<p>It’s clearly ridiculous.</p>
+<p>It’d be quite dangerous if everyone stopped criticising extremely unethical things (like torture) just because they also made individual choices that might be unethical but are incredibly difficult to avoid in the modern world.</p>
+<p>We can still criticise unspeakable actions by a country even if we make (much less consequential) unethical actions in our day-to-day lives.</p>
+<p>When I used an Uber to take my baby to the hospital at 3am, did it immediately become hypocritical to criticise Uber or their Saudi investors? Obviously not.</p>
+<p>Ethical purity is impossible. No-one meets that test. No-one is asking for ethical purity. Torture is wrong. It is infinitely worse than taking an Uber.</p>
+<p>Newcastle should not be involved with a prospective owner who commits torture.</p>
+<p><a id="markdown-6-whatabout-the-queenprince-williamprince-charlesdonald-trumpboris-johnson" name="6-whatabout-the-queenprince-williamprince-charlesdonald-trumpboris-johnson"></a></p>
+<h3>6. Whatabout the Queen/Prince William/Prince Charles/Donald Trump/Boris Johnson?</h3>
+<p>If Mohammad bin Salman is good enough for them to meet him, he’s good enough for Newcastle</p>
+<p>Maybe they should not have met him. Maybe they took him to task on human rights? A photo of someone meeting someone is not a good reason why it’s ok for a club to accept someone like that as their owner.</p>
+<p><a id="markdown-7-whatabout-other-owners" name="7-whatabout-other-owners"></a></p>
+<h3>7. Whatabout other owners?</h3>
+<p>All owners are bad men with a bad past (apparently). Hardly any (no?) other owner has abused people in the way Saudi Arabia has.</p>
+<p><a id="markdown-8-whatabout-what-journalists-diddid-not-say-in-the-past" name="8-whatabout-what-journalists-diddid-not-say-in-the-past"></a></p>
+<h3>8. Whatabout what journalists did/did not say in the past?</h3>
+<p>A whole thread of this whataboutery is finding previous articles or tweets by journalists who criticise the Saudi takeover of Newcastle. People then say that these journalists were less critical of potential Saudi investment in other clubs and therefore it's hypocritical for journalists to criticise this deal.</p>
+<p>It does not matter what journalists did or did not say in the past.</p>
+<p>We are either happy for Saudi Arabia to use Newcastle United to persuade more people to look favourably on it or not.</p>
+<p>What a journalist said or did not say in the past has no effect on how horrific it is for Saudi Arabia to beheading people.</p>
+<div class="footnotes">
+<hr>
+<ol>
+<li id="fn-1"><a href="https://www.bbc.co.uk/news/world-middle-east-49826905">https://www.bbc.co.uk/news/world-middle-east-49826905</a><a href="#fnref-1" class="footnote-backref">↩</a></li>
+<li id="fn-2"><a href="https://www.theguardian.com/world/2018/apr/26/saudi-arabia-criticised-over-executions-for-drug-offences">https://www.theguardian.com/world/2018/apr/26/saudi-arabia-criticised-over-executions-for-drug-offences</a><a href="#fnref-2" class="footnote-backref">↩</a></li>
+<li id="fn-3"><a href="https://www.amnesty.org.uk/exposed-british-made-bombs-used-civilian-targets-yemen">https://www.amnesty.org.uk/exposed-british-made-bombs-used-civilian-targets-yemen</a><a href="#fnref-3" class="footnote-backref">↩</a></li>
+<li id="fn-4"><a href="https://www.bbc.co.uk/news/world-middle-east-47553416">https://www.bbc.co.uk/news/world-middle-east-47553416</a><a href="#fnref-4" class="footnote-backref">↩</a></li>
+</ol>
+</div>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>New website: Save Your Indie High Street</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2020-03-30-new-website-save-your-indie-high-street"/>
+      <updated>Sun, 29 Mar 2020 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p><a href="https://saveyourindiehighstreet.uk">Save Your Indie High Street</a> is a response to coronavirus.</p>
+<p>Local pubs, cafes, restaurants and cinemas have had to close. Even with help from the government, they're under huge financial strain.</p>
+<p>Many small businesses sell vouchers or deliver their goods.</p>
+<p>Save Your Indie High Street lets anyone submit details about how to order delivery or buy vouchers from small local businesses.</p>
+<p>People can then use this information to support their local businesses get through coronavirus.</p>
+<p>Nearly 60 businesses are on the site so far. <a href="https://saveyourindiehighstreet.uk/save">You can add a business</a>.</p>
+<p>The site is open source. Have a <a href="https://github.com/edjw/Save-Your-Indie-High-Street">look at the code</a>.</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>Development and Production favicons in Eleventy</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2020-03-24-development-production-favicons-eleventy"/>
+      <updated>Tue, 24 Mar 2020 00:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p><em>CSS Tricks</em> has an article up about <a href="https://css-tricks.com/different-favicon-for-development">using a different favicon for local development and production</a>. That way, when you've got both open in tabs, you can easily tell which tab is which.</p>
+<p><strong>Here's a way to have different production and development favicons in <a href="https://www.11ty.dev">Eleventy</a>.</strong></p>
+<ol>
+<li>
+<p><strong>Have two folders for your site's favicons.</strong> Keep your favicons for production in one folder. And keep your favicons for development in the other folder.</p>
+</li>
+<li>
+<p><strong>Set the <code>ELEVENTY_ENV</code> environment variable in the scripts section of your <code>package.json</code>.</strong> Set <code>ELEVENTY_ENV</code> to "dev" when you're in development and using <code>eleventy --serve</code>. Set it to "prod" for the build script.</p>
+</li>
+</ol>
+<pre><code class="language-json">// package.json
+
+"scripts": {
+    "dev": "ELEVENTY_ENV=dev eleventy --serve",
+    "build": "ELEVENTY_ENV=prod eleventy"
+}
+</code></pre>
+<ol start="3">
+<li><strong>Pass through the relevant favicons directory.</strong> In your <code>eleventy.js</code> file, get the <code>ELEVENTY_ENV</code> variable. Then, if it's "prod", pass through your production favicons. If it's "dev", pass through your development icons.</li>
+</ol>
+<pre><code class="language-js">//.eleventy.js
+
+module.exports = function (eleventyConfig) {
+    let env = process.env.ELEVENTY_ENV;
+
+    if (env === "prod") {
+        eleventyConfig.addPassthroughCopy({ "./src/site/assets/images/favicons_prod": "/" });
+    }
+    else if (env === "dev") {
+        eleventyConfig.addPassthroughCopy({ "./src/site/assets/images/favicons_dev": "/" });
+    }
+}
+</code></pre>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>Bernie Sanders' healthcare plan isn't necessarily the best way to universal American healthcare</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2020-02-15-bernie-sanders-healthcare-plan-isnt-necessarily-the-best-way-to-universal-american-healthcare"/>
+      <updated>Sat, 15 Feb 2020 00:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>In the UK, the NHS is taxpayer-funded and free at the point of access. <sup id="fnref-1"><a href="#fn-1" class="footnote-ref">1</a></sup> It is great. And it sounds a lot like Bernie Sanders' plan for <a href="https://berniesanders.com/issues/medicare-for-all">Medicare for All</a> with a government-provided healthcare program providing all Americans with healthcare coverage.</p>
+<p>One difference between the British system and Medicare for All is that Bernie Sanders' plan is to completely dismantle America's private healthcare insurance system in less than four years. In Britain, there's a private sector that you can use if you can afford it and want to pay for it. I don't personally know anyone who does this though.</p>
+<p>Unlike Britain, private health insurance is common in America. Over half of Americans have private health insurance of some sort. It's a big ask to get rid of it so quickly.</p>
+<p>Something like Pete Buttigieg's plan for <a href="https://peteforamerica.com/policies/health-care">Medicare for All Who Want It</a> is actually much closer to the UK system. (Other candidates have plans similar to this but Buttigieg's plan has a name I can remember.)</p>
+<p>Buttigieg's plan gives everyone access to government-funded healthcare, but doesn't abolish the private system straightaway. He costs it at $1.5 trillion over 10 years. That's a lot less than the $52 trillion over 10 years that <a href="https://elizabethwarren.com/plans/paying-for-m4a">Elizabeth Warren says her plan</a> – very similar to Sanders' – would cost. $50.5 trillion pays for a lot of other progressive things that you want a Democratic president to do!</p>
+<p>Buttigieg thinks the lower costs to the individuals and families as well as the more efficient service you'd get in a government-backed programme would probably lead to lots of people switching away from private insurance. But he'd rather give people the choice.</p>
+<p>There's a good reason that people might want the choice. Trade unions in America have spent decades securing high quality healthcare for their members through generous employee-funded insurance. Many of them are understandably nervous about giving that up.</p>
+<p>I've noticed British people seem to assume Bernie Sanders' plan is to bring the NHS to America and don't realise the bit about abolishing the private sector completely. And British people who're on the (broadly-defined) left seem to assume the candidates who're labelled as moderates or centrists are opposite to Sanders and therefore probably oppose healthcare for everyone.</p>
+<p>But I'm not sure there's a Democratic candidate who doesn't support healthcare for everyone. Sanders, Buttigieg, Klobuchar, Warren, Biden. They all support it. (Maybe Bloomberg doesn't. I haven't looked into him.)</p>
+<p>Part of this confusion is probably down to British progressives not realising quite how successful Sanders has been in the 2016 primaries against Clinton and since then. He's moved the common ground of healthcare policy in the Democratic party towards him. Another reason is that the candidates are exaggerating their differences for political gain.</p>
+<p>Basically everyone in the Democratic party agrees on universal healthcare. There's just disagreement on how to get it done, whether you should force people to lose their existing private insurance, how to get the legislation passed, how quickly to do it, how much is a reasonable amount for the state/tax-payers to pay for it.</p>
+<p>Sanders' healthcare plan is one way to get universal healthcare in America. It could do a lot of good and make America a much better place to live in. It's not really the British system. And there are alternatives that would have the same impact on people who can't currently afford healthcare for a lot less money without disrupting people who are happy with their current situation. Other candidates exist and they are good. Let's not make this a purity test.</p>
+<div class="footnotes">
+<hr>
+<ol>
+<li id="fn-1">You have to pay an expensive surcharge if you're in the UK on a visa. Most people have to pay about £10 for each prescription. Dentistry is subsidised but not free. There are probably other exceptions that I'm not thinking of.<a href="#fnref-1" class="footnote-backref">↩</a></li>
+</ol>
+</div>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>Twitter's political ads ban has an accurate definition of political but campaign groups won't like it (eventually)</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2019-11-02-twitters-political-ads-ban"/>
+      <updated>Sat, 02 Nov 2019 00:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>Twitter's decision to ban political ads by the end of November <sup id="fnref-1"><a href="#fn-1" class="footnote-ref">1</a></sup> could lead to some bad situations for campaign groups, charities, and NGOs.</p>
+<p>As well as ads run by politicians, candidates, or ads in support of politicians, Twitter is also banning "issue ads".</p>
+<p>They're defining issue ads as "ads that advocate for or against legislative issues of national importance (such as: climate change, healthcare, immigration, national security, taxes)". <sup id="fnref-2"><a href="#fn-2" class="footnote-ref">2</a></sup> <sup id="fnref-3"><a href="#fn-3" class="footnote-ref">3</a></sup></p>
+<p>It remains to be seen how totally and equally Twitter will enforce the policy. Twitter does have a track record of announcing content policies and failing to enforce them.</p>
+<p>But in case it's not obvious, this ban will cover ads by small campaigns, campaigns we like, and ads about issues that we think are not politically contentious. It won't just cover misinformation in ads by politicians or campaigns that we don't like!</p>
+<p>Twitter has a broad definition of "political". They don't just mean politicians and political parties. And that's right. Politics and political outcomes are affected by all sorts of actors, not just politicians.</p>
+<p>As an aside, my definition is even broader — the content of <em>every</em> tweet and the practice of tweeting itself is "political". <sup id="fnref-4"><a href="#fn-4" class="footnote-ref">4</a></sup> But that's not the popular definition of "political" and Twitter obviously doesn't want to ban every tweet!</p>
+<p>Twitter probably thinks it's making life easier for itself by saying no "political" ads and they probably think they've already defined "political". That might be true but this will still get really complicated.</p>
+<p>A climate campaign group will try to run an ad and will be told they can't. There will be uproar because climate campaigners will say that the science isn't political. This has already happened with registering to run "political" Facebook ads.</p>
+<p>And other groups will just be upset that they can't use Twitter ads to push back against messages they don't like that get free advertising on TV/Radio etc.</p>
+<p>A few other questions…</p>
+<ol>
+<li>How does a campaign group know when their issue has reached national importance and should expect their ads not to be allowed?</li>
+<li>How does Twitter know when an issue has crossed that threshold? How nationally important is too nationally important?</li>
+<li>How broadly is Twitter defining 'national security' and 'taxes'?</li>
+</ol>
+<div class="footnotes">
+<hr>
+<ol>
+<li id="fn-1"><a href="https://threadreaderapp.com/thread/1189634360472829952.html">https://threadreaderapp.com/thread/1189634360472829952.html</a><a href="#fnref-1" class="footnote-backref">↩</a></li>
+<li id="fn-2"><a href="https://business.twitter.com/en/help/ads-policies/restricted-content-policies/political-content/global-political-content.html">https://business.twitter.com/en/help/ads-policies/restricted-content-policies/political-content/global-political-content.html</a><a href="#fnref-2" class="footnote-backref">↩</a></li>
+<li id="fn-3"><a href="https://twitter.com/vijaya/status/1189664481263046656">https://twitter.com/vijaya/status/1189664481263046656</a><a href="#fnref-3" class="footnote-backref">↩</a></li>
+<li id="fn-4"><a href="https://culturalstudiesnow.blogspot.com/2017/03/foucault-on-power-and-knowledge-summary.html">https://culturalstudiesnow.blogspot.com/2017/03/foucault-on-power-and-knowledge-summary.html</a><a href="#fnref-4" class="footnote-backref">↩</a></li>
+</ol>
+</div>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>New website: I made a test site to learn about fetching data from APIs and turning it into HTML using vanilla JS and accidentally made my main Hacker News reader</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2019-10-01-new-website-i-made-a-test-site-to-fetch-data-from-apis-and-turn-it-into-html-using-vanilla-js-and-accidentally-made-my-main-hacker-news-reader"/>
+      <updated>Mon, 30 Sep 2019 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>Title says it all. <a href="https://doughnut-reader.netlify.com">Doughnut Reader is my main Hacker News reader</a> now. It's got a dark theme, works nicely on mobile, and is really fast. No tracking.</p>
+<p>Have a look and let me know what you think.</p>
+<p>If you have a look at the code (<a href="https://github.com/edjw/hacker_news_reader">source on Github is here</a>), you can see that I played for a long time with getting comments to appear on the site in a popup. It kind of worked but I couldn't get the multi-level comments to work well. It means you have to go onto the main HN site if you want to read the comments — which, as we all known, is a big if.</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>Some of my Sacred Harp poster designs</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2019-07-08-some-of-my-sacred-harp-posters"/>
+      <updated>Sun, 07 Jul 2019 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>Over the last year, I've been designing posters for the <a href="https://durhamsacredharp.co.uk">Durham Sacred Harp</a> singing. These are a few that I've made.</p>
+<h2>Main poster</h2>
+<p>This one is very close to the one that I printed up and put around town. There are a couple of small differences. If you haven't sung Sacred Harp before, then the logo at the top is alluding to <a href="https://en.wikipedia.org/wiki/Sacred_Harp#Singing_Sacred_Harp_music">the hollow square arrangement</a> that Sacred Harp singers sit in. I've tried to prioritise a modern look and legibility of the copy.</p>
+<a href="/images/blue_square.png">
+<img src="/images/blue_square.png" alt="">
+</a>
+<h2>Bookwrap</h2>
+<p>This is a bookwrap with a similar design made landscape. It wraps around the loaner books we give out to new singers.</p>
+<p><a href="/images/blue_square_bookwrap.png"><img src="/images/blue_square_bookwrap.png" alt=""></a></p>
+<h2>Funky ones</h2>
+<p>These are a couple of designs that I kind of wimped out of getting printed and sticking up around town. I particularly like the first one. The shapes at the top are from <a href="https://en.wikipedia.org/wiki/Sacred_Harp#The_music_and_its_notation">the shapenote notation system</a> that Sacred Harp uses.</p>
+<p><a href="/images/funky_squares.png"><img src="/images/funky_squares.png" alt=""></a></p>
+<p><a href="/images/funky_squares_gharish.png"><img src="/images/funky_squares_gharish.png" alt=""></a></p>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>Replicating Jekyll's `markdownify` filter in Nunjucks with Eleventy</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2019-05-04-replicating-jekylls-markdownify-filter-in-nunjucks-with-eleventy"/>
+      <updated>Fri, 03 May 2019 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>Jekyll has a useful filter called <code>markdownify</code> that converts a Markdown string into HTML. Nunjucks doesn't have this filter.</p>
+<p>I've replicated this in <a href="https://www.11ty.io">Eleventy</a> by adding this into my <code>.eleventy.js</code> file.</p>
+<pre><code>module.exports = function (eleventyConfig) {
+
+    const md = require('markdown-it')({
+        html: false,
+        breaks: true,
+        linkify: true
+    });
+
+    eleventyConfig.addNunjucksFilter("markdownify", markdownString => md.render(markdownString));
+};
+</code></pre>
+<p>In a Nunjucks template, you can now use <!-- {% raw %} --><code>{{ someMarkdownString | markdownify | safe }}</code> <!-- {% endraw %} -->to convert any Markdown string to HTML.</p>
+<p>I'm not 100% sure about the <code>| safe</code> bit, but it's working for me like this.</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>Rebuilt website: Durham Sacred Harp</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2019-05-04-rebuilt-website-durham-sacred-harp"/>
+      <updated>Fri, 03 May 2019 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>I've rebuilt the <a href="https://durhamsacredharp.co.uk">Durham Sacred Harp site</a> in <a href="https://www.11ty.io">Eleventy</a>. The <a href="https://github.com/durhamsacredharp/durham-sacred-harp">source is on Github here</a>.</p>
+<p>This let me add in Netlify CMS which will make managing the content a lot easier as it was just one big HTML file before. The site should look the same.</p>
+<p>On the old site, I was using client-side Javascript to work out the dates of the next three singings. This was always a hack that I wasn't that happy with. If someone had the date and time wrong on their computer it wouldn't show the correct dates.</p>
+<p>I've put the script into an Eleventy Javascript Data files to get those dates at build time. Then I use the IFTT and Netlify build webhook technique I wrote about <a href="/blog/2019-04-25-publishing-my-pocket-reading-list-on-this-website">in this blogpost</a> to rebuild the site every Sunday at midnight.</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>New website: Newcastle Sacred Harp</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2019-05-02-new-website-newcastle-sacred-harp"/>
+      <updated>Wed, 01 May 2019 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>I made a website for the Newcastle Sacred Harp singing group. It's available at <a href="https://newcastlesacredharp.co.uk">https://newcastlesacredharp.co.uk</a>.</p>
+<p>The site is built with Jekyll and <a href="https://github.com/newcastle-shapenote/newcastle-shapenote-website">the code is on Github</a>. I learnt to set up Netlify CMS for the site. Which was nice.</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>New website: Durham Sacred Harp</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2019-05-02-new-website-durham-sacred-harp"/>
+      <updated>Mon, 22 Jan 2018 00:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>I made a website for the Durham Sacred Harp singing group. It's at <a href="https://durhamsacredharp.co.uk">https://durhamsacredharp.co.uk</a>.</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>Publishing my Pocket reading list on this website</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2019-04-25-publishing-my-pocket-reading-list-on-this-website"/>
+      <updated>Thu, 25 Apr 2019 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>I've recently added <a href="/reading-list">a page called Reading List to this website</a>. It's a page that shows the unread articles in my <a href="https://getpocket.com/">Pocket account</a> that I haven't tagged as 'private'.</p>
+<p>This post details how this works using Eleventy Javascript data files, the Pocket API, IFTT webhooks, and Netlify build webhooks.</p>
+<p>In case you don't know, Pocket is a service that lets you save links to read/watch later. It's really <a href="https://support.mozilla.org/en-US/kb/save-web-pages-later-pocket-firefox">well-integrated into Firefox</a>.</p>
+<p>I recently switched this blog from <a href="https://jekyllrb.com">Jekyll</a> to <a href="https://www.11ty.io">Eleventy</a>. Eleventy is a <a href="https://indieweb.org/static_site_generator">static-site generator</a>.</p>
+<p>Eleventy lets you <a href="https://www.11ty.io/docs/data-js/">make any data returned by a Javascript file</a> available to your website. This means you can pull in data from an external API and feed it to your templates to display on your website as static HTML. So the only time a call to the Pocket API is made is when the site is being built on the server.</p>
+<p>For my site, I use a Javascript file called <a href="https://github.com/edjw/edjw-blog/blob/master/_data/readingList.js"><code>readingList.js</code></a> that 1) pulls in all my items saved in Pocket, 2) reverses the order so they're roughly in descending publication date order, and 3) excludes any items I've tagged in Pocket as 'private'.</p>
+<p>The data from <a href="https://getpocket.com/developer/docs/v3/retrieve">Pocket's API</a> is then available to my <a href="https://github.com/edjw/edjw-blog/blob/master/_includes/layouts/reading-list.njk">templates</a> – written in Nunjucks in my case.</p>
+<p>I host this website on <a href="https://www.netlify.com">Netlify</a>. Netlify runs a build of your site when you make a change to the git repository it's linked to. Usually these changes would be things like adding a new blogpost or changing some CSS. But when I add an article to Pocket, no changes are made to the files in the git repository. The readingList.js file stays the same.</p>
+<p>So, for automated updating of the Reading List page, I need to trigger a build whenever something changes in my Pocket account.</p>
+<p>I'm doing this using <a href="https://ifttt.com">IFTT 'Applets'</a>. I've set up triggers to run whenever 1) a new item is added to my Pocket account, 2) if an item is archived, or 3) if an item is tagged as 'private'.</p>
+<p>And because IFTT can't detect if a tag is removed from a Pocket item, I've also added a trigger that runs once a day at midnight. This one makes sure any items are displayed which I'd previously tagged as 'private' but then had that tag removed.</p>
+<p>When these 'applets' above run, they send a webhook to Netlify to start a new build - using a 'Build hook' from the 'Build &#x26; Deploy' settings in Netlify. In IFTT, you set a POST request to a URL generated by Netlify that looks like this: <code><a href="https://api.netlify.com/build_hooks/6rbs0k5tmi3ipx7s8g82k9fm?trigger_title=Midnight+build">https://api.netlify.com/build_hooks/6rbs0k5tmi3ipx7s8g82k9fm?trigger_title=Midnight+build</a></code></p>
+<p>Notice you can include a <code>trigger_title</code> parameter which can be unique to each IFTT applet. This shows up in the Netlify build logs so you can check back on what happened.</p>
+<p>When these applets start a new build, the site pulls in the updated Pocket data and then rebuilds the HTML using the new Pocket data. I don't have to do anything other than manage my Pocket account for the changes to be replicated on my site.</p>
+<p>That's it. I've possibly missed something. <a href="https://twitter.com/_edjw">Let me know</a> if you have any questions :-)</p>
+<p>--</p>
+<p>Thanks to <a href="https://bryanlrobinson.com/blog/2019/04/02/using-eleventys-javascript-data-files">Bryan L. Robinson for his blog</a> explaining how to get Eleventy's Javascript data files working with the Meetup API. I've adapted his work for my purposes here.</p>
+<p>Thanks also for <a href="https://reader.fxneumann.de/plugins/oneclickpocket/auth.php">Felix Neumann's tool</a> that lets you easily generate a Pocket Access Token.</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>New website: Turning off targeted ads</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2019-03-29-new-website-turning-off-targeted-ads"/>
+      <updated>Fri, 29 Mar 2019 00:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>I’ve made a website. It’s called <a href="https://stoptargetingads.me">Stop Targeting Ads at Me</a>.</p>
+<p>It’s a collection of links and instructions to turn off targeting of ads and/or data collection that helps advertisers target ads on all sorts of websites, apps, and devices.</p>
+<p>Some people would prefer that data about who they are and what they do isn’t used to advertise things to them. This website is for those people.</p>
+<p>I’ve described what the site’s about on <a href="https://stoptargetingads.me/about">the About page</a> so take a look there if you’re interested.</p>
+<p>This is a personal project and I’ve just started telling people about it. If you visit the site AT ALL (even if it’s just for a few seconds and then you close the tab), let me know. I’d love to talk to you about it. Either <a href="mailto:hello@stoptargetingads.me">email me at hello@stoptargetingads.me</a> or <a href="https://twitter.com/_edjw">contact me on Twitter at @_edjw</a>.</p>
+<p>Much bigger questions are out there about ad targeting.</p>
+<p>For example, is it reasonable to expect people to spend their time and energy doing these things below just to avoid having data about them used to target ads at them?</p>
+<ol>
+<li>Find out/realise ad targeting is going on</li>
+<li>Find out that they can opt out of targeting at all</li>
+<li>Find the way to opt out on each individual website, app, and service they use</li>
+<li>Actually opt out on every individual website, app, and service they use</li>
+</ol>
+<p>These are a lot of steps to take. The website helps but it still takes ordinary people way too much of their limited time and energy to do all this.</p>
+<p>And that’s before we even get in to the worst offenders on user interface dark patterns that dissuade people from turning off the ad targeting (Yahoo/Oath, Facebook, and Twitter ...looking at you). I’ll write those up at some point.</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>Sacred Harp songs that are also HTTP Status Codes</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2018-10-09-sacred-harp-songs-that-are-also-http-status-codes"/>
+      <updated>Mon, 08 Oct 2018 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>This is another <em>really</em> silly Sacred Harp one. Someone called "<em>404" (</em><a href="https://fasola.org/indexes/1991/?p=404"><em>Youth Will Soon Be Gone</em></a><em>)</em> at a <a href="https://web.archive.org/web/20170918140510/http://newcastleshapenote.co.uk/">Newcastle singing</a> recently and someone immediately said <a href="https://en.wikipedia.org/wiki/HTTP_404">Error Not Found</a>. As a result, this is a list of Sacred Harp songs that are also <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status">HTTP Status Codes</a>. 404 is probably the most famous status code but <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status">there are lots</a>.</p>
+<p>My wife estimated that this will be funny to about three people. That might be pushing it.</p>
+<p>NB. I used <a href="/blog/2018-10-08-a-dataset-for-sacred-harp-songs">the Sacred Harp dataset</a> I just published to work this out.</p>
+<hr>
+<p><strong>100</strong> – The Bower of Prayer</p>
+<p><strong>100</strong> Continue</p>
+<p>This interim response indicates that everything so far is OK and that the client should continue with the request or ignore it if it is already finished.</p>
+<hr>
+<p><strong>101b</strong> – Holy City</p>
+<p><strong>101</strong> Switching Protocol</p>
+<p>This code is sent in response to an Upgrade request header by the client, and indicates the protocol the server is switching to.</p>
+<hr>
+<p><strong>101t</strong> – Canaan’s Land</p>
+<p><strong>101</strong> Switching Protocol</p>
+<p>This code is sent in response to an Upgrade request header by the client, and indicates the protocol the server is switching to.</p>
+<hr>
+<p><strong>102</strong> – Fulfillment</p>
+<p><strong>102</strong> Processing</p>
+<p>This code indicates that the server has received and is processing the request, but no response is available yet.</p>
+<hr>
+<p><strong>200</strong> – Edom</p>
+<p><strong>200</strong> OK</p>
+<p>The request has succeeded. The meaning of a success varies depending on the HTTP method:
+GET: The resource has been fetched and is transmitted in the message body.
+HEAD: The entity headers are in the message body.
+PUT or POST: The resource describing the result of the action is transmitted in the message body.
+TRACE: The message body contains the request message as received by the server</p>
+<hr>
+<p><strong>201</strong> – Pilgrim</p>
+<p><strong>201</strong> Created</p>
+<p>The request has succeeded and a new resource has been created as a result of it. This is typically the response sent after a POST request, or after some PUT requests.</p>
+<hr>
+<p><strong>202</strong> – New Lebanon</p>
+<p><strong>202</strong> Accepted</p>
+<p>The request has been received but not yet acted upon. It is non-committal, meaning that there is no way in HTTP to later send an asynchronous response indicating the outcome of processing the request. It is intended for cases where another process or server handles the request, or for batch processing.</p>
+<hr>
+<p><strong>203</strong> – Florida</p>
+<p><strong>203</strong> Non-Authoritative Information</p>
+<p>This response code means returned meta-information set is not exact set as available from the origin server, but collected from a local or a third party copy. Except this condition, 200 OK response should be preferred instead of this response.</p>
+<hr>
+<p><strong>204</strong> – Mission</p>
+<p><strong>204</strong> No Content</p>
+<p>There is no content to send for this request, but the headers may be useful. The user-agent may update its cached headers for this resource with the new ones.</p>
+<hr>
+<p><strong>205</strong> – Pleasant Hill</p>
+<p><strong>205</strong> Reset Content</p>
+<p>This response code is sent after accomplishing request to tell user agent reset document view which sent this request.</p>
+<hr>
+<p><strong>206</strong> – Christian’s Hope</p>
+<p><strong>206</strong> Partial Content</p>
+<p>This response code is used because of range header sent by the client to separate download into multiple streams.</p>
+<hr>
+<p><strong>207</strong> – Louisiana</p>
+<p><strong>207</strong> Multi-Status</p>
+<p>A Multi-Status response conveys information about multiple resources in situations where multiple status codes might be appropriate.</p>
+<hr>
+<p><strong>208</strong> – Traveling On</p>
+<p><strong>208</strong> Multi-Status</p>
+<p>Used inside a DAV: propstat response element to avoid enumerating the internal members of multiple bindings to the same collection repeatedly.</p>
+<hr>
+<p><strong>300</strong> – Calvary</p>
+<p><strong>300</strong> Multiple Choice</p>
+<p>The request has more than one possible response. The user-agent or user should choose one of them. There is no standardized way of choosing one of the responses.</p>
+<hr>
+<p><strong>301</strong> – Greenland</p>
+<p><strong>301</strong> Moved Permanently</p>
+<p>This response code means that the URI of the requested resource has been changed. Probably, the new URI would be given in the response.</p>
+<hr>
+<p><strong>302</strong> – Logan</p>
+<p><strong>302</strong> Found</p>
+<p>This response code means that the URI of requested resource has been changed temporarily. New changes in the URI might be made in the future. Therefore, this same URI should be used by the client in future requests.</p>
+<hr>
+<p><strong>303</strong> – Heavenly Land</p>
+<p><strong>303</strong> See Other</p>
+<p>The server sent this response to direct the client to get the requested resource at another URI with a GET request.</p>
+<hr>
+<p><strong>304</strong> – Morgan</p>
+<p><strong>304</strong> Not Modified</p>
+<p>This is used for caching purposes. It tells the client that the response has not been modified, so the client can continue to use the same cached version of the response.</p>
+<hr>
+<p><strong>306</strong> – Oxford</p>
+<p><strong>306</strong> unused</p>
+<p>This response code is no longer used, it is just reserved currently. It was used in a previous version of the HTTP 1.1 specification.</p>
+<hr>
+<p><strong>308</strong> – Parting Friends</p>
+<p><strong>308</strong> Permanent Redirect</p>
+<p>This means that the resource is now permanently located at another URI, specified by the Location: HTTP Response header. This has the same semantics as the 301 Moved Permanently HTTP response code, with the exception that the user agent must not change the HTTP method used: If a POST was used in the first request, a POST must be used in the second request.</p>
+<hr>
+<p><strong>400</strong> – Struggle On</p>
+<p><strong>400</strong> Bad Request</p>
+<p>This response means that server could not understand the request due to invalid syntax.</p>
+<hr>
+<p><strong>401</strong> – Cuba</p>
+<p><strong>401</strong> Unauthorized</p>
+<p>'Although the HTTP standard specifies unauthorized, semantically this response means unauthenticated. That is, the client must authenticate itself to get the requested response.'</p>
+<hr>
+<p><strong>402</strong> – Protection</p>
+<p><strong>402</strong> Payment Required</p>
+<p>This response code is reserved for future use. Initial aim for creating this code was using it for digital payment systems however this is not used currently.</p>
+<hr>
+<p><strong>403</strong> – Heavenly Rest</p>
+<p><strong>403</strong> Forbidden</p>
+<p>The client does not have access rights to the content, i.e. they are unauthorized, so server is rejecting to give proper response. Unlike 401, the client's identity is known to the server.</p>
+<hr>
+<p><strong>404</strong> – Youth Will Soon Be Gone</p>
+<p><strong>404</strong> Not Found</p>
+<p>The server can not find requested resource. In the browser, this means the URL is not recognized. In an API, this can also mean that the endpoint is valid but the resource itself does not exist. Servers may also send this response instead of 403 to hide the existence of a resource from an unauthorized client. This response code is probably the most famous one due to its frequent occurence on the web.</p>
+<hr>
+<p><strong>405</strong> – The Marcellas</p>
+<p><strong>405</strong> Method Not Allowed</p>
+<p>The request method is known by the server but has been disabled and cannot be used. For example, an API may forbid DELETE-ing a resource. The two mandatory methods, GET and HEAD, must never be disabled and should not return this error code.</p>
+<hr>
+<p><strong>406</strong> – New Harmony</p>
+<p><strong>406</strong> Not Acceptable</p>
+<p>This response is sent when the web server, after performing server-driven content negotiation, doesn't find any content following the criteria given by the user agent.</p>
+<hr>
+<p><strong>407</strong> – Charlton</p>
+<p><strong>407</strong> Proxy Authentication Required</p>
+<p>This is similar to 401 but authentication is needed to be done by a proxy.</p>
+<hr>
+<p><strong>408</strong> – Weeping Mary</p>
+<p><strong>408</strong> Request Timeout</p>
+<p>This response is sent on an idle connection by some servers, even without any previous request by the client. It means that the server would like to shut down this unused connection. This response is used much more since some browsers, like Chrome, Firefox 27+, or IE9, use HTTP pre-connection mechanisms to speed up surfing. Also note that some servers merely shut down the connection without sending this message.</p>
+<hr>
+<p><strong>409</strong> – Promised Day</p>
+<p><strong>409</strong> Conflict</p>
+<p>This response is sent when a request conflicts with the current state of the server.</p>
+<hr>
+<p><strong>410b</strong> – Mutual Love</p>
+<p><strong>410</strong> Gone</p>
+<p>'This response would be sent when the requested content has been permanently deleted from server, with no forwarding address. Clients are expected to remove their caches and links to the resource. The HTTP specification intends this status code to be used for limited-time, promotional services. APIs should not feel compelled to indicate resources that have been deleted with this status code.'</p>
+<hr>
+<p><strong>410t</strong> – The Dying Californian</p>
+<p><strong>410</strong> Gone</p>
+<p>'This response would be sent when the requested content has been permanently deleted from server, with no forwarding address. Clients are expected to remove their caches and links to the resource. The HTTP specification intends this status code to be used for limited-time, promotional services. APIs should not feel compelled to indicate resources that have been deleted with this status code.'</p>
+<hr>
+<p><strong>411</strong> – Morning Prayer</p>
+<p><strong>411</strong> Length Required</p>
+<p>Server rejected the request because the Content-Length header field is not defined and the server requires it.</p>
+<hr>
+<p><strong>412</strong> – New Hosanna</p>
+<p><strong>412</strong> Precondition Failed</p>
+<p>The client has indicated preconditions in its headers which the server does not meet.</p>
+<hr>
+<p><strong>413</strong> – The Loved Ones</p>
+<p><strong>413</strong> Payload Too Large</p>
+<p>Request entity is larger than limits defined by server; the server might close the connection or return an Retry-After header field.</p>
+<hr>
+<p><strong>414</strong> – Parting Friend</p>
+<p><strong>414</strong> URI Too Long</p>
+<p>The URI requested by the client is longer than the server is willing to interpret.</p>
+<hr>
+<p><strong>415</strong> – Easter Morn</p>
+<p><strong>415</strong> Unsupported Media Type</p>
+<p>The media format of the requested data is not supported by the server, so the server is rejecting the request.</p>
+<hr>
+<p><strong>416</strong> – The Christian’s Nightly Song</p>
+<p><strong>416</strong> Requested Range Not Satisfiable</p>
+<p>The range specified by the Range header field in the request can't be fulfilled; it's possible that the range is outside the size of the target URI's data.</p>
+<hr>
+<p><strong>417</strong> – Weeping Pilgrim</p>
+<p><strong>417</strong> Expectation Failed</p>
+<p>This response code means the expectation indicated by the Expect request header field can't be met by the server.</p>
+<hr>
+<p><strong>418</strong> – Reese</p>
+<p><strong>418</strong> I'm a teapot</p>
+<p>The server refuses the attempt to brew coffee with a teapot.</p>
+<hr>
+<p><strong>421</strong> – Sweet Morning</p>
+<p><strong>421</strong> Misdirected Request</p>
+<p>The request was directed at a server that is not able to produce a response. This can be sent by a server that is not configured to produce responses for the combination of scheme and authority that are included in the request URI.</p>
+<hr>
+<p><strong>422</strong> – Burdette</p>
+<p><strong>422</strong> Unprocessable Entity</p>
+<p>The request was well-formed but was unable to be followed due to semantic errors.</p>
+<hr>
+<p><strong>423</strong> – Grantville</p>
+<p><strong>423</strong> Locked</p>
+<p>The resource that is being accessed is locked.</p>
+<hr>
+<p><strong>424</strong> – Sweet Union</p>
+<p><strong>424</strong> Failed Dependency</p>
+<p>The request failed due to failure of a previous request.</p>
+<hr>
+<p><strong>425</strong> – Golden Streets</p>
+<p><strong>425</strong> Too Early</p>
+<p>Indicates that the server is unwilling to risk processing a request that might be replayed.</p>
+<hr>
+<p><strong>426b</strong> – Jasper</p>
+<p><strong>426</strong> Upgrade Required</p>
+<p>The server refuses to perform the request using the current protocol but might be willing to do so after the client upgrades to a different protocol. The server sends an Upgrade header in a 426 response to indicate the required protocol[s].</p>
+<hr>
+<p><strong>426t</strong> – Kelley</p>
+<p><strong>426</strong> Upgrade Required</p>
+<p>The server refuses to perform the request using the current protocol but might be willing to do so after the client upgrades to a different protocol. The server sends an Upgrade header in a 426 response to indicate the required protocol[s].</p>
+<hr>
+<p><strong>428</strong> – World Unknown</p>
+<p><strong>428</strong> Precondition Required</p>
+<p>The origin server requires the request to be conditional. Intended to prevent the 'lost update' problem, where a client GETs a resource's state, modifies it, and PUTs it back to the server, when meanwhile a third party has modified the state on the server, leading to a conflict.</p>
+<hr>
+<p><strong>429</strong> – Christian’s Delight</p>
+<p><strong>429</strong> Too Many Requests</p>
+<p>The user has sent too many requests in a given amount of time (rate limiting).</p>
+<hr>
+<p><strong>431</strong> – New Bethany</p>
+<p><strong>431</strong> Request Header Fields Too Large</p>
+<p>The server is unwilling to process the request because its header fields are too large. The request MAY be resubmitted after reducing the size of the request header fields.</p>
+<hr>
+<p><strong>451</strong> – Mary’s Grief and Joy</p>
+<p><strong>451</strong> Unavailable For Legal Reasons</p>
+<p>The user requests an illegal resource, such as a web page censored by a government.</p>
+<hr>
+<p><strong>500</strong> – Living Hope</p>
+<p><strong>500</strong> Internal Server Error</p>
+<p>The server has encountered a situation it doesn't know how to handle.</p>
+<hr>
+<p><strong>501</strong> – O’Leary</p>
+<p><strong>501</strong> Not Implemented</p>
+<p>The request method is not supported by the server and cannot be handled. The only methods that servers are required to support [and therefore that must not return this code] are GET and HEAD.</p>
+<hr>
+<p><strong>502</strong> – A Charge to Keep</p>
+<p><strong>502</strong> Bad Gateway</p>
+<p>This error response means that the server, while working as a gateway to get a response needed to handle the request, got an invalid response.</p>
+<hr>
+<p><strong>503</strong> – Lloyd</p>
+<p><strong>503</strong> Service Unavailable</p>
+<p>The server is not ready to handle the request. Common causes are a server that is down for maintenance or that is overloaded. Note that together with this response, a user-friendly page explaining the problem should be sent. This responses should be used for temporary conditions and the Retry-After: HTTP header should, if possible, contain the estimated time before the recovery of the service. The webmaster must also take care about the caching-related headers that are sent along with this response, as these temporary condition responses should usually not be cached.</p>
+<hr>
+<p><strong>504</strong> – Wood Street</p>
+<p><strong>504</strong> Gateway Timeout</p>
+<p>This error response is given when the server is acting as a gateway and cannot get a response in time.</p>
+<hr>
+<p><strong>505</strong> – Where Ceaseless Ages Roll</p>
+<p><strong>505</strong> HTTP Version Not Supported</p>
+<p>The HTTP version used in the request is not supported by the server.</p>
+<hr>
+<p><strong>506</strong> – The Ark</p>
+<p><strong>506</strong> Variant Also Negotiates</p>
+<p>The server has an internal configuration error: transparent content negotiation for the request results in a circular reference.</p>
+<hr>
+<p><strong>507</strong> – Sermon on the Mount</p>
+<p><strong>507</strong> Insufficient Storage</p>
+<p>The server has an internal configuration error: the chosen variant resource is configured to engage in transparent content negotiation itself, and is therefore not a proper end point in the negotiation process.</p>
+<hr>
+<p><strong>510</strong> – Corley</p>
+<p><strong>510</strong> Not Extended</p>
+<p>Further extensions to the request are required for the server to fulfill it.</p>
+<hr>
+<p><strong>511</strong> – The Great Redeemer</p>
+<p><strong>511</strong> Network Authentication Required</p>
+<p>The 511 status code indicates that the client needs to authenticate to gain network access.</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>A dataset for Sacred Harp songs</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2018-10-08-a-dataset-for-sacred-harp-songs"/>
+      <updated>Sun, 07 Oct 2018 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>I've previously done some analysis involving songs from the Sacred Harp. Some <a href="/blog/2018-02-07-female-composers-in-the-sacred-harp">have been serious</a>; some <a href="/blog/2018-06-10-football-formations-in-sacred-harp-numbers">less</a> <a href="/blog/2018-06-10-square-numbers-in-sacred-harp-song-numbers">so</a>.</p>
+<p>One challenge in doing this analysis is having a machine-readable dataset of all songs to work with. The excellent <a href="https://fasola.org/indexes/1991/">indexes on fasola.org</a> present the information for each individual song on a different page which is great but you can't easily analyse all the songs at once.</p>
+<p>To make future analysis easiser, I've prepared a single dataset of all the songs in <em>The Sacred Harp, 1991 Edition</em> (Denson Revision) in both a <code>.CSV</code> spreadsheet and also in a <code>.JSON</code> file.</p>
+<hr>
+<p><strong>Download the <a href="https://raw.githubusercontent.com/edjw/Sacred-Harp-datasets/master/sacred_harp_songs_data.csv">.CSV spreadsheet</a></strong> (Right click on this link and click Save or Download)</p>
+<p><strong>Download the <a href="https://raw.githubusercontent.com/edjw/Sacred-Harp-datasets/master/sacred_harp_songs_data.json">.JSON file</a></strong> (Right click on this link and click Save or Download)</p>
+<hr>
+<p>The files are <a href="https://github.com/edjw/Sacred-Harp-datasets">stored in a Github repository here</a>. (Don't worry if that bit doesn't make sense. You can still use the CSV and JSON files above.)</p>
+<p>Where the data exists, these data are available:</p>
+<ul>
+<li>song number</li>
+<li>bare song number (ie. without the 't' or 'b' after the song number for top or bottom)</li>
+<li>song title</li>
+<li>composer/source</li>
+<li>composition date</li>
+<li>poet/source</li>
+<li>poetry date</li>
+<li>poetic meter</li>
+<li>lyrics</li>
+<li>time signature</li>
+</ul>
+<p><del>I'm planning to add time signature data for all the songs.</del> Time signatures are also included.</p>
+<p><a href="mailto:mail@edjohnsonwilliams.co.uk"><strong>Let me know</strong></a> if you find mistakes in the data or if you have any ideas about how to make it better.</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>New website: Making it easy to get thumbnails of YouTube videos</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2018-08-26-new-website-making-it-easy-to-get-thumbnails-of-youtube-videos"/>
+      <updated>Sat, 25 Aug 2018 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>I made a web app that makes it easy to download thumbnails for YouTube videos. It’s called <a href="https://youtubethumbnails.pythonanywhere.com">Get YouTube Thumbnails</a>.</p>
+<blockquote>
+<p>Update 12 Jan 2021: This broke and I forgot how it worked so I couldn’t fix it. I’ve rebuilt it here: <a href="https://getyoutubethumbnails.netlify.app">getyoutubethumbnails.netlify.app</a></p>
+</blockquote>
+<p>When you submit a YouTube URL, you get back the image, a link to that image, and the original height and width of that image (even if it's scaled down on your screen size).</p>
+<p>You can also download the image with a YouTube play logo overlaid on the top.</p>
+<p>This is useful when you want to link to a YouTube video and you can't or don't want to embed a video. This might be:</p>
+<ul>
+<li>in emails</li>
+<li>in presentation slides (PowerPoint etc)</li>
+<li>in websites where you don't want any Javascript</li>
+<li>in websites where you want to minimise data transfers</li>
+</ul>
+<p>Let me know if you find it useful!</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>A better way of removing punctuation from a string in Python</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2018-07-06-a-better-way-of-removing-punctuation-from-a-string-in-python"/>
+      <updated>Thu, 05 Jul 2018 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>This post is as a future reminder for me as much as anything.</p>
+<p>I made <a href="https://github.com/edjw/game-image-resizer">a Python program</a> called game-image-resizer a few months ago. It takes a list of board games, finds each board game on <a href="http://boardgamegeek.com/">BoardGameGeek</a>'s API, downloads the best image for each game, does some resizing and editing of the image, and then saves it using a useful filename.</p>
+<p>That final stage of saving as a useful filename meant taking the board game name, making it lower case, removing punctuation, and replacing spaces with underscores.</p>
+<p>I did it like this – roughly using the information in <a href="https://stackoverflow.com/questions/265960/best-way-to-strip-punctuation-from-a-string-in-python">this StackOverflow discussion</a>.</p>
+<pre>
+
+from string import punctuation
+
+# making string lower case
+working_string = working_string.lower()
+
+# removing punctuation
+remove_punctuation = str.maketrans('', '', punctuation)
+working_string = working_string.translate(remove_punctuation)
+
+# replacing spaces and double-spaces with an underscore
+working_string = working_string.replace("  ", "_")
+working_string = working_string.replace(" ", "_")
+</pre>
+<p>I found a better, easier-to-use way of doing this earlier this morning on <a href="https://www.reddit.com/r/Python/comments/8wc2vi/5_rarely_mentioned_but_super_useful_packages_you/">a Reddit post</a> in <a href="https://www.reddit.com/r/Python">/r/Python</a>.</p>
+<p>It uses <a href="https://inflection.readthedocs.io/en/latest/">Inflection</a> – a "string transformation library". Inflection does all sorts of things including <code>inflection.parameterize().</code> <a href="https://inflection.readthedocs.io/en/latest/index.html#inflection.parameterize">Parameterize</a> "replace[s] special characters in a string so that it may be used as part of a 'pretty' URL."</p>
+<p>This means I can now do the following which is a much nicer-to-read and nicer-to-write solution.</p>
+<pre>
+
+from inflection import parameterize
+
+# Example board game names with upper case, punctuation, and non-ASCII characters
+board_game_names = [
+    "Dawn of the Zeds (Third edition)",
+    "Flash Point: Fire Rescue – Honor & Duty",
+    "Orléans",
+    "Mechs vs. Minions",
+    "Tzolk'in: The Mayan Calendar",
+    "T.I.M.E Stories",
+    "Aeon's End",
+]
+
+for name in board_game_names:
+    parameterized_name = parameterize(name, separator="_") # Default is `separator='-'`
+    print(parameterized_name) # Or whatever I want to do with it
+
+
+Output
+
+dawn_of_the_zeds_third_edition
+flash_point_fire_rescue_honor_duty
+orleans
+mechs_vs_minions
+tzolk_in_the_mayan_calendar
+t_i_m_e_stories
+aeon_s_end
+
+</pre>
+<p>Parameterize mostly just uses some regular expressions but it's very useful. It has the effect of:</p>
+<ol>
+<li><a href="https://inflection.readthedocs.io/en/latest/_modules/inflection.html#transliterate">Replacing non-ASCII characters</a> with an ASCII approximation – using <code>inflection.transliterate()</code></li>
+<li><a href="https://inflection.readthedocs.io/en/latest/_modules/inflection.html#parameterize">Replacing any character</a> with the separator if it isn't one of:
+<ul>
+<li>a-z</li>
+<li>A-Z</li>
+<li>0-9</li>
+<li>a hyphen (-)</li>
+<li>an underscore(_)</li>
+</ul>
+</li>
+<li>Ensuring there is never more than one separator in a row</li>
+<li>Removing separators from the start or end of the string</li>
+<li>Making the string lower case</li>
+</ol>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>Square numbers in Sacred Harp song numbers</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2018-06-10-square-numbers-in-sacred-harp-song-numbers"/>
+      <updated>Sat, 09 Jun 2018 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>A singer at the <a href="https://durhamsacredharp.co.uk/">Sacred Harp singing in Durham</a> yesterday was calling only <a href="https://en.wikipedia.org/wiki/Square_number">square numbers</a>.</p>
+<p>I went and made a list of those numbers.</p>
+<table>
+<thead>
+<tr>
+<th>Square root</th>
+<th>Song number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6</td>
+<td>36t</td>
+</tr>
+<tr>
+<td>6</td>
+<td>36b</td>
+</tr>
+<tr>
+<td>7</td>
+<td>49t</td>
+</tr>
+<tr>
+<td>7</td>
+<td>49b</td>
+</tr>
+<tr>
+<td>8</td>
+<td>64</td>
+</tr>
+<tr>
+<td>9</td>
+<td>81t</td>
+</tr>
+<tr>
+<td>9</td>
+<td>81b</td>
+</tr>
+<tr>
+<td>10</td>
+<td>100</td>
+</tr>
+<tr>
+<td>11</td>
+<td>121</td>
+</tr>
+<tr>
+<td>12</td>
+<td>144</td>
+</tr>
+<tr>
+<td>13</td>
+<td>169</td>
+</tr>
+<tr>
+<td>14</td>
+<td>196</td>
+</tr>
+<tr>
+<td>15</td>
+<td>225t</td>
+</tr>
+<tr>
+<td>15</td>
+<td>225b</td>
+</tr>
+<tr>
+<td>17</td>
+<td>289</td>
+</tr>
+<tr>
+<td>18</td>
+<td>324</td>
+</tr>
+<tr>
+<td>19</td>
+<td>361</td>
+</tr>
+<tr>
+<td>20</td>
+<td>400</td>
+</tr>
+<tr>
+<td>21</td>
+<td>441</td>
+</tr>
+<tr>
+<td>22</td>
+<td>484</td>
+</tr>
+</tbody>
+</table>
+<p>And the Python code I used to find this…</p>
+<pre>
+
+import math
+
+# All song numbers with the t (top) or b (bottom) taken off
+song_numbers = [26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 191, 192, 193, 195, 196, 197, 198, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 220, 222, 223, 224, 225, 227, 228, 229, 230, 231, 232, 234, 235, 236, 240, 242, 245, 250, 254, 260, 263, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 306, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 358, 359, 360, 361, 362, 365, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 510, 511, 512, 513, 515, 516, 517, 518, 521, 522, 523, 524, 527, 528, 530, 531, 532, 534, 535, 536, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 553, 556, 558, 560, 562, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573]
+
+square_numbers = []
+
+for number in song_numbers:
+
+    # find the square root of the song number
+    square_root = math.sqrt(number)
+
+    # if the sqrt of the song number is an integer
+    if int(square_root) == square_root:
+
+        # add the song number to the list of square numbers
+        square_numbers.append(number)
+
+print(square_numbers)
+# 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 289, 324, 361, 400, 441, 484
+
+# 36t, 36b, 49t, 49b, 64, 81t, 81b, 100, 121, 144, 169, 196, 225t, 225b, 289, 324, 361, 400, 441, 484
+
+</pre>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>Football formations in Sacred Harp numbers</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2018-06-10-football-formations-in-sacred-harp-numbers"/>
+      <updated>Sat, 09 Jun 2018 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>This is a very silly post.</p>
+<p>I took all <a href="https://fasola.org/indexes/1991/?v=pagenum">the song numbers</a> from <a href="https://en.wikipedia.org/wiki/Sacred_Harp">the Sacred Harp</a> and asked the question, "Which song numbers in the Sacred Harp are football/soccer formations?"</p>
+<p>The answer (if you only count modern, <strong>proper</strong> formations with a forward) is:</p>
+<blockquote>
+<p><em>343</em>, <em>352</em>, <em>361</em>, <em>424</em>, <em>433</em>, <em>442</em>, <em>451</em>, <em>523</em>, <em>532</em>, and <em>541</em></p>
+</blockquote>
+<p>There's a great book called <a href="https://www.orionbooks.co.uk/books/detail.page?isbn=9781409176824">Inverting the Pyramid</a> that's about the history of football formations. A really popular formation in the 1880s was <em>2-3-5</em>. Some teams in recent years have also experimented with playing without a forward.</p>
+<p>So, if you count all possible formations with 10 outfield players and at least 1 player in defence and midfield (but not necessarily <a href="https://en.wikipedia.org/wiki/Forward_(association_football)#False_9">at least 1 forward</a>) then the full list is:</p>
+<blockquote>
+<p><em>118</em>, <em>127</em>, <em>136</em>, <em>145t</em>, <em>145b</em>, <em>154</em>, <em>163t</em>, <em>163b</em>, <em>172</em>, <em>181</em>, <em>217</em>, <em>235</em>, <em>271t</em>, <em>271b,</em> <em>280</em>, <em>316</em>, <em>325</em>, <em>334</em>, <em>343</em>, <em>352</em>, <em>361</em>, <em>370</em>, <em>415</em>, <em>424</em>, <em>433</em>, <em>442</em>, <em>451</em>, <em>460</em>, <em>523</em>, <em>532</em>, <em>541</em>, and <em>550</em></p>
+</blockquote>
+<p>And the Python code I used to get the answers to this very silly question…</p>
+<pre>
+
+# All song numbers with the t (top) or b (bottom) taken off
+song_numbers = [26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 191, 192, 193, 195, 196, 197, 198, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 220, 222, 223, 224, 225, 227, 228, 229, 230, 231, 232, 234, 235, 236, 240, 242, 245, 250, 254, 260, 263, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 306, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 358, 359, 360, 361, 362, 365, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 510, 511, 512, 513, 515, 516, 517, 518, 521, 522, 523, 524, 527, 528, 530, 531, 532, 534, 535, 536, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 553, 556, 558, 560, 562, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573]
+
+total_is_ten = []
+
+for number in song_numbers:
+    number_of_digits = len(str(number))
+
+    # Remove numbers from the list that are only 2 digits.
+    # Football formations have at least 3 digits in
+    if number_of_digits != 3:
+        continue
+
+    # Remove numbers from the list with a zero for the middle number
+    # No-one plays 0 in defence or midfield. Some teams like Barcelona occasionally play 0 up front
+    list_of_digits = [int(digit) for digit in str(number)]
+    if min(list_of_digits[1:2]) == 0:
+        continue
+
+    # From the remaining numbers in the list, keep it if the sum of the digits in the number is 10
+    sum_of_digits = sum(int(digit) for digit in str(number))
+    if sum_of_digits == 10:
+        total_is_ten.append(number)
+
+print(total_is_ten)
+
+# All results
+# 118, 127, 136, 145, 154, 163, 172, 181, 217, 235, 271, 280, 316, 325, 334, 343, 352, 361, 370, 415, 424, 433, 442, 451, 460, 523, 532, 541, 550
+
+# All results where it's a proper formation nowadays
+# 343, 352, 361, 424, 433, 442, 451, 523, 532, 541
+
+</pre>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>Winners and Losers in the City of Durham Parish Council Election</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2018-05-04-winners-and-losers-in-the-city-of-durham-parish-council-election"/>
+      <updated>Thu, 03 May 2018 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>Yesterday saw the first <a href="https://www.durham.gov.uk/durhamcityelection">City of Durham Parish Council Election</a>. Considering it was the first election of its type, it would have been handy if <a href="https://twitter.com/_edjw/status/991946855562076160">the council had told people</a> how the electoral system would work.</p>
+<p>The <a href="https://www.durham.gov.uk/media/24199/Community-Governance-Review-City-of-Durham-Parish-Boundary-and-Wards/pdf/CityOfDurhamParishBoundaryAndWards2017.pdf">parish council is divided into three wards</a>:</p>
+<p>Elvet and Gilesgate (six councillors) — <a href="https://www.durham.gov.uk/media/24668/Declaration-of-Result-City-of-Durham-Parish-Elvet-and-Gilesgate-Ward/pdf/DeclarationOfResult-CityOfDurhamElvetAndGilesgateWard.pdf">results</a>
+Neville's Cross (eight councillors) — <a href="https://www.durham.gov.uk/media/24669/Declaration-of-Result-City-of-Durham-Parish-Nevilles-Cross-Ward/pdf/DeclarationOfResult-CityOfDurhamNevillesCrossWard1.pdf">results</a>
+Durham South (one councillor) — <a href="https://www.durham.gov.uk/media/24667/Declaration-of-Result-City-of-Durham-Parish-Durham-South-Ward/pdf/DeclarationOfResult-CityOfDurhamDurhamSouthWard.pdf">results</a></p>
+<p>Nearly all the candidates stood for a party but you voted for the candidates rather than the party. If you live in a ward with six councillors, you can vote for up to six candidates and the six candidates with the most votes win. It's <a href="https://en.wikipedia.org/wiki/First-past-the-post_voting">first-past-the-post</a> in a multi-member constituency.</p>
+<p>I ran <a href="https://docs.google.com/spreadsheets/d/1Zd9AObNK9Lg9brqe4iERKLBiPNTHiYNtGNFHWOtvqRo/edit?usp=sharing">some numbers on the results</a>. Fun times.
+(Thanks to <a href="https://github.com/tabulapdf/tabula">Tabula</a> and specifically the <a href="https://github.com/chezou/tabula-py">tabula-py</a> Python wrapper for Tabula that helped with exporting the table of results from Durham County Council's PDFs into CSVs.)</p>
+<p><a href="https://www.durham.gov.uk/media/24669/Declaration-of-Result-City-of-Durham-Parish-Nevilles-Cross-Ward/pdf/DeclarationOfResult-CityOfDurhamNevillesCrossWard1.pdf"><strong>Aggregated <em>Neville's Cross</em> Results</strong></a></p>
+<p>The quirks of the system are clearest in the Neville's Cross ward.</p>
+<style type="text/css">
+.tg {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+.tg td {
+overflow: hidden;
+word-break: normal;
+border-color: black;
+}
+
+.tg th {
+padding: 10px 5px;
+border-style: solid;
+border-width: 1px;
+overflow: hidden;
+word-break: normal;
+border-color: black;
+}
+
+.tg .tg-2ag8 {
+background-color: #1465b6;
+vertical-align: top
+}
+
+.tg .tg-9hbo {
+font-weight: bold;
+vertical-align: top
+}
+
+.tg .tg-4hfa {
+background-color: #fffe65;
+vertical-align: top
+}
+
+.tg .tg-q9qv {
+background-color: #fe0000;
+vertical-align: top
+}
+
+.tg .tg-y0xi {
+background-color: #32cb00;
+vertical-align: top
+}
+
+.tg .tg-le8v {
+background-color: #c0c0c0;
+vertical-align: top
+}
+</style>
+<table class="tg">
+<tr>
+<th class="tg-9hbo">PARTY</th>
+<th class="tg-9hbo">VOTES</th>
+<th class="tg-9hbo">SEATS WON</th>
+<th class="tg-9hbo">NUM OF CANDIDATES</th>
+<th class="tg-9hbo">AVG VOTES PER CANDIDATE</th>
+<th class="tg-9hbo">% VOTES</th>
+<th class="tg-9hbo">% SEATS</th>
+</tr>
+<tr>
+<td class="tg-4hfa">LD</td>
+<td class="tg-4hfa">7098</td>
+<td class="tg-4hfa">4</td>
+<td class="tg-4hfa">8</td>
+<td class="tg-4hfa">887</td>
+<td class="tg-4hfa">41.5</td>
+<td class="tg-4hfa">50</td>
+</tr>
+<tr>
+<td class="tg-q9qv">LAB</td>
+<td class="tg-q9qv">4031</td>
+<td class="tg-q9qv">2</td>
+<td class="tg-q9qv">6</td>
+<td class="tg-q9qv">672</td>
+<td class="tg-q9qv">23.5</td>
+<td class="tg-q9qv">25</td>
+</tr>
+<tr>
+<td class="tg-y0xi">GREEN</td>
+<td class="tg-y0xi">3012</td>
+<td class="tg-y0xi">1</td>
+<td class="tg-y0xi">4</td>
+<td class="tg-y0xi">753</td>
+<td class="tg-y0xi">17.6</td>
+<td class="tg-y0xi">12.5</td>
+</tr>
+<tr>
+<td class="tg-2ag8">CON</td>
+<td class="tg-2ag8">1241</td>
+<td class="tg-2ag8">0</td>
+<td class="tg-2ag8">3</td>
+<td class="tg-2ag8">414</td>
+<td class="tg-2ag8">7.2</td>
+<td class="tg-2ag8">0</td>
+</tr>
+<tr>
+<td class="tg-le8v">IND 2</td>
+<td class="tg-le8v">823</td>
+<td class="tg-le8v">1</td>
+<td class="tg-le8v">1</td>
+<td class="tg-le8v">823</td>
+<td class="tg-le8v">4.8</td>
+<td class="tg-le8v">12.5</td>
+</tr>
+<tr>
+<td class="tg-le8v">IND 1</td>
+<td class="tg-le8v">566</td>
+<td class="tg-le8v">0</td>
+<td class="tg-le8v">1</td>
+<td class="tg-le8v">566</td>
+<td class="tg-le8v">3.3</td>
+<td class="tg-le8v">0</td>
+</tr>
+<tr>
+<td class="tg-le8v">IND 3</td>
+<td class="tg-le8v">353</td>
+<td class="tg-le8v">0</td>
+<td class="tg-le8v">1</td>
+<td class="tg-le8v">353</td>
+<td class="tg-le8v">2.1</td>
+<td class="tg-le8v">0</td>
+</tr>
+</table>
+---
+<ol>
+<li>Three Green candidates in Neville's Cross got more votes than the average Labour candidate. But only one Green candidate was elected whereas two Labour candidates were elected.</li>
+<li>Green candidates got more votes on average than Labour candidates but two Labour candidates were elected and only one Green candidate was elected.</li>
+<li>One Lib Dem candidate got more votes than the average Labour and Green candidate. But she didn't get elected even though Labour and the Greens won two seats and one seat respectively.</li>
+</ol>
+<p>It looks like Green voters ran out of Green candidates to vote for. With their remaining votes it seems likely that they voted for Labour candidates with the effect of boosting Labour candidates above Green candidates.</p>
+<p>It's important to note that two Labour candidates who won seats got significantly more support than the other Labour candidates. I'm not sure but lots of voters could know them personally.</p>
+<p>So key takeaways are:</p>
+<ol>
+<li>If you support a single party, vote for all the candidates from that party and don't vote for any others. Just don't use all your votes. If you do, you risk boosting them above the candidates from your most-preferred party.</li>
+<li>If you're a political party in one of these elections, do everything you can to field the maximum number of candidates. It ensures that supporters of your party just vote for your candidates and don't boost other parties' candidates above your most popular candidate(s).</li>
+</ol>
+<p>Despite the quirks, for a first-past-the-post election, these results were <em>relatively</em> proportional. In general, the Greens suffered the most. I <a href="http://www.dhondt.eu/js/">used this website</a> to project what the results would have been under one type of proportional representation where voters voted for a party rather than individual candidates. The Greens would have won two extra seats overall across the city.</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>When does Easter Sunday fall on April Fools' Day?</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2018-04-01-how-often-does-easter-sunday-fall-on-april-fools-day"/>
+      <updated>Sat, 31 Mar 2018 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p><strong>Today is both <a href="https://en.wikipedia.org/wiki/April_Fools&#x27;_Day">April Fools' Day</a> and <a href="https://en.wikipedia.org/wiki/Easter">Easter Sunday</a> (in <a href="https://en.wikipedia.org/wiki/Western_Christianity">Western Christianity</a>).</strong></p>
+<p>When did this last happen and when will it happen again?</p>
+<p>This is relatively straightforward to find out thanks to <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a> and specifically the <a href="https://github.com/dateutil/dateutil">dateutil</a> module. Dateutil makes it easy to find out the date of Easter Sunday for any given year between 1583 and 4099. The code I used for this is right at the bottom of this post.</p>
+<p><strong>The last time April Fools' Day was on Easter Sunday was 1956 – 62 years ago. And the next time will be in 2029 – only 11 more years!</strong></p>
+<p>Here's a full list of years where Western Easter Sunday is on April Fools' Day.</p>
+<p>1584
+1646
+1657
+1668
+1714
+1725
+1736
+1804
+1866
+1877
+1888
+1923
+1934
+1945
+1956
+2018
+2029
+2040
+2108
+2170
+2181
+2192
+2238
+2249
+2260
+2306
+2317
+2328
+2401
+2412
+2485
+2496
+2553
+2564
+2610
+2621
+2632
+2700
+2762
+2773
+2784
+2857
+2863
+2868
+2925
+2936
+3004
+3077
+3088
+3145
+3156
+3235
+3240
+3308
+3387
+3392
+3449
+3455
+3460
+3517
+3528
+3601
+3607
+3612
+3691
+3696
+3759
+3764
+3821
+3827
+3832
+3900
+3973
+3979
+3984
+4063
+4068
+4074</p>
+<h2>The Code</h2>
+<pre>
+
+from dateutil.easter import easter
+
+for year in range(1583, 4100):
+    easter_full_date = easter(year)
+    easter_full_date = str(easter_full_date)
+    year, month, date = easter_full_date.split("-")
+
+    if date == "01" and month == "04":
+        print(year)
+</pre>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>Female Composers in the Sacred Harp</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2018-02-07-female-composers-in-the-sacred-harp"/>
+      <updated>Thu, 08 Feb 2018 00:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>A couple of weeks ago, I was in a <a href="https://en.wikipedia.org/wiki/Sacred_Harp">Sacred Harp</a> singing school where a new singer asked whether there are female composers in the Sacred Harp. The singing school was in <a href="https://durhamsacredharp.co.uk">Durham, UK</a> (<a href="https://durhamsacredharp.co.uk">shameless plug</a>). I said something like, "Oh yeah there are lots of great songs in here by women." A few days later I thought about the question again for a bit. I realised that although I liked several songs by women, I didn't really have anything to base my answer on.</p>
+<p>To rectify that, I've looked at the Sacred Harp and the minutes data to answer some questions that came to mind about female composers in the Sacred Harp. I'm using the 1991 edition of the red "Denson book".</p>
+<ol>
+  <li><a href="#toc_0">Who are the female composers in the book?</a></li>
+  <li><a href="#toc_0">Which songs in the book are by female composers?</a></li>
+  <li><a href="#toc_1">What proportion of songs in the book are by female composers?</a></li>
+  <li><a href="#toc_2">What proportion of the composers in the book are female?</a></li>
+  <li><a href="#toc_3">How likely are female composers to have multiple songs in the book?</a></li>
+  <li><a href="#toc_4">How popular are the songs by female composers?</a></li>
+  <li><a href="#toc_6">What are the most popular songs by female composers?</a></li>
+  <li><a href="#toc_5">Has the popularity of songs by female composers changed over time?</a></li>
+  <li><a href="#toc_8">Which songs by female composers have changed the most in the popularity over time?</a></li>
+</ol>
+<p>There's <a href="#toc_7">a note at the bottom of this post</a> about how I attributed gender to the composers. The short version is that I used the name given in the book for the composer and didn't get into nuances.</p>
+<p>The data I created and used for this is available here as <a href="/images/sacredharpcomposers.xls">an Excel (.xls) spreadsheet</a>.</p>
+<p><a href="mailto:mail@edjohnsonwilliams.co.uk">Let me know</a> if you see errors, would like some more detail on an answer, or if there are other questions you'd be interested in seeing the answer to.</p>
+<h2 id="toc_0">Who are the female composers in the book? Which songs in the book are by female composers?</h2>
+<p>In many ways, this is the most interesting question. Here's a list of songs in the book by female composers. Note that the first song in the book is by a woman!</p>
+<p><strong>26</strong> Samaria – Maggie Denson Cagle</p>
+<p><strong>77b</strong> Holcombe – Charlene Wallace</p>
+<p><strong>112</strong> The Last Words of Copernicus – Sarah Lancaster</p>
+<p><strong>128</strong> The Promised Land – M. Durham</p>
+<p><strong>275b</strong> Roll On – Cynthia Bass</p>
+<p><strong>345b</strong> I'm On My Journey Home – Sarah Lancaster</p>
+<p><strong>348t</strong> Ainslie – Judy Hauff</p>
+<p><strong>367</strong> Consolation – Annie Denson Aaron</p>
+<p><strong>368</strong> Stony Point – Judy Hauff</p>
+<p><strong>374</strong> Oh, Sing With Me! – P. R. Lancaster</p>
+<p><strong>378b</strong> Never Turn Back – F. E. Parkerson</p>
+<p><strong>406</strong> New Harmony – M. L. A. Lancaster</p>
+<p><strong>426t</strong> Kelley – Amanda Burdette Denson</p>
+<p><strong>438</strong> The Marriage in the Skies – Sidney Burdette Denson</p>
+<p><strong>446</strong> Infinite Day – Ruth Denson Edwards</p>
+<p><strong>448b</strong> The Grieved Soul – M. A. Hendon</p>
+<p><strong>460</strong> Sardis – Sarah Lancaster</p>
+<p><strong>466</strong> Haynes Creek – Joyce Harrison</p>
+<p><strong>491</strong> Oh, What Love – Eula Denson Johnson</p>
+<p><strong>504</strong> Wood Street – Judy Hauff</p>
+<p><strong>534</strong> New Georgia – Ruth Denson Edwards</p>
+<p><strong>543</strong> Thou Art God – Ruth Denson Edwards</p>
+<p><strong>545</strong> The Pilgrim's Way – Irene Parker Denson</p>
+<p><strong>547</strong> Granville – Judy Hauff</p>
+<p><strong>551</strong> Jacob's Vision – Margaret Wright</p>
+<h2 id="toc_1">What proportion of songs in the book are by female composers?</h2>
+<p>4.5% (25) of songs in the book are by female composers. 84.3% (467) of songs are by male composers. 11.2% (62) of songs are by composers of unknown gender.</p>
+<h2 id="toc_2">What proportion of the composers in the book are female?</h2>
+<p>8.7% (18) of the named composers in the book are female. 91.3% (190) of the named composers are male. I didn't count songs in the book <a href="#unknown-gender">where I couldn't attribute a gender</a> to the composer for this. </p>
+<h2 id="toc_3">How likely are female composers to have multiple songs in the book?</h2>
+<p>Getting useful averages on how many songs female and male composer have in the book was really hard as the data is really skewed. Small numbers of men and women have a lot more songs than all the other composers of their gender.</p>
+<p>This is the best way I could find of describing the data.</p>
+<p>17% (3) of female composers and 36% (67) of male composers individually have more than 1 song in the book.</p>
+<p>Some composers who have 1 song in the 1991 edition had more songs in earlier editions.</p>
+<h2 id="toc_4">How popular are the songs by female composers?</h2>
+<p>I used <a href="https://fasola.org/minutes/stats/?s=c">the data from minuted Sacred Harp singings from 1995-2017</a> to work out how many times each song by a female composer has been called as a proportion of all the songs called.</p>
+<p>If all 554 songs in the book were led equally, 4.15% of all songs led in minuted singings would be by female composers. 4.28% of all songs led in minuted singings from 1995-2017 were by female composers. 1 in every 24 songs in the book is by a female composer. 1 in every 23 songs led at a minuted singing from 1995-2017 is by a female composer.</p>
+<h2 id="toc_6">What are the most popular songs by female composers?</h2>
+<p>If all 554 songs in the book were led equally, each song would be led 0.18% (1 in every 554) of the time. 9 of the 25 songs in the book by female composers are more popular than that.</p>
+<a href="/images/pc_all_songs_by_song_number_.png">
+    <img src="/images/pc_all_songs_by_song_number_.png" alt="">
+</a>
+<p>Here are the songs by female composers sorted by the percentage of all songs led in minuted singing 1995-2017 that that particular song has been led. The percentages are rounded to 2 decimal places. The 1 in N figure is from the unrounded percentage which is why there's a slight discrepancy sometimes.
+<p>By comparison, 146 Hallelujah – the song in the book that has been led most often – accounts for 0.8% (1 in every 125) of all songs led 1995-2017.</p>
+<p><strong>0.56% (1 in 177)</strong> – <strong>112</strong> The Last Words of Copernicus – Sarah Lancaster</p>
+<p><strong>0.43% (1 in 235)</strong> – <strong>460</strong> Sardis – Sarah Lancaster</p>
+<p><strong>0.34% (1 in 290)</strong> – <strong>128</strong> The Promised Land – M. Durham</p>
+<p><strong>0.34% (1 in 291)</strong> – <strong>504</strong> Wood Street – Judy Hauff</p>
+<p><strong>0.34% (1 in 298)</strong> – <strong>448b</strong> The Grieved Soul – M. A. Hendon</p>
+<p><strong>0.29% (1 in 341)</strong> – <strong>547</strong> Granville – Judy Hauff</p>
+<p><strong>0.27% (1 in 374)</strong> – <strong>551</strong> Jacob's Vision – Margaret Wright</p>
+<p><strong>0.20% (1 in 489)</strong> – <strong>426t</strong> Kelley – Amanda Burdette Denson</p>
+<p><strong>0.19% (1 in 522)</strong> – <strong>378b</strong> Never Turn Back – F. E. Parkerson</p>
+<p><strong>0.16% (1 in 627)</strong> – <strong>77b</strong> Holcombe – Charlene Wallace</p>
+<p><strong>0.12% (1 in 811)</strong> – <strong>345b</strong> I'm On My Journey Home – Sarah Lancaster</p>
+<p><strong>0.12% (1 in 813)</strong> – <strong>406</strong> New Harmony – M. L. A. Lancaster</p>
+<p><strong>0.11% (1 in 909)</strong> – <strong>275b</strong> Roll On – Cynthia Bass</p>
+<p><strong>0.09% (1 in 1059)</strong> – <strong>368</strong> Stony Point – Judy Hauff</p>
+<p><strong>0.09% (1 in 1059)</strong> – <strong>446</strong> Infinite Day – Ruth Denson Edwards</p>
+<p><strong>0.09% (1 in 1093)</strong> – <strong>543</strong> Thou Art God – Ruth Denson Edwards</p>
+<p><strong>0.08% (1 in 1259)</strong> – <strong>438</strong> The Marriage in the Skies – Sidney Burdette Denson</p>
+<p><strong>0.07% (1 in 1351)</strong> – <strong>491</strong> Oh, What Love – Eula Denson Johnson</p>
+<p><strong>0.07% (1 in 1413)</strong> – <strong>534</strong> New Georgia – Ruth Denson Edwards</p>
+<p><strong>0.07% (1 in 1458)</strong> – <strong>466</strong> Haynes Creek – Joyce Harrison</p>
+<p><strong>0.07% (1 in 1530)</strong> – <strong>348t</strong> Ainslie – Judy Hauff</p>
+<p><strong>0.05% (1 in 1912)</strong> – <strong>26</strong> Samaria – Maggie Denson Cagle</p>
+<p><strong>0.04% (1 in 2685)</strong> – <strong>367</strong> Consolation – Annie Denson Aaron</p>
+<p><strong>0.04% (1 in 2740)</strong> – <strong>374</strong> Oh, Sing With Me! – P. R. Lancaster</p>
+<p><strong>0.03% (1 in 3095)</strong> – <strong>545</strong> The Pilgrim's Way – Irene Parker Denson</p>
+<h2 id="toc_5">Has the popularity of songs by female composers changed over time?</h2>
+<p>Songs by female composers <em>have</em> become more popular since 1995. </p>
+<p>In 1995 – the year where songs by female composers were least popular – 1 in every 25 songs led at a minuted singing was by a female composer. By comparison, in 2017 – when female composers' songs were most popular – 1 in every 21 songs was by a female composer.</p>
+<a href="/images/pc_all_songs_led_by_female_composer_.png">
+    <img src="/images/pc_all_songs_led_by_female_composer_.png" alt="">
+</a>
+<h2 id="toc_8">Which songs by female composers have changed the most in the popularity over time?</h2>
+<p>The data here compares the popularity of songs by female composers between a) 1995-1997 and b) 2015-2017 as a 3 year average % of all songs by female composers.</p>
+<p>Choosing a 3 year average seemed a bit arbitary but the same songs came out on top whether I compared a 1 year average (1995 vs 2017) or a 2 (1995-1997 vs 2016-2017), 4, or 5 year average. The eight songs below were all in the top 10 for standard deviation in popularity of female composers&#39; song across the full period of 1995-2017. This suggests the popularity of these songs has varied markedly across the full period.</p>
+<p>The four songs by female composers that have increased in popularity the most are:</p>
+<p><strong>+4.52%</strong> – <strong>547</strong> Granville – Judy Hauff</p>
+<p><strong>+3.13%</strong> – <strong>504</strong> Wood Street – Judy Hauff</p>
+<p><strong>+2.93</strong> – <strong>534</strong> New Georgia – Ruth Denson Edwards</p>
+<p><strong>+2.84%</strong> – <strong>466</strong> Haynes Creek – Joyce Harrison</p>
+<a href="/images/biggest_increase_popularity.png">
+    <img src="/images/biggest_increase_popularity.png" alt="">
+</a>
+<p>The four songs that have decreased the most in popularity in that timeframe are:</p>
+<p><strong>-4.8%</strong> – <strong>460</strong> Sardis – Sarah Lancaster</p>
+<p><strong>-4.64%</strong> – <strong>426t</strong> Kelley – Amanda Burdette Denson</p>
+<p><strong>-3.22%</strong> – <strong>275b</strong> Roll On – Cynthia Bass</p>
+<p><strong>-2.74%</strong> – <strong>378b</strong> Never Turn Back – F. E. Parkerson</p>
+<a href="/images/biggest_decrease_popularity.png">
+    <img src="/images/biggest_decrease_popularity.png" alt="">
+</a>
+<h2 id="toc_7">How I attributed gender to composers</h2>
+<p>I used the composer names as given in the book to attribute gender. In general, if Wikipedia says a given name is predominantly used for men then I assumed a composer with that name was male. Clearly, there are some potential issues with that approach.</p>
+<p>Some songs in the book give the name for the composer which is not the name of the person who wrote the song. There would be arguments for assigning the song to the original composer rather than the attributed composer but I decided not to get into that.</p>
+<p>A song which is attributed in the book to a male composer is counted as being by a male composer even if it was written by a woman. A song which is attributed to a female composer is counted as being by a female composer even if it was written by a man. </p>
+<p id="unknown-gender">Songs where there is no clear composer are counted as unknown, neither male nor female. This accounts for 62 songs. This includes songs where: a) only a surname is given (410t The Dying Californian – Ball), b) a songbook is given as the source of the tune (28t Aylesbury – A Book of Psalmody), and c) no source is given (43 Primrose Hill). I haven't delved into the sources of those tunes but it is very likely that the overwhelming majority of songs in these three groups was written by men.</p>
+<p>90 of the composers in the book use their initials instead of their first name. I assumed that they were male unless I found out that they were female. (M. Durham, P. R. Lancaster, and M. L. A. Lancaster are female composers.) It seems particularly likely that I've made mistakes because of this assumption.</p>
+<p>Finally, I have doubtless made mistakes in assigning a gender to some of the composers even considering the process above. The data I used is available here as <a href="/images/sacredharpcomposers.xls">an Excel (.xls) spreadsheet</a>. <a href="mailto:mail@edjohnsonwilliams.co.uk">Let me know</a> if you see any mistakes.</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>How often is 1st January a Monday?</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2018-01-02-how-often-is-1st-january-a-monday"/>
+      <updated>Tue, 02 Jan 2018 00:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p><strong>Answer...less often than every other day except Saturday. I have no idea why.</strong></p>
+<p>Yesterday, 1st January 2018 was a Monday. Monday is the first day of the week. Some people think Sunday is the first day of the week. I don't understand those people.</p>
+<p>Anyway, it made me wonder...How often has the first day of the week been the first day of the year? And how many years will we have to wait until the first day of the year is a Monday again?</p>
+<p>I wrote some <a href="#that-bad-repetitive-python">bad, repetitive Python code</a> (also <a href="https://github.com/edjw/how-often-is-1st-january-a-monday/">on Github)</a> to work this out. I also made some bad, repetitive use of the <a href="https://plot.ly/python/">Plotly Python Library</a> to make some bar charts.</p>
+<p>For some reason, 1st January doesn't spread evenly among all the days of the week. One in 7 is 14.29%. 1st January is a Monday or Saturday 14% of the time; Wednesday or Thursday 14.25% of the time; and Tuesday, Friday or Sunday 14.5% of the time.</p>
+<h1>From the year 1 AD to 2018</h1>
+<table>
+<thead>
+<tr>
+<th>Day of week</th>
+<th align="center">Times 1st Jan has been X day</th>
+<th align="center">Avg years to wait</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monday</td>
+<td align="center">283</td>
+<td align="center">7.15</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td align="center">293</td>
+<td align="center">6.89</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td align="center">287</td>
+<td align="center">7.03</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td align="center">288</td>
+<td align="center">7.01</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td align="center">292</td>
+<td align="center">6.89</td>
+</tr>
+<tr>
+<td>Saturday</td>
+<td align="center">282</td>
+<td align="center">7.14</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td align="center">293</td>
+<td align="center">6.89</td>
+</tr>
+</tbody>
+</table>
+<p>These are the number of times 1st January has fallen on X day of the week since the year 1 AD (the earliest year Python can work with in its standard library). It also shows the mean average number of years we have to wait from 1st January being X day of the week until the next time it happens.</p>
+<p>There are three groupings of frequency of 1st January being X day of the week.</p>
+<ol>
+<li><strong>Tuesdays (293 since the year 1 AD), Fridays (292) and Sundays (293) -- 14.51%</strong></li>
+<li><strong>Wednesdays (287) and Thursdays (288)</strong></li>
+<li><strong>Mondays (283) and Saturdays (282)</strong></li>
+</ol>
+<p>Somebody (else) probably has an explanation for why this happens.</p>
+<p><strong>The next time 1st January is a Monday is 2024 (in 6 years). The previous time was 2007 (11 years ago).</strong></p>
+<a href="/images/first_jan_mon_2018.png">
+    <img src="/images/first_jan_mon_2018.png" alt="">
+</a>
+<a href="/images/mean_wait_2018.png">
+    <img src="/images/mean_wait_2018.png" alt="">
+</a>
+<h1>From the year 1 AD to 9999</h1>
+<p>To test that a bit further I tried it from 1AD to the year 9999 as well. (9999 is the maximum year Python can work with in its standard library.) The results are as good as exactly the same.</p>
+<table>
+<thead>
+<tr>
+<th>Day of week</th>
+<th align="center">Times 1st Jan has been X day</th>
+<th align="center">Avg years to wait</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monday</td>
+<td align="center">1400</td>
+<td align="center">7.14</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td align="center">1450</td>
+<td align="center">6.89</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td align="center">1425</td>
+<td align="center">7.02</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td align="center">1425</td>
+<td align="center">7.02</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td align="center">1450</td>
+<td align="center">6.89</td>
+</tr>
+<tr>
+<td>Saturday</td>
+<td align="center">1399</td>
+<td align="center">7.15</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td align="center">1450</td>
+<td align="center">6.89</td>
+</tr>
+</tbody>
+</table>
+<a href="/images/first_jan_mon_9999.png">
+    <img src="/images/first_jan_mon_9999.png" alt="">
+</a>
+<a href="/images/mean_wait_9999.png">
+    <img src="/images/mean_wait_9999.png" alt="">
+</a>
+<p>And just to check that there's no change over time in how often a 1st January is X day of the week...</p>
+<p><img src="" alt=""></p>
+<a href="/images/first_jan_over_time_9999.png">
+    <img src="/images/first_jan_over_time_9999.png" alt="">
+</a>
+<p>There's no change over time in the rate of X day of the week being 1st January. (The days in the original three groupings overlap.)</p>
+<h1>That bad, repetitive Python</h1>
+<p>In case you want to work with this here's that bad, repetitive code I used. It's <a href="https://github.com/edjw/how-often-is-1st-january-a-monday/">also on Github</a>.</p>
+<pre>
+
+from datetime import datetime
+from statistics import mean
+import plotly
+import plotly.graph_objs as go
+
+# year = int(datetime.today().strftime("%Y"))  # 2018 at the moment
+year = 9999  # the latest year you can use
+
+
+def get_first_jan_weekdays(year):
+    mondays = []  # "2018, 2007, 2001"
+    tuesdays = []
+    wednesdays = []
+    thursdays = []
+    fridays = []
+    saturdays = []
+    sundays = []
+
+    while year >= 1:
+        day_of_week_first_jan = datetime(year, 1, 1).strftime("%A")
+
+        if day_of_week_first_jan == 'Monday':
+            mondays.append(year)
+        elif day_of_week_first_jan == 'Tuesday':
+            tuesdays.append(year)
+        elif day_of_week_first_jan == 'Wednesday':
+            wednesdays.append(year)
+        elif day_of_week_first_jan == 'Thursday':
+            thursdays.append(year)
+        elif day_of_week_first_jan == 'Friday':
+            fridays.append(year)
+        elif day_of_week_first_jan == 'Saturday':
+            saturdays.append(year)
+        elif day_of_week_first_jan == 'Sunday':
+            sundays.append(year)
+
+        year -= 1
+
+    return mondays, tuesdays, wednesdays, thursdays, fridays, saturdays, sundays
+
+
+def first_jans_over_time(mondays, tuesdays, wednesdays, thursdays, fridays,
+                         saturdays, sundays):
+    mondays_over_time = sorted(mondays)
+    tuesdays_over_time = sorted(tuesdays)
+    wednesdays_over_time = sorted(wednesdays)
+    thursdays_over_time = sorted(thursdays)
+    fridays_over_time = sorted(fridays)
+    saturdays_over_time = sorted(saturdays)
+    sundays_over_time = sorted(sundays)
+
+    return mondays_over_time, tuesdays_over_time, wednesdays_over_time, thursdays_over_time, fridays_over_time, saturdays_over_time, sundays_over_time
+
+
+def get_number_of_first_jan_weekdays(mondays, tuesdays, wednesdays, thursdays,
+                                     fridays, saturdays, sundays):
+    total_mondays = len(mondays)
+    total_tuesdays = len(tuesdays)
+    total_wednesdays = len(wednesdays)
+    total_thursdays = len(thursdays)
+    total_fridays = len(fridays)
+    total_saturdays = len(saturdays)
+    total_sundays = len(sundays)
+
+    return total_mondays, total_tuesdays, total_wednesdays, total_thursdays, total_fridays, total_saturdays, total_sundays
+
+
+def get_avg_wait_between_years(mondays, tuesdays, wednesdays, thursdays,
+                               fridays, saturdays, sundays):
+    # 1st num minus 2nd num
+    mon_waits = [s - t for s, t in zip(mondays, mondays[1:])]
+    # mean difference rounded to 2 decimal places
+    mon_avg_wait = round(mean(mon_waits), 2)
+
+    tues_waits = [s - t for s, t in zip(tuesdays, tuesdays[1:])]
+    tues_avg_wait = round(mean(tues_waits), 2)
+
+    wed_waits = [s - t for s, t in zip(wednesdays, wednesdays[1:])]
+    wed_avg_wait = round(mean(wed_waits), 2)
+
+    thurs_waits = [s - t for s, t in zip(thursdays, thursdays[1:])]
+    thurs_avg_wait = round(mean(thurs_waits), 2)
+
+    fri_waits = [s - t for s, t in zip(fridays, fridays[1:])]
+    fri_avg_wait = round(mean(fri_waits), 2)
+
+    sat_waits = [s - t for s, t in zip(saturdays, saturdays[1:])]
+    sat_avg_wait = round(mean(sat_waits), 2)
+
+    sun_waits = [s - t for s, t in zip(sundays, sundays[1:])]
+    sun_avg_wait = round(mean(sun_waits), 2)
+
+    return mon_avg_wait, tues_avg_wait, wed_avg_wait, thurs_avg_wait, fri_avg_wait, sat_avg_wait, sun_avg_wait
+
+
+def generate_first_jan_over_time_line_chart(*args):
+
+    trace0 = go.Scatter(
+        x=mondays_over_time, name='Mondays', line=dict(color=('red'), width=3))
+
+    trace1 = go.Scatter(
+        x=tuesdays_over_time,
+        name='Tuesdays',
+        line=dict(color=('blue'), width=3))
+
+    trace2 = go.Scatter(
+        x=wednesdays_over_time,
+        name='Wednesdays',
+        line=dict(color=('yellow'), width=3))
+
+    trace3 = go.Scatter(
+        x=thursdays_over_time,
+        name='Thursdays',
+        line=dict(color=('green'), width=3))
+
+    trace4 = go.Scatter(
+        x=fridays_over_time,
+        name='Fridays',
+        line=dict(color=('black'), width=3))
+
+    trace5 = go.Scatter(
+        x=saturdays_over_time,
+        name='Saturdays',
+        line=dict(color=('pink'), width=3))
+
+    trace6 = go.Scatter(
+        x=sundays_over_time,
+        name='Sundays',
+        line=dict(color=('orange'), width=3))
+
+    data = [trace0, trace1, trace2, trace3, trace4, trace5, trace6]
+
+    layout = go.Layout(
+        title="Number of times 1st Jan is X day over time",
+        xaxis=dict(title="Instance of X day as 1st January", range=[0, 10001]),
+        yaxis=dict(title="Year from 1 AD to 9999", range=[0, 1400]),
+    )
+
+    plotly.offline.plot({"data": data, "layout": layout})
+
+
+def generate_totals_bar_chart(*args):
+    y_axis_data = []
+    for arg in args:
+        y_axis_data.append(arg)
+
+    data = [
+        go.Bar(
+            x=[
+                "Mondays", "Tuesdays", "Wednesdays", "Thursday", "Fridays",
+                "Saturdays", "Sundays"
+            ],
+            y=y_axis_data)
+    ]
+
+    layout = go.Layout(
+        title="How often is 1st January a Monday? From the year 1 to 9999",
+        xaxis=dict(title="Days of the week"),
+        yaxis=dict(
+            title="Number of times 1st January has been X day",
+            range=[1350, 1460]),
+    )
+
+    plotly.offline.plot({"data": data, "layout": layout})
+
+
+def generate_avgs_barchart(*args):
+    y_axis_data = []
+    for arg in args:
+        y_axis_data.append(arg)
+
+    data = [
+        go.Bar(
+            x=[
+                "Mondays", "Tuesdays", "Wednesdays", "Thursday", "Fridays",
+                "Saturdays", "Sundays"
+            ],
+            y=y_axis_data)
+    ]
+
+    layout = go.Layout(
+        title=
+        "How many years until it's a Monday again? From the year 1 to 9999",
+        xaxis=dict(title="Days of the week"),
+        yaxis=dict(title="Average (mean) years to wait", range=[6.5, 7.5]),
+    )
+
+    plotly.offline.plot({"data": data, "layout": layout})
+
+
+mondays, tuesdays, wednesdays, thursdays, fridays, saturdays, sundays = get_first_jan_weekdays(
+    year)
+
+total_mondays, total_tuesdays, total_wednesdays, total_thursdays, total_fridays, total_saturdays, total_sundays = get_number_of_first_jan_weekdays(
+    mondays, tuesdays, wednesdays, thursdays, fridays, saturdays, sundays)
+
+mon_avg_wait, tues_avg_wait, wed_avg_wait, thurs_avg_wait, fri_avg_wait, sat_avg_wait, sun_avg_wait = get_avg_wait_between_years(
+    mondays, tuesdays, wednesdays, thursdays, fridays, saturdays, sundays)
+
+mondays_over_time, tuesdays_over_time, wednesdays_over_time, thursdays_over_time, fridays_over_time, saturdays_over_time, sundays_over_time = first_jans_over_time(
+    mondays, tuesdays, wednesdays, thursdays, fridays, saturdays, sundays)
+
+# generate_totals_bar_chart(total_mondays, total_tuesdays, total_wednesdays, total_thursdays, total_fridays, total_saturdays, total_sundays)
+
+# generate_avgs_barchart(mon_avg_wait, tues_avg_wait, wed_avg_wait, thurs_avg_wait, fri_avg_wait, sat_avg_wait, sun_avg_wait)
+
+# generate_first_jan_over_time_line_chart(mondays_over_time, tuesdays_over_time, wednesdays_over_time, thursdays_over_time, fridays_over_time, saturdays_over_time, sundays_over_time)
+
+</pre>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>A simplistic post on remembering your country's history</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2017-08-16-a-simplistic-post-on-remembering-your-country-s-history"/>
+      <updated>Tue, 15 Aug 2017 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>Donald Trump says that removing statues to Confederate generals is <a href="http://www.politico.com/story/2017/08/15/full-text-trump-comments-white-supremacists-alt-left-transcript-241662">changing history</a>.</p>
+<p>He's wrong.</p>
+<p>Take Germany. They don't need statues of Hitler to remember Germany's history even though Hitler is part of German history.</p>
+<p>They have memorials to the victims of Nazi Germany instead.</p>
+<p>People in Germany remember Germany's history without having monuments of the people responsible for the Holocaust.</p>
+<p>America can remember what happened before and during the Civil War without having statues of the leaders of the Confederacy.</p>
+<p>They can have memorials to victims of slavery and those who died in the Civil War instead.</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>A simplistic post on quick trade agreements</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2017-07-10-a-simplistic-post-on-quick-trade-agreements"/>
+      <updated>Sun, 09 Jul 2017 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<p>A quick trade deal means the country with the smaller economy being forced to accept the demands of the larger economy in return for the speed of the deal.</p>
+<p>You don't want a quick deal if you're <a href="http://www.bbc.co.uk/news/uk-politics-40540340">negotiating with the US</a>. Unless you're not bothered about food safety, environmental standards, rules on procurement of public services (this means NHS).</p>
+<p>One example. <a href="http://www.salon.com/2014/05/26/chlorine_in_your_chicken_why_poultry_is_more_dangerous_than_ever_partner/">Chicken in America</a> is usually <a href="https://www.washingtonpost.com/world/europe/free-trade-with-us-europe-balks-at-chlorine-chicken-hormone-beef/2014/12/04/e9aa131c-6c3f-11e4-bafd-6598192a448d_story.html">washed with chlorine</a>. You can't sell chlorine-washed chicken in the EU. The US chicken industry wants to sell its chicken internationally without having a separate chlorine-free production line. So the US puts something into a trade agreement with the UK that says chlorine-washed chicken is OK. The UK wants a quick agreement so says yes to that so it can improve the deal on a bigger priority like financial services.</p>
+<p>Apply the chicken example to basically every category of goods or services.</p>
+<p>If you're a single bloc negotiating on behalf of 28 countries you're more likely to be able to say no to stuff you really don't want and other countries are more likely to say yes to the things you do want. That's because other countries have much stronger incentives to get a deal with you so they can do more trade with you than if you're a single country alone.</p>
+<p>File this one under things I never thought about before the referendum</p>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>A simplistic post on Brexit utopianism</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2017-06-18-a-simplistic-post-on-brexit-utopianism"/>
+      <updated>Sat, 17 Jun 2017 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<ol>
+<li>
+<p>This has been said many times before.</p>
+</li>
+<li>
+<p>Brexit supporters on the right who complain that the socialist utopianism of Corbyn etc isn't pragmatic are ridiculous.</p>
+</li>
+<li>
+<p>You can't complain about utopianism while wanting the UK to jump off the Brexit cliff hoping there will be a soft landing.</p>
+</li>
+<li>
+<p>Brexit is not a pragmatic project.</p>
+</li>
+<li>
+<p>Labour's position is not much better. You can't claim your manifesto is fully costed if you don't cost out the economic impact of your policy of ending freedom of movement.</p>
+</li>
+</ol>
+]]></content>
+    </entry>
+  
+    <entry>
+      <title>A simplistic post on liberalism and Christianity</title>
+      <link href="https://edjohnsonwilliams.co.uk/posts//blog/2017-06-15-a-simplistic-post-on-liberalism-and-christianity"/>
+      <updated>Wed, 14 Jun 2017 23:00:00 GMT</updated>
+      <content type="html"><![CDATA[<ol>
+<li>
+<p>I'm a straight, Christian man who is liberal - both politically and theologically.</p>
+</li>
+<li>
+<p>I disagree with Tim Farron's apparent view that having an abortion or gay sex is a sin</p>
+</li>
+<li>
+<p>I also disagree with Tim Farron's comments that being a liberal leader and a "faithful Christian" is irreconcilable. There are lots of liberal Christians.</p>
+</li>
+<li>
+<p>It <em>helps</em> to be a Christian who embraces people of all sexualities and is pro-choice if you want to be a liberal leader.</p>
+</li>
+<li>
+<p>I do however think that you can hold personal views that are illiberal and still be a liberal politician so long as you don't impose your personal views on others.</p>
+</li>
+<li>
+<p>There is nothing in Tim Farron's record to suggest he has tried to impose his personal views on others.</p>
+</li>
+<li>
+<p>You might say that you want to know your political leaders say what they believe in. Fair enough.</p>
+</li>
+<li>
+<p>Jeremy Corbyn opposes nuclear weapons but is (now) happy to say he will promote party policy which is to renew Trident. Is there a difference between this and Farron?</p>
+</li>
+<li>
+<p>What about Theresa May? Does she personally believe everything she promotes? Does every journalist? Is this only an issue because Tim Farron is a <em>liberal</em> politician?</p>
+</li>
+<li>
+<p>I saw someone on Twitter ask...Where do you draw the line on personal views that you'd be OK with so long as they didn't act on them? Would you be OK with a Holocaust denier? Answer...Don't know.</p>
+</li>
+<li>
+<p>But Tim Farron has consistently voted for liberal legislation on abortion and gay rights. This would be <em>a bit</em> like a Holocaust denier consistently voting to fund museums about the Holocaust. Stress on <em>a bit like</em>. It's not actually the same. Obviously.</p>
+</li>
+<li>
+<p>I would probably react to this differently if I was gay and I need to think about this more.</p>
+</li>
+<li>
+<p>Reading this <a href="https://twitter.com/huwlemmey/status/875254164909109248">Twitter thread</a> by Huw Lemmey is the closest I've got to changing my mind on this.</p>
+</li>
+</ol>
+]]></content>
+    </entry>
+  
+</feed>
+  
