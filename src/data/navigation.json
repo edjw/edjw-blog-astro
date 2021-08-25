@@ -1,0 +1,28 @@
+[
+  {
+    "text": "Blog",
+    "url": "/blog"
+  },
+  {
+    "text": "Reading",
+    "url": "/reading-list"
+  },
+  {
+    "text": "About",
+    "url": "/about"
+  },
+  {
+    "text": "Twitter",
+    "url": "https://twitter.com/_edjw",
+    "attribute": "me"
+  },
+  {
+    "text": "Github",
+    "url": "https://github.com/edjw",
+    "attribute": "me"
+  },
+  {
+    "text": "RSS",
+    "url": "/feed.xml"
+  }
+]

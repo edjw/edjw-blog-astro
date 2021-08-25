@@ -1,0 +1,29 @@
+---
+
+import siteData from '$data/siteconfig'
+import BaseHead from '$components/BaseHead.astro'
+import Header from '$components/Header.astro'
+import Footer from '$components/Footer.astro'
+
+const {pageTitle, description: pageDescription } = Astro.props
+
+const { title: siteTitle, url, author: { twitterUsername }, repository, RSSFeed, sitemap, contentLicence } = siteData
+
+---
+
+<!-- <html lang={ content.lang || 'en' }> -->
+<html lang="en">
+    <BaseHead title={pageTitle} description={pageDescription} />
+
+
+<div
+    class="container grid h-screen max-w-4xl px-4 pt-4 mx-auto bg-white grid-cols-full grid-rows-auto-1-auto dark:bg-trueGray-800">
+    <Header />
+
+    <main class="mt-8 prose dark:prose-light">
+        <slot />
+    </main>
+
+    <Footer />
+
+</html>

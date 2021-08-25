@@ -1,0 +1,30 @@
+---
+import siteData from "$data/siteconfig"
+const { title: siteTitle, description, url, author: { twitterUsername }, repository, RSSFeed, sitemap, contentLicence } = siteData
+
+const {title: pageTitle, description: pageDescription } = Astro.props
+
+
+const currentPath = "todo"
+const currentURL = "todo"
+---
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charSet="utf-8" />
+<meta name="description" content={description} />
+<title>{pageTitle || siteTitle}</title>
+<link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
+
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary" key="twcard" />
+<meta name="twitter:creator" content={twitterUsername} key="twhandle" />
+
+<!-- Open Graph -->
+<meta property="og:url" content={currentURL} key="ogurl" />
+
+<!-- <meta property="og:image" content={previewImage} key="ogimage" /> -->
+<meta property="og:site_name" content={siteTitle} key="ogsitename" />
+<meta property="og:title" content={pageTitle} key="ogtitle" />
+<meta property="og:description" content={pageDescription} key="ogdesc" />
+<link rel="alternate" type="application/rss+xml" title="RSS feed for Ed Johnson-Williams’ blog" href="/feed.xml" />
