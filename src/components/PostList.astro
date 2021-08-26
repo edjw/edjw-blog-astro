@@ -1,0 +1,20 @@
+---
+import PostEntry from '$components/PostEntry.astro'
+
+// import getYear from '$utils/getYear';
+// let year = ''
+// let postYear = ''
+// function setPostYear(date) {
+//     postYear.current = getYear(date);
+// }
+
+// function setYear(date) {
+//     year.current = getYear(date);
+// }
+const { posts, showYears } = Astro.props
+---
+{posts.map((post) => (
+     <PostEntry post={post} />
+))}
+
+

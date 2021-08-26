@@ -1,0 +1,10 @@
+---
+const {post: {date, title, url}} = Astro.props;
+---
+<section class="p-8 my-10 prose border-t-8 border-yellow-200 shadow-lg dark:prose-light dark:bg-gray-800">
+    <p class="m-0 text-base">{date}</p>
+    <h3 class="mt-1">
+        <a href={url}>{title}</a>
+    </h3>
+</section>
+

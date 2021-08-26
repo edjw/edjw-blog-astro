@@ -8,9 +8,15 @@
     "build": "astro build"
   },
   "devDependencies": {
+    "@types/react": "^17.0.19",
     "astro": "^0.19.4"
   },
   "dependencies": {
-    "@astrojs/renderer-react": "^0.2.0"
+    "@astrojs/renderer-react": "^0.2.0",
+    "luxon": "^2.0.2",
+    "reading-time": "^1.4.0",
+    "remark": "^14.0.1",
+    "remark-html": "^14.0.0",
+    "slugify": "^1.6.0"
   }
 }
