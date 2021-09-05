@@ -4,35 +4,37 @@ import PostList from "$components/PostList.astro"
 const title = "Ed Johnson Williams' website"
 const socialDescription = "Ed Johnson Williams' website"
 let allPosts = Astro.fetchContent('./blog/*.md');
-const featuredPosts = allPosts.filter((post) => post.featured === true)
+const featuredPosts = allPosts.filter((post) => post.featured === true).sort((a, b) => new Date(b.date) - new
+Date(a.date))
 ---
 
 <PageLayout title={title} socialDescription={socialDescription}>
 
-    <section class='px-8 py-4 prose text-gray-900 border-t-4 border-yellow-200 bg-yellow-50 dark:bg-gray-800 dark:prose-light'>
-          <p>
-            My personal site
-          </p>
+  <section
+    class='px-8 py-4 prose text-gray-900 border-t-4 border-yellow-200 bg-yellow-50 dark:bg-gray-800 dark:prose-light'>
+    <p>
+      My personal site
+    </p>
 
-          <p>
-            Some tech, some politics, some shapenote music
-          </p>
-        </section>
+    <p>
+      Some tech, some politics, some shapenote music
+    </p>
+  </section>
 
 
   <div class="mt-10">
-          <h2>A few blogposts I like</h2>
+    <h2>A few blogposts I like</h2>
 
-          <p>
-            A selection of my blogposts. You can also <a href="/blog" class="font-semibold">see all blogposts</a>.
-          </p>
+    <p>
+      A selection of my blogposts. You can also <a href="/blog" class="font-semibold">see all blogposts</a>.
+    </p>
 
-           <PostList posts={featuredPosts} showYears={false} />
+    <PostList posts={featuredPosts} showYears={false} />
 
-          <p>
-              <a href="/blog" className="font-semibold">See all blogposts</a>
-          </p>
-        </div>
+    <p>
+      <a href="/blog" className="font-semibold">See all blogposts</a>
+    </p>
+  </div>
 
 
 </PageLayout>
