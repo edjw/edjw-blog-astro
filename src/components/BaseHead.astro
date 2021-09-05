@@ -4,9 +4,8 @@ const { title: siteTitle, description, url, author: { twitterUsername }, reposit
 
 const {title: pageTitle, description: pageDescription } = Astro.props
 
-
-const currentPath = "todo"
-const currentURL = "todo"
+// const currentPath = Astro.request.url.pathname
+const currentURL = Astro.request.url.href
 ---
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
