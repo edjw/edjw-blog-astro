@@ -4,10 +4,6 @@
     "url": "/blog"
   },
   {
-    "text": "Reading",
-    "url": "/reading-list"
-  },
-  {
     "text": "About",
     "url": "/about"
   },
@@ -20,9 +16,5 @@
     "text": "Github",
     "url": "https://github.com/edjw",
     "attribute": "me"
-  },
-  {
-    "text": "RSS",
-    "url": "/feed.xml"
   }
 ]
