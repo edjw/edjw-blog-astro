@@ -1,0 +1,14 @@
+---
+import BaseLayout from "$layouts/BaseLayout.astro"
+const {content: {title, socialDescription}} = Astro.props;
+---
+<BaseLayout pageTitle={title} description={socialDescription}>
+
+        <h2 class="-mt-0 p-name">
+            {title}
+        </h2>
+
+        <div class="e-content">
+            <slot />
+        </div>
+</BaseLayout>

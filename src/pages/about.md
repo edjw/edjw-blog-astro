@@ -1,7 +1,7 @@
 ---
 title: About me
 socialDescription: My 'About me' page
-layout: '$layouts/BaseLayout.astro'
+layout: '$layouts/PageLayout.astro'
 ---
 I'm Ed Johnson-Williams. This is my personal website. I'm also [on Twitter at @_edjw](https://twitter.com/_edjw).
 
