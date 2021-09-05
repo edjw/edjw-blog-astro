@@ -6,10 +6,8 @@ import PostList from "$components/PostList.astro"
 
 export async function getStaticPaths() {
   const allPosts = Astro.fetchContent('../blog/*.md');
-  let allUniqueTags = [...new Set(allPosts.map(post => post.tags).flat())];
-  let sluggedTags = allUniqueTags.map(tag => slugify(tag));
-  console.log({allUniqueTags, sluggedTags})
-  return sluggedTags.map(tag => ({params: {tag}, props: {allPosts}}));
+  let allUniqueTags = [...new Set(allPosts.map(post => post.tags).flat())].map(tag => slugify(tag));
+  return allUniqueTags.map(tag => ({params: {tag}, props: {allPosts}}));
 }
 const { allPosts } = Astro.props;
 const { params } = Astro.request;
@@ -24,6 +22,5 @@ const tagName = titleCase(tag);
     <p>
         These are the blogposts I've tagged as <em>{tagName}</em>.
     </p>
-
     <PostList posts={tagPosts} />
 </PageLayout>

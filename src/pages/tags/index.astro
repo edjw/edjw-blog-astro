@@ -1,0 +1,23 @@
+---
+import PageLayout from "$layouts/PageLayout.astro";
+const title = "Tags"
+const description = "Tags from my blog posts"
+import slugify from 'slugify';
+import { titleCase } from "title-case";
+
+const allPosts = Astro.fetchContent('../blog/*.md');
+let allUniqueTags = [...new Set(allPosts.map(post => post.tags).flat())].map(tag => slugify(tag)).sort();
+---
+<PageLayout title={title} socialDescription={description}>
+    <p>A list of tags used in blogposts on my website</p>
+
+    <section class='mt-8'>
+
+        <ul>
+        {allUniqueTags.map((tag) =>
+        <li><a href={`/tags/${tag}`}>{titleCase(tag).replace("-", " ")}</a></li>
+        )}
+
+        </ul>
+    </section>
+</PageLayout>
