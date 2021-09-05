@@ -4,12 +4,13 @@ import slugify from 'slugify'
 import { titleCase } from "title-case";
 import BaseLayout from "$layouts/BaseLayout.astro"
 
+const {content} = Astro.props
 const {content: {title, date, tags, socialDescription, astro: {html}}} = Astro.props;
+
 const formattedDate = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }).format(new
 Date(date))
 
 const postReadingTime = readingTime(html).text
-
 ---
 <BaseLayout pageTitle={title} description={socialDescription}>
     <article class="prose h-entry dark:prose-light">

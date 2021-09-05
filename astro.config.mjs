@@ -8,7 +8,11 @@
 
 // @ts-check
 export default /** @type {import('astro').AstroUserConfig} */ ({
-  renderers: ["@astrojs/renderer-react"],
+  remarkPlugins: [
+    ['remark-html'],
+    ['remark-gfm'],
+    ['remark-footnotes', { inlineNotes: true }],
+  ],
   devOptions: {
     tailwindConfig: "./tailwind.config.js"
   }

@@ -37,7 +37,7 @@ I went and made a list of those numbers.
 
 And the Python code I used to find this…
 
-<pre>
+```
 
 import math
 
@@ -62,4 +62,4 @@ print(square_numbers)
 
 # 36t, 36b, 49t, 49b, 64, 81t, 81b, 100, 121, 144, 169, 196, 225t, 225b, 289, 324, 361, 400, 441, 484
 
-</pre>
+```

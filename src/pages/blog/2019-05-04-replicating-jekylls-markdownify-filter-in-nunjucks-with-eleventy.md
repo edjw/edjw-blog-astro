@@ -10,7 +10,7 @@ Jekyll has a useful filter called `markdownify` that converts a Markdown string 
 
 I've replicated this in [Eleventy](https://www.11ty.io) by adding this into my `.eleventy.js` file.
 
-```
+```js
 module.exports = function (eleventyConfig) {
 
     const md = require('markdown-it')({

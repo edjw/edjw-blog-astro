@@ -74,8 +74,6 @@ To test that a bit further I tried it from 1AD to the year 9999 as well. (9999 i
 
 And just to check that there's no change over time in how often a 1st January is X day of the week...
 
-![]()
-
 <a href="/images/first_jan_over_time_9999.png">
     <img src="/images/first_jan_over_time_9999.png" alt="">
 </a>
@@ -86,7 +84,7 @@ There's no change over time in the rate of X day of the week being 1st January. 
 
 In case you want to work with this here's that bad, repetitive code I used. It's [also on Github](https://github.com/edjw/how-often-is-1st-january-a-monday/).
 
-<pre>
+```
 
     from datetime import datetime
     from statistics import mean
@@ -296,4 +294,4 @@ In case you want to work with this here's that bad, repetitive code I used. It's
 
     # generate_first_jan_over_time_line_chart(mondays_over_time, tuesdays_over_time, wednesdays_over_time, thursdays_over_time, fridays_over_time, saturdays_over_time, sundays_over_time)
 
-</pre>
+```
