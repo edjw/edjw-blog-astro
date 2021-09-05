@@ -1,64 +1,78 @@
 ---
-// import readingTime from 'reading-time'
+import readingTime from 'reading-time'
+import slugify from 'slugify'
+import { titleCase } from "title-case";
 import BaseLayout from "$layouts/BaseLayout.astro"
 
-const {content: {title, date, tags, socialDescription, markdownBody, readingTime}} = Astro.props;
-const formattedDate = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(date))
-const x = Astro.props
-console.log(x)
+const {content: {title, date, tags, socialDescription, astro: {html}}} = Astro.props;
+const formattedDate = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }).format(new
+Date(date))
+
+const postReadingTime = readingTime(html).text
+
 ---
 <BaseLayout pageTitle={title} description={socialDescription}>
-    <article className="prose h-entry dark:prose-light">
-                <!-- h-entry things -->
-                    <div className="hidden">
-                       <!-- <a href="{{ page.url }}"></a>
+    <article class="prose h-entry dark:prose-light">
+        <!-- h-entry things -->
+        <div class="hidden">
+            <!-- <a href="{{ page.url }}"></a>-->
 
-                       <time className="dt-published">{new Date(date).toUTCString()}</time> -->
+            <time class="dt-published">{new Date(date).toUTCString()}</time>
 
-                       <!-- TODO: fix tags -->
-                        <!-- {tags.map((tag, index) => (
-                            <a key={index} className="p-category" href={`/tags/${slugify(tag)}`}>{titleCase(tag)}</a>
-                        ))} -->
+            <!-- TODO: fix tags -->
+<!--
+ {
+            (tags.length > 0) &&
 
-                        <a rel="author" href="https://edjohnsonwilliams.co.uk">Ed Johnson-Williams</a>
-                    </div>
-                  <!-- End of h-entry things -->
+                    {tags.map((tag) =>
+                    <a href={`/tags/${slugify(tag)}`}>
+                        {titleCase(tag)}
+                    </a>
+                    )}
 
-                    <h2 className="-mt-0 p-name">
-                        {title}
-                    </h2>
-
-                    <section>
-                        <p className="my-1">
-                            <span>Published: </span>
-                            <time>{formattedDate}</time>
-                        </p>
-
-                        <p className="my-1">
-                            <span>Reading time: </span>
-                            {readingTime}
-                        </p>
+            } -->
 
 
-                        <!-- {(tags.length > 0) &&
 
-                            <p className="flex my-1">
-                                <span className='mr-1'>Tags: </span>
+            <a rel="author" href="https://edjohnsonwilliams.co.uk">Ed Johnson-Williams</a>
+        </div>
+        <!-- End of h-entry things -->
 
-                                <span className='flex space-x-2'>
-                                    {tags.map((tag, index) => (
-                                        <Link href={`/tags/${slugify(tag)}`} key={index}>
-                                            <a>{titleCase(tag)}</a>
-                                        </Link>
-                                    ))}
-                                </span>
+        <h2 class="-mt-0 p-name">
+            {title}
+        </h2>
 
-                            </p>} -->
+        <section>
+            <p class="my-1">
+                <span>Published: </span>
+                <time>{formattedDate}</time>
+            </p>
 
-                    </section>
+            <p class="my-1">
+                <span>Reading time: </span>
+                {postReadingTime}
+            </p>
 
-                    <div className="e-content">
-                        <slot />
-                    </div>
-                </article>
+            {
+            (tags.length > 0) &&
+            <p class="flex my-1">
+                <span class='mr-1'>Tags: </span>
+                <span class='flex space-x-2'>
+                    {tags.map((tag) =>
+                    <a href={`/tags/${slugify(tag)}`}>
+                        {titleCase(tag)}
+                    </a>
+                    )}
+                </span>
+            </p>
+            }
+
+
+
+        </section>
+
+        <div class="e-content">
+            <slot />
+        </div>
+    </article>
 </BaseLayout>
