@@ -16,13 +16,14 @@ const postReadingTime = readingTime(html).text
     <article class="prose h-entry dark:prose-light">
         <!-- h-entry things -->
         <div class="hidden">
-            <!-- <a href="{{ page.url }}"></a>-->
+            <a href="{Astro.request.url.href}"></a>
 
             <time class="dt-published">{new Date(date).toUTCString()}</time>
 
             <!-- TODO: fix tags -->
+
 <!--
- {
+              {
             (tags.length > 0) &&
 
                     {tags.map((tag) =>
