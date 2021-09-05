@@ -15,15 +15,17 @@ const { title: siteTitle, url, author: { twitterUsername }, repository, RSSFeed,
 <html lang="en">
     <BaseHead title={pageTitle} description={pageDescription} />
 
-
-<div
+    <div
     class="container grid h-screen max-w-4xl px-4 pt-4 mx-auto bg-white grid-cols-full grid-rows-auto-1-auto dark:bg-trueGray-800">
-    <Header />
 
-    <main class="mt-8 prose dark:prose-light">
-        <slot />
-    </main>
+        <Header />
 
-    <Footer />
+        <main class="mt-8 prose dark:prose-light">
+            <slot />
+        </main>
+
+        <Footer />
+
+    </div>
 
 </html>
