@@ -5,6 +5,7 @@ socialDescription: You can remember you history without celebrating the worst pa
 tags:
   - politics
   - history
+layout: $layouts/BlogpostLayout.astro
 ---
 
 

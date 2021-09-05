@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a {
+    @apply border-b-2 border-transparent no-underline font-normal;
+  }
+
+  a:hover {
+    @apply bg-yellow-100 border-b-2 border-yellow-200;
+  }
+
+  p,
+  li,
+  blockquote,
+  p > code {
+    @apply text-lg;
+  }
+}
+
+@layer components {
+  .readingListItem {
+    @apply p-4 my-10 border-t-8 border-yellow-200 shadow-lg;
+  }
+}
+
+@layer utilities {
+  .prose a {
+    @apply break-words font-normal;
+  }
+
+  .prose p > code {
+    @apply break-words;
+  }
+}
