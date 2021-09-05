@@ -1,11 +1,11 @@
-name: Schedule Netlify Build
-on:
-  schedule:
-    - cron: "01 2 * * *"
-jobs:
-  build:
-    name: Call Netlify build hook
-    runs-on: ubuntu-latest
-    steps:
-      - name: Curl request
-        run: curl -X POST -d {} ${{ secrets.NETLIFY_REBUILD_HOOK }}
+# name: Schedule Netlify Build
+# on:
+#   schedule:
+#     - cron: "01 2 * * *"
+# jobs:
+#   build:
+#     name: Call Netlify build hook
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Curl request
+#         run: curl -X POST -d {} ${{ secrets.NETLIFY_REBUILD_HOOK }}
