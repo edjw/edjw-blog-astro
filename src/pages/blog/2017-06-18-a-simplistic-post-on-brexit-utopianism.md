@@ -4,7 +4,7 @@ date: 2017-06-18T09:12:11.000Z
 socialDescription: Hard Brexit is utopianism.
 tags:
   - politics
-layout: "$layouts/BlogpostLayout.astro"
+layout: "../../layouts/BlogpostLayout.astro"
 ---
 
 1. This has been said many times before.

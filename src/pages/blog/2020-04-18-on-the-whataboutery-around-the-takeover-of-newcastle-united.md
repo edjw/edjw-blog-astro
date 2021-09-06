@@ -7,7 +7,7 @@ tags:
   - politics
   - sport
 featured: true
-layout: "$layouts/BlogpostLayout.astro"
+layout: "../../layouts/BlogpostLayout.astro"
 ---
 Saudi Arabia wants to buy 80% of Newcastle United Football Club to make itself look good.
 

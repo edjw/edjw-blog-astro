@@ -7,7 +7,7 @@ tags:
   - tailwind
   - svelte
 featured: true
-layout: "$layouts/BlogpostLayout.astro"
+layout: "../../layouts/BlogpostLayout.astro"
 ---
 I've made a new tool called **[Find the nearest Tailwind colour](https://find-nearest-tailwind-colour.netlify.app/)**.
 

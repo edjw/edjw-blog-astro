@@ -4,7 +4,7 @@ date: 2019-04-26T08:00:00.000Z
 socialDescription: I switched this blog to Eleventy and can now show my Pocket reading list on it
 tags:
   - eleventy
-layout: "$layouts/BlogpostLayout.astro"
+layout: "../../layouts/BlogpostLayout.astro"
 ---
 I've recently added [a page called Reading List to this website](/reading-list). It's a page that shows the unread articles in my [Pocket account](https://getpocket.com/) that I haven't tagged as 'private'.
 
