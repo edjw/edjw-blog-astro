@@ -5,7 +5,7 @@ socialDescription: Sacred Harp songs that are square numbers
 tags:
   - data
   - shapenote
-layout: "../../layouts/BlogpostLayout.astro"
+layout: "../layouts/BlogpostLayout.astro"
 ---
 A singer at the [Sacred Harp singing in Durham](https://durhamsacredharp.co.uk/) yesterday was calling only [square numbers](https://en.wikipedia.org/wiki/Square_number).
 

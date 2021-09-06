@@ -4,7 +4,7 @@ date: 2020-03-24T14:45:00.000Z
 socialDescription: Here's how to have different favicons for dev and prod in 11ty
 tags:
   - eleventy
-layout: "../../layouts/BlogpostLayout.astro"
+layout: "../layouts/BlogpostLayout.astro"
 ---
 
 *CSS Tricks* has an article up about [using a different favicon for local development and production](https://css-tricks.com/different-favicon-for-development). That way, when you've got both open in tabs, you can easily tell which tab is which.

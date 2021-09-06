@@ -9,7 +9,7 @@ socialDescription: "New website: I made a test site to fetch data from APIs and
 tags:
   - new website
   - javascript
-layout: "../../layouts/BlogpostLayout.astro"
+layout: "../layouts/BlogpostLayout.astro"
 ---
 Title says it all. [Doughnut Reader is my main Hacker News reader](https://doughnut-reader.netlify.com) now. It's got a dark theme, works nicely on mobile, and is really fast. No tracking.
 
