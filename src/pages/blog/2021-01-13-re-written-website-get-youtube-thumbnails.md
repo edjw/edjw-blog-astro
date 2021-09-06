@@ -5,7 +5,7 @@ socialDescription: I rewrote my tool Get YouTube Thumbnails with Svelte and Netl
 tags:
   - new website
   - svelte
-layout: "../../layouts/BlogpostLayout__.astro"
+layout: "../../layouts/BlogpostLayout.astro"
 ---
 
 

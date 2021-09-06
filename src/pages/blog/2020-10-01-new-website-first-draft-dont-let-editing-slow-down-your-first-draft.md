@@ -7,7 +7,7 @@ tags:
   - svelte
   - writing
 featured: true
-layout: "../../layouts/BlogpostLayout__.astro"
+layout: "../../layouts/BlogpostLayout.astro"
 ---
 Do you ever find yourself writing a first draft of something but you keep getting bogged down by making little edits?
 

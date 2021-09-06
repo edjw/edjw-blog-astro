@@ -5,7 +5,7 @@ socialDescription: How often has the first day of the week been the first day of
 tags:
   - python
   - data
-layout: "../../layouts/BlogpostLayout__.astro"
+layout: "../../layouts/BlogpostLayout.astro"
 ---
 
 **Answer...less often than every other day except Saturday. I have no idea why.**
