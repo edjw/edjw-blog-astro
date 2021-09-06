@@ -5,7 +5,7 @@ socialDescription: CSV and JSON datasets of the Sacred Harp
 tags:
   - data
   - shapenote
-layout: "../layouts/BlogpostLayout.astro"
+layout: "../../layouts/BlogpostLayout.astro"
 ---
 I've previously done some analysis involving songs from the Sacred Harp. Some [have been serious](/blog/2018-02-07-female-composers-in-the-sacred-harp); some [less](/blog/2018-06-10-football-formations-in-sacred-harp-numbers){' '}[so](/blog/2018-06-10-square-numbers-in-sacred-harp-song-numbers).
 

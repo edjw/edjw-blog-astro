@@ -3,8 +3,6 @@ import readingTime from 'reading-time'
 import slugify from 'slugify'
 import { titleCase } from "title-case";
 import BaseLayout from "$layouts/BaseLayout.astro"
-
-const {content} = Astro.props
 const {content: {title, date, tags, socialDescription, astro: {html}}} = Astro.props;
 
 const formattedDate = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }).format(new
