@@ -5,7 +5,7 @@ socialDescription: I made a new website for Newcastle Sacred Harp.
 tags:
   - new website
   - shapenote
-layout: $layouts/BlogpostLayout.astro
+layout: "$layouts/BlogpostLayout.astro"
 ---
 I made a website for the Newcastle Sacred Harp singing group. It's available at <https://newcastlesacredharp.co.uk>.
 

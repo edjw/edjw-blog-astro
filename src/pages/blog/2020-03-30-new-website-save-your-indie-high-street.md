@@ -4,7 +4,7 @@ date: 2020-03-30T21:23:29.714Z
 socialDescription: A website to help your local small businesses make it through the coronavirus
 tags:
   - new website
-layout: $layouts/BlogpostLayout.astro
+layout: "$layouts/BlogpostLayout.astro"
 ---
 [Save Your Indie High Street](https://saveyourindiehighstreet.uk) is a response to coronavirus.
 
