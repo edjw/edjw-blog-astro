@@ -6,7 +6,7 @@ socialDescription: Today is both April Fools' Day and Easter Sunday. When did
 tags:
   - python
   - data
-layout: "../../layouts/BlogpostLayout.astro"
+layout: "../../layouts/BlogpostLayout__.astro"
 ---
 **Today is both [April Fools' Day](https://en.wikipedia.org/wiki/April_Fools'_Day) and [Easter Sunday](https://en.wikipedia.org/wiki/Easter) (in [Western Christianity](https://en.wikipedia.org/wiki/Western_Christianity)).**
 
