@@ -5,7 +5,9 @@ socialDescription: An easier way to remove punctuation from strings in Python
 tags:
   - python
 layout: "../../layouts/BlogpostLayout.astro"
+
 ---
+
 This post is as a future reminder for me as much as anything.
 
 I made [a Python program](https://github.com/edjw/game-image-resizer) called game-image-resizer a few months ago. It takes a list of board games, finds each board game on [BoardGameGeek](http://boardgamegeek.com/)'s API, downloads the best image for each game, does some resizing and editing of the image, and then saves it using a useful filename.

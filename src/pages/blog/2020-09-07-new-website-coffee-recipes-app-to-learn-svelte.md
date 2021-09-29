@@ -6,7 +6,9 @@ tags:
   - new website
   - svelte
 layout: "../../layouts/BlogpostLayout.astro"
+
 ---
+
 I've made a very small website of coffee recipes. To be clear, there is [one recipe](https://coffee-coach.netlify.app/v60-by-james-hoffman) on there.
 
 I've called it [Coffee Coach](https://coffee-coach.netlify.app/) – which is way too grandiose.

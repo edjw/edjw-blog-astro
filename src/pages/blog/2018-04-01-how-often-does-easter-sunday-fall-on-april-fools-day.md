@@ -7,7 +7,9 @@ tags:
   - python
   - data
 layout: "../../layouts/BlogpostLayout.astro"
+
 ---
+
 **Today is both [April Fools' Day](https://en.wikipedia.org/wiki/April_Fools'_Day) and [Easter Sunday](https://en.wikipedia.org/wiki/Easter) (in [Western Christianity](https://en.wikipedia.org/wiki/Western_Christianity)).**
 
 When did this last happen and when will it happen again?

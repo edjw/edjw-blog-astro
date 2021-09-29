@@ -6,7 +6,9 @@ tags:
   - data
   - shapenote
 layout: "../../layouts/BlogpostLayout.astro"
+
 ---
+
 This is a very silly post.
 
 I took all [the song numbers](https://fasola.org/indexes/1991/?v=pagenum) from [the Sacred Harp](https://en.wikipedia.org/wiki/Sacred_Harp) and asked the question, "Which song numbers in the Sacred Harp are football/soccer formations?"

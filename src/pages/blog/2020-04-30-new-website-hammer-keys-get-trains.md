@@ -5,7 +5,9 @@ socialDescription: I made a website for my son. He likes trains and pressing key
 tags:
   - new website
 layout: "../../layouts/BlogpostLayout.astro"
+
 ---
+
 ### User story
 
 As a 3-year old,

@@ -8,7 +8,9 @@ tags:
   - svelte
 featured: true
 layout: "../../layouts/BlogpostLayout.astro"
+
 ---
+
 I've made a new tool called **[Find the nearest Tailwind colour](https://find-nearest-tailwind-colour.netlify.app/)**.
 
 Enter any hex colour code like #FFFFFF and it willl find the nearest colour in [Tailwind CSS](https://tailwindcss.com/)'s full colour palette for you.

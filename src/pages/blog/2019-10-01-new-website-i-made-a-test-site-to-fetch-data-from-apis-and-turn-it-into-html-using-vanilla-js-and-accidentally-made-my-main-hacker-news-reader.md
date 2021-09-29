@@ -10,7 +10,9 @@ tags:
   - new website
   - javascript
 layout: "../../layouts/BlogpostLayout.astro"
+
 ---
+
 Title says it all. [Doughnut Reader is my main Hacker News reader](https://doughnut-reader.netlify.com) now. It's got a dark theme, works nicely on mobile, and is really fast. No tracking.
 
 Have a look and let me know what you think.

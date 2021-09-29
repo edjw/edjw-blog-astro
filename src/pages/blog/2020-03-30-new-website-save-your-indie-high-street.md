@@ -5,7 +5,9 @@ socialDescription: A website to help your local small businesses make it through
 tags:
   - new website
 layout: "../../layouts/BlogpostLayout.astro"
+
 ---
+
 [Save Your Indie High Street](https://saveyourindiehighstreet.uk) is a response to coronavirus.
 
 Local pubs, cafes, restaurants and cinemas have had to close. Even with help from the government, they're under huge financial strain.

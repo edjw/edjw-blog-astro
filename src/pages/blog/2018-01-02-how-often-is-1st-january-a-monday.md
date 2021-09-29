@@ -6,7 +6,9 @@ tags:
   - python
   - data
 layout: "../../layouts/BlogpostLayout.astro"
+
 ---
+
 
 **Answer...less often than every other day except Saturday. I have no idea why.**
 

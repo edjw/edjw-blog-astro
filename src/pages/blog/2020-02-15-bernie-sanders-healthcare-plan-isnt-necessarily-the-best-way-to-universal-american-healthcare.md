@@ -6,7 +6,9 @@ socialDescription: Other candidates exist and they are good
 tags:
   - politics
 layout: "../../layouts/BlogpostLayout.astro"
+
 ---
+
 In the UK, the NHS is taxpayer-funded and free at the point of access. ^[You have to pay an expensive surcharge if you're in the UK on a visa. Most people have to pay about £10 for each prescription. Dentistry is subsidised but not free. There are probably other exceptions that I'm not thinking of.] It is great. And it sounds a lot like Bernie Sanders' plan for [Medicare for All](https://berniesanders.com/issues/medicare-for-all) with a government-provided healthcare program providing all Americans with healthcare coverage.
 
 One difference between the British system and Medicare for All is that Bernie Sanders' plan is to completely dismantle America's private healthcare insurance system in less than four years. In Britain, there's a private sector that you can use if you can afford it and want to pay for it. I don't personally know anyone who does this though.

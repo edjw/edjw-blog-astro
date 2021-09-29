@@ -5,7 +5,9 @@ socialDescription: You shouldn't aim for speed in trade agreements with big trad
 tags:
   - politics
 layout: "../../layouts/BlogpostLayout.astro"
+
 ---
+
 
 A quick trade deal means the country with the smaller economy being forced to accept the demands of the larger economy in return for the speed of the deal.
 
