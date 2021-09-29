@@ -5,7 +5,7 @@ socialDescription: Some of my Sacred Harp poster designs
 tags:
   - shapenote
   - design
-layout: layouts/BlogpostLayout.astro
+layout: "../../layouts/BlogpostLayout.astro"
 ---
 
 

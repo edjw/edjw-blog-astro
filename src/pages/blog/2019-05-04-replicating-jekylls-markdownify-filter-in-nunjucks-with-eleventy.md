@@ -4,7 +4,7 @@ date: 2019-05-04T20:11:19.010Z
 socialDescription: Converting Markdown strings to HTML with Nunjucks and Eleventy
 tags:
   - eleventy
-layout: layouts/BlogpostLayout.astro
+layout: "../../layouts/BlogpostLayout.astro"
 ---
 
 Jekyll has a useful filter called `markdownify` that converts a Markdown string into HTML. Nunjucks doesn't have this filter.
