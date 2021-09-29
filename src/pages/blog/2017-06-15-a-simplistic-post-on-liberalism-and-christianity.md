@@ -5,8 +5,7 @@ socialDescription: A simplistic post on liberalism and Christianity
 tags:
   - politics
   - christianity
-layout: "../../layouts/BlogpostLayout.astro"
-
+layout: ../../layouts/BlogpostLayout.astro
 ---
 
 1. I'm a straight, Christian man who is liberal - both politically and theologically.

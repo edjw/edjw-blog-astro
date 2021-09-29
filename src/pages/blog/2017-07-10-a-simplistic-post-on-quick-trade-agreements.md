@@ -4,8 +4,7 @@ date: 2017-07-10T14:14:38.000Z
 socialDescription: You shouldn't aim for speed in trade agreements with big trading blocs
 tags:
   - politics
-layout: "../../layouts/BlogpostLayout.astro"
-
+layout: ../../layouts/BlogpostLayout.astro
 ---
 
 

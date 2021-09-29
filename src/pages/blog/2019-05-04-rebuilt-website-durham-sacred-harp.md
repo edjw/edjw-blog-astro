@@ -5,8 +5,7 @@ socialDescription: I rebuilt this site in Eleventy which brought some nice advan
 tags:
   - new website
   - shapenote
-layout: "../../layouts/BlogpostLayout.astro"
-
+layout: ../../layouts/BlogpostLayout.astro
 ---
 
 I've rebuilt the [Durham Sacred Harp site](https://durhamsacredharp.co.uk) in [Eleventy](https://www.11ty.io). The [source is on Github here](https://github.com/durhamsacredharp/durham-sacred-harp).
