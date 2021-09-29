@@ -6,7 +6,9 @@ tags:
   - shapenote
   - design
 layout: "../../layouts/BlogpostLayout.astro"
+
 ---
+
 
 Over the last year, I've been designing posters for the [Durham Sacred Harp](https://durhamsacredharp.co.uk) singing. These are a few that I've made.
 

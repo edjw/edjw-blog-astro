@@ -6,7 +6,9 @@ tags:
   - data
   - shapenote
 layout: "../../layouts/BlogpostLayout.astro"
+
 ---
+
 I've previously done some analysis involving songs from the Sacred Harp. Some [have been serious](/blog/2018-02-07-female-composers-in-the-sacred-harp); some [less](/blog/2018-06-10-football-formations-in-sacred-harp-numbers){' '}[so](/blog/2018-06-10-square-numbers-in-sacred-harp-song-numbers).
 
 One challenge in doing this analysis is having a machine-readable dataset of all songs to work with. The excellent [indexes on fasola.org](https://fasola.org/indexes/1991/) present the information for each individual song on a different page which is great but you can't easily analyse all the songs at once.

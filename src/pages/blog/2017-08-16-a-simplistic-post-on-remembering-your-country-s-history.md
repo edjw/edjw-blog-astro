@@ -6,7 +6,9 @@ tags:
   - politics
   - history
 layout: "../../layouts/BlogpostLayout.astro"
+
 ---
+
 
 
 Donald Trump says that removing statues to Confederate generals is [changing history](http://www.politico.com/story/2017/08/15/full-text-trump-comments-white-supremacists-alt-left-transcript-241662).

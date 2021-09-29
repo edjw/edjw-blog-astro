@@ -6,7 +6,9 @@ tags:
   - politics
   - data
 layout: "../../layouts/BlogpostLayout.astro"
+
 ---
+
 Yesterday saw the first [City of Durham Parish Council Election](https://www.durham.gov.uk/durhamcityelection). Considering it was the first election of its type, it would have been handy if [the council had told people](https://twitter.com/_edjw/status/991946855562076160) how the electoral system would work.
 
 The [parish council is divided into three wards](https://www.durham.gov.uk/media/24199/Community-Governance-Review-City-of-Durham-Parish-Boundary-and-Wards/pdf/CityOfDurhamParishBoundaryAndWards2017.pdf):

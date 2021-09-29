@@ -6,7 +6,9 @@ tags:
   - politics
   - christianity
 layout: "../../layouts/BlogpostLayout.astro"
+
 ---
+
 1. I'm a straight, Christian man who is liberal - both politically and theologically.
 
 2. I disagree with Tim Farron's apparent view that having an abortion or gay sex is a sin

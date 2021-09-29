@@ -6,7 +6,9 @@ tags:
   - data
   - shapenote
 layout: "../../layouts/BlogpostLayout.astro"
+
 ---
+
 This is another _really_ silly Sacred Harp one. Someone called "_404" (_[_Youth Will Soon Be Gone_](https://fasola.org/indexes/1991/?p=404)_)_ at a [Newcastle singing](https://web.archive.org/web/20170918140510/http://newcastleshapenote.co.uk/) recently and someone immediately said [Error Not Found](https://en.wikipedia.org/wiki/HTTP_404). As a result, this is a list of Sacred Harp songs that are also [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status). 404 is probably the most famous status code but [there are lots](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
 
 My wife estimated that this will be funny to about three people. That might be pushing it.

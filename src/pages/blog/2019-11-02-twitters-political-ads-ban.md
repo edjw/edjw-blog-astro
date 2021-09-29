@@ -8,7 +8,9 @@ tags:
   - tech
   - politics
 layout: "../../layouts/BlogpostLayout.astro"
+
 ---
+
 Twitter's decision to ban political ads by the end of November ^[<https://threadreaderapp.com/thread/1189634360472829952.html>] could lead to some bad situations for campaign groups, charities, and NGOs.
 
 As well as ads run by politicians, candidates, or ads in support of politicians, Twitter is also banning "issue ads".
