@@ -4,7 +4,7 @@ date: 2018-07-06T00:00:00.000Z
 socialDescription: An easier way to remove punctuation from strings in Python
 tags:
   - python
-layout: ../../layouts/BlogpostLayout.astro
+layout: layouts/BlogpostLayout.astro
 ---
 
 This post is as a future reminder for me as much as anything.

@@ -6,7 +6,7 @@ socialDescription: I made a website that helps you turn off targeted ads
 tags:
   - new website
   - tech
-layout: ../../layouts/BlogpostLayout.astro
+layout: layouts/BlogpostLayout.astro
 ---
 
 I’ve made a website. It’s called [Stop Targeting Ads at Me](https://stoptargetingads.me).

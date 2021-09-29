@@ -6,7 +6,7 @@ socialDescription: I made a web app that makes it easy to download thumbnails fo
 tags:
   - new website
   - python
-layout: ../../layouts/BlogpostLayout.astro
+layout: layouts/BlogpostLayout.astro
 ---
 
 I made a web app that makes it easy to download thumbnails for YouTube videos. It’s called [Get YouTube Thumbnails](https://youtubethumbnails.pythonanywhere.com).

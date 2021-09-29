@@ -5,7 +5,7 @@ socialDescription: How often has the first day of the week been the first day of
 tags:
   - python
   - data
-layout: ../../layouts/BlogpostLayout.astro
+layout: layouts/BlogpostLayout.astro
 ---
 
 

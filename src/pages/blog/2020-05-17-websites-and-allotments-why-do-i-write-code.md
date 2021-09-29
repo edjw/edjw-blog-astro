@@ -5,7 +5,7 @@ socialDescription: Farmers don't have allotments.
 tags:
   - tech
   - writing
-layout: ../../layouts/BlogpostLayout.astro
+layout: layouts/BlogpostLayout.astro
 ---
 
 I am not a professional web developer. Why do I write code?

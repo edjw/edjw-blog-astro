@@ -5,7 +5,7 @@ socialDescription: Sacred Harp song numbers that are also football/soccer format
 tags:
   - data
   - shapenote
-layout: ../../layouts/BlogpostLayout.astro
+layout: layouts/BlogpostLayout.astro
 ---
 
 This is a very silly post.

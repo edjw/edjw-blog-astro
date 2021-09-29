@@ -4,7 +4,7 @@ date: 2020-03-24T14:45:00.000Z
 socialDescription: Here's how to have different favicons for dev and prod in 11ty
 tags:
   - eleventy
-layout: ../../layouts/BlogpostLayout.astro
+layout: layouts/BlogpostLayout.astro
 ---
 
 
