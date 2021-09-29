@@ -8,7 +8,9 @@ tags:
   - writing
 featured: true
 layout: "../../layouts/BlogpostLayout.astro"
+
 ---
+
 Do you ever find yourself writing a first draft of something but you keep getting bogged down by making little edits?
 
 **[First Draft](https://firstdraft.page/)** is a text editor I've created that stops editing from slowing you down. It's at **[firstdraft.page](https://firstdraft.page/)**.

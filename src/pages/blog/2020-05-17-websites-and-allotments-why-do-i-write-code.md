@@ -6,7 +6,9 @@ tags:
   - tech
   - writing
 layout: "../../layouts/BlogpostLayout.astro"
+
 ---
+
 I am not a professional web developer. Why do I write code?
 
 My answer is, farmers don't have allotments. Let me explain.
