@@ -11,14 +11,14 @@
     "workspaceRoot": "../.."
   },
   "devDependencies": {
-    "astro": "^0.20.4",
-    "tailwindcss": "^2.2.9"
+    "astro": "^0.20.8",
+    "tailwindcss": "^2.2.16"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.4.1",
-    "reading-time": "^1.4.0",
+    "reading-time": "^1.5.0",
     "remark": "^14.0.1",
-    "remark-html": "^14.0.0",
+    "remark-html": "^14.0.1",
     "slugify": "^1.6.0",
     "title-case": "^3.0.3"
   }
