@@ -4,8 +4,7 @@ import PostList from "../components/PostList.astro"
 const title = "Ed Johnson Williams' website"
 const socialDescription = "Ed Johnson Williams' website"
 let allPosts = Astro.fetchContent('./blog/*.md');
-const featuredPosts = allPosts.filter((post) => post.featured === true).sort((a, b) => new Date(b.date) - new
-Date(a.date))
+const featuredPosts = allPosts.filter((post) => post.featured === true).sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf())
 ---
 
 <PageLayout title={title} socialDescription={socialDescription}>
