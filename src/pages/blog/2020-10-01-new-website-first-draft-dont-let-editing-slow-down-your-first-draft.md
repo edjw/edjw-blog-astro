@@ -12,7 +12,7 @@ layout: "../../layouts/BlogpostLayout.astro"
 
 Do you ever find yourself writing a first draft of something but you keep getting bogged down by making little edits?
 
-**[First Draft](https://firstdraft.page/)** is a text editor I've created that stops editing from slowing you down. It's at **[firstdraft.page](https://firstdraft.page/)**.
+**[First Draft](https://first-draft.netlify.app/)** is a text editor I've created that stops editing from slowing you down. It's at **[first-draft.netlify.app](https://first-draft.netlify.app/)**.
 
 With *First Draft*, you can type text. But you can't remove any characters you type.
 
