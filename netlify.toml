@@ -2,6 +2,11 @@
   command = "npm run build"
   publish = "dist"
 
+[[redirects]]
+  from = "/feed.xml"
+  to = "/rss.xml"
+  status = 301
+
 [[plugins]]
 package = "netlify-plugin-rss"
   [plugins.inputs]
@@ -13,20 +18,12 @@ package = "netlify-plugin-rss"
   rssDescription = "Ed Johnson-Williams' website"
   categories = []
 
-  # # optional configs, defaults shown
-  # rssFaviconUrl = "https://swyx.io/favicon.png"
-  # docs = "http://example.com/rss/docs.html"
-  # managingEditor = "authorName"
-  # webMaster = "authorName"
-  # copyright = "2020 ${authorName}"
   language = "en"
   pubDate = "new Date().toUTCString(),"
-  # ttl = "60" # aka refresh every hour
 
   # # cheerio selectors for extractMetadataFromFile
   # # defaults shown
-  # contentSelector = "main"
-  # publishDateSelector = # if not specified, we use the date of file creation
+  # contentSelector = ".e-content"
   # descriptionSelector = "meta[name=description]" # probably no need to change
   # titleSelector = "title" # probably no need to change
 
