@@ -5,10 +5,10 @@ import getYear from "../utils/getYear.js";
 let year = ""
 let currentPostYear = ""
 const setCurrentPostYear =(date) => {
-    currentPostYear = getYear(date)
+    currentPostYear = String(getYear(date))
 }
 const setYear = (date) => {
-    year = getYear(date);
+    year = String(getYear(date));
 }
 const { posts, showYears } = Astro.props
 

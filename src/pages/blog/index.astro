@@ -1,8 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro"
 import PostList from "../../components/PostList.astro"
-let allPosts = Astro.fetchContent('./*.md');
-allPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+let allPosts = Astro.fetchContent('./*.md').sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());;
 ---
 <BaseLayout pageTitle='All posts' description="Ed Johnson-Williams' blogposts">
     <div class="prose dark:prose-light">

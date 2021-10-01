@@ -6,8 +6,12 @@
 // helpful tooltips, and warnings if your exported object is invalid.
 // You can disable this by removing "@ts-check" and `@type` comments below.
 
+
 // @ts-check
 export default /** @type {import('astro').AstroUserConfig} */ ({
+  buildOptions: {
+    site: "https://edjohnsonwilliams.co.uk"
+  },
   remarkPlugins: [
     ['remark-html'],
     ['remark-gfm'],

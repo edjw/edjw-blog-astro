@@ -2,7 +2,7 @@ const siteData = {
   title: "Ed Johnson-Williams",
   url: "https://edjohnsonwilliams.co.uk",
   description: "Ed Johnson-Williams' website",
-  repository: "edjw/edjw-nextjs-blog",
+  repository: "edjw/edjw-blog-astro",
   contentLicence: {
     link: "https://creativecommons.org/licenses/by/4.0",
     text: "Creative Commons Attribution"
