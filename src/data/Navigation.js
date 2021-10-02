@@ -1,4 +1,4 @@
-[
+const Navigation = [
   {
     "text": "Blog",
     "url": "/blog"
@@ -18,3 +18,5 @@
     "attribute": "me"
   }
 ]
+
+export default Navigation
