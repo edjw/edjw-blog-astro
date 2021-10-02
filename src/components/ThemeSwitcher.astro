@@ -1,0 +1,26 @@
+<p class="prose dark:prose-light">
+    <button id="dark" class="underline">
+        Dark
+    </button>
+    /
+    <button id="light" class="underline">
+        Light
+    </button>
+</p>
+<script>
+
+const applyLightMode = () => {
+    localStorage.theme = 'light';
+    document.documentElement.classList.remove('dark');
+}
+
+const applyDarkMode = () => {
+    localStorage.theme = 'dark';
+    document.documentElement.classList.add('dark');
+}
+
+document.querySelector("#dark").addEventListener("click", applyDarkMode);
+document.querySelector("#light").addEventListener("click", applyLightMode);
+
+
+</script>

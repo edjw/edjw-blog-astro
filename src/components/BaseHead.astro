@@ -1,6 +1,7 @@
 ---
 import siteData from "../data/siteconfig.js"
-const { title: siteTitle, description, url, author: { twitterUsername }, repository, RSSFeed, sitemap, contentLicence } = siteData
+const { title: siteTitle, description, url, author: { twitterUsername }, repository, RSSFeed, sitemap, contentLicence }
+= siteData
 
 const {title: pageTitle, description: pageDescription } = Astro.props
 
@@ -28,3 +29,11 @@ const {title: pageTitle, description: pageDescription } = Astro.props
 <meta property="og:title" content={pageTitle} key="ogtitle" />
 <meta property="og:description" content={pageDescription} key="ogdesc" />
 <link rel="alternate" type="application/rss+xml" title="RSS feed for Ed Johnson-Williams’ blog" href="/rss.xml" />
+
+<script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+    } else {
+        document.documentElement.classList.remove('dark')
+    }
+</script>

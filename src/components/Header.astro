@@ -1,5 +1,6 @@
 ---
 import Navigation from "../components/Navigation.astro"
+import ThemeSwitcher from "../components/ThemeSwitcher.astro"
 import siteData from '../data/siteconfig'
 const { title: siteTitle, url, author: { twitterUsername }, repository, RSSFeed, sitemap, contentLicence } = siteData
 ---
@@ -13,7 +14,9 @@ const { title: siteTitle, url, author: { twitterUsername }, repository, RSSFeed,
                 {siteTitle}
             </a>
         </h1>
-        <!-- <ThemeToggleButton /> -->
+        <div class="pt-4">
+        <ThemeSwitcher />
+        </div>
     </div>
 
     <Navigation />
