@@ -1,26 +1,19 @@
 <p class="text-lg leading-loose prose dark:prose-light">
-    <button id="dark" class="hover:underline">
-        Dark
-    </button>
-    <span class="invisible sm:visible"> / </span>
-    <button id="light" class="hover:underline">
-        Light
-    </button>
+  <button id="dark" class="hover:underline"> Dark </button>
+  <span class="invisible sm:visible"> / </span>
+  <button id="light" class="hover:underline"> Light </button>
 </p>
 <script>
+  const applyLightMode = () => {
+    localStorage.theme = "light";
+    document.documentElement.classList.remove("dark");
+  };
 
-const applyLightMode = () => {
-    localStorage.theme = 'light';
-    document.documentElement.classList.remove('dark');
-}
+  const applyDarkMode = () => {
+    localStorage.theme = "dark";
+    document.documentElement.classList.add("dark");
+  };
 
-const applyDarkMode = () => {
-    localStorage.theme = 'dark';
-    document.documentElement.classList.add('dark');
-}
-
-document.querySelector("#dark").addEventListener("click", applyDarkMode);
-document.querySelector("#light").addEventListener("click", applyLightMode);
-
-
+  document.querySelector("#dark").addEventListener("click", applyDarkMode);
+  document.querySelector("#light").addEventListener("click", applyLightMode);
 </script>

@@ -14,7 +14,7 @@ layout: "../../layouts/BlogpostLayout.astro"
 
 3. I also disagree with Tim Farron's comments that being a liberal leader and a "faithful Christian" is irreconcilable. There are lots of liberal Christians.
 
-4. It *helps* to be a Christian who embraces people of all sexualities and is pro-choice if you want to be a liberal leader.
+4. It _helps_ to be a Christian who embraces people of all sexualities and is pro-choice if you want to be a liberal leader.
 
 5. I do however think that you can hold personal views that are illiberal and still be a liberal politician so long as you don't impose your personal views on others.
 
@@ -24,11 +24,11 @@ layout: "../../layouts/BlogpostLayout.astro"
 
 8. Jeremy Corbyn opposes nuclear weapons but is (now) happy to say he will promote party policy which is to renew Trident. Is there a difference between this and Farron?
 
-9. What about Theresa May? Does she personally believe everything she promotes? Does every journalist? Is this only an issue because Tim Farron is a *liberal* politician?
+9. What about Theresa May? Does she personally believe everything she promotes? Does every journalist? Is this only an issue because Tim Farron is a _liberal_ politician?
 
 10. I saw someone on Twitter ask...Where do you draw the line on personal views that you'd be OK with so long as they didn't act on them? Would you be OK with a Holocaust denier? Answer...Don't know.
 
-11. But Tim Farron has consistently voted for liberal legislation on abortion and gay rights. This would be *a bit* like a Holocaust denier consistently voting to fund museums about the Holocaust. Stress on *a bit like*. It's not actually the same. Obviously.
+11. But Tim Farron has consistently voted for liberal legislation on abortion and gay rights. This would be _a bit_ like a Holocaust denier consistently voting to fund museums about the Holocaust. Stress on _a bit like_. It's not actually the same. Obviously.
 
 12. I would probably react to this differently if I was gay and I need to think about this more.
 

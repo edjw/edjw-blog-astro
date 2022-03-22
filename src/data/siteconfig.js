@@ -5,7 +5,7 @@ const siteData = {
   repository: "edjw/edjw-blog-astro",
   contentLicence: {
     link: "https://creativecommons.org/licenses/by/4.0",
-    text: "Creative Commons Attribution"
+    text: "Creative Commons Attribution",
   },
   author: {
     name: "Ed Johnson-Williams",
@@ -13,13 +13,13 @@ const siteData = {
     twitterUsername: "@_edjw",
     mastodonUsername: "@_edjw",
     microblogUsername: "edjw",
-    instagramUsername: "_edjw"
+    instagramUsername: "_edjw",
   },
   indieauth: true,
   micropub: true,
   netlifyCMS: true,
   RSSFeed: true,
-  sitemap: true
-}
+  sitemap: true,
+};
 
-export default siteData
+export default siteData;

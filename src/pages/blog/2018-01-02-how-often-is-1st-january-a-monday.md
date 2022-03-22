@@ -8,7 +8,6 @@ tags:
 layout: "../../layouts/BlogpostLayout.astro"
 ---
 
-
 **Answer...less often than every other day except Saturday. I have no idea why.**
 
 Yesterday, 1st January 2018 was a Monday. Monday is the first day of the week. Some people think Sunday is the first day of the week. I don't understand those people.

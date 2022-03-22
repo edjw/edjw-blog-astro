@@ -7,8 +7,7 @@ tags:
 layout: "../../layouts/BlogpostLayout.astro"
 ---
 
-
-*CSS Tricks* has an article up about [using a different favicon for local development and production](https://css-tricks.com/different-favicon-for-development). That way, when you've got both open in tabs, you can easily tell which tab is which.
+_CSS Tricks_ has an article up about [using a different favicon for local development and production](https://css-tricks.com/different-favicon-for-development). That way, when you've got both open in tabs, you can easily tell which tab is which.
 
 **Here's a way to have different production and development favicons in [Eleventy](https://www.11ty.dev).**
 
@@ -25,20 +24,22 @@ layout: "../../layouts/BlogpostLayout.astro"
 }
 ```
 
-
 3. **Pass through the relevant favicons directory.** In your `eleventy.js` file, get the `ELEVENTY_ENV` variable. Then, if it's "prod", pass through your production favicons. If it's "dev", pass through your development icons.
 
 ```js
 //.eleventy.js
 
 module.exports = function (eleventyConfig) {
-    let env = process.env.ELEVENTY_ENV;
+  let env = process.env.ELEVENTY_ENV;
 
-    if (env === "prod") {
-        eleventyConfig.addPassthroughCopy({ "./src/site/assets/images/favicons_prod": "/" });
-    }
-    else if (env === "dev") {
-        eleventyConfig.addPassthroughCopy({ "./src/site/assets/images/favicons_dev": "/" });
-    }
-}
+  if (env === "prod") {
+    eleventyConfig.addPassthroughCopy({
+      "./src/site/assets/images/favicons_prod": "/",
+    });
+  } else if (env === "dev") {
+    eleventyConfig.addPassthroughCopy({
+      "./src/site/assets/images/favicons_dev": "/",
+    });
+  }
+};
 ```

@@ -35,7 +35,6 @@ I went and made a list of those numbers.
 | 21          | 441         |
 | 22          | 484         |
 
-
 And the Python code I used to find this…
 
 ```

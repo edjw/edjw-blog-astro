@@ -19,9 +19,9 @@ You can also download the image with a YouTube play logo overlaid on the top.
 
 This is useful when you want to link to a YouTube video and you can't or don't want to embed a video. This might be:
 
-* in emails
-* in presentation slides (PowerPoint etc)
-* in websites where you don't want any Javascript
-* in websites where you want to minimise data transfers
+- in emails
+- in presentation slides (PowerPoint etc)
+- in websites where you don't want any Javascript
+- in websites where you want to minimise data transfers
 
 Let me know if you find it useful!

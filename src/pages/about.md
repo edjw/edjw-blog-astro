@@ -3,7 +3,8 @@ title: About me
 socialDescription: My 'About me' page
 layout: "../layouts/PageLayout.astro"
 ---
-I'm Ed Johnson-Williams. This is my personal website. I'm also [on Twitter at @_edjw](https://twitter.com/_edjw).
+
+I'm Ed Johnson-Williams. This is my personal website. I'm also [on Twitter at @\_edjw](https://twitter.com/_edjw).
 
 I work at [More Onion](https://www.more-onion.com) – a company that makes software for charities and campaign groups to campaign and raise money online.
 
