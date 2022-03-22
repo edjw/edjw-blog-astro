@@ -13,14 +13,15 @@ I've replicated this in [Eleventy](https://www.11ty.io) by adding this into my `
 
 ```js
 module.exports = function (eleventyConfig) {
+  const md = require("markdown-it")({
+    html: false,
+    breaks: true,
+    linkify: true,
+  });
 
-    const md = require('markdown-it')({
-        html: false,
-        breaks: true,
-        linkify: true
-    });
-
-    eleventyConfig.addNunjucksFilter("markdownify", markdownString => md.render(markdownString));
+  eleventyConfig.addNunjucksFilter("markdownify", (markdownString) =>
+    md.render(markdownString)
+  );
 };
 ```
 

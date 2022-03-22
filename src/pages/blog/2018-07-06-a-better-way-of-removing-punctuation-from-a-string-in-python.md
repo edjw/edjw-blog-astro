@@ -73,11 +73,11 @@ Parameterize mostly just uses some regular expressions but it's very useful. It 
 
 1. [Replacing non-ASCII characters](https://inflection.readthedocs.io/en/latest/_modules/inflection.html#transliterate) with an ASCII approximation – using `inflection.transliterate()`
 2. [Replacing any character](https://inflection.readthedocs.io/en/latest/_modules/inflection.html#parameterize) with the separator if it isn't one of:
-   * a-z
-   * A-Z
-   * 0-9
-   * a hyphen (-)
-   * an underscore(_)
+   - a-z
+   - A-Z
+   - 0-9
+   - a hyphen (-)
+   - an underscore(\_)
 3. Ensuring there is never more than one separator in a row
 4. Removing separators from the start or end of the string
 5. Making the string lower case

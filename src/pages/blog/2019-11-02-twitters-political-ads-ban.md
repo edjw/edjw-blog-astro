@@ -22,7 +22,7 @@ But in case it's not obvious, this ban will cover ads by small campaigns, campai
 
 Twitter has a broad definition of "political". They don't just mean politicians and political parties. And that's right. Politics and political outcomes are affected by all sorts of actors, not just politicians.
 
-As an aside, my definition is even broader — the content of *every* tweet and the practice of tweeting itself is "political". ^[<https://culturalstudiesnow.blogspot.com/2017/03/foucault-on-power-and-knowledge-summary.html>] But that's not the popular definition of "political" and Twitter obviously doesn't want to ban every tweet!
+As an aside, my definition is even broader — the content of _every_ tweet and the practice of tweeting itself is "political". ^[<https://culturalstudiesnow.blogspot.com/2017/03/foucault-on-power-and-knowledge-summary.html>] But that's not the popular definition of "political" and Twitter obviously doesn't want to ban every tweet!
 
 Twitter probably thinks it's making life easier for itself by saying no "political" ads and they probably think they've already defined "political". That might be true but this will still get really complicated.
 

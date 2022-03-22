@@ -7,7 +7,6 @@ tags:
 layout: "../../layouts/BlogpostLayout.astro"
 ---
 
-
 A quick trade deal means the country with the smaller economy being forced to accept the demands of the larger economy in return for the speed of the deal.
 
 You don't want a quick deal if you're [negotiating with the US](http://www.bbc.co.uk/news/uk-politics-40540340). Unless you're not bothered about food safety, environmental standards, rules on procurement of public services (this means NHS).

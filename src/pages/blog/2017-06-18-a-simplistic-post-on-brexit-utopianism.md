@@ -7,7 +7,6 @@ tags:
 layout: "../../layouts/BlogpostLayout.astro"
 ---
 
-
 1. This has been said many times before.
 
 2. Brexit supporters on the right who complain that the socialist utopianism of Corbyn etc isn't pragmatic are ridiculous.

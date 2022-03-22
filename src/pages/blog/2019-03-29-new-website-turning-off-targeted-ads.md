@@ -17,7 +17,7 @@ Some people would prefer that data about who they are and what they do isn’t u
 
 I’ve described what the site’s about on [the About page](https://stoptargetingads.me/about) so take a look there if you’re interested.
 
-This is a personal project and I’ve just started telling people about it. If you visit the site AT ALL (even if it’s just for a few seconds and then you close the tab), let me know. I’d love to talk to you about it. Either [email me at hello@stoptargetingads.me](mailto:hello@stoptargetingads.me) or [contact me on Twitter at @_edjw](https://twitter.com/_edjw).
+This is a personal project and I’ve just started telling people about it. If you visit the site AT ALL (even if it’s just for a few seconds and then you close the tab), let me know. I’d love to talk to you about it. Either [email me at hello@stoptargetingads.me](mailto:hello@stoptargetingads.me) or [contact me on Twitter at @\_edjw](https://twitter.com/_edjw).
 
 Much bigger questions are out there about ad targeting.
 

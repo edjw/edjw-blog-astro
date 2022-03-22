@@ -1,12 +1,19 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
 
-import siteData from "../data/siteconfig.js"
-const { title: siteTitle, description, url, author: { twitterUsername }, repository, RSSFeed, sitemap, contentLicence }
-= siteData
+import siteData from "../data/siteconfig.js";
+const {
+  title: siteTitle,
+  description,
+  url,
+  author: { twitterUsername },
+  repository,
+  RSSFeed,
+  sitemap,
+  contentLicence,
+} = siteData;
 
-const {title: pageTitle, description: pageDescription } = Astro.props
-
+const { title: pageTitle, description: pageDescription } = Astro.props;
 
 // const currentPath = Astro.request.url.pathname
 // const currentURL = Astro.request.url.href
@@ -31,14 +38,23 @@ const {title: pageTitle, description: pageDescription } = Astro.props
 <meta property="og:site_name" content={siteTitle} key="ogsitename" />
 <meta property="og:title" content={pageTitle} key="ogtitle" />
 <meta property="og:description" content={pageDescription} key="ogdesc" />
-<link rel="alternate" type="application/rss+xml" title="RSS feed for Ed Johnson-Williams’ blog" href="/rss.xml" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="RSS feed for Ed Johnson-Williams’ blog"
+  href="/rss.xml"
+/>
 
 <!-- <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> -->
 
 <script>
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark')
-    } else {
-        document.documentElement.classList.remove('dark')
-    }
+  if (
+    localStorage.theme === "dark" ||
+    (!("theme" in localStorage) &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
 </script>

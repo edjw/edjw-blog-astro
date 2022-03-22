@@ -16,7 +16,7 @@ const Page = createClass({
         </article>
       </main>
     `;
-  }
+  },
 });
 
 export default Page;

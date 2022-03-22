@@ -12,26 +12,25 @@ const Post = createClass({
         <article class="prose">
           <h2>${entry.getIn(["data", "title"], null)}</h2>
           <p class="mb-0">
-              Published: <time
-                >${format(
-      entry.getIn(["data", "date"], new Date()),
-      "dd MMMM yyyy"
-    )}</time
-              >
+            Published:
+            <time
+              >${format(
+                entry.getIn(["data", "date"], new Date()),
+                "dd MMMM yyyy"
+              )}</time
+            >
           </p>
 
           <!--<p>${entry.getIn(["data", "summary"], "")}</p>-->
 
-              <p class="mt-0">Tagged as:
+          <p class="mt-0">
+            Tagged as:
             ${entry
-        .getIn(["data", "tags"], [])
-        .map((tag) => html` <a href="#" rel="tag">${tag}</a> `)}
+              .getIn(["data", "tags"], [])
+              .map((tag) => html` <a href="#" rel="tag">${tag}</a> `)}
           </p>
 
-          <div>
-            ${this.props.widgetFor("body")}
-          </div>
-
+          <div>${this.props.widgetFor("body")}</div>
         </article>
       </main>
     `;

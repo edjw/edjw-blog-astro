@@ -32,7 +32,7 @@ Clearly, I enjoy making the platform as much as the content.
 
 When you make your own website, you can also try out new things like publishing the articles I've got in [my reading list](/reading-list). <span>Wordpress.com</span> or Facebook Posts aren't flexible enough to let you do that.
 
-Making your own personal website in this way is a bit like keeping [an allotment](https://en.wikipedia.org/wiki/Allotment_(gardening)).
+Making your own personal website in this way is a bit like keeping [an allotment](<https://en.wikipedia.org/wiki/Allotment_(gardening)>).
 
 Most people with an allotment don't need to grow fruit and vegetables for survival. Mostly, they don't sell what they grow and can afford to buy food.
 

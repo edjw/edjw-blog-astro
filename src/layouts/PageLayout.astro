@@ -1,25 +1,25 @@
 ---
-import BaseLayout from "./BaseLayout.astro"
+import BaseLayout from "./BaseLayout.astro";
 let title = "";
 let socialDescription = "";
 
 // Markdown files come with frontmatter within a 'content' key. Astro files don't have the 'content' key. So this is making this layout file work with markdown files and .astro files
 
-if ('content' in Astro.props) {
-     title = Astro.props.content.title;
-     socialDescription = Astro.props.content.socialDescription;
+if ("content" in Astro.props) {
+  title = Astro.props.content.title;
+  socialDescription = Astro.props.content.socialDescription;
 } else {
-     title = Astro.props.title
-     socialDescription = Astro.props.socialDescription
+  title = Astro.props.title;
+  socialDescription = Astro.props.socialDescription;
 }
 ---
+
 <BaseLayout pageTitle={title} description={socialDescription}>
+  <h2 class="-mt-0 p-name">
+    {title}
+  </h2>
 
-        <h2 class="-mt-0 p-name">
-            {title}
-        </h2>
-
-        <div class="e-content">
-            <slot />
-        </div>
+  <div class="e-content">
+    <slot />
+  </div>
 </BaseLayout>
