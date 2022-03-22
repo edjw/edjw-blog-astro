@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         gray: colors.gray,
-        trueGray: colors.trueGray,
+        trueGray: colors.neutral,
       },
       gridTemplateColumns: {
         full: "100%",
