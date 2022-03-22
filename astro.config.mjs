@@ -6,18 +6,25 @@
 // helpful tooltips, and warnings if your exported object is invalid.
 // You can disable this by removing "@ts-check" and `@type` comments below.
 
-
 // @ts-check
-export default /** @type {import('astro').AstroUserConfig} */ ({
+// export default /** @type {import('astro').AstroUserConfig} */ ({
+//
+//
+//   // devOptions: {
+//   //   tailwindConfig: "./tailwind.config.js"
+//   // }
+// });
+
+import { defineConfig } from "astro/config";
+
+// https://astro.build/config
+export default defineConfig({
   buildOptions: {
-    site: "https://edjohnsonwilliams.co.uk"
+    site: "https://edjohnsonwilliams.co.uk",
   },
   remarkPlugins: [
-    ['remark-html'],
-    ['remark-gfm'],
-    ['remark-footnotes', { inlineNotes: true }],
+    ["remark-html"],
+    ["remark-gfm"],
+    ["remark-footnotes", { inlineNotes: true }],
   ],
-  devOptions: {
-    tailwindConfig: "./tailwind.config.js"
-  }
 });
