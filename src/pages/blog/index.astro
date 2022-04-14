@@ -1,8 +1,11 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PostList from "../../components/PostList.astro";
-let allPosts = Astro.fetchContent("./*.md").sort(
-  (a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf()
+let allPostsData = await Astro.glob("./*.md");
+let allPosts = allPostsData.sort(
+  (a, b) =>
+    new Date(b.frontmatter.date).valueOf() -
+    new Date(a.frontmatter.date).valueOf()
 );
 ---
 
