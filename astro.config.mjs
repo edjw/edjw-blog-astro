@@ -7,9 +7,16 @@ import netlify from "@astrojs/netlify";
 export default defineConfig({
   site: "https://edjohnsonwilliams.co.uk",
   markdown: {
-    remarkPlugins: ["remark-html", "remark-gfm", ["remark-footnotes", {
-      inlineNotes: true
-    }]]
+    remarkPlugins: [
+      "remark-html",
+      "remark-gfm",
+      [
+        "remark-footnotes",
+        {
+          inlineNotes: true,
+        },
+      ],
+    ],
   },
-  integrations: [sitemap(), tailwind(), netlify()]
+  integrations: [sitemap(), tailwind(), netlify()],
 });
