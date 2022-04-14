@@ -15,8 +15,7 @@ const {
 
 const { title: pageTitle, description: pageDescription } = Astro.props;
 
-// const currentPath = Astro.request.url.pathname
-// const currentURL = Astro.request.url.href
+const currentURL = Astro.request.url;
 ---
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -25,14 +24,12 @@ const { title: pageTitle, description: pageDescription } = Astro.props;
 <title>{pageTitle || siteTitle}</title>
 <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
 
-<!-- <link rel="stylesheet" type="text/css" href={Astro.resolve("../styles/global.css")}> -->
-
 <!-- Twitter -->
 <meta name="twitter:card" content="summary" key="twcard" />
 <meta name="twitter:creator" content={twitterUsername} key="twhandle" />
 
 <!-- Open Graph -->
-<!-- <meta property="og:url" content={currentURL} key="ogurl" /> -->
+<meta property="og:url" content={currentURL} key="ogurl" />
 
 <!-- <meta property="og:image" content={previewImage} key="ogimage" /> -->
 <meta property="og:site_name" content={siteTitle} key="ogsitename" />

@@ -1,6 +1,9 @@
 ---
 const {
-  post: { date, title, url },
+  post: {
+    frontmatter: { date, title },
+    url,
+  },
 } = Astro.props;
 
 const formattedDate = new Intl.DateTimeFormat("en-GB", {

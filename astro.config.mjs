@@ -19,12 +19,13 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  buildOptions: {
-    site: "https://edjohnsonwilliams.co.uk",
+  site: "https://edjohnsonwilliams.co.uk",
+
+  markdown: {
+    remarkPlugins: [
+      "remark-html",
+      "remark-gfm",
+      ["remark-footnotes", { inlineNotes: true }],
+    ],
   },
-  remarkPlugins: [
-    ["remark-html"],
-    ["remark-gfm"],
-    ["remark-footnotes", { inlineNotes: true }],
-  ],
 });

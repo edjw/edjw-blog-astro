@@ -84,7 +84,7 @@ There's no change over time in the rate of X day of the week being 1st January. 
 
 In case you want to work with this here's that bad, repetitive code I used. It's [also on Github](https://github.com/edjw/how-often-is-1st-january-a-monday/).
 
-```
+```python
 
     from datetime import datetime
     from statistics import mean
