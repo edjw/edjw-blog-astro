@@ -4,7 +4,6 @@ import PostList from "../components/PostList.astro";
 const title = "Ed Johnson Williams' website";
 const socialDescription = "Ed Johnson Williams' website";
 let allPosts = await Astro.glob("./blog/*.md");
-console.log(allPosts[0].frontmatter);
 const featuredPosts = allPosts
   .filter((post) => post.frontmatter.featured === true)
   .sort(
