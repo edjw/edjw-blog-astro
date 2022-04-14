@@ -18,7 +18,7 @@ module.exports = {
         "auto-1-auto": "auto 1fr auto",
       },
       typography: (theme) => ({
-        light: {
+        dark: {
           css: [
             {
               color: theme("colors.gray.100"),
