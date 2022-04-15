@@ -17,5 +17,7 @@ export default defineConfig({
       ],
     ],
   },
-  integrations: [sitemap(), tailwind()],
+  integrations: [sitemap(), tailwind({
+    config: { applyBaseStyles: false },
+  })],
 });

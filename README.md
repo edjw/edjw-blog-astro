@@ -1,5 +1,7 @@
 # Ed Johnson-Williams blog
 
+<https://edjohnsonwilliams.co.uk>
+
 Using Astro
 
 ## 🧞 Commands
