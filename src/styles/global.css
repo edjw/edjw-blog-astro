@@ -19,12 +19,6 @@
   }
 }
 
-@layer components {
-  .readingListItem {
-    @apply my-10 border-t-8 border-yellow-200 p-4 shadow-lg;
-  }
-}
-
 @layer utilities {
   .prose a {
     @apply break-words font-normal;
