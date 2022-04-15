@@ -9,29 +9,29 @@ const formattedDate = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 
 Date(date))
 
 const postReadingTime = readingTime(html).text
+
+const currentURL = Astro.request.url
+
 ---
 <BaseLayout pageTitle={title} description={socialDescription}>
-    <article class="prose h-entry dark:prose-light">
+    <article class="prose h-entry dark:prose-dark">
         <!-- h-entry things -->
         <div class="hidden">
-            <!-- <a href="{Astro.request.url.href}"></a> -->
+            <a href={currentURL}></a>
 
             <time class="dt-published">{new Date(date).toUTCString()}</time>
 
             <!-- TODO: fix tags -->
-
 <!--
-              {
-            (tags.length > 0) &&
-
-                    {tags.map((tag) =>
-                    <a href={`/tags/${slugify(tag)}`}>
-                        {titleCase(tag)}
-                    </a>
-                    )}
-
-            } -->
-
+            {
+(tags.length > 0 ) &&
+{tags.map((tag) =>
+<a href={`/tags/${slugify(tag)}`}>
+{titleCase(tag)}
+</a>
+)}
+            }
+            -->
 
 
             <a rel="author" href="https://edjohnsonwilliams.co.uk">Ed Johnson-Williams</a>
