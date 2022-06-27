@@ -45,7 +45,7 @@ export default defineConfig({
             label: 'Post',
             folder: 'src/pages/blog',
             create: true,
-            slug: '{{year}}-{{month}}-{{day}}-',
+            slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
             fields: [
               {
                 label: "Title",
