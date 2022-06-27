@@ -44,6 +44,7 @@ export default defineConfig({
             label: 'Post',
             folder: 'src/pages/blog',
             create: true,
+            slug: '{{year}}-{{month}}-{{day}}-',
             fields: [
               {
                 label: "Title",
@@ -76,38 +77,40 @@ export default defineConfig({
                 label: "Body",
                 name: "body",
                 widget: "markdown",
+              }
+            ]
+          },
+          {
+            name: "pages",
+            label: "Page",
+            folder: "src/pages",
+            create: false,
+            slug: "{{slug}}",
+            fields: [
+              {
+                label: "Title",
+                name: "title",
+                widget: "string",
               },
               {
-                name: "pages",
-                label: "Page",
-                folder: "src/pages",
-                create: false,
-                slug: "{{slug}}",
-                fields: [
-                  {
-                    label: "Title",
-                    name: "title",
-                    widget: "string",
-                  },
-                  {
-                    label: "Social Description",
-                    name: "socialDescription",
-                    widget: "string",
-                    pattern: [".{0,155}", "Maximum of 155 characters"],
-                    default: '',
-                  },
-                  {
-                    label: "Body",
-                    name: "body",
-                    widget: "markdown",
-                  },
-                ],
+                label: "Social Description",
+                name: "socialDescription",
+                widget: "string",
+                pattern: [".{0,155}", "Maximum of 155 characters"],
+                default: '',
+              },
+              {
+                label: "Body",
+                name: "body",
+                widget: "markdown",
               },
             ],
           },
         ],
-        media_folder: "public/images",
       },
+        ],
+  media_folder: "public/images",
+},
     }),
   ]
 });
