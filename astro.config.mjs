@@ -48,6 +48,12 @@ export default defineConfig({
             slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
             fields: [
               {
+                label: "Layout",
+                name: "layout",
+                widget: "hidden",
+                default: "../../layouts/BlogpostLayout.astro"
+              },
+              {
                 label: "Title",
                 name: "title",
                 widget: "string",
@@ -68,6 +74,7 @@ export default defineConfig({
                 label: "Tags",
                 name: "tags",
                 widget: "list",
+                default: [""],
                 field: {
                   label: "Tag",
                   name: "tag",
@@ -88,6 +95,12 @@ export default defineConfig({
             create: false,
             slug: "{{slug}}",
             fields: [
+              {
+                label: "Layout",
+                name: "layout",
+                widget: "hidden",
+                default: "../../layouts/PageLayout.astro"
+              },
               {
                 label: "Title",
                 name: "title",
