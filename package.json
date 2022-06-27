@@ -6,13 +6,13 @@
     "dev": "astro dev --experimental-integrations",
     "start": "astro dev --experimental-integrations",
     "build": "astro build --experimental-integrations",
-    "preview": "astro preview",
+    "preview": "astro preview --experimental-integrations",
     "format": "prettier -w ."
   },
   "devDependencies": {
     "@astrojs/sitemap": "^0.1.0",
     "@astrojs/tailwind": "^0.2.0",
-    "astro": "^1.0.0-beta.12",
+    "astro": "^1.0.0-beta.56",
     "prettier": "^2.6.2",
     "prettier-plugin-astro": "^0.0.12",
     "prettier-plugin-tailwindcss": "^0.1.8"

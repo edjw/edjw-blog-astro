@@ -21,7 +21,7 @@ export default defineConfig({
   integrations: [
     sitemap(),
     tailwind({
-      config: { applyBaseStyles: false }
+      config: { applyBaseStyles: false },
     }),
     NetlifyCMS({
       config: {
@@ -29,90 +29,83 @@ export default defineConfig({
           name: "git-gateway",
           branch: "main",
           commit_messages: {
-            "create": `Create {{collection}} "{{slug}}"`,
-            "update": `Update {{collection}} "{{slug}}`,
-            "delete": `Delete {{collection}} "{{slug}}`,
-            "uploadMedia": `Upload "{{path}}`,
-            "deleteMedia": `Delete "{{path}}`
-          }
+            create: `Create {{collection}} "{{slug}}"`,
+            update: `Update {{collection}} "{{slug}}`,
+            delete: `Delete {{collection}} "{{slug}}`,
+            uploadMedia: `Upload "{{path}}`,
+            deleteMedia: `Delete "{{path}}`,
+          },
         },
         media_folder: "public/images",
         // publish_mode:  "editorial_workflow"
         collections: [
-
           {
-            "name": "blog",
-            "label": "Post",
-            "folder": "src/pages/blog",
-            "create": true,
-            "slug": "{{year}}-{{month}}-{{day}}-{{slug}}",
-            "fields": [
+            name: "blog",
+            label: "Post",
+            folder: "src/pages/blog",
+            create: true,
+            slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
+            fields: [
               {
-                "label": "Title",
-                "name": "title",
-                "widget": "string"
+                label: "Title",
+                name: "title",
+                widget: "string",
               },
               {
-                "label": "Publish Date",
-                "name": "date",
-                "widget": "datetime"
+                label: "Publish Date",
+                name: "date",
+                widget: "datetime",
               },
               {
-                "label": "Social Description",
-                "name": "socialDescription",
-                "widget": "string",
-                "pattern": [
-                  ".{0,155}",
-                  "Maximum of 155 characters"
-                ],
-                "default": "Ed Johnson-Williams' blog"
+                label: "Social Description",
+                name: "socialDescription",
+                widget: "string",
+                pattern: [".{0,155}", "Maximum of 155 characters"],
+                default: "Ed Johnson-Williams' blog",
               },
               {
-                "label": "Tags",
-                "name": "tags",
-                "widget": "list",
-                "field": {
-                  "label": "Tag",
-                  "name": "tag",
-                  "widget": "string"
-                }
+                label: "Tags",
+                name: "tags",
+                widget: "list",
+                field: {
+                  label: "Tag",
+                  name: "tag",
+                  widget: "string",
+                },
               },
               {
-                "label": "Body",
-                "name": "body",
-                "widget": "markdown"
-              }
-            ]
+                label: "Body",
+                name: "body",
+                widget: "markdown",
+              },
+            ],
           },
           {
-            "name": "pages",
-            "label": "Page",
-            "folder": "src/pages",
-            "create": false,
-            "slug": "{{slug}}",
-            "fields": [
+            name: "pages",
+            label: "Page",
+            folder: "src/pages",
+            create: false,
+            slug: "{{slug}}",
+            fields: [
               {
-                "label": "Title",
-                "name": "title",
-                "widget": "string"
+                label: "Title",
+                name: "title",
+                widget: "string",
               },
               {
-                "label": "Social Description",
-                "name": "socialDescription",
-                "widget": "string",
-                "pattern": [
-                  ".{0,155}",
-                  "Maximum of 155 characters"
-                ],
-                "default": "Ed Johnson-Williams' blog"
+                label: "Social Description",
+                name: "socialDescription",
+                widget: "string",
+                pattern: [".{0,155}", "Maximum of 155 characters"],
+                default: "Ed Johnson-Williams' blog",
               },
               {
-                "label": "Body",
-                "name": "body",
-                "widget": "markdown"
-              }
-            ]
-          }
+                label: "Body",
+                name: "body",
+                widget: "markdown",
+              },
+            ],
+          },
         ],
       },
     }),
