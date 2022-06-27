@@ -1,6 +1,6 @@
 ---
 title: Square numbers in Sacred Harp song numbers
-date: 2018-06-10T00:00:00.000Z
+pubDate: 2018-06-10T00:00:00.000Z
 socialDescription: Sacred Harp songs that are square numbers
 tags:
   - data

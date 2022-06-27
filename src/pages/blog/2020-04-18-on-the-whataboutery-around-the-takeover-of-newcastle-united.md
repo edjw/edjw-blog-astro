@@ -1,6 +1,6 @@
 ---
 title: On the whataboutery around the Saudi takeover of Newcastle United
-date: 2020-04-18T21:15:15.958Z
+pubDate: 2020-04-18T21:15:15.958Z
 socialDescription: Let's not try to make ourselves feel better about Saudi
   Arabia buying Newcastle United by pointing out other bad things.
 tags:

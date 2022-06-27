@@ -1,6 +1,6 @@
 ---
 title: Development and Production favicons in Eleventy
-date: 2020-03-24T14:45:00.000Z
+pubDate: 2020-03-24T14:45:00.000Z
 socialDescription: Here's how to have different favicons for dev and prod in 11ty
 tags:
   - eleventy

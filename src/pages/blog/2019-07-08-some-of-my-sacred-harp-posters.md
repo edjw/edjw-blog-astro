@@ -1,6 +1,6 @@
 ---
 title: Some of my Sacred Harp poster designs
-date: 2019-07-08T09:00:00.000Z
+pubDate: 2019-07-08T09:00:00.000Z
 socialDescription: Some of my Sacred Harp poster designs
 tags:
   - shapenote

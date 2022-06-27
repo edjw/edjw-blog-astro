@@ -1,6 +1,6 @@
 ---
 title: "New website: Turning off targeted ads"
-date: 2019-03-29T20:24:00.000Z
+pubDate: 2019-03-29T20:24:00.000Z
 permalink: /2019/03/29/turning-off-targeted-ads.html
 socialDescription: I made a website that helps you turn off targeted ads
 tags:
