@@ -1,6 +1,6 @@
 ---
 title: A simplistic post on remembering your country's history
-date: 2017-08-16T17:27:30.000Z
+pubDate: 2017-08-16T17:27:30.000Z
 socialDescription: You can remember you history without celebrating the worst parts of it
 tags:
   - politics

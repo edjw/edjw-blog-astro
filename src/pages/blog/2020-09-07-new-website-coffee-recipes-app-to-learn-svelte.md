@@ -1,6 +1,6 @@
 ---
 title: "New website: Coffee recipes app to learn Svelte"
-date: 2020-09-07T17:52:45.871Z
+pubDate: 2020-09-07T17:52:45.871Z
 socialDescription: "New website: Coffee recipes app to learn Svelte"
 tags:
   - new website

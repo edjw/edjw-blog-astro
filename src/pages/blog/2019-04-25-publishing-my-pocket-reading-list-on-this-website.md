@@ -1,6 +1,6 @@
 ---
 title: Publishing my Pocket reading list on this website
-date: 2019-04-26T08:00:00.000Z
+pubDate: 2019-04-26T08:00:00.000Z
 socialDescription: I switched this blog to Eleventy and can now show my Pocket reading list on it
 tags:
   - eleventy

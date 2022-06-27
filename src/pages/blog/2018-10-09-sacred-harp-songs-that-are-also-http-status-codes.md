@@ -1,6 +1,6 @@
 ---
 title: Sacred Harp songs that are also HTTP Status Codes
-date: 2018-10-09T00:00:00.000Z
+pubDate: 2018-10-09T00:00:00.000Z
 socialDescription: A list of Sacred Harp songs that are the same number as HTTP status codes
 tags:
   - data

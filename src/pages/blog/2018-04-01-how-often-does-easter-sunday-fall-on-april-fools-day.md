@@ -1,6 +1,6 @@
 ---
 title: When does Easter Sunday fall on April Fools' Day?
-date: 2018-04-01T00:00:00.000Z
+pubDate: 2018-04-01T00:00:00.000Z
 socialDescription: Today is both April Fools' Day and Easter Sunday. When did
   this last happen and when will it happen again?
 tags:

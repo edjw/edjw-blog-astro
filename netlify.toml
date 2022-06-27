@@ -7,19 +7,19 @@
   to = "/rss.xml"
   status = 301
 
-[[plugins]]
-package = "netlify-plugin-rss"
-  [plugins.inputs]
-  # required configs, customize as needed
-  dirToScan = "/blog" # a subfolder to scan. "/" to scan all
-  authorName = "Ed Johnson-Williams"
-  site_url = "https://edjohnsonwilliams.co.uk"
-  title = "Ed Johnson-Williams"
-  rssDescription = "Ed Johnson-Williams' website"
-  categories = []
+# [[plugins]]
+# package = "netlify-plugin-rss"
+#   [plugins.inputs]
+#   # required configs, customize as needed
+#   dirToScan = "/blog" # a subfolder to scan. "/" to scan all
+#   authorName = "Ed Johnson-Williams"
+#   site_url = "https://edjohnsonwilliams.co.uk"
+#   title = "Ed Johnson-Williams"
+#   rssDescription = "Ed Johnson-Williams' website"
+#   categories = []
 
-  language = "en"
-  pubDate = "new Date().toUTCString(),"
+#   language = "en"
+#   pubDate = "new Date().toUTCString(),"
 
   # # cheerio selectors for extractMetadataFromFile
   # # defaults shown
