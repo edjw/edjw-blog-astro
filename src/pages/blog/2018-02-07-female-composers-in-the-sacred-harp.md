@@ -66,7 +66,7 @@ layout: "../../layouts/BlogpostLayout.astro"
 
 <h2 id="toc_2">What proportion of the composers in the book are female?</h2>
 
-<p>8.7% (18) of the named composers in the book are female. 91.3% (190) of the named composers are male. I didn't count songs in the book <a href="#unknown-gender">where I couldn't attribute a gender</a> to the composer for this. </p>
+<p>8.7% (18) of the named composers in the book are female. 91.3% (190) of the named composers are male. I didn't count songs in the book <a href="#unknown-gender">where I couldn't attribute a gender</a> to the composer for this.</p>
 
 <h2 id="toc_3">How likely are female composers to have multiple songs in the book?</h2>
 
@@ -92,7 +92,7 @@ layout: "../../layouts/BlogpostLayout.astro"
     <img src="/images/pc_all_songs_by_song_number_.png" alt="">
 </a>
 
-<p>Here are the songs by female composers sorted by the percentage of all songs led in minuted singing 1995-2017 that that particular song has been led. The percentages are rounded to 2 decimal places. The 1 in N figure is from the unrounded percentage which is why there's a slight discrepancy sometimes.
+<p>Here are the songs by female composers sorted by the percentage of all songs led in minuted singing 1995-2017 that that particular song has been led. The percentages are rounded to 2 decimal places. The 1 in N figure is from the unrounded percentage which is why there's a slight discrepancy sometimes.</p>
 
 <p>By comparison, 146 Hallelujah – the song in the book that has been led most often – accounts for 0.8% (1 in every 125) of all songs led 1995-2017.</p>
 
@@ -148,7 +148,7 @@ layout: "../../layouts/BlogpostLayout.astro"
 
 <h2 id="toc_5">Has the popularity of songs by female composers changed over time?</h2>
 
-<p>Songs by female composers <em>have</em> become more popular since 1995. </p>
+<p>Songs by female composers <em>have</em> become more popular since 1995.</p>
 
 <p>In 1995 – the year where songs by female composers were least popular – 1 in every 25 songs led at a minuted singing was by a female composer. By comparison, in 2017 – when female composers' songs were most popular – 1 in every 21 songs was by a female composer.</p>
 
@@ -196,7 +196,7 @@ layout: "../../layouts/BlogpostLayout.astro"
 
 <p>Some songs in the book give the name for the composer which is not the name of the person who wrote the song. There would be arguments for assigning the song to the original composer rather than the attributed composer but I decided not to get into that.</p>
 
-<p>A song which is attributed in the book to a male composer is counted as being by a male composer even if it was written by a woman. A song which is attributed to a female composer is counted as being by a female composer even if it was written by a man. </p>
+<p>A song which is attributed in the book to a male composer is counted as being by a male composer even if it was written by a woman. A song which is attributed to a female composer is counted as being by a female composer even if it was written by a man.</p>
 
 <p id="unknown-gender">Songs where there is no clear composer are counted as unknown, neither male nor female. This accounts for 62 songs. This includes songs where: a) only a surname is given (410t The Dying Californian – Ball), b) a songbook is given as the source of the tune (28t Aylesbury – A Book of Psalmody), and c) no source is given (43 Primrose Hill). I haven't delved into the sources of those tunes but it is very likely that the overwhelming majority of songs in these three groups was written by men.</p>
 
