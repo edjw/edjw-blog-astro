@@ -8,4 +8,4 @@ tags:
 layout: "../../layouts/BlogpostLayout.astro"
 ---
 
-I made a website for the Durham Sacred Harp singing group. It's at <https://durhamsacredharp.co.uk>.
+I made a website for the Durham Sacred Harp singing group. It's at [https://durhamsacredharp.co.uk](https://durhamsacredharp.co.uk).
