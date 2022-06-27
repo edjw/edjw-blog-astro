@@ -25,7 +25,7 @@ I ran [some numbers on the results](https://docs.google.com/spreadsheets/d/1Zd9A
 
 The quirks of the system are clearest in the Neville's Cross ward.
 
-<style type="text/css">
+<!-- <style type="text/css">
 .tg {
 border-collapse: collapse;
 border-spacing: 0;
@@ -75,7 +75,7 @@ vertical-align: top
 background-color: #c0c0c0;
 vertical-align: top
 }
-</style>
+</style> -->
 
 <table class="tg">
 <tr>
