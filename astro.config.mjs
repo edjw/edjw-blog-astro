@@ -3,7 +3,6 @@ import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import NetlifyCMS from "astro-netlify-cms";
 
-// https://astro.build/config
 export default defineConfig({
   site: "https://edjohnsonwilliams.co.uk",
   markdown: {
