@@ -26,6 +26,7 @@ export default defineConfig({
       // previewStyles: ["src/styles/global.css"],
       // publish_mode: "editorial_workflow",
       config: {
+        media_folder: "public/images",
         backend: {
           name: "git-gateway",
           branch: "main",
@@ -108,9 +109,5 @@ export default defineConfig({
           },
         ],
       },
-        ],
-  media_folder: "public/images",
-},
-    }),
-  ]
+    })]
 });
