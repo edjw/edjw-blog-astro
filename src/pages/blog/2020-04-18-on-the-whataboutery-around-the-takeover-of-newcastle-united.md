@@ -26,27 +26,14 @@ But the reasons, the whataboutery, some people are using to make it seem like it
 
 Here is some of the whataboutery I've seen people engaging in over the last few days.
 
-- [1. Whatabout Mike Ashley?](#1-whatabout-mike-ashley)
-- [2. Whatabout Saudi Arabia investing in other clubs?](#2-whatabout-saudi-arabia-investing-in-other-clubs)
-- [3. Whatabout the UK's arms sales to Saudi Arabia?](#3-whatabout-the-uks-arms-sales-to-saudi-arabia)
-- [4. Whatabout the fans? Don’t they deserve some success?](#4-whatabout-the-fans-dont-they-deserve-some-success)
-- [5. Whatabout you? Don’t criticise the deal if you do unethical things too](#5-whatabout-you-dont-criticise-the-deal-if-you-do-unethical-things-too)
-- [6. Whatabout the Queen/Prince William/Prince Charles/Donald Trump/Boris Johnson?](#6-whatabout-the-queenprince-williamprince-charlesdonald-trumpboris-johnson)
-- [7. Whatabout other owners?](#7-whatabout-other-owners)
-- [8. Whatabout what journalists did/did not say in the past?](#8-whatabout-what-journalists-diddid-not-say-in-the-past)
-
-<a id="markdown-1-whatabout-mike-ashley" name="1-whatabout-mike-ashley"></a>
-
 ### 1. Whatabout Mike Ashley?
 
 Yes. Mike Ashley is a bad boss. His company Sports Direct treats its workers terribly. Mike Ashley has treated the club terribly. But, unlike Saudi Arabia, Mike Ashley does not:
 
-- murder journalists ^[<https://www.bbc.co.uk/news/world-middle-east-49826905>]
-- behead people ^[<https://www.theguardian.com/world/2018/apr/26/saudi-arabia-criticised-over-executions-for-drug-offences>]
-- lead wars that kill civilians ^[<https://www.amnesty.org.uk/exposed-british-made-bombs-used-civilian-targets-yemen>]
-- put people in prison for saying that men and women are equal ^[<https://www.bbc.co.uk/news/world-middle-east-47553416>]
-
-<a id="markdown-2-whatabout-saudi-arabia-investing-in-other-clubs" name="2-whatabout-saudi-arabia-investing-in-other-clubs"></a>
+- murder journalists ^[[https://www.bbc.co.uk/news/world-middle-east-49826905](https://www.bbc.co.uk/news/world-middle-east-49826905)]
+- behead people ^[[https://www.theguardian.com/world/2018/apr/26/saudi-arabia-criticised-over-executions-for-drug-offences](https://www.theguardian.com/world/2018/apr/26/saudi-arabia-criticised-over-executions-for-drug-offences)]
+- lead wars that kill civilians ^[[https://www.amnesty.org.uk/exposed-british-made-bombs-used-civilian-targets-yemen](https://www.amnesty.org.uk/exposed-british-made-bombs-used-civilian-targets-yemen)]
+- put people in prison for saying that men and women are equal ^[[https://www.bbc.co.uk/news/world-middle-east-47553416](https://www.bbc.co.uk/news/world-middle-east-47553416)]
 
 ### 2. Whatabout Saudi Arabia investing in other clubs?
 
@@ -60,21 +47,15 @@ Some people seem to think that anyone who criticises the Saudi takeover is holdi
 
 [Journalists have covered Saudi Arabia investing in](https://www.theguardian.com/football/2019/feb/15/sportswashing-europes-biggest-clubs-champions-league-owners-sponsors-uefa) or being interested in buying other clubs in the past. How else would any of us have heard about it happening if journalists had not covered it?
 
-<a id="markdown-3-whatabout-the-uks-arms-sales-to-saudi-arabia" name="3-whatabout-the-uks-arms-sales-to-saudi-arabia"></a>
-
 ### 3. Whatabout the UK's arms sales to Saudi Arabia?
 
 Yes. This is also very bad. The UK should not sell arms to Saudi Arabia. That Saudi Arabia buys so many arms for its war in Yemen is a reason why Newcastle United should not be involved with them.
-
-<a id="markdown-4-whatabout-the-fans-dont-they-deserve-some-success" name="4-whatabout-the-fans-dont-they-deserve-some-success"></a>
 
 ### 4. Whatabout the fans? Don’t they deserve some success?
 
 It would be great for Newcastle to have success. Supporting Newcastle under Mike Ashley has often been rubbish. But if Newcastle does have success using Saudi Arabia's money, it will be hollow.
 
 Sidenote: Does any team actually _deserve_ success more or less than other teams?
-
-<a id="markdown-5-whatabout-you-dont-criticise-the-deal-if-you-do-unethical-things-too" name="5-whatabout-you-dont-criticise-the-deal-if-you-do-unethical-things-too"></a>
 
 ### 5. Whatabout you? Don’t criticise the deal if you do unethical things too
 
@@ -102,21 +83,15 @@ Ethical purity is impossible. No-one meets that test. No-one is asking for ethic
 
 Newcastle should not be involved with a prospective owner who commits torture.
 
-<a id="markdown-6-whatabout-the-queenprince-williamprince-charlesdonald-trumpboris-johnson" name="6-whatabout-the-queenprince-williamprince-charlesdonald-trumpboris-johnson"></a>
-
 ### 6. Whatabout the Queen/Prince William/Prince Charles/Donald Trump/Boris Johnson?
 
 If Mohammad bin Salman is good enough for them to meet him, he’s good enough for Newcastle
 
 Maybe they should not have met him. Maybe they took him to task on human rights? A photo of someone meeting someone is not a good reason why it’s ok for a club to accept someone like that as their owner.
 
-<a id="markdown-7-whatabout-other-owners" name="7-whatabout-other-owners"></a>
-
 ### 7. Whatabout other owners?
 
 All owners are bad men with a bad past (apparently). Hardly any (no?) other owner has abused people in the way Saudi Arabia has.
-
-<a id="markdown-8-whatabout-what-journalists-diddid-not-say-in-the-past" name="8-whatabout-what-journalists-diddid-not-say-in-the-past"></a>
 
 ### 8. Whatabout what journalists did/did not say in the past?
 
