@@ -1,0 +1,26 @@
+---
+const { PUBLIC_MY_EMAIL } = import.meta.env;
+---
+
+<section class="p-8 mt-16 prose border-2 border-yellow-200 dark:prose-dark">
+
+    <p>
+        You can email me at: <a href={`mailto:${PUBLIC_MY_EMAIL}`}>{PUBLIC_MY_EMAIL}</a>
+    </p>
+
+    <p class="text-sm">
+        I use the <a href="https://www.fastmail.help/hc/en-us/articles/4406536368911-Masked-Email"><em>Masked Email
+                service</em></a> within <a href="https://www.fastmail.com">Fastmail</a> to create this email address. I
+        can read and reply to emails that go
+        to this address. But I can disable or change the email address at any time.
+    </p>
+    <p class="text-sm">
+        <a href="https://ref.fm/u21272984">Sign up for Fastmail and get 10% off your first year</a>.
+
+        <span class="text-xs text-gray-500 dark:text-gray-300">
+            (I get <a class="text-gray-500 dark:text-gray-300"
+                href="https://www.fastmail.help/hc/en-us/articles/1500000279701-Referrals">a tiny amount of money</a> if
+            you use that link.)
+        </span>
+    </p>
+</section>
