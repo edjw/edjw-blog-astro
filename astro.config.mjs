@@ -30,28 +30,27 @@ export default defineConfig({
         backend: {
           name: "git-gateway",
           branch: "main",
-          commit_messages:
-          {
-            "create": "Create {{collection}} “{{slug}}”",
-            "update": "Update {{collection}} “{{slug}}”",
-            "delete": "Delete {{collection}} “{{slug}}”",
-            "uploadMedia": "Upload “{{path}}”",
-            "deleteMedia": "Delete “{{path}}”"
-          }
+          commit_messages: {
+            create: "Create {{collection}} “{{slug}}”",
+            update: "Update {{collection}} “{{slug}}”",
+            delete: "Delete {{collection}} “{{slug}}”",
+            uploadMedia: "Upload “{{path}}”",
+            deleteMedia: "Delete “{{path}}”",
+          },
         },
         collections: [
           {
-            name: 'blog',
-            label: 'Post',
-            folder: 'src/pages/blog',
+            name: "blog",
+            label: "Post",
+            folder: "src/pages/blog",
             create: true,
-            slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
+            slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
             fields: [
               {
                 label: "Layout",
                 name: "layout",
                 widget: "hidden",
-                default: "../../layouts/BlogpostLayout.astro"
+                default: "../../layouts/BlogpostLayout.astro",
               },
               {
                 label: "Title",
@@ -68,7 +67,7 @@ export default defineConfig({
                 name: "socialDescription",
                 widget: "string",
                 pattern: [".{0,155}", "Maximum of 155 characters"],
-                default: '',
+                default: "",
               },
               {
                 label: "Tags",
@@ -85,8 +84,8 @@ export default defineConfig({
                 label: "Body",
                 name: "body",
                 widget: "markdown",
-              }
-            ]
+              },
+            ],
           },
           {
             name: "pages",
@@ -99,7 +98,7 @@ export default defineConfig({
                 label: "Layout",
                 name: "layout",
                 widget: "hidden",
-                default: "../../layouts/PageLayout.astro"
+                default: "../../layouts/PageLayout.astro",
               },
               {
                 label: "Title",
@@ -111,7 +110,7 @@ export default defineConfig({
                 name: "socialDescription",
                 widget: "string",
                 pattern: [".{0,155}", "Maximum of 155 characters"],
-                default: '',
+                default: "",
               },
               {
                 label: "Body",
@@ -122,5 +121,6 @@ export default defineConfig({
           },
         ],
       },
-    })]
+    }),
+  ],
 });
