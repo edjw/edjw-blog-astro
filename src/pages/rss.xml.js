@@ -1,8 +1,9 @@
-import rss from '@astrojs/rss';
+import rss from "@astrojs/rss";
 
-export const get = () => rss({
+export const get = () =>
+  rss({
     // `<title>` field in output xml
-    title: 'Ed Johnson-Williams',
+    title: "Ed Johnson-Williams",
     // `<description>` field in output xml
     description: "Ed Johnson-Williams' website",
     // base URL for RSS <item> links
@@ -11,8 +12,8 @@ export const get = () => rss({
     // list of `<item>`s in output xml
     // simple example: generate items for every md file in /src/pages
     // see "Generating items" section for required frontmatter and advanced use cases
-    items: import.meta.glob('./blog/**/*.md'),
+    items: import.meta.glob("./blog/**/*.md"),
     // (optional) inject custom xml
     customData: `<language>en-gb</language>`,
-    stylesheet: "rss-styles.xsl"
-});
+    stylesheet: "rss-styles.xsl",
+  });
