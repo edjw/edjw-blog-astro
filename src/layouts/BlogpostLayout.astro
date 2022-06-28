@@ -3,8 +3,8 @@ import readingTime from 'reading-time'
 import slugify from 'slugify'
 import { titleCase } from "title-case";
 import BaseLayout from "./BaseLayout.astro"
+import EmailMe from '../components/EmailMe.astro';
 const {content: {title, pubDate: date, tags, socialDescription, astro: {html}}} = Astro.props;
-
 const formattedDate = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }).format(new
 Date(date))
 
@@ -75,4 +75,6 @@ const currentURL = Astro.request.url
             <slot />
         </div>
     </article>
+
+    <EmailMe />
 </BaseLayout>
