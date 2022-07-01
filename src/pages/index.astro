@@ -8,8 +8,8 @@ const featuredPosts = allPosts
   .filter((post) => post.frontmatter.featured === true)
   .sort(
     (a, b) =>
-      new Date(b.frontmatter.date).valueOf() -
-      new Date(a.frontmatter.date).valueOf()
+      new Date(b.frontmatter.pubDate).valueOf() -
+      new Date(a.frontmatter.pubDate).valueOf()
   );
 ---
 
@@ -27,6 +27,7 @@ const featuredPosts = allPosts
 
     <p>
       A selection of my blogposts. You can also <a
+        rel="prefetch"
         href="/blog"
         class="font-semibold">see all blogposts</a
       >.
@@ -35,7 +36,7 @@ const featuredPosts = allPosts
     <PostList posts={featuredPosts} showYears={false} />
 
     <p>
-      <a href="/blog" class="font-semibold">See all blogposts</a>
+      <a rel="prefetch" href="/blog" class="font-semibold">See all blogposts</a>
     </p>
   </div>
 </PageLayout>
