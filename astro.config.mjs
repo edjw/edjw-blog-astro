@@ -2,6 +2,7 @@ import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import NetlifyCMS from "astro-netlify-cms";
+import prefetch from '@astrojs/prefetch';
 
 export default defineConfig({
   site: "https://edjohnsonwilliams.co.uk",
@@ -19,6 +20,7 @@ export default defineConfig({
   },
   integrations: [
     sitemap(),
+    prefetch(),
     tailwind({
       config: { applyBaseStyles: false },
     }),
