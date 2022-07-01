@@ -88,7 +88,6 @@ export default defineConfig({
                 widget: "markdown",
               },
             ],
-            sortable_fields: ["pubDate", "title"],
           },
           {
             name: "pages",
