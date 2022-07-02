@@ -1,20 +1,20 @@
 ---
-import Navigation from "../data/Navigation.js"
+import Navigation from "../data/Navigation.js";
 ---
 
 <nav
-    class="grid w-9/12 grid-cols-2 mt-8 mb-4 prose list-none sm:grid-cols-4 sm:w-6/12 md:w-6/12 gap-y-2 dark:prose-dark">
-
-    {
-    Navigation.map(({url, text, attribute}) => (
-    <a rel="prefetch" href={url}
-        class="w-full p-1 text-lg transition duration-300 ease-in-out border-b-2 border-transparent hover:border-yellow-200 hover:bg-yellow-100 hover:bg-opacity-20 dark:hover:border-gray-800 dark:hover:bg-yellow-200 dark:hover:bg-opacity-100"
-        rel={attribute}>
-        {text}
+  class="flex w-2/4 mt-8 mb-4 space-x-6 prose list-none md:w-2/5 sm:space-x-0 dark:prose-dark"
+>
+  {Navigation.map(({ url, text, attribute }) => (
+    <a
+      rel="prefetch"
+      href={url}
+      class="w-full py-1 text-lg transition duration-300 ease-in-out border-b-2 border-transparent hover:border-yellow-200 hover:bg-yellow-100 hover:bg-opacity-20 dark:hover:border-gray-800 dark:hover:bg-yellow-200 dark:hover:bg-opacity-100"
+      rel={attribute}
+    >
+      {text}
     </a>
-    ))
-    }
+  ))}
 
-    <!-- {% if section == nav.section %} aria-current="page"{% endif %}  -->
-
+  <!-- {% if section == nav.section %} aria-current="page"{% endif %}  -->
 </nav>
