@@ -4,10 +4,10 @@ const html = htm.bind(h);
 
 // Preview component for a Page
 const Page = createClass({
-    render() {
-        const entry = this.props.entry;
+  render() {
+    const entry = this.props.entry;
 
-        return html`
+    return html`
       <main>
         <article class="prose">
           <h2>${entry.getIn(["data", "title"], null)}</h1>
@@ -16,7 +16,7 @@ const Page = createClass({
         </article>
       </main>
     `;
-    },
+  },
 });
 
 export default Page;

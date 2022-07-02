@@ -5,9 +5,9 @@ const html = htm.bind(h);
 
 // Preview component for a Post
 const Post = createClass({
-    render() {
-        const entry = this.props.entry;
-        return html`
+  render() {
+    const entry = this.props.entry;
+    return html`
       <main>
         <article class="prose">
           <h2>${entry.getIn(["data", "title"], null)}</h2>
@@ -15,9 +15,9 @@ const Post = createClass({
             Published:
             <time
               >${format(
-            entry.getIn(["data", "date"], new Date()),
-            "dd MMMM yyyy"
-        )}</time
+      entry.getIn(["data", "date"], new Date()),
+      "dd MMMM yyyy"
+    )}</time
             >
           </p>
 
@@ -26,15 +26,15 @@ const Post = createClass({
           <p class="mt-0">
             Tagged as:
             ${entry
-                .getIn(["data", "tags"], [])
-                .map((tag) => html` <a href="#" rel="tag">${tag}</a> `)}
+        .getIn(["data", "tags"], [])
+        .map((tag) => html` <a href="#" rel="tag">${tag}</a> `)}
           </p>
 
           <div>${this.props.widgetFor("body")}</div>
         </article>
       </main>
     `;
-    },
+  },
 });
 
 export default Post;
