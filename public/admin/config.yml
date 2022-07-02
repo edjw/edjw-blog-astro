@@ -39,7 +39,12 @@ collections:
           field: { label: Tag, name: tag, widget: string },
         }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: : "Layout", name: "layout", widget: "hidden", default: "../../layouts/BlogpostLayout.astro"}
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "../../layouts/BlogpostLayout.astro",
+        }
 
   # Pages e.g. About
   - name: "pages"
@@ -56,4 +61,9 @@ collections:
           pattern: [".{0,155}", "Maximum of 155 characters"],
         }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: : "Layout", name: "layout", widget: "hidden", default: "../../layouts/PageLayout.astro"}
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "../../layouts/PageLayout.astro",
+        }
