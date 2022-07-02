@@ -1,33 +1,32 @@
 ---
-import PostEntry from '../components/PostEntry.astro'
+import PostEntry from "../components/PostEntry.astro";
 
 import getYear from "../utils/getYear.js";
-let year = ""
-let currentPostYear = ""
-const setCurrentPostYear =(date) => {
-    currentPostYear = String(getYear(date))
-}
+let year = "";
+let currentPostYear = "";
+const setCurrentPostYear = (date) => {
+  currentPostYear = String(getYear(date));
+};
 const setYear = (date) => {
-    year = String(getYear(date));
-}
-const { posts, showYears } = Astro.props
+  year = String(getYear(date));
+};
+const { posts, showYears } = Astro.props;
 
+const sortedPosts = posts.sort(
+  (a, b) =>
+    new Date(b.frontmatter.pubDate).valueOf() -
+    new Date(a.frontmatter.pubDate).valueOf()
+);
 ---
 
-{
-     posts.map((post) =>(
-       <div>
-          {showYears && setCurrentPostYear(post.date)}
-          {showYears && year != "" && year != currentPostYear && (
-               <p class='mt-10 -mb-6 text-lg font-bold'>
-                    {currentPostYear}
-               </p>
-          )}
-          {showYears && setYear(post.date)}
+{sortedPosts.map((post) => (
+  <div>
+    {showYears && setCurrentPostYear(post.date)}
+    {showYears && year != "" && year != currentPostYear && (
+      <p class="mt-10 -mb-6 text-lg font-bold">{currentPostYear}</p>
+    )}
+    {showYears && setYear(post.date)}
 
-          <PostEntry post={post}></PostEntry>
-       </div>
-          )
-     )
-}
-
+    <PostEntry post={post} />
+  </div>
+))}
