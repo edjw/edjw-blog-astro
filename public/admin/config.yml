@@ -1,0 +1,69 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update
+  commit_messages:
+    create: Create {{collection}} "{{slug}}"
+    update: Update {{collection}} "{{slug}}"
+    delete: Delete {{collection}} "{{slug}}"
+    uploadMedia: Upload "{{path}}"
+    deleteMedia: Delete "{{path}}"
+
+# Uncomment below to enable drafts
+# publish_mode: editorial_workflow
+
+# site_url: https://edjohnsonwilliams.co.uk
+
+media_folder: "public/images"
+
+collections:
+  # Blog posts
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Post" # Used in the UI
+    folder: "src/pages/blog" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "pubDate", widget: "datetime" }
+      - {
+          label: "Social Description",
+          name: "socialDescription",
+          widget: "string",
+          pattern: [".{0,155}", "Maximum of 155 characters"],
+          default: "Ed Johnson-Williams' blog",
+        }
+      - {
+          label: "Tags",
+          name: "tags",
+          widget: "list",
+          field: { label: Tag, name: tag, widget: string },
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "../../layouts/BlogpostLayout.astro",
+        }
+
+  # Pages e.g. About
+  - name: "pages"
+    label: "Page"
+    folder: "src/pages"
+    create: false # Change to true to allow editors to create new pages
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Social Description",
+          name: "socialDescription",
+          widget: "string",
+          pattern: [".{0,155}", "Maximum of 155 characters"],
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "../../layouts/PageLayout.astro",
+        }
