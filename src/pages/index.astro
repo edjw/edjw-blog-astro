@@ -3,7 +3,7 @@ import PageLayout from "../layouts/PageLayout.astro";
 import PostList from "../components/PostList.astro";
 const title = "Ed Johnson Williams' website";
 const socialDescription = "Ed Johnson Williams' website";
-let allPosts = await Astro.glob("./blog/*.md");
+let allPosts = await Astro.glob("./blog/*.mdx");
 const featuredPosts = allPosts
   .filter((post) => post.frontmatter.featured === true)
   .sort(
@@ -29,8 +29,9 @@ const featuredPosts = allPosts
       A selection of my blogposts. You can also <a
         rel="prefetch"
         href="/blog"
-        class="font-semibold">see all blogposts</a
-      >.
+        class="font-semibold"
+        >see all blogposts
+      </a>.
     </p>
 
     <PostList posts={featuredPosts} showYears={false} />
