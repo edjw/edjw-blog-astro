@@ -1,28 +1,40 @@
 ---
-import readingTime from 'reading-time'
-import slugify from 'slugify'
+// import readingTime from "reading-time";
+import slugify from "slugify";
 import { titleCase } from "title-case";
-import BaseLayout from "./BaseLayout.astro"
-import EmailMe from '../components/EmailMe.astro';
-const {content: {title, pubDate: date, tags, socialDescription, astro: {html}}} = Astro.props;
-const formattedDate = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }).format(new
-Date(date))
+import BaseLayout from "./BaseLayout.astro";
+import EmailMe from "../components/EmailMe.astro";
+const {
+  content: {
+    title,
+    pubDate: date,
+    tags,
+    socialDescription,
+    // astro: { html },
+  },
+} = Astro.props;
 
-const postReadingTime = readingTime(html).text
+const formattedDate = new Intl.DateTimeFormat("en-GB", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+}).format(new Date(date));
 
-const currentURL = Astro.request.url
+// const postReadingTime = readingTime(html).text;
 
+const currentURL = Astro.request.url;
 ---
+
 <BaseLayout pageTitle={title} description={socialDescription}>
-    <article class="prose h-entry dark:prose-dark">
-        <!-- h-entry things -->
-        <div class="hidden">
-            <a href={currentURL}></a>
+  <article class="prose h-entry dark:prose-dark">
+    <!-- h-entry things -->
+    <div class="hidden">
+      <a href={currentURL}></a>
 
-            <time class="dt-published">{new Date(date).toUTCString()}</time>
+      <time class="dt-published">{new Date(date).toUTCString()}</time>
 
-            <!-- TODO: fix tags -->
-<!--
+      <!-- TODO: fix tags -->
+      <!--
             {
 (tags.length > 0 ) &&
 {tags.map((tag) =>
@@ -33,48 +45,45 @@ const currentURL = Astro.request.url
             }
             -->
 
+      <a rel="author" href="https://edjohnsonwilliams.co.uk"
+        >Ed Johnson-Williams
+      </a>
+    </div>
+    <!-- End of h-entry things -->
 
-            <a rel="author" href="https://edjohnsonwilliams.co.uk">Ed Johnson-Williams</a>
-        </div>
-        <!-- End of h-entry things -->
+    <h2 class="-mt-0 p-name">
+      {title}
+    </h2>
 
-        <h2 class="-mt-0 p-name">
-            {title}
-        </h2>
+    <section>
+      <p class="my-1">
+        <span>Published:</span>
+        <time>{formattedDate}</time>
+      </p>
 
-        <section>
-            <p class="my-1">
-                <span>Published: </span>
-                <time>{formattedDate}</time>
-            </p>
+      <!-- <p class="my-1">
+        <span>Reading time:</span>
+        {postReadingTime}
+      </p> -->
 
-            <p class="my-1">
-                <span>Reading time: </span>
-                {postReadingTime}
-            </p>
+      {tags.length > 0 && (
+        <p class="flex my-1">
+          <span class="mr-1">Tags: </span>
+          <span class="flex space-x-2">
+            {tags.map((tag) => (
+              <a rel="prefetch" href={`/tags/${slugify(tag)}`}>
+                {titleCase(tag)}
+              </a>
+            ))}
+          </span>
+        </p>
+      )}
+    </section>
 
-            {
-            (tags.length > 0) &&
-            <p class="flex my-1">
-                <span class='mr-1'>Tags: </span>
-                <span class='flex space-x-2'>
-                    {tags.map((tag) =>
-                    <a rel="prefetch" href={`/tags/${slugify(tag)}`}>
-                        {titleCase(tag)}
-                    </a>
-                    )}
-                </span>
-            </p>
-            }
+    <div class="e-content">
+      <slot />
+    </div>
+  </article>
 
-
-
-        </section>
-
-        <div class="e-content">
-            <slot />
-        </div>
-    </article>
-
-    <EmailMe />
+  <EmailMe />
 </BaseLayout>

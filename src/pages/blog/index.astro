@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PostList from "../../components/PostList.astro";
-let allPosts = await Astro.glob("./*.md");
+let allPosts = await Astro.glob("./*.mdx");
 ---
 
 <BaseLayout pageTitle="All posts" description="Ed Johnson-Williams' blogposts">
