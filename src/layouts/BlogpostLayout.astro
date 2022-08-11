@@ -1,17 +1,10 @@
 ---
-// import readingTime from "reading-time";
 import slugify from "slugify";
 import { titleCase } from "title-case";
 import BaseLayout from "./BaseLayout.astro";
 import EmailMe from "../components/EmailMe.astro";
 const {
-  content: {
-    title,
-    pubDate: date,
-    tags,
-    socialDescription,
-    // astro: { html },
-  },
+  content: { title, pubDate: date, tags, socialDescription },
 } = Astro.props;
 
 const formattedDate = new Intl.DateTimeFormat("en-GB", {
@@ -19,8 +12,6 @@ const formattedDate = new Intl.DateTimeFormat("en-GB", {
   month: "long",
   year: "numeric",
 }).format(new Date(date));
-
-// const postReadingTime = readingTime(html).text;
 
 const currentURL = Astro.request.url;
 ---
@@ -60,11 +51,6 @@ const currentURL = Astro.request.url;
         <span>Published:</span>
         <time>{formattedDate}</time>
       </p>
-
-      <!-- <p class="my-1">
-        <span>Reading time:</span>
-        {postReadingTime}
-      </p> -->
 
       {tags.length > 0 && (
         <p class="flex my-1">
