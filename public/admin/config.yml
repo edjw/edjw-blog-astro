@@ -11,14 +11,14 @@ backend:
 # Uncomment below to enable drafts
 # publish_mode: editorial_workflow
 
-# site_url: https://edjohnsonwilliams.co.uk
+site_url: https://edjohnsonwilliams.co.uk
 
 media_folder: "public/images"
 
 collections:
   # Blog posts
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Post" # Used in the UI
+    label: "Posts" # Used in the UI
     folder: "src/pages/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -48,7 +48,7 @@ collections:
 
   # Pages e.g. About
   - name: "pages"
-    label: "Page"
+    label: "Pages"
     folder: "src/pages"
     create: false # Change to true to allow editors to create new pages
     slug: "{{slug}}"
