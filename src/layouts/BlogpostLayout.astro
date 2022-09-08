@@ -52,7 +52,7 @@ const currentURL = Astro.request.url;
         <time>{formattedDate}</time>
       </p>
 
-      {tags.length > 0 && (
+      {tags && (
         <p class="flex my-1">
           <span class="mr-1">Tags: </span>
           <span class="flex space-x-2">
