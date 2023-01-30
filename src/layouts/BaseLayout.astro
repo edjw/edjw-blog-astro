@@ -1,4 +1,6 @@
 ---
+import "../styles/global.css";
+
 import siteData from "../data/siteconfig.js";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
@@ -21,7 +23,7 @@ const {
   <BaseHead title={pageTitle} description={pageDescription} />
   <body class="dark:bg-trueGray-800">
     <div
-      class="container grid h-screen max-w-4xl px-4 pt-4 mx-auto bg-white grid-cols-full grid-rows-auto-1-auto dark:bg-trueGray-800"
+      class="container grid h-screen max-w-4xl px-4 pt-4 mx-auto bg-white grid-rows-[auto_1fr_auto] dark:bg-trueGray-800"
     >
       <Header />
 
