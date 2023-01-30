@@ -28,5 +28,8 @@
     "slugify": "^1.6.5",
     "tailwindcss": "^3.2.4",
     "title-case": "^3.0.3"
+  },
+  "dependencies": {
+    "astro-compress": "^1.1.28"
   }
 }
