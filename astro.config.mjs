@@ -3,30 +3,20 @@ import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import prefetch from "@astrojs/prefetch";
 import mdx from "@astrojs/mdx";
+import compress from "astro-compress";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://edjohnsonwilliams.co.uk",
-  markdown: {
-    remarkPlugins: [
-      "remark-html",
-      "remark-gfm",
-      [
-        "remark-footnotes",
-        {
-          inlineNotes: true,
-        },
-      ],
-    ],
-  },
   integrations: [
     sitemap(),
     prefetch(),
-    tailwind({
-      config: {
-        applyBaseStyles: false,
+    tailwind(),
+    mdx(),
+    compress({
+      html: {
+        removeComments: true,
       },
     }),
-    mdx(),
   ],
 });
