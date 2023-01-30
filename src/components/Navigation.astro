@@ -3,18 +3,22 @@ import Navigation from "../data/Navigation.js";
 ---
 
 <nav
-  class="flex w-2/4 mt-8 mb-4 space-x-6 prose list-none md:w-2/5 sm:space-x-0 dark:prose-dark"
+  class="flex items-center justify-start mt-8 mb-4 sm:gap-x-8 gap-x-2 dark:prose-dark"
 >
-  {Navigation.map(({ url, text, attribute }) => (
-    <a
-      rel="prefetch"
-      href={url}
-      class="w-full border-b-2 border-transparent py-1 text-lg transition duration-300 ease-in-out hover:border-yellow-200 hover:bg-yellow-100 hover:bg-opacity-20 dark:hover:border-gray-800 dark:hover:bg-yellow-200 dark:hover:bg-opacity-100"
-      rel={attribute}
-    >
-      {text}
-    </a>
-  ))}
+  {
+    Navigation.map(({ url, text, attribute }, index) => {
+      return (
+        <a
+          rel="prefetch"
+          href={url}
+          class="py-1 text-lg border-b-2 border-yellow-200 hover:border-transparent"
+          rel={attribute}
+        >
+          <span class="py-1 text-left">{text}</span>
+        </a>
+      );
+    })
+  }
 
   <!-- {% if section == nav.section %} aria-current="page"{% endif %}  -->
 </nav>
