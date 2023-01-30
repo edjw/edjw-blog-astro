@@ -7,7 +7,7 @@ specifiers:
   '@astrojs/sitemap': ^1.0.0
   '@astrojs/tailwind': ^3.0.0
   '@tailwindcss/typography': ^0.5.9
-  astro: ^2.0.2
+  astro: ^2.0.4
   astro-compress: ^1.1.28
   mdast-util-to-string: ^3.1.1
   prettier: ^2.8.3
@@ -25,13 +25,13 @@ dependencies:
   astro-compress: 1.1.28
 
 devDependencies:
-  '@astrojs/mdx': 0.15.1_astro@2.0.2
+  '@astrojs/mdx': 0.15.1_astro@2.0.4
   '@astrojs/prefetch': 0.1.1
   '@astrojs/rss': 2.1.0
   '@astrojs/sitemap': 1.0.0
-  '@astrojs/tailwind': 3.0.0_uhsc6pehih5huiqhsy5i7sy5um
+  '@astrojs/tailwind': 3.0.0_w4tcfhwvdtjypoawtn32k4prgu
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.4
-  astro: 2.0.2
+  astro: 2.0.4
   mdast-util-to-string: 3.1.1
   prettier: 2.8.3
   prettier-plugin-astro: 0.8.0
@@ -80,13 +80,13 @@ packages:
       vscode-uri: 3.0.7
     dev: true
 
-  /@astrojs/markdown-remark/2.0.1_astro@2.0.2:
+  /@astrojs/markdown-remark/2.0.1_astro@2.0.4:
     resolution: {integrity: sha512-xQF1rXGJN18m+zZucwRRtmNehuhPMMhZhi6HWKrtpEAKnHSPk8lqf1GXgKH7/Sypglu8ivdECZ+EGs6kOYVasQ==}
     peerDependencies:
       astro: ^2.0.2
     dependencies:
       '@astrojs/prism': 2.0.0
-      astro: 2.0.2
+      astro: 2.0.4
       github-slugger: 1.5.0
       import-meta-resolve: 2.2.1
       rehype-raw: 6.1.1
@@ -103,11 +103,11 @@ packages:
       - supports-color
     dev: true
 
-  /@astrojs/mdx/0.15.1_astro@2.0.2:
+  /@astrojs/mdx/0.15.1_astro@2.0.4:
     resolution: {integrity: sha512-RzrJ2vq+XnAtqvhRdIeONYBINFEWetXnfAqiB2V4s/FB/jd+8y9fSOtBtGpWCGpRZfidtMYPIiQ/damz0yJxVA==}
     engines: {node: '>=16.12.0'}
     dependencies:
-      '@astrojs/markdown-remark': 2.0.1_astro@2.0.2
+      '@astrojs/markdown-remark': 2.0.1_astro@2.0.4
       '@astrojs/prism': 2.0.0
       '@mdx-js/mdx': 2.2.1
       '@mdx-js/rollup': 2.2.1
@@ -157,14 +157,14 @@ packages:
       zod: 3.20.2
     dev: true
 
-  /@astrojs/tailwind/3.0.0_uhsc6pehih5huiqhsy5i7sy5um:
+  /@astrojs/tailwind/3.0.0_w4tcfhwvdtjypoawtn32k4prgu:
     resolution: {integrity: sha512-Ul0LzTIW+QD/qXUaTDSDoe/uNOPSAX6Ce7yTMzl7v+9OlZ4vlgkj1CUq/WkhlKnJ2+SnJvLArEj6yYs/M2V8nA==}
     peerDependencies:
       astro: ^2.0.0
       tailwindcss: ^3.0.24
     dependencies:
       '@proload/core': 0.3.3
-      astro: 2.0.2
+      astro: 2.0.4
       autoprefixer: 10.4.13_postcss@8.4.21
       postcss: 8.4.21
       postcss-load-config: 4.0.1_postcss@8.4.21
@@ -1036,14 +1036,14 @@ packages:
       terser: 5.16.1
     dev: false
 
-  /astro/2.0.2:
-    resolution: {integrity: sha512-47N1jLWNxSri7kWfIfgcEnQJZWTvd0gXhNC3P2ZHiiurl4nOxFC5ULsW5MDDTjTzQ1S7y1RoaL9XxYm+Rury7w==}
+  /astro/2.0.4:
+    resolution: {integrity: sha512-VSxFONW4hazODUIzjpoPdSZ4eRMz86pQn375277GhJDDRq/kfA5tSfvDFtySlAeEWrsE9W8tC2Jj3HuYcRYRig==}
     engines: {node: '>=16.12.0', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
       '@astrojs/compiler': 1.0.1
       '@astrojs/language-server': 0.28.3
-      '@astrojs/markdown-remark': 2.0.1_astro@2.0.2
+      '@astrojs/markdown-remark': 2.0.1_astro@2.0.4
       '@astrojs/telemetry': 2.0.0
       '@astrojs/webapi': 2.0.0
       '@babel/core': 7.20.12

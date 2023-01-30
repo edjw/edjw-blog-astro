@@ -11,12 +11,6 @@ module.exports = {
         gray: colors.gray,
         trueGray: colors.neutral,
       },
-      gridTemplateColumns: {
-        full: "100%",
-      },
-      gridTemplateRows: {
-        "auto-1-auto": "auto 1fr auto",
-      },
       typography: (theme) => ({
         dark: {
           css: [
@@ -96,5 +90,4 @@ module.exports = {
     typography: ["dark"],
   },
   plugins: [require("@tailwindcss/typography")],
-  important: true,
 };
