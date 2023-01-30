@@ -1,6 +1,9 @@
 ---
+const backupEmail = "testing@test.com";
 const { PUBLIC_MY_EMAIL } = import.meta.env;
-const [localPart, domain] = PUBLIC_MY_EMAIL.split("@");
+let email = PUBLIC_MY_EMAIL || backupEmail;
+
+const [localPart, domain] = email.split("@");
 ---
 
 <section class="p-8 mt-16 prose border-2 border-yellow-200 dark:prose-dark">
