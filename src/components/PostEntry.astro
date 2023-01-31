@@ -1,16 +1,16 @@
 ---
-const {
-  post: {
-    frontmatter: { pubDate: date, title },
-    url,
-  },
-} = Astro.props;
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  post: CollectionEntry<"blog">;
+}
+const { post } = Astro.props;
 
 const formattedDate = new Intl.DateTimeFormat("en-GB", {
   day: "numeric",
   month: "long",
   year: "numeric",
-}).format(new Date(date));
+}).format(new Date(post.data.pubDate));
 ---
 
 <section
@@ -18,6 +18,8 @@ const formattedDate = new Intl.DateTimeFormat("en-GB", {
 >
   <p class="m-0 text-base">{formattedDate}</p>
   <h3 class="mt-1">
-    <a href={url} rel="prefetch">{title}</a>
+    <a class="cursor-pointer" href={`/blog/${post.slug}`} rel="prefetch"
+      >{post.data.title}</a
+    >
   </h3>
 </section>
