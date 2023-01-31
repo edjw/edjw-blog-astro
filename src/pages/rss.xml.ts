@@ -19,7 +19,6 @@ export async function get(context: { site: any }) {
       title: post.data.title,
       pubDate: post.data.pubDate,
       content: sanitizeHtml(parser.render(post.body)),
-      ...post.data,
     })),
   });
 }
