@@ -3,17 +3,18 @@ import PageLayout from "../layouts/PageLayout.astro";
 import PostList from "../components/PostList.astro";
 const title = "Ed Johnson Williams' website";
 const socialDescription = "Ed Johnson Williams' website";
-let allPosts = await Astro.glob("./blog/*.mdx");
-const featuredPosts = allPosts
-  .filter((post) => post.frontmatter.featured === true)
+
+import { getCollection } from "astro:content";
+
+const featuredPosts = (await getCollection("blog"))
+  .filter((post) => post.data.featured === true)
   .sort(
     (a, b) =>
-      new Date(b.frontmatter.pubDate).valueOf() -
-      new Date(a.frontmatter.pubDate).valueOf()
+      new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
   );
 ---
 
-<PageLayout {title} {socialDescription}>
+<PageLayout title={title} socialDescription={socialDescription}>
   <section
     class="px-8 py-4 prose text-gray-900 border-t-4 border-yellow-200 bg-yellow-50 dark:bg-gray-800 dark:prose-dark"
   >
