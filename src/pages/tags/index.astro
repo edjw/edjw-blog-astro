@@ -12,7 +12,7 @@ const allPosts = (await getCollection("blog")).filter((post) => {
 });
 
 let allUniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())]
-  .map((tag) => slugify(tag))
+  .map((tag) => slugify(tag, { lower: true }))
   .sort();
 ---
 
