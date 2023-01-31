@@ -11,38 +11,46 @@ const {
 } = siteData;
 ---
 
-<footer class="mt-16 prose border-t-8 border-yellow-200 dark:prose-dark">
+<footer class="mt-16 prose border-t-8 border-yellow-200 dark:prose-invert">
   <div class="leading-loose list-none">
-    {repository && (
-      <p class="my-2 pl-0">
-        <a class="underline" href={`https://github.com/${repository}`}>
-          See the code for this site
-        </a>
-      </p>
-    )}
+    {
+      repository && (
+        <p class="my-2 pl-0">
+          <a class="underline" href={`https://github.com/${repository}`}>
+            See the code for this site
+          </a>
+        </p>
+      )
+    }
 
-    {RSSFeed && (
-      <p class="my-2 pl-0">
-        <a class="underline" href="/feed.xml">
-          See the RSS feed for this site
-        </a>
-      </p>
-    )}
+    {
+      RSSFeed && (
+        <p class="my-2 pl-0">
+          <a class="underline" href="/feed.xml">
+            See the RSS feed for this site
+          </a>
+        </p>
+      )
+    }
 
-    {sitemap && (
-      <p class="hidden">
-        <a href="/sitemap.xml">Sitemap</a>
-      </p>
-    )}
+    {
+      sitemap && (
+        <p class="hidden">
+          <a href="/sitemap.xml">Sitemap</a>
+        </p>
+      )
+    }
 
-    {contentLicence && (
-      <p class="mt-6 text-sm">
-        Content on this website is licenced as
-        <a href={contentLicence.link}>{contentLicence.text}</a>. That means you
-        can copy, adapt, and redistribute any content on this site for any
-        purpose providing you give credit, provide a link to the licence, and
-        indicate if you made changes.
-      </p>
-    )}
+    {
+      contentLicence && (
+        <p class="mt-6 text-sm">
+          Content on this website is licenced as
+          <a href={contentLicence.link}>{contentLicence.text}</a>. That means
+          you can copy, adapt, and redistribute any content on this site for any
+          purpose providing you give credit, provide a link to the licence, and
+          indicate if you made changes.
+        </p>
+      )
+    }
   </div>
 </footer>
