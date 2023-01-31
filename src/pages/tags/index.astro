@@ -1,9 +1,9 @@
 ---
 import PageLayout from "../../layouts/PageLayout.astro";
-import slugify from "slugify";
 import { titleCase } from "title-case";
 const title = "Tags";
 const description = "Tags from my blog posts";
+import { getSlug } from "../../utils/getSlug";
 
 import { getCollection } from "astro:content";
 
@@ -12,7 +12,7 @@ const allPosts = (await getCollection("blog")).filter((post) => {
 });
 
 let allUniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())]
-  .map((tag) => slugify(tag, { lower: true }))
+  .map((tag) => getSlug(tag))
   .sort();
 ---
 

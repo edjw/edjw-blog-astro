@@ -1,9 +1,9 @@
 ---
-import slugify from "slugify";
 import { titleCase } from "title-case";
 import BaseLayout from "./BaseLayout.astro";
 import EmailMe from "../components/EmailMe.astro";
 import { CollectionEntry } from "astro:content";
+import { getSlug } from "../utils/getSlug";
 
 type Props = CollectionEntry<"blog">["data"];
 
@@ -33,7 +33,7 @@ const currentURL = Astro.request.url;
             {
 (tags.length > 0 ) &&
 {tags.map((tag) =>
-<a href={`/tags/${slugify(tag)}`}>
+<a href={`/tags/${getSlug(tag)}`}>
 {titleCase(tag)}
 </a>
 )}
@@ -62,11 +62,8 @@ const currentURL = Astro.request.url;
             <span class="mr-1">Tags: </span>
             <span class="flex space-x-2">
               {tags.map((tag: string) => (
-                <a
-                  rel="prefetch"
-                  href={`/tags/${slugify(tag, { lower: true })}`}
-                >
-                  {titleCase(tag)}
+                <a rel="prefetch" href={`/tags/${getSlug(tag)}`}>
+                  {titleCase(tag).replace(/-/g, " ")}
                 </a>
               ))}
             </span>

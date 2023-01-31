@@ -1,12 +1,14 @@
 ---
-import slugify from "slugify";
 import { titleCase } from "title-case";
 import PageLayout from "../../layouts/PageLayout.astro";
 import PostList from "../../components/PostList.astro";
 import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+
+import { getSlug } from "../../utils/getSlug";
 
 export async function getStaticPaths() {
-  const allPosts = await (
+  const allPosts: CollectionEntry<"blog">[] = (
     await getCollection("blog")
   ).filter((post) => {
     return post.data.tags && post.data.tags.length > 0;
@@ -14,27 +16,28 @@ export async function getStaticPaths() {
 
   let allUniqueTags = [
     ...new Set(allPosts.map((post) => post.data.tags).flat()),
-  ].map((tag) => slugify(tag, { lower: true }));
+  ].map((tag) => getSlug(tag));
 
-  const allPostsData = allUniqueTags.map((tag) => ({
-    params: { tag },
-    props: { allPosts },
-  }));
-  return allPostsData;
+  return allUniqueTags.map((tag) => {
+    return {
+      params: { tag },
+      props: { tag },
+    };
+  });
 }
-const { allPosts } = Astro.props;
-const { tag } = Astro.params;
 
-const cleanedTag = String(tag).replace(/-/g, " ");
+const { tag } = Astro.props;
 
-const tagPosts = allPosts.filter((post) => post.data.tags.includes(cleanedTag));
+const tagPosts: CollectionEntry<"blog">[] = (
+  await getCollection("blog")
+).filter((post) => post.data.tags && post.data.tags.includes(tag));
 
-const tagName = titleCase(cleanedTag);
+const tagName = titleCase(tag).replace(/-/g, " ");
 ---
 
 <PageLayout title={tagName} socialDescription={`Blogposts about ${tagName}`}>
   <p>
     These are the blogposts I've tagged as <em>{tagName}</em>.
   </p>
-  <PostList posts={tagPosts} />
+  <PostList posts={tagPosts} showYears={true} />
 </PageLayout>

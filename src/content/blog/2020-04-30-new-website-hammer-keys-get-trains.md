@@ -3,7 +3,7 @@ title: "New website: Hammer keys. Get trains."
 pubDate: 2020-04-30T14:29:26.147Z
 socialDescription: I made a website for my son. He likes trains and pressing keys on my keyboard.
 tags:
-  - new website
+  - new-website
 ---
 
 ### User story

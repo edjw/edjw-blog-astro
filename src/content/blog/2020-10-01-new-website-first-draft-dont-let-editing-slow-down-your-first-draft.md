@@ -3,7 +3,7 @@ title: "New website: First Draft – Don't let editing slow down your first draf
 pubDate: 2020-10-01T16:09:02.282Z
 socialDescription: First Draft is a text editor that stops editing from slowing you down
 tags:
-  - new website
+  - new-website
   - svelte
   - writing
 featured: true
