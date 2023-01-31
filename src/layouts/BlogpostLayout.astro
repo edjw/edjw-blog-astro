@@ -62,7 +62,10 @@ const currentURL = Astro.request.url;
             <span class="mr-1">Tags: </span>
             <span class="flex space-x-2">
               {tags.map((tag: string) => (
-                <a rel="prefetch" href={`/tags/${slugify(tag)}`}>
+                <a
+                  rel="prefetch"
+                  href={`/tags/${slugify(tag, { lower: true })}`}
+                >
                   {titleCase(tag)}
                 </a>
               ))}
