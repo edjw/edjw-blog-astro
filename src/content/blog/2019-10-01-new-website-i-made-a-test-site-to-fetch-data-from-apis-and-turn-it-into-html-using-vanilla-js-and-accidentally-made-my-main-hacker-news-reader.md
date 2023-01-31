@@ -7,7 +7,7 @@ socialDescription: "New website: I made a test site to fetch data from APIs and
   turn it into HTML using vanilla JS and accidentally made my main Hacker News
   reader"
 tags:
-  - new website
+  - new-website
   - javascript
 ---
 

@@ -4,7 +4,7 @@ pubDate: 2022-11-02T20:11:37.359Z
 socialDescription: Not all high mountains are rewarding to climb. Here are the most interesting ones.
 
 tags:
-  - learning out loud
+  - learning-out-loud
   - geography
 featured: true
 ---
