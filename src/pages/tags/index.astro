@@ -25,7 +25,7 @@ let allUniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())]
         allUniqueTags.map((tag) => (
           <li>
             <a rel="prefetch" href={`/tags/${tag}`}>
-              {titleCase(tag).replace("-", " ")}
+              {titleCase(tag).replace(/-/g, " ")}
             </a>
           </li>
         ))
