@@ -2,7 +2,7 @@
 import { titleCase } from "title-case";
 import BaseLayout from "./BaseLayout.astro";
 import EmailMe from "../components/EmailMe.astro";
-import { CollectionEntry } from "astro:content";
+import type { CollectionEntry } from "astro:content";
 import { getSlug } from "../utils/getSlug";
 
 type Props = CollectionEntry<"blog">["data"];

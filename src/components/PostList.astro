@@ -5,11 +5,11 @@ import PostEntry from "../components/PostEntry.astro";
 import getYear from "../utils/getYear.js";
 let year = "";
 let currentPostYear = "";
-const setCurrentPostYear = (date) => {
-  currentPostYear = String(getYear(date));
+const setCurrentPostYear = (date: Date) => {
+  currentPostYear = getYear(date);
 };
-const setYear = (date) => {
-  year = String(getYear(date));
+const setYear = (date: Date) => {
+  year = getYear(date);
 };
 
 interface Props {
@@ -18,7 +18,7 @@ interface Props {
 }
 const { posts, showYears } = Astro.props;
 
-const sortedPosts = posts.sort(
+const sortedPosts: CollectionEntry<"blog">[] = posts.sort(
   (a, b) =>
     new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
 );

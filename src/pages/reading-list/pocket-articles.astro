@@ -1,10 +1,9 @@
 ---
 import PageLayout from "../../layouts/PageLayout.astro";
-import PostList from "../../components/PostList.astro";
 const title = "Pocket articles";
 const socialDescription = "My saved Pocket articles";
 ---
 
-<PageLayout {title} {socialDescription}>
+<PageLayout title={title} socialDescription={socialDescription}>
   <p>I used to keep my Pocket articles here, but I don't do that any more.</p>
 </PageLayout>
