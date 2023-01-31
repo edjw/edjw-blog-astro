@@ -3,11 +3,17 @@ import slugify from "slugify";
 import { titleCase } from "title-case";
 import PageLayout from "../../layouts/PageLayout.astro";
 import PostList from "../../components/PostList.astro";
+import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const allPosts = await Astro.glob("../blog/*.mdx");
+  const allPosts = await (
+    await getCollection("blog")
+  ).filter((post) => {
+    return post.data.tags && post.data.tags.length > 0;
+  });
+
   let allUniqueTags = [
-    ...new Set(allPosts.map((post) => post.frontmatter.tags).flat()),
+    ...new Set(allPosts.map((post) => post.data.tags).flat()),
   ].map((tag) => slugify(tag));
 
   const allPostsData = allUniqueTags.map((tag) => ({
@@ -21,9 +27,7 @@ const { tag } = Astro.params;
 
 const cleanedTag = String(tag).replace(/-/g, " ");
 
-const tagPosts = allPosts.filter((post) =>
-  post.frontmatter.tags.includes(cleanedTag)
-);
+const tagPosts = allPosts.filter((post) => post.data.tags.includes(cleanedTag));
 
 const tagName = titleCase(cleanedTag);
 ---

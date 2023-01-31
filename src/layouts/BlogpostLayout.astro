@@ -3,26 +3,30 @@ import slugify from "slugify";
 import { titleCase } from "title-case";
 import BaseLayout from "./BaseLayout.astro";
 import EmailMe from "../components/EmailMe.astro";
-const {
-  content: { title, pubDate: date, tags, socialDescription },
-} = Astro.props;
+import { CollectionEntry } from "astro:content";
+
+type Props = CollectionEntry<"blog">["data"];
+
+const { data } = Astro.props;
+
+const { title, pubDate, tags, socialDescription } = data;
 
 const formattedDate = new Intl.DateTimeFormat("en-GB", {
   day: "numeric",
   month: "long",
   year: "numeric",
-}).format(new Date(date));
+}).format(new Date(pubDate));
 
 const currentURL = Astro.request.url;
 ---
 
-<BaseLayout pageTitle={title} description={socialDescription}>
+<BaseLayout pageTitle={data.title} description={data.socialDescription}>
   <article class="prose h-entry dark:prose-dark">
     <!-- h-entry things -->
     <div class="hidden">
       <a href={currentURL}></a>
 
-      <time class="dt-published">{new Date(date).toUTCString()}</time>
+      <time class="dt-published">{new Date(pubDate).toUTCString()}</time>
 
       <!-- TODO: fix tags -->
       <!--
@@ -71,7 +75,7 @@ const currentURL = Astro.request.url;
     <div class="e-content">
       <slot />
     </div>
-  </article>
 
-  <!-- <EmailMe /> -->
+    <!-- <EmailMe /> -->
+  </article>
 </BaseLayout>

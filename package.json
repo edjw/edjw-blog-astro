@@ -10,7 +10,6 @@
     "format": "prettier -w ."
   },
   "devDependencies": {
-    "@astrojs/mdx": "^0.15.1",
     "@astrojs/prefetch": "^0.1.1",
     "@astrojs/rss": "^2.1.0",
     "@astrojs/sitemap": "^1.0.0",
