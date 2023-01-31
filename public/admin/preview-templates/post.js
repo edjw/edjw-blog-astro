@@ -12,7 +12,7 @@ const Post = createClass({
         <article class="prose">
           <h2>${entry.getIn(["data", "title"], null)}</h2>
           <p class="mb-0">
-            Published:{" "}
+            Published:${" "}
             <time
               >${format(
                 entry.getIn(["data", "date"], new Date()),
