@@ -19,10 +19,10 @@ collections:
   # Blog posts
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Posts" # Used in the UI
-    folder: "src/pages/blog" # The path to the folder where the documents are stored
+    folder: "src/content/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    extension: mdx
+    extension: md
     format: "frontmatter"
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
@@ -58,7 +58,7 @@ collections:
     folder: "src/pages"
     create: false # Change to true to allow editors to create new pages
     slug: "{{slug}}"
-    extension: "mdx"
+    extension: "md"
     format: "frontmatter"
     fields:
       - { label: "Title", name: "title", widget: "string" }
