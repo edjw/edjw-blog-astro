@@ -3,7 +3,7 @@ import Navigation from "../data/Navigation.js";
 ---
 
 <nav
-  class="flex items-center justify-start mt-8 mb-4 sm:gap-x-8 gap-x-2 dark:prose-dark"
+  class="flex items-center justify-start mt-8 mb-4 sm:gap-x-8 gap-x-2 prose dark:prose-invert"
 >
   {
     Navigation.map(({ url, text, attribute }, index) => {
@@ -11,7 +11,7 @@ import Navigation from "../data/Navigation.js";
         <a
           rel="prefetch"
           href={url}
-          class="py-1 text-lg border-b-2 border-yellow-200 hover:border-transparent"
+          class="py-1 text-lg border-b-2 border-yellow-200 hover:border-transparent no-underline"
           rel={attribute}
         >
           <span class="py-1 text-left">{text}</span>

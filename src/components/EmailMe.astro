@@ -6,7 +6,7 @@ let email = PUBLIC_MY_EMAIL || backupEmail;
 const [localPart, domain] = email.split("@");
 ---
 
-<section class="p-8 mt-16 prose border-2 border-yellow-200 dark:prose-dark">
+<section class="p-8 mt-16 prose border-2 border-yellow-200 dark:prose-invert">
   <p>
     You can email me at: <a href={`mailto:${PUBLIC_MY_EMAIL}`}
       >{localPart}@<wbr />{domain}
