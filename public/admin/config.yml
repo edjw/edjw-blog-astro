@@ -38,7 +38,17 @@ collections:
           label: "Tags",
           name: "tags",
           widget: "list",
-          field: { label: Tag, name: tag, widget: string },
+          field:
+            {
+              label: Tag,
+              name: tag,
+              widget: string,
+              pattern:
+                [
+                  "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+                  "Use lower case and kebab case for tags: eg 'my-tag' but not 'My Tag' or 'myTag'",
+                ],
+            },
         }
       - { label: "Body", name: "body", widget: "markdown" }
 
