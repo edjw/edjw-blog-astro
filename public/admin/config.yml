@@ -41,12 +41,6 @@ collections:
           field: { label: Tag, name: tag, widget: string },
         }
       - { label: "Body", name: "body", widget: "markdown" }
-      - {
-          label: "Layout",
-          name: "layout",
-          widget: "hidden",
-          default: "../../layouts/BlogpostLayout.astro",
-        }
 
   # Pages e.g. About
   - name: "pages"
