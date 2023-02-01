@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "format": "prettier -w ."
+    "format": "prettier -w 'src/**/*.{astro,css,html,json,md,mdx,js,jsx,ts,tsx}'",
+    "post": "deno run --allow-write ./new-blog-cli/main.ts"
   },
   "devDependencies": {
     "@astrojs/prefetch": "^0.1.1",
