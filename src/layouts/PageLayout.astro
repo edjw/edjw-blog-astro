@@ -5,7 +5,7 @@ const path = Astro.url.pathname;
 ---
 
 <BaseLayout pageTitle={title} description={socialDescription}>
-  {path !== "/" && <h2 class="-mt-0 p-name">{title}</h2>}
+  {path !== "/" && <h2 class="p-name -mt-0">{title}</h2>}
 
   <div class="e-content">
     <slot />
