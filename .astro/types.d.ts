@@ -326,6 +326,13 @@ declare module 'astro:content' {
   collection: "blog",
   data: InferEntrySchema<"blog">
 },
+"2023-02-02-draft-one-my-new-app.md": {
+  id: "2023-02-02-draft-one-my-new-app.md",
+  slug: "2023-02-02-draft-one-my-new-app",
+  body: string,
+  collection: "blog",
+  data: InferEntrySchema<"blog">
+},
 },
 
 	};
