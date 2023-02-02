@@ -8,10 +8,10 @@ tags:
 ---
 
 <p>
-  A couple of weeks ago, I was in a{" "}
+  A couple of weeks ago, I was in a
   <a href="https://en.wikipedia.org/wiki/Sacred_Harp">Sacred Harp</a> singing
   school where a new singer asked whether there are female composers in the
-  Sacred Harp. The singing school was in{" "}
+  Sacred Harp. The singing school was in
   <a href="https://durhamsacredharp.co.uk">Durham, UK</a> (
   <a href="https://durhamsacredharp.co.uk">shameless plug</a>). I said something
   like, "Oh yeah there are lots of great songs in here by women." A few days
@@ -74,7 +74,7 @@ tags:
 </p>
 
 <p>
-  The data I created and used for this is available here as{" "}
+  The data I created and used for this is available here as
   <a href="/images/sacredharpcomposers.xls">an Excel (.xls) spreadsheet</a>.
 </p>
 
@@ -184,7 +184,7 @@ tags:
 
 <p>
   8.7% (18) of the named composers in the book are female. 91.3% (190) of the
-  named composers are male. I didn't count songs in the book{" "}
+  named composers are male. I didn't count songs in the book
   <a href="#unknown-gender">where I couldn't attribute a gender</a> to the
   composer for this.
 </p>
@@ -514,8 +514,8 @@ tags:
 <p>
   Finally, I have doubtless made mistakes in assigning a gender to some of the
   composers even considering the process above. The data I used is available
-  here as{" "}
-  <a href="/images/sacredharpcomposers.xls">an Excel (.xls) spreadsheet</a>.{" "}
+  here as
+  <a href="/images/sacredharpcomposers.xls">an Excel (.xls) spreadsheet</a>.
   <a href="mailto:mail@edjohnsonwilliams.co.uk">Let me know</a> if you see any
   mistakes.
 </p>
