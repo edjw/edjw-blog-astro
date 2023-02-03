@@ -38,9 +38,9 @@ And I'm working on getting a Windows version out soon.
 
 **There's loads more to say about the technical side.**
 
-I built it with [Tauri](https://tauri.studio), which is a fairly new framework for building desktop apps with web technologies. There are some really good things about it, but defintely some rough edges too.
+I built it with [Tauri](https://tauri.studio), which is a fairly new framework for building desktop apps with web technologies. There are some really good things about it, but definitely some rough edges too.
 
-Speaking of rough edges, building an app for the Mac App Store is a whole new world of pain.
+Speaking of rough edges…building an app for the Mac App Store is a whole new world of pain.
 
 Draft One's built with [a bunch of other amazing open source projects too](https://draft-one.com/credits).
 
