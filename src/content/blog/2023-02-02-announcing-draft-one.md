@@ -1,5 +1,5 @@
 ---
-title: Draft One – my new text editor
+title: Announcing "Draft One" – a new text editor
 pubDate: 2023-02-02T20:19:46.327Z
 socialDescription: I built a new app called Draft One, and I’m really excited about it.
 tags:
