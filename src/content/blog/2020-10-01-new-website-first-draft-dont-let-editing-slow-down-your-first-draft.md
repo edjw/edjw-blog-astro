@@ -6,7 +6,11 @@ tags:
   - new-website
   - svelte
   - writing
-featured: true
+featured: false
+---
+
+Update: I've rewritten First Draft from scratch and re-worked it into a totally offline desktop app. It's now called [**Draft One**](https://draft-one.com). It's available on [**macOS**](https://apps.apple.com/gb/app/draft-one/id1660388186) so far with Windows to come.
+
 ---
 
 Do you ever find yourself writing a first draft of something but you keep getting bogged down by making little edits?
