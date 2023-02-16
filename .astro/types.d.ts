@@ -326,9 +326,16 @@ declare module 'astro:content' {
   collection: "blog",
   data: InferEntrySchema<"blog">
 },
-"2023-02-02-draft-one-my-new-app.md": {
-  id: "2023-02-02-draft-one-my-new-app.md",
-  slug: "2023-02-02-draft-one-my-new-app",
+"2023-02-02-announcing-draft-one.md": {
+  id: "2023-02-02-announcing-draft-one.md",
+  slug: "2023-02-02-announcing-draft-one",
+  body: string,
+  collection: "blog",
+  data: InferEntrySchema<"blog">
+},
+"2023-02-16-ive-set-up-a-microblog-that-uses-github-issues-as-a-cms.md": {
+  id: "2023-02-16-ive-set-up-a-microblog-that-uses-github-issues-as-a-cms.md",
+  slug: "2023-02-16-ive-set-up-a-microblog-that-uses-github-issues-as-a-cms",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
