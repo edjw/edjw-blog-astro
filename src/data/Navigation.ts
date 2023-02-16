@@ -7,6 +7,10 @@ const Navigation = [
     text: "About",
     url: "/about",
   },
+  {
+    text: "Microblog",
+    url: "https://microblog.edjohnsonwilliams.co.uk",
+  },
   //   {
   //     "text": "Twitter",
   //     "url": "https://twitter.com/_edjw",
