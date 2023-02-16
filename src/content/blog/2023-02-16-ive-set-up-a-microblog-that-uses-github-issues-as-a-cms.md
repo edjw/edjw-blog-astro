@@ -20,4 +20,6 @@ The microblog uses [Astro](https://astro.build) for the framework, same as this 
 
 I also pieced together an API route which dynamically builds share (Open Graph) images for all of the pages. That uses [Vercel's 'satori'](https://github.com/vercel/satori) library.
 
+It's got [an RSS feed if you're into that sort of thing](https://microblog.edjohnsonwilliams.co.uk/rss.xml).
+
 I'll switch the site repostitory to public in a few days. I'll probably leave the Issues/CMS repository private.
