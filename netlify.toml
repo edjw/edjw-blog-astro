@@ -7,6 +7,11 @@
   to = "/rss.xml"
   status = 301
 
+[[redirects]]
+  from = "/.well-known/webfinger"
+  to = "https://mastodon.social/.well-known/webfinger?resource=acct:_edjw@mastodon.social"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
@@ -14,7 +19,7 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "same-origin"
-    
+
 # [[plugins]]
 # package = "netlify-plugin-rss"
 #   [plugins.inputs]
