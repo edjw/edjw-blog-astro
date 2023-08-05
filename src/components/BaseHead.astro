@@ -50,7 +50,6 @@ const currentURL = Astro.request.url;
 document.addEventListener(
   "astro:load",
   () => {
-    // This only runs once.
     const theme = (() => {
       if (
         typeof localStorage !== "undefined" &&
@@ -71,6 +70,6 @@ document.addEventListener(
     }
     window.localStorage.setItem("theme", theme);
   },
-  { once: true }
+  // { once: true }
 );
 </script>
