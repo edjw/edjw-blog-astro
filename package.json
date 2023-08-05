@@ -11,16 +11,16 @@
     "post": "deno run --allow-write ./new-blog-cli/main.ts"
   },
   "devDependencies": {
-    "@astrojs/prefetch": "^0.1.1",
-    "@astrojs/rss": "^2.1.0",
-    "@astrojs/sitemap": "^1.0.0",
-    "@astrojs/tailwind": "^3.0.0",
+    "@astrojs/prefetch": "^0.3.0",
+    "@astrojs/rss": "^2.4.3",
+    "@astrojs/sitemap": "^2.0.1",
+    "@astrojs/tailwind": "^4.0.0",
     "@tailwindcss/typography": "^0.5.9",
     "@types/markdown-it": "^12.2.3",
     "@types/sanitize-html": "^2.8.0",
-    "astro": "^2.0.4",
+    "astro": "^2.10.1",
     "mdast-util-to-string": "^3.1.1",
-    "prettier": "^2.8.3",
+    "prettier": "2.8.8",
     "prettier-plugin-astro": "^0.8.0",
     "prettier-plugin-tailwind": "^2.2.12",
     "prettier-plugin-tailwindcss": "^0.1.13",
@@ -28,11 +28,11 @@
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
     "slugify": "^1.6.5",
-    "tailwindcss": "^3.2.4",
+    "tailwindcss": "^3.3.3",
     "title-case": "^3.0.3"
   },
   "dependencies": {
-    "astro-compress": "^1.1.28",
+    "astro-compress": "^1.1.50",
     "markdown-it": "^13.0.1",
     "sanitize-html": "^2.8.1"
   }
