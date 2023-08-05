@@ -14,21 +14,27 @@
   >
 </p>
 <script>
-  const darkModeButton = document.querySelector(
-    "button#dark"
-  ) as HTMLButtonElement;
+  document.addEventListener(
+    "astro:load",
+    () => {
+      const darkModeButton = document.querySelector(
+        "button#dark"
+      ) as HTMLButtonElement;
 
-  const lightModeButton = document.querySelector(
-    "button#light"
-  ) as HTMLButtonElement;
+      const lightModeButton = document.querySelector(
+        "button#light"
+      ) as HTMLButtonElement;
 
-  darkModeButton.addEventListener("click", () => {
-    document.documentElement.classList.add("dark");
-    localStorage.setItem("theme", "dark");
-  });
+      darkModeButton.addEventListener("click", () => {
+        document.documentElement.classList.add("dark");
+        localStorage.setItem("theme", "dark");
+      });
 
-  lightModeButton.addEventListener("click", () => {
-    document.documentElement.classList.remove("dark");
-    localStorage.setItem("theme", "light");
-  });
+      lightModeButton.addEventListener("click", () => {
+        document.documentElement.classList.remove("dark");
+        localStorage.setItem("theme", "light");
+      });
+    },
+    { once: true }
+  );
 </script>
