@@ -1,4 +1,5 @@
 ---
+import { ViewTransitions } from "astro:transitions";
 import siteData from "../data/siteconfig.js";
 
 const {
@@ -42,6 +43,8 @@ const currentURL = Astro.request.url;
   title="RSS feed for Ed Johnson-Williams’ blog"
   href="/rss.xml"
 />
+
+<ViewTransitions />
 
 <script is:inline>
   const theme = (() => {
