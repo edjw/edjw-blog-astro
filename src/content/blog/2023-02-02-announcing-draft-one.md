@@ -8,7 +8,7 @@ tags:
 featured: true
 ---
 
-[**Draft One**](https://draft-one.com) is a new app I've built. I'm calling it *a text editor for focused first drafts*. It's a simple app, but I think it's going to be really useful for people.
+[**Draft One**](https://draft-one.com) is a new app I've built. I'm calling it _a text editor for focused first drafts_. It's a simple app, but I think it's going to be really useful for people.
 
 [![A screenshot of the starting screen of Draft One with the words 'Draft One – For focused first drafts' above it](/images/draft-one-screenshots/1.png)](https://draft-one.com)
 
