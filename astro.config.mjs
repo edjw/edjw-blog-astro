@@ -2,21 +2,18 @@ import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import prefetch from "@astrojs/prefetch";
-import compress from "astro-compress";
+
 
 export default defineConfig({
   site: "https://edjohnsonwilliams.co.uk",
+  // output: "static",
+  server: {
+    host: true,
+    port: 3000
+  },
   integrations: [
     sitemap(),
     prefetch(),
     tailwind(),
-    compress({
-      html: {
-        removeComments: true,
-      },
-    }),
-  ],
-  experimental: {
-    viewTransitions: true
-  }
+  ]
 });
