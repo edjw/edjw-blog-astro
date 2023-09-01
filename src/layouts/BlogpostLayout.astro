@@ -5,17 +5,17 @@ import EmailMe from "../components/EmailMe.astro";
 import type { CollectionEntry } from "astro:content";
 import { getSlug } from "../utils/getSlug";
 
-type Props = CollectionEntry<"blog">["data"];
+type Props = CollectionEntry<"blog">;
+// type Props = CollectionEntry<"blog">["data"];
 
-const { data } = Astro.props;
-
-const { title, pubDate, tags, socialDescription } = data;
+const { entry } = Astro.props;
+const { data } = entry;
 
 const formattedDate = new Intl.DateTimeFormat("en-GB", {
   day: "numeric",
   month: "long",
   year: "numeric",
-}).format(new Date(pubDate));
+}).format(new Date(data.pubDate));
 
 const currentURL = Astro.request.url;
 ---
@@ -26,7 +26,7 @@ const currentURL = Astro.request.url;
     <div class="hidden">
       <a href={currentURL}></a>
 
-      <time class="dt-published">{new Date(pubDate).toUTCString()}</time>
+      <time class="dt-published">{new Date(data.pubDate).toUTCString()}</time>
 
       <!-- TODO: fix tags -->
       <!--
@@ -47,7 +47,7 @@ const currentURL = Astro.request.url;
     <!-- End of h-entry things -->
 
     <h2 class="-mt-0 p-name" transition:name="pageSubtitle">
-      {title}
+      {data.title}
     </h2>
 
     <section>
@@ -57,11 +57,11 @@ const currentURL = Astro.request.url;
       </p>
 
       {
-        tags && (
+        data.tags && (
           <p class="my-1 flex">
             <span class="mr-1">Tags: </span>
             <span class="flex space-x-2">
-              {tags.map((tag: string) => (
+              {data.tags.map((tag: string) => (
                 <a rel="prefetch" href={`/tags/${getSlug(tag)}`}>
                   {titleCase(tag).replace(/-/g, " ")}
                 </a>
