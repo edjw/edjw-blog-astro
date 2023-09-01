@@ -12,7 +12,7 @@ I've made a [microblog](https://microblog.edjohnsonwilliams.co.uk). It's a blog 
 
 The key thing here is the posting experience. If it's not easy, I won't do it.
 
-Writing a markdown file on my phone is just not going to happen. I *can* – but usually don't – use Netlify CMS for this blog and it's not good on mobile – like it's really bad.
+Writing a markdown file on my phone is just not going to happen. I _can_ – but usually don't – use Netlify CMS for this blog and it's not good on mobile – like it's really bad.
 
 Github's interface for creating issues is pretty good for this though, including on the mobile app. You get a really good markdown editor for free including the ability to add images, videos, all markdown stuff and a formatting bar.
 
