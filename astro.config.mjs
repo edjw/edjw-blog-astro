@@ -6,6 +6,11 @@ import prefetch from "@astrojs/prefetch";
 
 export default defineConfig({
   site: "https://edjohnsonwilliams.co.uk",
+  // output: "static",
+  server: {
+    host: true,
+    port: 3000
+  },
   integrations: [
     sitemap(),
     prefetch(),
