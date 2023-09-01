@@ -7,7 +7,7 @@ import sanitizeHtml from "sanitize-html";
 import MarkdownIt from "markdown-it";
 const parser = new MarkdownIt();
 
-export async function get(context: { site: any }) {
+export async function GET(context: { site: any }) {
   const blog: CollectionEntry<"blog">[] = await getCollection("blog");
   return rss({
     title: "Ed Johnson-Williams",
