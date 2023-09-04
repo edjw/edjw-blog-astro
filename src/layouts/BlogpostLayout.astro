@@ -46,12 +46,12 @@ const currentURL = Astro.request.url;
     </div>
     <!-- End of h-entry things -->
 
-    <h2 class="-mt-0 p-name" transition:name="pageSubtitle">
+    <h2 class="-mt-0 p-name" transition:name={data.title}>
       {data.title}
     </h2>
 
     <section>
-      <p class="my-1">
+      <p class="my-1" transition:name={`${data.title}-${data.pubDate}`}>
         <span>Published:</span>
         <time>{formattedDate}</time>
       </p>
