@@ -12,31 +12,6 @@ from = "/.well-known/webfinger"
 status = 200
 to = "https://mastodon.social/.well-known/webfinger?resource=acct:_edjw@mastodon.social"
 
-[[redirects]]
-from = "/2017/*/*/*"
-status = 301
-to = "/blog/:splat"
-
-[[redirects]]
-from = "/2018/*/*/*"
-status = 301
-to = "/blog/:splat"
-
-[[redirects]]
-from = "/2019/*/*/*"
-status = 301
-to = "/blog/:splat"
-
-[[redirects]]
-from = "/2020/*/*/*"
-status = 301
-to = "/blog/:splat"
-
-[[redirects]]
-from = "/2021/*/*/*"
-status = 301
-to = "/blog/:splat"
-
 [[headers]]
 for = "/*"
 [headers.values]
@@ -44,6 +19,103 @@ Referrer-Policy = "same-origin"
 X-Content-Type-Options = "nosniff"
 X-Frame-Options = "DENY"
 X-XSS-Protection = "1; mode=block"
+
+# Redirecting from old site urls to new site urls
+
+[[redirects]]
+from = "/2017/06/15/a-simplistic-post-on-liberalism-and-christianity"
+status = 301
+to = "/blog/2017-06-15-a-simplistic-post-on-liberalism-and-christianity"
+
+[[redirects]]
+from = "/2017/06/18/a-simplistic-post-on-brexit-utopianism"
+status = 301
+to = "/blog/2017-06-18-a-simplistic-post-on-brexit-utopianism"
+
+[[redirects]]
+from = "/2017/07/10/a-simplistic-post-on-quick-trade-agreements"
+status = 301
+to = "/blog/2017-07-10-a-simplistic-post-on-quick-trade-agreements"
+
+[[redirects]]
+from = "/2017/08/16/a-simplistic-post-on-remembering-your-country-s-history"
+status = 301
+to = "/blog/2017-08-16-a-simplistic-post-on-remembering-your-country-s-history"
+
+[[redirects]]
+from = "/2018/01/02/how-often-is-1st-january-a-monday"
+status = 301
+to = "/blog/2018-01-02-how-often-is-1st-january-a-monday"
+
+[[redirects]]
+from = "/2018/02/07/female-composers-in-the-sacred-harp"
+status = 301
+to = "/blog/2018-02-07-female-composers-in-the-sacred-harp"
+
+[[redirects]]
+from = "/2018/04/01/how-often-does-easter-sunday-fall-on-april-fools-day"
+status = 301
+to = "/blog/2018-04-01-how-often-does-easter-sunday-fall-on-april-fools-day"
+
+[[redirects]]
+from = "/2018/05/04/winners-and-losers-in-the-city-of-durham-parish-council-election"
+status = 301
+to = "/blog/2018-05-04-winners-and-losers-in-the-city-of-durham-parish-council-election"
+
+[[redirects]]
+from = "/2018/06/10/football-formations-in-sacred-harp-numbers"
+status = 301
+to = "/blog/2018-06-10-football-formations-in-sacred-harp-numbers"
+
+[[redirects]]
+from = "/2018/06/10/square-numbers-in-sacred-harp-song-numbers"
+status = 301
+to = "/blog/2018-06-10-square-numbers-in-sacred-harp-song-numbers"
+
+[[redirects]]
+from = "/2018/07/06/a-better-way-of-removing-punctuation-from-a-string-in-python"
+status = 301
+to = "/blog/2018-07-06-a-better-way-of-removing-punctuation-from-a-string-in-python"
+
+[[redirects]]
+from = "/2018/08/26/new-website-making-it-easy-to-get-thumbnails-of-youtube-videos"
+status = 301
+to = "/blog/2018-08-26-new-website-making-it-easy-to-get-thumbnails-of-youtube-videos"
+
+[[redirects]]
+from = "/2018/10/08/a-dataset-for-sacred-harp-songs"
+status = 301
+to = "/blog/2018-10-08-a-dataset-for-sacred-harp-songs"
+
+[[redirects]]
+from = "/2018/10/09/sacred-harp-songs-that-are-also-http-status-codes"
+status = 301
+to = "/blog/2018-10-09-sacred-harp-songs-that-are-also-http-status-codes"
+
+[[redirects]]
+from = "/2019/03/29/new-website-turning-off-targeted-ads"
+status = 301
+to = "/blog/2019-03-29-new-website-turning-off-targeted-ads"
+
+[[redirects]]
+from = "/2019/04/25/publishing-my-pocket-reading-list-on-this-website"
+status = 301
+to = "/blog/2019-04-25-publishing-my-pocket-reading-list-on-this-website"
+
+[[redirects]]
+from = "/2019/05/02/new-website-durham-sacred-harp"
+status = 301
+to = "/blog/2019-05-02-new-website-durham-sacred-harp"
+
+[[redirects]]
+from = "/2019/05/02/new-website-newcastle-sacred-harp"
+status = 301
+to = "/blog/2019-05-02-new-website-newcastle-sacred-harp"
+
+[[redirects]]
+from = "/2019/05/04/rebuilt-website-durham-sacred-harp"
+status = 301
+to = "/blog/2019-05-04-rebuilt-website-durham-sacred-harp"
 
 # [[plugins]]
 # package = "netlify-plugin-rss"
@@ -63,7 +135,7 @@ X-XSS-Protection = "1; mode=block"
 # # defaults shown
 # contentSelector = ".e-content"
 # descriptionSelector = "meta[name=description]" # probably no need to change
-# titleSelector = "title" # probably no need to change
+# titleSelector = "title"# probably no need to change
 
 # # developer configs
 # debugMode = false # (for development) turn true for extra diagnostic logging
