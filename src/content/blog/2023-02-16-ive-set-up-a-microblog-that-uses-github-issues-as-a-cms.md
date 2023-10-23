@@ -1,10 +1,11 @@
 ---
 title: I've set up a microblog that uses Github Issues as a CMS
-pubDate: 2023-02-16T21:51:29.046Z
-socialDescription: I stopped using social media a while ago. What if I could just easily post stuff to a website of my own?
+pubDate: 2023-02-16
 tags:
   - new-website
   - astro
+socialDescription: I stopped using social media a while ago. What if I could
+  just easily post stuff to a website of my own?
 featured: false
 ---
 
