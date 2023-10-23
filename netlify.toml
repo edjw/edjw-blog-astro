@@ -1,24 +1,49 @@
 [build]
-  command = "npm run build"
-  publish = "dist"
+command = "npm run build"
+publish = "dist"
 
 [[redirects]]
-  from = "/feed.xml"
-  to = "/rss.xml"
-  status = 301
+from = "/feed.xml"
+status = 301
+to = "/rss.xml"
 
 [[redirects]]
-  from = "/.well-known/webfinger"
-  to = "https://mastodon.social/.well-known/webfinger?resource=acct:_edjw@mastodon.social"
-  status = 200
+from = "/.well-known/webfinger"
+status = 200
+to = "https://mastodon.social/.well-known/webfinger?resource=acct:_edjw@mastodon.social"
+
+[[redirects]]
+from = "/2017/*/*/*"
+status = 301
+to = "/blog/:splat"
+
+[[redirects]]
+from = "/2018/*/*/*"
+status = 301
+to = "/blog/:splat"
+
+[[redirects]]
+from = "/2019/*/*/*"
+status = 301
+to = "/blog/:splat"
+
+[[redirects]]
+from = "/2020/*/*/*"
+status = 301
+to = "/blog/:splat"
+
+[[redirects]]
+from = "/2021/*/*/*"
+status = 301
+to = "/blog/:splat"
 
 [[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-XSS-Protection = "1; mode=block"
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "same-origin"
+for = "/*"
+[headers.values]
+Referrer-Policy = "same-origin"
+X-Content-Type-Options = "nosniff"
+X-Frame-Options = "DENY"
+X-XSS-Protection = "1; mode=block"
 
 # [[plugins]]
 # package = "netlify-plugin-rss"
@@ -34,11 +59,11 @@
 #   language = "en"
 #   pubDate = "new Date().toUTCString(),"
 
-  # # cheerio selectors for extractMetadataFromFile
-  # # defaults shown
-  # contentSelector = ".e-content"
-  # descriptionSelector = "meta[name=description]" # probably no need to change
-  # titleSelector = "title" # probably no need to change
+# # cheerio selectors for extractMetadataFromFile
+# # defaults shown
+# contentSelector = ".e-content"
+# descriptionSelector = "meta[name=description]" # probably no need to change
+# titleSelector = "title" # probably no need to change
 
-  # # developer configs
-  # debugMode = false # (for development) turn true for extra diagnostic logging
+# # developer configs
+# debugMode = false # (for development) turn true for extra diagnostic logging
