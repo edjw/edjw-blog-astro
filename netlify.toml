@@ -117,6 +117,11 @@ from = "/2019/05/04/rebuilt-website-durham-sacred-harp"
 status = 301
 to = "/blog/2019-05-04-rebuilt-website-durham-sacred-harp"
 
+[[redirects]]
+from = "/2019/05/04/replicating-jekyll-s-markdownify-filter-in-nunjucks-with-eleventy"
+status = 301
+to = "/blog/2019-05-04-replicating-jekylls-markdownify-filter-in-nunjucks-with-eleventy"
+
 # [[plugins]]
 # package = "netlify-plugin-rss"
 #   [plugins.inputs]
