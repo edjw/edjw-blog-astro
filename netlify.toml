@@ -122,6 +122,71 @@ from = "/2019/05/04/replicating-jekyll-s-markdownify-filter-in-nunjucks-with-ele
 status = 301
 to = "/blog/2019-05-04-replicating-jekylls-markdownify-filter-in-nunjucks-with-eleventy"
 
+[[redirects]]
+from = "/2019/07/08/some-of-my-sacred-harp-posters"
+status = 301
+to = "/blog/2019-07-08-some-of-my-sacred-harp-posters"
+
+[[redirects]]
+from = "/2019/10/01/new-website-i-made-a-test-site-to-fetch-data-from-apis-and-turn-it-into-html-using-vanilla-js-and-accidentally-made-my-main-hacker-news-reader"
+status = 301
+to = "/blog/2019-10-01-new-website-i-made-a-test-site-to-fetch-data-from-apis-and-turn-it-into-html-using-vanilla-js-and-accidentally-made-my-main-hacker-news-reader"
+
+[[redirects]]
+from = "/2019/11/02/twitters-political-ads-ban"
+status = 301
+to = "/blog/2019-11-02-twitters-political-ads-ban"
+
+[[redirects]]
+from = "/2020/02/15/bernie-sanders-healthcare-plan-isnt-necessarily-the-best-way-to-universal-american-healthcare"
+status = 301
+to = "/blog/2020-02-15-bernie-sanders-healthcare-plan-isnt-necessarily-the-best-way-to-universal-american-healthcare"
+
+[[redirects]]
+from = "/2020/03/24/development-production-favicons-eleventy"
+status = 301
+to = "/blog/2020-03-24-development-production-favicons-eleventy"
+
+[[redirects]]
+from = "/2020/03/30/new-website-save-your-indie-high-street"
+status = 301
+to = "/blog/2020-03-30-new-website-save-your-indie-high-street"
+
+[[redirects]]
+from = "/2020/04/18/on-the-whataboutery-around-the-takeover-of-newcastle-united"
+status = 301
+to = "/blog/2020-04-18-on-the-whataboutery-around-the-takeover-of-newcastle-united"
+
+[[redirects]]
+from = "/2020/04/30/new-website-hammer-keys-get-trains"
+status = 301
+to = "/blog/2020-04-30-new-website-hammer-keys-get-trains"
+
+[[redirects]]
+from = "/2020/05/17/websites-and-allotments-why-do-i-write-code"
+status = 301
+to = "/blog/2020-05-17-websites-and-allotments-why-do-i-write-code"
+
+[[redirects]]
+from = "/2020/09/07/new-website-coffee-recipes-app-to-learn-svelte"
+status = 301
+to = "/blog/2020-09-07-new-website-coffee-recipes-app-to-learn-svelte"
+
+[[redirects]]
+from = "/2020/10/01/new-website-first-draft-–-dont-let-editing-slow-down-your-first-draft"
+status = 301
+to = "/blog/2020-10-01-new-website-first-draft-–-dont-let-editing-slow-down-your-first-draft"
+
+[[redirects]]
+from = "/2021/01/02/new-website-find-the-nearest-tailwind-colour"
+status = 301
+to = "/blog/2021-01-02-new-website-find-the-nearest-tailwind-colour"
+
+[[redirects]]
+from = "/2021/01/13/re-written-website-get-youtube-thumbnails"
+status = 301
+to = "/blog/2021-01-13-re-written-website-get-youtube-thumbnails"
+
 # [[plugins]]
 # package = "netlify-plugin-rss"
 #   [plugins.inputs]
