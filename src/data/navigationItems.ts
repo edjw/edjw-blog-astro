@@ -1,4 +1,4 @@
-const Navigation = [
+const navigationItems = [
   {
     text: "Blog",
     url: "/blog",
@@ -23,4 +23,4 @@ const Navigation = [
   },
 ];
 
-export default Navigation;
+export default navigationItems;
