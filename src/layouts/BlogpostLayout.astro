@@ -5,27 +5,26 @@ import type { CollectionEntry } from "astro:content";
 import { getSlug } from "@/utils/getSlug";
 
 type Props = CollectionEntry<"blog">;
-// type Props = CollectionEntry<"blog">["data"];
-
 const { entry } = Astro.props;
-const { data } = entry;
+
+const { title, pubDate, socialDescription, tags } = entry.data;
 
 const formattedDate = new Intl.DateTimeFormat("en-GB", {
   day: "numeric",
   month: "long",
   year: "numeric",
-}).format(new Date(data.pubDate));
+}).format(new Date(pubDate));
 
 const currentURL = Astro.request.url;
 ---
 
-<BaseLayout pageTitle={data.title} description={data.socialDescription}>
+<BaseLayout pageTitle={title} description={socialDescription}>
   <article class="h-entry prose dark:prose-invert">
     <!-- h-entry things -->
     <div class="hidden">
       <a href={currentURL}></a>
 
-      <time class="dt-published">{new Date(data.pubDate).toUTCString()}</time>
+      <time class="dt-published">{new Date(pubDate).toUTCString()}</time>
 
       <!-- TODO: fix tags -->
       <!--
@@ -45,22 +44,22 @@ const currentURL = Astro.request.url;
     </div>
     <!-- End of h-entry things -->
 
-    <h2 class="p-name -mt-0" transition:name={data.title}>
-      {data.title}
+    <h2 class="p-name -mt-0" transition:name={title}>
+      {title}
     </h2>
 
     <section>
-      <p class="my-1" transition:name={`${data.title}-${data.pubDate}`}>
+      <p class="my-1" transition:name={`${title}-${pubDate}`}>
         <span>Published: &nbsp;</span>
         <time>{formattedDate}</time>
       </p>
 
       {
-        data.tags && (
+        tags && (
           <p class="my-1 flex">
             <span class="mr-1">Tags: </span>
             <span class="flex space-x-2">
-              {data.tags.map((tag: string) => (
+              {tags.map((tag: string) => (
                 <a rel="prefetch" href={`/tags/${getSlug(tag)}`}>
                   {titleCase(tag).replace(/-/g, " ")}
                 </a>
