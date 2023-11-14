@@ -1,9 +1,8 @@
 ---
 import { titleCase } from "title-case";
-import BaseLayout from "./BaseLayout.astro";
-import EmailMe from "../components/EmailMe.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
 import type { CollectionEntry } from "astro:content";
-import { getSlug } from "../utils/getSlug";
+import { getSlug } from "@/utils/getSlug";
 
 type Props = CollectionEntry<"blog">;
 // type Props = CollectionEntry<"blog">["data"];
@@ -76,6 +75,5 @@ const currentURL = Astro.request.url;
       <slot />
     </div>
 
-    <!-- <EmailMe /> -->
   </article>
 </BaseLayout>

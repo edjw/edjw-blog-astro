@@ -1,8 +1,8 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import PostEntry from "../components/PostEntry.astro";
+import PostEntry from "@/components/PostEntry.astro";
 
-import getYear from "../utils/getYear";
+import getYear from "@/utils/getYear";
 let year = "";
 let currentPostYear = "";
 const setCurrentPostYear = (date: Date) => {
