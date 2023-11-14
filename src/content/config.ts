@@ -10,7 +10,7 @@ const blogCollection = defineCollection({
           z.string().regex(kebabCaseRegex, {
             message:
               "Use lower case and kebab case for tags: eg 'my-tag' but not 'My Tag' or 'myTag'",
-          })
+          }),
         )
         .optional(),
       socialDescription: z.string().max(155).optional(),
