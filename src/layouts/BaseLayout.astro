@@ -1,22 +1,11 @@
 ---
-import "../styles/global.css";
+import "@/styles/global.css";
 
-import siteData from "../data/siteconfig.js";
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import BaseHead from "@/components/BaseHead.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
 
 const { pageTitle, description: pageDescription } = Astro.props;
-
-const {
-  title: siteTitle,
-  url,
-  author: { twitterUsername },
-  repository,
-  RSSFeed,
-  sitemap,
-  contentLicence,
-} = siteData;
 ---
 
 <html lang="en" class="dark">
@@ -25,11 +14,11 @@ const {
   </head>
   <body class="bg-white dark:bg-stone-800">
     <div
-      class="grid grid-rows-[auto_1fr_auto] h-screen max-w-4xl mx-auto pt-4 px-4 container"
+      class="container mx-auto grid h-screen max-w-4xl grid-rows-[auto_1fr_auto] px-4 pt-4"
     >
       <Header />
 
-      <main class="mt-8 prose dark:prose-invert">
+      <main class="prose mt-8 dark:prose-invert">
         <slot />
       </main>
 
