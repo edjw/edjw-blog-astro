@@ -1,6 +1,6 @@
 ---
-import PageLayout from "../layouts/PageLayout.astro";
-import PostList from "../components/PostList.astro";
+import PageLayout from "@/layouts/PageLayout.astro";
+import PostList from "@/components/PostList.astro";
 const title = "Ed Johnson Williams' website";
 const socialDescription = "Ed Johnson Williams' website";
 
@@ -10,13 +10,13 @@ const featuredPosts = (await getCollection("blog"))
   .filter((post) => post.data.featured === true)
   .sort(
     (a, b) =>
-      new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+      new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
   );
 ---
 
 <PageLayout title={title} socialDescription={socialDescription}>
   <section
-    class="px-8 py-4 prose border-b-4 border-yellow-200 dark:border-stone-900 shadow-lg bg-yellow-50 dark:bg-stone-800 dark:prose-invert"
+    class="prose border-b-4 border-yellow-200 bg-yellow-50 px-8 py-4 shadow-lg dark:prose-invert dark:border-stone-900 dark:bg-stone-800"
   >
     <p>My personal site</p>
 

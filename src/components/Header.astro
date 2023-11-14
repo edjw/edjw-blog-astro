@@ -1,7 +1,7 @@
 ---
-import Navigation from "../components/Navigation.astro";
-import ThemeSwitcher from "../components/ThemeSwitcher.astro";
-import siteData from "../data/siteconfig";
+import Navigation from "@/components/Navigation.astro";
+import ThemeSwitcher from "@/components/ThemeSwitcher.astro";
+import siteData from "@/data/siteconfig";
 const {
   title: siteTitle,
   url,
@@ -15,10 +15,10 @@ const {
 
 <header>
   <div class="flex items-center">
-    <h1 class="mr-6 text-4xl prose dark:prose-invert">
+    <h1 class="prose mr-6 text-4xl dark:prose-invert">
       <a
         href="/"
-        class="text-4xl leading-relaxed no-underline border-b-8 border-yellow-200 hover:border-transparent h-card"
+        class="h-card border-b-8 border-yellow-200 text-4xl leading-relaxed no-underline hover:border-transparent"
         rel="me"
       >
         {siteTitle}
