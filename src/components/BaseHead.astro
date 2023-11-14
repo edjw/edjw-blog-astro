@@ -47,7 +47,7 @@ const currentURL = Astro.request.url;
 <ViewTransitions />
 
 <script is:inline>
-  document.addEventListener("astro:page-load", () => {
+  document.addEventListener("astro:after-swap", () => {
     // handle theme switching
     const theme = (() => {
       if (
