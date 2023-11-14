@@ -20,7 +20,7 @@ const currentURL = Astro.request.url;
 ---
 
 <BaseLayout pageTitle={data.title} description={data.socialDescription}>
-  <article class="prose h-entry dark:prose-invert">
+  <article class="h-entry prose dark:prose-invert">
     <!-- h-entry things -->
     <div class="hidden">
       <a href={currentURL}></a>
@@ -45,7 +45,7 @@ const currentURL = Astro.request.url;
     </div>
     <!-- End of h-entry things -->
 
-    <h2 class="-mt-0 p-name" transition:name={data.title}>
+    <h2 class="p-name -mt-0" transition:name={data.title}>
       {data.title}
     </h2>
 
@@ -74,6 +74,5 @@ const currentURL = Astro.request.url;
     <div class="e-content">
       <slot />
     </div>
-
   </article>
 </BaseLayout>

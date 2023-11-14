@@ -19,7 +19,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addNunjucksFilter("markdownify", (markdownString) =>
-    md.render(markdownString)
+    md.render(markdownString),
   );
 };
 ```
