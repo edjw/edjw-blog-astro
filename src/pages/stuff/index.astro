@@ -1,0 +1,94 @@
+---
+import PageLayout from "@/layouts/PageLayout.astro";
+const title = "Stuff";
+const socialDescription = "Some of the stuff I've done or into";
+import MarkdownIt from "markdown-it";
+const parser = new MarkdownIt();
+import { getEntry } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+
+const codingStuff = await getEntry("stuff", "coding");
+const hobbyStuff = await getEntry("stuff", "hobbies");
+
+type stuffObject = {
+  name: string;
+  description?: string; // Can be markdown
+  data: CollectionEntry<"stuff">["data"];
+};
+
+const allStuff: stuffObject[] = [
+  {
+    name: "Coding",
+    description:
+      "I do a lot of different coding projects. Here are some of them roughly ordered with the most recent first.",
+    data: codingStuff.data,
+  },
+  {
+    name: "Hobbies",
+    data: hobbyStuff.data,
+  },
+];
+---
+
+<PageLayout title={title} socialDescription={socialDescription}>
+  <p>Stuff I'm doing, interested in, up to…</p>
+  <div class="flex flex-col gap-y-8">
+    {
+      allStuff.map((stuff, index) => {
+        const id = `${stuff.name.toLowerCase()}-${String(index + 1)}`;
+        return (
+          <details
+            class="border-t-8 border-yellow-200  p-8 px-4 py-4 shadow-lg dark:prose-invert dark:bg-stone-900"
+            id={id}
+            name="project"
+          >
+            <summary class="cursor-pointer select-none bg-white  text-lg font-semibold text-gray-900 dark:bg-stone-900 dark:text-white">
+              {stuff.name}
+            </summary>
+
+            {stuff.description && (
+              <p set:html={parser.render(stuff.description)} />
+            )}
+
+            <div class="mt-12 flex flex-col gap-y-8">
+              {stuff.data &&
+                stuff.data.map(({ url, name, description }) => (
+                  <section class="prose dark:prose-invert dark:bg-stone-900">
+                    {url ? (
+                      <a href={url}>
+                        <h3 class="mt-1">{name}</h3>
+                      </a>
+                    ) : (
+                      <h3 class="mt-1">{name}</h3>
+                    )}
+                    <p set:html={parser.render(description)} />
+                  </section>
+                ))}
+            </div>
+            <div class="mt-4">
+              <button class="close-button border-b">Close this section</button>
+            </div>
+          </details>
+        );
+      })
+    }
+  </div>
+
+  <script>
+    const closeButtons: HTMLButtonElement[] = Array.from(
+      document.querySelectorAll("button.close-button"),
+    );
+
+    closeButtons.forEach((button) => {
+      button.addEventListener("click", function (event) {
+        if (event.target !== null) {
+          const targetElement = event.target as Element;
+          const detailsElement = targetElement.closest("details");
+          if (detailsElement !== null) {
+            detailsElement.removeAttribute("open");
+          }
+        }
+      });
+    });
+  </script>
+</PageLayout>

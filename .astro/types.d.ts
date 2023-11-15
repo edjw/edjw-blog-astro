@@ -453,7 +453,19 @@ declare module 'astro:content' {
 	};
 
 	type DataEntryMap = {
-		
+		"stuff": {
+"coding": {
+	id: "coding";
+  collection: "stuff";
+  data: InferEntrySchema<"stuff">
+};
+"hobbies": {
+	id: "hobbies";
+  collection: "stuff";
+  data: InferEntrySchema<"stuff">
+};
+};
+
 	};
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
