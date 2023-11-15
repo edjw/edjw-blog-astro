@@ -4,6 +4,10 @@ const navigationItems = [
     url: "/blog",
   },
   {
+    text: "Stuff",
+    url: "/stuff",
+  },
+  {
     text: "About",
     url: "/about",
   },
