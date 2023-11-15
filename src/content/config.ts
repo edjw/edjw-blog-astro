@@ -1,6 +1,7 @@
 import { z, defineCollection } from "astro:content";
 const kebabCaseRegex = new RegExp(/^([a-z][a-z0-9]*)(-[a-z0-9]+)*$/);
 const blogCollection = defineCollection({
+  type: "content",
   schema: z
     .object({
       title: z.string().min(1),
@@ -20,6 +21,20 @@ const blogCollection = defineCollection({
     .strict(),
 });
 
+const StuffSchema = z
+  .object({
+    name: z.string(),
+    url: z.optional(z.string().url()),
+    description: z.string(),
+  })
+  .strict();
+
+const stuffCollection = defineCollection({
+  type: "data",
+  schema: z.array(StuffSchema),
+});
+
 export const collections = {
   blog: blogCollection,
+  stuff: stuffCollection,
 };
