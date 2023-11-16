@@ -1,10 +1,14 @@
 [
     {
+        "name": "Shapenote singing",
+        "description": "Singing [Sacred Harp](https://en.wikipedia.org/wiki/Sacred_Harp) and [Christian Harmony](https://en.wikipedia.org/wiki/The_Christian_Harmony) (also know as [shapenote singing](https://en.wikipedia.org/wiki/Shape_note)) is almost more lifestyle than hobby really. Have a listen on [Youtube](https://www.youtube.com/results?search_query=sacred+harp) or [any music streaming service](https://music.youtube.com/playlist?list=OLAK5uy_nqWWZ-EXneD7w6s3fGw10ePUOnNpnMVZg). Then go to [sacredharp.uk](https://sacredharp.uk) or [fasola.org](https://fasola.org) to find a singing near you."
+    },
+    {
         "name": "Running",
-        "description": "Surprisingly (to old me at least) I have really got into running over the last 6 months. Particuarly trail running. I've done two organised races."
+        "description": "Surprisingly (to old me at least) I have really got into running over the last 6 months. Particuarly trail running. I've done two organised races so far."
     },
     {
         "name": "Chess",
-        "description": "Getting into playing chess online and with my older son. The [Dr Wolf app](https://www.learnchesswithdrwolf.com) is great"
+        "description": "Getting into playing chess online and with my older son. I found the [Dr Wolf app](https://www.learnchesswithdrwolf.com) a great way to get going."
     }
 ]
