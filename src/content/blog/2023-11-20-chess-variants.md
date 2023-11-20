@@ -11,6 +11,14 @@ Shut Up & Sit Down – the board game reviewers – have a fun video called [*Ni
 
 I've been playing normal chess a bit recently and I like it. Just going to write down notes on some of the variants that seem like they'd be fun to try out.
 
+- [Atomic Chess](#atomic-chess)
+- [Horde](#horde)
+- [Monster chess](#monster-chess)
+- [Rifle chess](#rifle-chess)
+- [Demi chess](#demi-chess)
+- [Synchronistic chess](#synchronistic-chess)
+- [Get the King to the other side](#get-the-king-to-the-other-side)
+
 ## Atomic Chess
 Standard chess rules and…
 
