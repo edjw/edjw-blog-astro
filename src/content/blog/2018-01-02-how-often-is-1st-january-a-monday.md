@@ -41,13 +41,9 @@ Somebody (else) probably has an explanation for why this happens.
 
 **The next time 1st January is a Monday is 2024 (in 6 years). The previous time was 2007 (11 years ago).**
 
-<a href="/images/first_jan_mon_2018.png">
-  <img src="/images/first_jan_mon_2018.png" alt="" />
-</a>
+![Image](@/images/first_jan_mon_2018.png)]
 
-<a href="/images/mean_wait_2018.png">
-  <img src="/images/mean_wait_2018.png" alt="" />
-</a>
+![Image](@/images/mean_wait_2018.png)]
 
 # From the year 1 AD to 9999
 
@@ -63,19 +59,14 @@ To test that a bit further I tried it from 1AD to the year 9999 as well. (9999 i
 | Saturday    |             1399             |       7.15        |
 | Sunday      |             1450             |       6.89        |
 
-<a href="/images/first_jan_mon_9999.png">
-  <img src="/images/first_jan_mon_9999.png" alt="" />
-</a>
+![Image](@/images/first_jan_mon_2018.png)
 
-<a href="/images/mean_wait_9999.png">
-  <img src="/images/mean_wait_9999.png" alt="" />
-</a>
+![Image](@/images/mean_wait_2018.png)
+
 
 And just to check that there's no change over time in how often a 1st January is X day of the week...
 
-<a href="/images/first_jan_over_time_9999.png">
-  <img src="/images/first_jan_over_time_9999.png" alt="" />
-</a>
+![Image](@/images/first_jan_over_time_9999.png)
 
 There's no change over time in the rate of X day of the week being 1st January. (The days in the original three groupings overlap.)
 

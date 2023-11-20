@@ -75,7 +75,7 @@ tags:
 
 <p>
   The data I created and used for this is available here as
-  <a href="/images/sacredharpcomposers.xls">an Excel (.xls) spreadsheet</a>.
+  <a href="/files/sacred-harp-composers/sacredharpcomposers.xls">an Excel (.xls) spreadsheet</a>.
 </p>
 
 <p>
@@ -238,9 +238,9 @@ tags:
   are more popular than that.
 </p>
 
-<a href="/images/pc_all_songs_by_song_number_.png">
-  <img src="/images/pc_all_songs_by_song_number_.png" alt="" />
-</a>
+
+![Image](@/images/pc_all_songs_by_song_number_.png)
+
 
 <p>
   Here are the songs by female composers sorted by the percentage of all songs
@@ -394,9 +394,7 @@ tags:
   every 21 songs was by a female composer.
 </p>
 
-<a href="/images/pc_all_songs_led_by_female_composer_.png">
-  <img src="/images/pc_all_songs_led_by_female_composer_.png" alt="" />
-</a>
+![Image](@/images/pc_all_songs_led_by_female_composer_.png)
 
 <h2 id="toc_8">
   Which songs by female composers have changed the most in the popularity over
@@ -440,9 +438,7 @@ tags:
   <strong>+2.84%</strong> – <strong>466</strong> Haynes Creek – Joyce Harrison
 </p>
 
-<a href="/images/biggest_increase_popularity.png">
-  <img src="/images/biggest_increase_popularity.png" alt="" />
-</a>
+![Image](@/images/biggest_increase_popularity.png)
 
 <p>
   The four songs that have decreased the most in popularity in that timeframe
@@ -467,9 +463,7 @@ tags:
   Parkerson
 </p>
 
-<a href="/images/biggest_decrease_popularity.png">
-  <img src="/images/biggest_decrease_popularity.png" alt="" />
-</a>
+![Image](@/images/biggest_decrease_popularity.png)
 
 <h2 id="toc_7">How I attributed gender to composers</h2>
 
@@ -515,7 +509,7 @@ tags:
   Finally, I have doubtless made mistakes in assigning a gender to some of the
   composers even considering the process above. The data I used is available
   here as
-  <a href="/images/sacredharpcomposers.xls">an Excel (.xls) spreadsheet</a>.
+  <a href="/files/sacred-harp-composers/sacredharpcomposers.xls">an Excel (.xls) spreadsheet</a>.
   <a href="mailto:mail@edjohnsonwilliams.co.uk">Let me know</a> if you see any
   mistakes.
 </p>

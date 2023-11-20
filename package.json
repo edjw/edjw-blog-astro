@@ -32,5 +32,8 @@
     "tailwindcss": "^3.3.5",
     "title-case": "^3.0.3",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "sharp": "^0.32.6"
   }
 }
