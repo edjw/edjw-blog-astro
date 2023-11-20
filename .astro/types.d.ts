@@ -448,6 +448,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"2023-11-20-chess-variants.md": {
+	id: "2023-11-20-chess-variants.md";
+  slug: "2023-11-20-chess-variants";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 };
 
 	};
