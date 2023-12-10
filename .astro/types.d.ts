@@ -455,6 +455,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"2023-12-10-svelte-unstyled-tags-input.md": {
+	id: "2023-12-10-svelte-unstyled-tags-input.md";
+  slug: "2023-12-10-svelte-unstyled-tags-input";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 };
 
 	};
