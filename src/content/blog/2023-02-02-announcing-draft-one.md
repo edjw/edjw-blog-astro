@@ -5,7 +5,11 @@ socialDescription: I built a new app called Draft One, and I’m really excited 
 tags:
   - new-app
   - tauri
-featured: true
+featured: false
+---
+
+Update (19.12.2023): I've allowed my Apple developer certificate lapse and the domain expired so this isn't available any more :-(
+
 ---
 
 [**Draft One**](https://draft-one.com) is a new app I've built. I'm calling it _a text editor for focused first drafts_. It's a simple app, but I think it's going to be really useful for people.
