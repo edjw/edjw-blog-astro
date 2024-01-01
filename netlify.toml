@@ -12,6 +12,18 @@ from = "/.well-known/webfinger"
 status = 200
 to = "https://mastodon.social/.well-known/webfinger?resource=acct:_edjw@mastodon.social"
 
+[[redirects]]
+force = true
+from = "https://edjohnsonwilliams.co.uk/js/script.js"
+status = 200
+to = "https://plausible.io/js/script.js"
+
+[[redirects]]
+force = true
+from = "https://edjohnsonwilliams.co.uk/api/event"
+status = 200
+to = "https://plausible.io/api/event"
+
 [[headers]]
 for = "/*"
 [headers.values]
