@@ -4,7 +4,6 @@ content:
     type: collection
     path: src/content/blog
     filename: "{year}-{month}-{day}-{primary}.md"
-    extension: md
     fields:
       - name: title
         label: Title
@@ -37,6 +36,7 @@ content:
         description: "Flag to indicate if the blog post is featured."
       - name: body
         label: Body
+        type: rich-text
     view:
       fields: [title, pubDate]
       primary: title
