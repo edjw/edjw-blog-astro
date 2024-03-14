@@ -54,11 +54,11 @@ content:
 
   - name: stuff
     label: Stuff
-    type: file
-    path: src/content/stuff
+    type: collection
     files:
       - name: coding
         label: Coding Projects
+        file: src/content/stuff/coding.json
         fields:
           - name: name
             label: Project Name
@@ -72,6 +72,7 @@ content:
 
       - name: hobbies
         label: Hobbies
+        file: src/content/stuff/hobbies.json
         fields:
           - name: name
             label: Hobby Name
