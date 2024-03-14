@@ -52,7 +52,6 @@ content:
         sort: pubDate
         order: desc
 
-content:
   - name: stuff
     label: Stuff
     type: collection
@@ -84,9 +83,9 @@ content:
 
     # Configure how the collections are to be viewed within the CMS
     view:
-      fields: [name]  # List the fields you want to be displayed in the CMS collection list
-      primary: name   # Specify the primary field for identification
-      sort: [name]    # Specify the default sort order
+      fields: [name] # List the fields you want to be displayed in the CMS collection list
+      primary: name # Specify the primary field for identification
+      sort: [name] # Specify the default sort order
       default:
         sort: name
         order: asc
