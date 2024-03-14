@@ -51,3 +51,42 @@ content:
       default:
         sort: pubDate
         order: desc
+
+content:
+  - name: stuff
+    label: Stuff
+    type: collection
+    files:
+      - name: coding
+        label: Coding Projects
+        path: src/content/stuff/coding.json
+        fields:
+          - name: name
+            label: Project Name
+            type: string
+          - name: url
+            label: Project URL
+            type: string
+          - name: description
+            label: Description
+            type: text
+
+      - name: hobbies
+        label: Hobbies
+        path: src/content/stuff/hobbies.json
+        fields:
+          - name: name
+            label: Hobby Name
+            type: string
+          - name: description
+            label: Description
+            type: text
+
+    # Configure how the collections are to be viewed within the CMS
+    view:
+      fields: [name]  # List the fields you want to be displayed in the CMS collection list
+      primary: name   # Specify the primary field for identification
+      sort: [name]    # Specify the default sort order
+      default:
+        sort: name
+        order: asc
