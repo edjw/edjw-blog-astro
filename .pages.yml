@@ -2,8 +2,7 @@ content:
   - name: blog
     label: Blog Posts
     type: collection
-    path: src/blog
-    extension: md
+    path: src/content/blog
     filename: "{year}-{month}-{day}-{primary}.md"
     fields:
       - name: title
@@ -27,7 +26,6 @@ content:
         label: Social Description
         type: string
         description: "A short description for social media platforms. Max 155 characters."
-        max_length: 155
       - name: image
         label: Image
         type: image
