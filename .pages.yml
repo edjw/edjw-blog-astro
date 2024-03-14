@@ -66,13 +66,13 @@ content:
       - name: description
         label: Description
         type: text
-      view:
-        fields: [name, url]
-        primary: name
-        sort: [name]
-        default:
-          sort: name
-          order: asc
+    view:
+      fields: [name, url]
+      primary: name
+      sort: [name]
+      default:
+        sort: name
+        order: asc
 
   - name: hobbies
     label: Hobbies
@@ -85,10 +85,10 @@ content:
       - name: description
         label: Description
         type: text
-      view:
-        fields: [name, description]
-        primary: name
-        sort: [name]
-        default:
-          sort: name
-          order: asc
+    view:
+      fields: [name, description]
+      primary: name
+      sort: [name]
+      default:
+        sort: name
+        order: asc
