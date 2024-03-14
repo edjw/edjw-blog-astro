@@ -55,6 +55,7 @@ content:
   - name: stuff
     label: Stuff
     type: collection
+    path: src/content/stuff
     files:
       - name: coding
         label: Coding Projects
