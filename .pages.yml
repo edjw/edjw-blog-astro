@@ -69,7 +69,7 @@ content:
       view:
         fields: [name, url]
         primary: name
-        sort: name
+        sort: [name]
         default:
           sort: name
           order: asc
@@ -88,7 +88,7 @@ content:
       view:
         fields: [name, description]
         primary: name
-        sort: name
+        sort: [name]
         default:
           sort: name
           order: asc
