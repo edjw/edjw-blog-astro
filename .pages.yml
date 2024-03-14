@@ -52,28 +52,24 @@ content:
         sort: pubDate
         order: desc
 
-  - name: stuff
-    label: Stuff
-    type: collection
-    path: src/content/stuff
-    files:
-      - name: coding
-        label: Coding Projects
-        file: src/content/stuff/coding.json
-        fields:
-          - name: name
-            label: Project Name
-            type: string
-          - name: url
-            label: Project URL
-            type: string
-          - name: description
-            label: Description
-            type: text
+
+    - name: coding
+      label: Coding Projects
+      path: src/content/stuff/coding.json
+      fields:
+        - name: name
+          label: Project Name
+          type: string
+        - name: url
+          label: Project URL
+          type: string
+        - name: description
+          label: Description
+          type: text
 
       - name: hobbies
         label: Hobbies
-        file: src/content/stuff/hobbies.json
+        path: src/content/stuff/hobbies.json
         fields:
           - name: name
             label: Hobby Name
