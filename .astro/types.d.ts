@@ -413,6 +413,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"2024-06-03-announcing-nearest-color.md": {
+	id: "2024-06-03-announcing-nearest-color.md";
+  slug: "2024-06-03-announcing-nearest-color";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 };
 
 	};
