@@ -11,14 +11,14 @@
     "post": "deno run --allow-write ./new-blog-cli/main.ts"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.5.9",
-    "@astrojs/rss": "^4.0.5",
-    "@astrojs/sitemap": "^3.1.1",
+    "@astrojs/check": "^0.7.0",
+    "@astrojs/rss": "^4.0.6",
+    "@astrojs/sitemap": "^3.1.5",
     "@astrojs/tailwind": "^5.1.0",
     "@tailwindcss/typography": "^0.5.10",
     "@types/markdown-it": "^12.2.3",
     "@types/sanitize-html": "^2.9.4",
-    "astro": "^4.5.3",
+    "astro": "^4.9.2",
     "markdown-it": "^13.0.2",
     "mdast-util-to-string": "^3.2.0",
     "prettier": "^3.1.0",
