@@ -238,9 +238,7 @@ tags:
   are more popular than that.
 </p>
 
-
 ![Image](@/images/pc_all_songs_by_song_number_.png)
-
 
 <p>
   Here are the songs by female composers sorted by the percentage of all songs
