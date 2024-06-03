@@ -7,7 +7,7 @@ tags:
 featured: false
 ---
 
-Shut Up & Sit Down – the board game reviewers – have a fun video called [*Nine Easy Ways to Make Chess Fun*](https://www.youtube.com/watch?v=8yrfLDsEcQ4) that looks at 9 variants on the rules of chess.
+Shut Up & Sit Down – the board game reviewers – have a fun video called [_Nine Easy Ways to Make Chess Fun_](https://www.youtube.com/watch?v=8yrfLDsEcQ4) that looks at 9 variants on the rules of chess.
 
 I've been playing normal chess a bit recently and I like it. Just going to write down notes on some of the variants that seem like they'd be fun to try out.
 
@@ -20,6 +20,7 @@ I've been playing normal chess a bit recently and I like it. Just going to write
 - [Get the King to the other side](#get-the-king-to-the-other-side)
 
 ## Atomic Chess
+
 Standard chess rules and…
 
 - Every capture causes an explosion which destroys the captured piece, the piece used to capture, and all pieces except pawns in a 3x3 square surrounding the capture piece.
@@ -27,7 +28,6 @@ Standard chess rules and…
 - You can't capture a piece that would destroy your king.
 - Your king can't capture any piece because it would be destroyed in the explosion.
 - Any move that blows up the opponent's king means an immediate victory, overriding all checks and checkmates.
-
 
 Normal checkmate can happen.
 
@@ -45,8 +45,8 @@ White's pawns on the first and second rows can move forward 2 squares. Black's p
 
 Read some [very in-depth strategy advice on Horde chess](https://docs.google.com/document/d/136BCRPzm1QH_OBK3qjKwlmK3MIji7ZmLZPMYgDpmOCU)
 
-
 ## Monster chess
+
 White has a king and four pawns – but can move twice each turn. Black plays as usual.
 
 Normal rules of chess but…
@@ -59,11 +59,9 @@ Normal rules of chess but…
 
 ![The starting position for Monster chess. Black is normal. White has a Kings and 4 pawns in files 3 to 6](@/images/monster-chess.png)
 
-
 ## Rifle chess
 
 Rules are the same as normal chess. But after capturing a piece, the attacker stays still. Protecting pieces is useless. I think this is going to be a brain burner.
-
 
 ## Demi chess
 
@@ -82,7 +80,6 @@ Both players write down their moves and then announce them. They move pieces usi
 - If a player moves to a square that the opponent's piece moved away from in that turn, it is captured if it's of lower value (King > Queen > Castle > Bishop > Knight > Pawn). If it's the same or higher value, then pieces aren't taken.
 
 You could both get checkmate at the same time.
-
 
 ## Get the King to the other side
 

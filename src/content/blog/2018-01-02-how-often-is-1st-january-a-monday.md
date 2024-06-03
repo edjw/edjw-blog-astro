@@ -63,7 +63,6 @@ To test that a bit further I tried it from 1AD to the year 9999 as well. (9999 i
 
 ![Image](@/images/mean_wait_2018.png)
 
-
 And just to check that there's no change over time in how often a 1st January is X day of the week...
 
 ![Image](@/images/first_jan_over_time_9999.png)
