@@ -17,7 +17,7 @@ There are more hoops to jump through compared to hosting SvelteKit etc on Vercel
 
 I'm going to assume you know a bit about Vercel and how to use its CLI and web interface.
 
-[**Provide feedback to this post on Github**](https://github.com/edjw/edjw-blog-astro/issues/18).
+[**Provide feedback to this post on Github**](https://github.com/edjw/edjw-blog-astro/issues/18). I will make changes to this post if it can be improved.
 
 ---
 
@@ -190,4 +190,4 @@ There's some prior art from others which helped get to this point. I found some 
 An example of a new thing in my instructions would be that `vercel.json` Vercel doesn't support environment variables in `vercel.json` any more. The `/build/(.*)` route is another new thing here.
 
 ---
-[**Provide feedback to this post**](https://github.com/edjw/edjw-blog-astro/issues/18).
+[**Provide feedback to this post**](https://github.com/edjw/edjw-blog-astro/issues/18). I will make changes to this post if it can be improved.
