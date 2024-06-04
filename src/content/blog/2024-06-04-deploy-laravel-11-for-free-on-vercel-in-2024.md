@@ -9,9 +9,9 @@ featured: false
 
 You can deploy Laravel on Vercel. For free!
 
-This is nice if you're coming to Laravel from Javascript land and you're used to being able to put up a site for free without needing to worry about running a server.
+This is nice if you're coming to Laravel from Javascript land like me. In Javascript, Netlify and Vercel make it really easy to deploy something you're just trying out for free without needing to worry about running a server.
 
-There are more hoops to jump through compared to hosting SvelteKit etc on Vercel.
+Deploying Laravel on Vercel is more work compared to hosting Astro, SvelteKit etc on Vercel or Netlify. But Laravel does more stuff so it's a tradeoff like everything else.
 
 [Tools like Ploi](https://ploi.io/register?referrer=H1A1JZd9zNVLJ4EimK4I) (referral) and [Laravel Forge](https://forge.laravel.com) are probably the way forward for more substantial sites.
 
@@ -23,7 +23,7 @@ I'm going to assume you know a bit about Vercel and how to use its CLI and web i
 
 ## 1. Make a Laravel app
 
-I assume you can do this.
+I'm going to assume you can do this or can find out how to do it.
 
 ## 2. Add these files to your Laravel project
 
@@ -109,7 +109,7 @@ php artisan key:generate --show` # in a Laravel project
 # or
 php -r "echo 'base64:' . base64_encode(random_bytes(32)) . PHP_EOL;" # elsewhere
 vercel env add APP_KEY
-```
+```****
 
 ## 7. Set the other environment variables
 
