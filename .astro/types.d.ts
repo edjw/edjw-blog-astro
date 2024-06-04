@@ -420,6 +420,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"2024-06-04-deploy-laravel-11-for-free-on-vercel-in-2024.md": {
+	id: "2024-06-04-deploy-laravel-11-for-free-on-vercel-in-2024.md";
+  slug: "2024-06-04-deploy-laravel-11-for-free-on-vercel-in-2024";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 };
 
 	};
