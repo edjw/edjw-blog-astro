@@ -104,8 +104,12 @@ Go to `bootstrap/app.php`. Add `$middleware->trustProxies(at: '*');` to the `wit
 This step is new in Laravel 11 and needed if you want to host on Vercel which uses AWS. [See more here](https://laravel.com/docs/11.x/requests#trusting-all-proxies).
 
 ## 6. Set the `APP_KEY` environment variable
-
-Run `php artisan key:generate --show` in a Laravel project or `php -r "echo 'base64:' . base64_encode(random_bytes(32)) . PHP_EOL;"` elsewhere to make an `APP_KEY`. Then run `vercel env add APP_KEY` to add it to Vercel.
+```bash
+php artisan key:generate --show` # in a Laravel project
+# or
+php -r "echo 'base64:' . base64_encode(random_bytes(32)) . PHP_EOL;" # elsewhere
+vercel env add APP_KEY
+```
 
 ## 7. Set the other environment variables
 
