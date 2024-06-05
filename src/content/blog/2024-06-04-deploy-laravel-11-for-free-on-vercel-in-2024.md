@@ -109,7 +109,7 @@ php artisan key:generate --show` # in a Laravel project
 # or
 php -r "echo 'base64:' . base64_encode(random_bytes(32)) . PHP_EOL;" # elsewhere
 vercel env add APP_KEY
-```****
+```
 
 ## 7. Set the other environment variables
 
