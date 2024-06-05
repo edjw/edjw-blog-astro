@@ -26,4 +26,12 @@
   .prose p > code {
     @apply break-words;
   }
+
+  .prose pre {
+    @apply max-w-[90vw];
+  }
+}
+
+* {
+  outline: 1px solid black;
 }
