@@ -12,3 +12,5 @@ You enter <code>#d58400</code> and select your palette. Say you select Tailwind,
 I [made a page](https://nearest-color.com/best-color-science) showing how the underlying colour algorithm for Nearest Color finds matches that correspond with human perception unlike other tools that just use the mathematically closest colour.
 
 [Find out more about Nearest Color](https://nearest-color.com)
+
+[Test it out on MacOS for free with TestFlight](https://testflight.apple.com/join/XSTycxqX)
