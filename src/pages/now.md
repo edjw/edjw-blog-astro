@@ -4,7 +4,6 @@ socialDescription: "Some of the stuff I'm doing, done or into"
 layout: "@/layouts/PageLayout.astro"
 ---
 
-
 This is my now page – it's about what I'm focused on or interested in at the moment.
 
 ### Personal
@@ -16,4 +15,6 @@ This is my now page – it's about what I'm focused on or interested in at the m
 1. Helping UK campaign groups run campaigns around the General Election
 
 ---
+Last updated: 13 June 2024
+
 [**What's a now page?**](https://nownownow.com/about)
