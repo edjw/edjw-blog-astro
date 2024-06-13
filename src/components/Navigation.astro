@@ -1,24 +1,24 @@
 ---
-import navigationItems from "@/data/navigationItems.js";
+import { navigationItems } from "@/data/navigationItems.js";
 ---
 
 <nav
-  class="prose mb-4 mt-8 flex items-center justify-start gap-x-2 dark:prose-invert sm:gap-x-8"
+	class="prose mb-4 mt-8 flex items-center justify-start gap-x-2 dark:prose-invert sm:gap-x-8"
 >
-  {
-    navigationItems.map(({ url, text, attribute }, index) => {
-      return (
-        <a
-          rel="prefetch"
-          href={url}
-          class="border-b-2 border-yellow-200 py-1 text-lg no-underline hover:border-transparent"
-          rel={attribute}
-        >
-          <span class="py-1 text-left">{text}</span>
-        </a>
-      );
-    })
-  }
+	{
+		navigationItems.map(({ url, text, attribute }, index) => {
+			return (
+				<a
+					rel="prefetch"
+					href={url}
+					class="border-b-2 border-yellow-200 py-1 text-lg no-underline hover:border-transparent"
+					rel={attribute || undefined}
+				>
+					<span class="py-1 text-left">{text}</span>
+				</a>
+			);
+		})
+	}
 
-  <!-- {% if section == nav.section %} aria-current="page"{% endif %}  -->
+	<!-- {% if section == nav.section %} aria-current="page"{% endif %}  -->
 </nav>
