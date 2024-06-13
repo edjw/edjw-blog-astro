@@ -10,25 +10,15 @@ export const navigationItems: NavigationItem[] = [
     url: "/blog",
   },
   {
-    text: "Stuff",
-    url: "/stuff",
-  },
-  {
     text: "Microblog",
     url: "https://microblog.edjohnsonwilliams.co.uk",
+  },
+  {
+    text: "Now",
+    url: "/now",
   },
   {
     text: "About",
     url: "/about",
   },
-  // {
-  //   text: "Twitter",
-  //   url: "https://twitter.com/_edjw",
-  //   attribute: "me",
-  // },
-  // {
-  //   text: "Github",
-  //   url: "https://github.com/edjw",
-  //   attribute: "me",
-  // },
 ];
