@@ -1,19 +1,26 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+
 const { title, socialDescription } = Astro.props;
 const path = Astro.url.pathname;
 ---
 
-<BaseLayout pageTitle={title} description={socialDescription}>
-  {
-    path !== "/" && (
-      <h2 class="p-name -mt-0" transition:name="pageSubtitle">
-        {title}
-      </h2>
-    )
-  }
+<BaseLayout
+	pageTitle={title}
+	description={socialDescription}
+>
+	{
+		path !== "/" && (
+			<h2
+				class="p-name -mt-0"
+				transition:name="pageSubtitle"
+			>
+				{title}
+			</h2>
+		)
+	}
 
-  <div class="e-content">
-    <slot />
-  </div>
+	<div class="e-content">
+		<slot />
+	</div>
 </BaseLayout>
