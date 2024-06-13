@@ -1,4 +1,10 @@
-const navigationItems = [
+type NavigationItem = {
+  text: string;
+  url: string;
+  attribute?: string;
+};
+
+export const navigationItems: NavigationItem[] = [
   {
     text: "Blog",
     url: "/blog",
@@ -8,23 +14,21 @@ const navigationItems = [
     url: "/stuff",
   },
   {
-    text: "About",
-    url: "/about",
-  },
-  {
     text: "Microblog",
     url: "https://microblog.edjohnsonwilliams.co.uk",
   },
-  //   {
-  //     "text": "Twitter",
-  //     "url": "https://twitter.com/_edjw",
-  //     "attribute": "me"
-  //   },
   {
-    text: "Github",
-    url: "https://github.com/edjw",
-    attribute: "me",
+    text: "About",
+    url: "/about",
   },
+  // {
+  //   text: "Twitter",
+  //   url: "https://twitter.com/_edjw",
+  //   attribute: "me",
+  // },
+  // {
+  //   text: "Github",
+  //   url: "https://github.com/edjw",
+  //   attribute: "me",
+  // },
 ];
-
-export default navigationItems;
