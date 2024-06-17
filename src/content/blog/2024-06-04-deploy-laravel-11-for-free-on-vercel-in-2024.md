@@ -105,7 +105,7 @@ This step is new in Laravel 11 and needed if you want to host on Vercel which us
 
 ## 6. Set the `APP_KEY` environment variable
 ```bash
-php artisan key:generate --show` # in a Laravel project
+php artisan key:generate --show # in a Laravel project
 # or
 php -r "echo 'base64:' . base64_encode(random_bytes(32)) . PHP_EOL;" # elsewhere
 vercel env add APP_KEY
