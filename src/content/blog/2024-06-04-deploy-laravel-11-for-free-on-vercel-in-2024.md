@@ -103,7 +103,10 @@ Go to `bootstrap/app.php`. Add `$middleware->trustProxies(at: '*');` to the `wit
 
 This step is new in Laravel 11 and needed if you want to host on Vercel which uses AWS. [See more here](https://laravel.com/docs/11.x/requests#trusting-all-proxies).
 
-## 6. Set the `APP_KEY` environment variable
+## 6. Run `vercel` to deploy
+It'll error because of missing environment variables.
+
+## 7. Set the `APP_KEY` environment variable
 ```bash
 php artisan key:generate --show` # in a Laravel project
 # or
@@ -111,7 +114,7 @@ php -r "echo 'base64:' . base64_encode(random_bytes(32)) . PHP_EOL;" # elsewhere
 vercel env add APP_KEY
 ```
 
-## 7. Set the other environment variables
+## 8. Set the other environment variables
 
 ```
 APP_URL=https://your-app-url.vercel.app
@@ -127,20 +130,22 @@ LOG_CHANNEL=stderr
 SESSION_DRIVER=cookie
 ```
 
-## 8. Set up a database (optional)
+## 9. Set up a database (optional)
 
 I've had a look around for database options that will work with a Laravel deployed on Vercel.
 
 ### Turso
-[Turso](https://turso.tech) is *basically* SQLite. To use Turso with Laravel, the best approach I can find is to add Turso as a database driver and [follow the installation instructions here](https://github.com/richan-fongdasen/turso-laravel?tab=readme-ov-file#installation). Use `https` not `libsql` in the `DB_URL` variable.
+[Turso](https://turso.tech) is *basically* SQLite. To use Turso with Laravel, the best approach I can find is to add Turso as a database driver and [follow Turso's LibSQL Driver for Laravel installation instructions here](https://github.com/tursodatabase/turso-driver-laravel?tab=readme-ov-file).
 
-Add these environment variables
+This post used to mention [this package](https://github.com/richan-fongdasen/turso-laravel?tab=readme-ov-file#installation) and advised to se `https` not `libsql` in the `DB_URL` variable and to add these environment variables
 
 ```
 DB_CONNECTION=turso
 DB_URL=https://***.turso.io
 DB_ACCESS_TOKEN=your_turso_access_token
 ```
+
+I think it's probably better to use the Turso-approved driver.
 
 [You have to go a long way](https://turso.tech/pricing) to absolutely need to start paying for Turso.
 
@@ -191,7 +196,7 @@ There's some prior art from others which helped get to this point. I found some 
 - <https://calebporzio.com/easy-free-serverless-laravel-with-vercel>
 - <https://github.com/Nembie/vercelit-laravel>
 
-An example of a new thing in my instructions would be that `vercel.json` Vercel doesn't support environment variables in `vercel.json` any more. The `/build/(.*)` route is another new thing here.
+An example of a new thing in my instructions would be that Vercel doesn't support environment variables in `vercel.json` any more. The `/build/(.*)` route is another new thing here.
 
 ---
 [**Provide feedback to this post**](https://github.com/edjw/edjw-blog-astro/issues/18). I will make changes to this post if you can point out the ways it can be improved.
