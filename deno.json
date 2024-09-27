@@ -15,7 +15,8 @@
             "node_modules",
             "new-blog-cli",
             ".astro",
-            "**/*.md"
+            "**/*.md",
+            "pnpm-lock.yaml"
         ]
     }
 }
