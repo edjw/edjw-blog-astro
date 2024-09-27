@@ -15,7 +15,7 @@
             "node_modules",
             "new-blog-cli",
             ".astro",
-            "*/.md"
+            "**/*.md"
         ]
     }
 }
