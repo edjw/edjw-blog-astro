@@ -27,10 +27,10 @@ class Blog extends Command
     /**
      * Execute the console command.
      */
-    public function handle()
+    public function handle(): void
     {
         // Define the path to the blog directory
-        $basePath = realpath(__DIR__ . '/../../..');
+        $basePath = realpath(__DIR__.'/../../..');
         $blogPath = "{$basePath}/src/content/blog";
 
         $responses = form()
@@ -76,27 +76,30 @@ class Blog extends Command
         $featured = $responses['featured'] ? 'true' : 'false';
 
         $slugifiedTitle = Str::slug($title);
-        $tagsArray = array_map('trim', explode(',', $tags));
 
         $datetime = now()->toISOString();
         $date = now()->toDateString();
 
-        $tags = '';
-        if (!empty($tagsArray)) {
-            $tags = "tags:\n  - " . implode("\n  - ", $tagsArray);
-        }
-
-        $socialDescriptionLine = !empty($socialDescription) ? "socialDescription: {$socialDescription}" : '';
+        $tagsArray = array_filter(array_map('trim', explode(',', $tags)));
+        $tags = $tagsArray ? "tags:\n - ".implode("\n - ", $tagsArray) : '';
 
         $frontmatter = <<<EOD
 ---
 title: {$title}
 pubDate: {$datetime}
-{$socialDescriptionLine}
-{$tags}
 featured: {$featured}
----
+EOD;
 
+        if (! empty($socialDescription)) {
+            $frontmatter .= "socialDescription: {$socialDescription}\n";
+        }
+
+        if (! empty($tagsArray)) {
+            $frontmatter .= "{$tags}\n";
+        }
+
+        $frontmatter .= <<<'EOD'
+---
 EOD;
 
         $filePath = "{$blogPath}/{$date}-{$slugifiedTitle}.md";
