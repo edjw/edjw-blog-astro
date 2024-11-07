@@ -1,6 +1,8 @@
 [build]
 command = "pnpm run build"
 publish = "dist"
+# Ignore changes in the new-blog-cli directory
+ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF ':!new-blog-cli'"
 
 [[redirects]]
 from = "/feed.xml"
