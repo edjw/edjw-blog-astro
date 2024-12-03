@@ -1,7 +1,8 @@
 import { defineCollection, z } from "astro:content";
+import { glob } from 'astro/loaders';
 const kebabCaseRegex = new RegExp(/^([a-z][a-z0-9]*)(-[a-z0-9]+)*$/);
 const blogCollection = defineCollection({
-  type: "content",
+  loader: glob({ pattern: '**\/[^_]*.md', base: "./src/content/blog" }),
   schema: z
     .object({
       title: z.string().min(1),
