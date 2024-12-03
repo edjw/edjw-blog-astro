@@ -15,10 +15,10 @@ export async function GET(context: { site: any }) {
     site: context.site,
     customData: `<language>en-gb</language>`,
     items: blog.map((post) => ({
-      link: `/blog/${post.slug}/`,
+      link: `/blog/${post.id}/`,
       title: post.data.title,
       pubDate: post.data.pubDate,
-      content: sanitizeHtml(parser.render(post.body)),
+      content: sanitizeHtml(parser.render(post.body || "")),
     })),
   });
 }

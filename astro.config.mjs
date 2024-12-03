@@ -4,5 +4,5 @@ import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   site: "https://edjohnsonwilliams.co.uk",
-  integrations: [sitemap(), tailwind()],
+  integrations: [sitemap(), tailwind()]
 });
