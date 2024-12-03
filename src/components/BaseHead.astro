@@ -1,5 +1,6 @@
 ---
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from 'astro:transitions';
+
 import siteData from "@/data/siteconfig.js";
 
 const {
@@ -44,7 +45,7 @@ const currentURL = Astro.request.url;
   href="/rss.xml"
 />
 
-<ViewTransitions />
+<ClientRouter />
 
 <script is:inline>
   function handleTheme() {
