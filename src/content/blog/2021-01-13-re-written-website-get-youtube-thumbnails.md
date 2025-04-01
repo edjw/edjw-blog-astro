@@ -1,6 +1,6 @@
 ---
 title: "Re-written website: Get YouTube Thumbnails"
-pubDate: 2021-01-13T19:01:23.800Z
+pubDate: 2021-01-13T19:01
 socialDescription: I rewrote my tool Get YouTube Thumbnails with Svelte and Netlify functions.
 tags:
   - new-website

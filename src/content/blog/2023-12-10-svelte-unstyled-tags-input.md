@@ -1,6 +1,6 @@
 ---
 title: Svelte Unstyled Tags Input
-pubDate: 2023-12-10T22:33:16.238Z
+pubDate: 2023-12-10T22:33
 tags:
   - svelte
 socialDescription: I made a Svelte component and published it

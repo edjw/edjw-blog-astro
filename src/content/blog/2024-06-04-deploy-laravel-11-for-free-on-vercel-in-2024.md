@@ -1,6 +1,6 @@
 ---
 title: Deploy Laravel 11 for free on Vercel in 2024
-pubDate: 2024-06-04T21:31:50.309Z
+pubDate: 2024-06-04T21:31
 socialDescription: How to deploy Laravel on Vercel
 tags:
   - laravel
@@ -49,36 +49,32 @@ The runtime is a [PHP Runtime for Vercel Serverless Functions](https://github.co
 
 ```json
 {
-    "version": 2,
-    "regions": [
-        "fra1"
-    ],
-    "functions": {
-        "api/index.php": {
-            "runtime": "vercel-php@0.7.1"
-        }
+  "version": 2,
+  "regions": ["fra1"],
+  "functions": {
+    "api/index.php": {
+      "runtime": "vercel-php@0.7.1"
+    }
+  },
+  "routes": [
+    {
+      "src": "/build/(.*)",
+      "dest": "/build/$1"
     },
-    "routes": [
-        {
-            "src": "/build/(.*)",
-            "dest": "/build/$1"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/api/index.php"
-        }
-    ],
-    "outputDirectory": "public"
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.php"
+    }
+  ],
+  "outputDirectory": "public"
 }
 ```
-
 
 ### .vercelignore
 
 ```
 /vendor
 ```
-
 
 ## 3. Edit `.package.json`
 
@@ -93,6 +89,7 @@ As of 4th July 2024, you need to add this to your `package.json`. Otherwise you'
 Add `.vercel` to your `.gitignore`
 
 ## 5. Trust proxies
+
 Go to `bootstrap/app.php`. Add `$middleware->trustProxies(at: '*');` to the `withMiddleware` method so it looks like this:
 
 ```php
@@ -104,9 +101,11 @@ Go to `bootstrap/app.php`. Add `$middleware->trustProxies(at: '*');` to the `wit
 This step is new in Laravel 11 and needed if you want to host on Vercel which uses AWS. [See more here](https://laravel.com/docs/11.x/requests#trusting-all-proxies).
 
 ## 6. Run `vercel` to deploy
+
 It'll error because of missing environment variables.
 
 ## 7. Set the `APP_KEY` environment variable
+
 ```bash
 php artisan key:generate --show # in a Laravel project
 # or
@@ -135,7 +134,8 @@ SESSION_DRIVER=cookie
 I've had a look around for database options that will work with a Laravel deployed on Vercel.
 
 ### Turso
-[Turso](https://turso.tech) is *basically* SQLite. To use Turso with Laravel, the best approach I can find is to add Turso as a database driver and [follow Turso's LibSQL Driver for Laravel installation instructions here](https://github.com/tursodatabase/turso-driver-laravel?tab=readme-ov-file).
+
+[Turso](https://turso.tech) is _basically_ SQLite. To use Turso with Laravel, the best approach I can find is to add Turso as a database driver and [follow Turso's LibSQL Driver for Laravel installation instructions here](https://github.com/tursodatabase/turso-driver-laravel?tab=readme-ov-file).
 
 This post used to mention [this package](https://github.com/richan-fongdasen/turso-laravel?tab=readme-ov-file#installation) and advised to se `https` not `libsql` in the `DB_URL` variable and to add these environment variables
 
@@ -150,21 +150,24 @@ I think it's probably better to use the Turso-approved driver.
 [You have to go a long way](https://turso.tech/pricing) to absolutely need to start paying for Turso.
 
 ### Neon
+
 [Neon](https://neon.tech) is Postgres. Neon lets you have a 500MB project for free. You can make multiple databases in Neon and use them as you like.
 
 ```
 DB_CONNECTION="psql"
 DB_URL="postgres://default:*****db_user*****@***db_password**.neon.tech:5432/****database_name****?sslmode=require"
 ```
+
 Don't use a pooled connection from Neon.
 
 ### Cloudflare D1
 
-[Cloudflare D1](https://developers.cloudflare.com/d1) is also *basically* SQLite. To add it as a database driver for Laravel, [follow these instructions](https://github.com/renoki-co/l1?tab=readme-ov-file#d1-with-laravel). It looks like they would like to offer Cloudflare KV as a cache driver and Cloudflare Queues as a queue driver too but that's not available as of 4th June 2024.
+[Cloudflare D1](https://developers.cloudflare.com/d1) is also _basically_ SQLite. To add it as a database driver for Laravel, [follow these instructions](https://github.com/renoki-co/l1?tab=readme-ov-file#d1-with-laravel). It looks like they would like to offer Cloudflare KV as a cache driver and Cloudflare Queues as a queue driver too but that's not available as of 4th June 2024.
 
 Aaron Francis did a good video on [using Cloudflare D1 with Laravel](https://www.youtube.com/watch?v=htAOyy3-E9c).
 
 ## Cache
+
 You don't have to set up Redis for a cache and session driver. You could use your database. But you can [use Upstash for this if you want](https://upstash.com).
 
 Add these environment variables.
@@ -188,9 +191,11 @@ When you install a new module using composer, you'll probably get a build failur
 I had a look at the Vercel database and cache options. They look far more expensive than the other options I've looked at and are actually whitelabelled versions of Neon and Upstash anyway!
 
 ## Disclaimer
+
 I haven't pushed this approach very hard. There might be limits that I haven't reached yet. To help you deploy Laravel on a conventional server with a database, Redis, web server etc on Hetzner, Digital Ocean, AWS EC2 etc, you might want to [use something like Ploi](https://ploi.io/register?referrer=H1A1JZd9zNVLJ4EimK4I) (referral).
 
 ## Prior art
+
 There's some prior art from others which helped get to this point. I found some things in Laravel and Vercel have changed since these posts/project were made which is why I pieced together the instructions above. I couldn't have done any of this without this work by Caleb Porzio and Luca Pacitto (Nembie).
 
 - <https://calebporzio.com/easy-free-serverless-laravel-with-vercel>
@@ -199,4 +204,5 @@ There's some prior art from others which helped get to this point. I found some 
 An example of a new thing in my instructions would be that Vercel doesn't support environment variables in `vercel.json` any more. The `/build/(.*)` route is another new thing here.
 
 ---
+
 [**Provide feedback to this post**](https://github.com/edjw/edjw-blog-astro/issues/18). I will make changes to this post if you can point out the ways it can be improved.

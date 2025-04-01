@@ -1,6 +1,6 @@
 ---
 title: On the whataboutery around the Saudi takeover of Newcastle United
-pubDate: 2020-04-18T21:15:15.958Z
+pubDate: 2020-04-18T21:15
 socialDescription: Let's not try to make ourselves feel better about Saudi
   Arabia buying Newcastle United by pointing out other bad things.
 tags:
@@ -103,6 +103,9 @@ We are either happy for Saudi Arabia to use Newcastle United to persuade more pe
 What a journalist said or did not say in the past has no effect on how horrific it is for Saudi Arabia to beheading people.
 
 [^1]: [https://www.bbc.co.uk/news/world-middle-east-49826905](https://www.bbc.co.uk/news/world-middle-east-49826905)
+
 [^2]: [https://www.theguardian.com/world/2018/apr/26/saudi-arabia-criticised-over-executions-for-drug-offences](https://www.theguardian.com/world/2018/apr/26/saudi-arabia-criticised-over-executions-for-drug-offences)
+
 [^3]: [https://www.amnesty.org.uk/exposed-british-made-bombs-used-civilian-targets-yemen](https://www.amnesty.org.uk/exposed-british-made-bombs-used-civilian-targets-yemen)
+
 [^4]: [https://www.bbc.co.uk/news/world-middle-east-47553416](https://www.bbc.co.uk/news/world-middle-east-47553416)

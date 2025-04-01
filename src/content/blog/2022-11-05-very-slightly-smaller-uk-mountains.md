@@ -1,6 +1,6 @@
 ---
 title: Very slightly smaller UK mountains
-pubDate: 2022-11-05T17:11:37.359Z
+pubDate: 2022-11-05T17:11
 socialDescription: Some hills don't quite make the UK Prominent Peaks databases
 tags:
   - learning-out-loud

@@ -1,7 +1,7 @@
 ---
 title: Twitter's political ads ban has an accurate definition of political but
   campaign groups won't like it (eventually)
-pubDate: 2019-11-02T11:02:56.978Z
+pubDate: 2019-11-02T11:02
 socialDescription: Twitter's political ads ban has an accurate definition of
   political but campaign groups won't like it (eventually)
 tags:
@@ -36,6 +36,9 @@ A few other questions…
 3. How broadly is Twitter defining 'national security' and 'taxes'?
 
 [^1]: [https://threadreaderapp.com/thread/1189634360472829952.html](https://threadreaderapp.com/thread/1189634360472829952.html)
+
 [^2]: [https://business.twitter.com/en/help/ads-policies/restricted-content-policies/political-content/global-political-content.html](https://business.twitter.com/en/help/ads-policies/restricted-content-policies/political-content/global-political-content.html)
+
 [^3]: [https://twitter.com/vijaya/status/1189664481263046656](https://twitter.com/vijaya/status/1189664481263046656)
+
 [^4]: [https://culturalstudiesnow.blogspot.com/2017/03/foucault-on-power-and-knowledge-summary.html](https://culturalstudiesnow.blogspot.com/2017/03/foucault-on-power-and-knowledge-summary.html)
