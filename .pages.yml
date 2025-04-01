@@ -16,7 +16,7 @@ content:
         description: "The date when the blog post was published."
         options:
           time: true
-          format: yyyy-MM-DDTHH:mm:ss.SSSZ
+          format: yyyy-MM-ddTHH:mm:ss.SSSZ
       - name: tags
         label: Tags
         type: string
