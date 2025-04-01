@@ -1,6 +1,6 @@
 ---
 title: Announcing Nearest Color
-pubDate: 2024-06-03T21:49:38.577Z
+pubDate: 2024-06-03T21:49
 socialDescription: A desktop tool to find the nearest colour from your palette
 featured: true
 ---

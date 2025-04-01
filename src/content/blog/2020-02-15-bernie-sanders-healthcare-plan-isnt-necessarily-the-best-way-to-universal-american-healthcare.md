@@ -1,7 +1,7 @@
 ---
 title: Bernie Sanders' healthcare plan isn't necessarily the best way to
   universal American healthcare
-pubDate: 2020-02-15T21:32:56.151Z
+pubDate: 2020-02-15T21:32
 socialDescription: Other candidates exist and they are good
 tags:
   - politics

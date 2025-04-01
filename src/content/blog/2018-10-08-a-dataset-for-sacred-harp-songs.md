@@ -1,6 +1,6 @@
 ---
 title: A dataset for Sacred Harp songs
-pubDate: 2018-10-08T00:00:00.000Z
+pubDate: 2018-10-08T00:00
 socialDescription: CSV and JSON datasets of the Sacred Harp
 tags:
   - data

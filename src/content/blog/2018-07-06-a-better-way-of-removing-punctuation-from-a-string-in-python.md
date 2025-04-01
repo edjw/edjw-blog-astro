@@ -1,6 +1,6 @@
 ---
 title: A better way of removing punctuation from a string in Python
-pubDate: 2018-07-06T00:00:00.000Z
+pubDate: 2018-07-06T00:00
 socialDescription: An easier way to remove punctuation from strings in Python
 tags:
   - python

@@ -2,7 +2,7 @@
 title: "New website: I made a test site to learn about fetching data from APIs
   and turning it into HTML using vanilla JS and accidentally made my main Hacker
   News reader"
-pubDate: 2019-10-01T19:00:58.169Z
+pubDate: 2019-10-01T19:00
 socialDescription: "New website: I made a test site to fetch data from APIs and
   turn it into HTML using vanilla JS and accidentally made my main Hacker News
   reader"

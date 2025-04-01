@@ -1,6 +1,6 @@
 ---
 title: Chess Variants
-pubDate: 2023-11-20T19:32:22.526Z
+pubDate: 2023-11-20T19:32
 socialDescription: Looking at some modified versions of chess
 tags:
   - board-games

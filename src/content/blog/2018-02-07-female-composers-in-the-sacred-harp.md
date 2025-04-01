@@ -1,6 +1,6 @@
 ---
 title: Female Composers in the Sacred Harp
-pubDate: 2018-02-08T00:00:00.000Z
+pubDate: 2018-02-08T00:00
 socialDescription: Data about female composers in the Sacred Harp
 tags:
   - data

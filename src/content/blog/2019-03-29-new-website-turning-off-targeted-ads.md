@@ -1,6 +1,6 @@
 ---
 title: "New website: Turning off targeted ads"
-pubDate: 2019-03-29T20:24:00.000Z
+pubDate: 2019-03-29T20:24
 socialDescription: I made a website that helps you turn off targeted ads
 tags:
   - new-website

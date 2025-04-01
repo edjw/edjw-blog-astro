@@ -1,6 +1,6 @@
 ---
 title: A simplistic post on Brexit utopianism
-pubDate: 2017-06-18T09:12:11.000Z
+pubDate: 2017-06-18T09:12
 socialDescription: Hard Brexit is utopianism.
 tags:
   - politics

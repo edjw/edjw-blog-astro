@@ -1,6 +1,6 @@
 ---
 title: I attended a funeral on Youtube
-pubDate: 2022-09-08T20:11:37.359Z
+pubDate: 2022-09-08T20:11
 socialDescription: A quick note about live-streaming a funeral
 tags:
   - personal

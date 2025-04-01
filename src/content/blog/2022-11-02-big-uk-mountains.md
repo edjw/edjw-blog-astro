@@ -1,6 +1,6 @@
 ---
 title: Big UK mountains
-pubDate: 2022-11-02T20:11:37.359Z
+pubDate: 2022-11-02T20:11
 socialDescription: Not all high mountains are rewarding to climb. Here are the most interesting ones.
 
 tags:
@@ -40,5 +40,7 @@ I removed mountains in Northern Ireland. Unfortunately I couldn't get my program
 There is another database called ["Database of British and Irish hills"](http://www.hills-database.co.uk/downloads.html) that seems to be updated regularly. It is extremely thorough (21,291 hills!) with data about peaks as low as just 2m above sea level! The website recommends [an iOS app called Hill Lists](https://apps.apple.com/app/id315200683) and [an Android app called British Hills](https://play.google.com/store/apps/details?id=uk.colessoft.android.hilllist&hl=en_GB) as app-based ways of accessing and filtering this database.
 
 [^1]: Although [this photo from the top of Sgor an Lochain Uaine](https://www.geograph.org.uk/photo/3067669) makes the view seem well worth it in this case.
+
 [^2]: I've also seen the word "drop" used instead of prominence.
+
 [^3]: In the UK, [a mountain is 610m (2,000ft) above sea level](https://en.wikipedia.org/wiki/Mountain#Definition). But I'm just going to say mountain even though some of the peaks in the UK Prominent Peak Database are only 500m.
