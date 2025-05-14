@@ -12,6 +12,7 @@ const allPosts = (await getCollection("blog")).filter((post) => {
 });
 
 let allUniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())]
+  .filter((tag): tag is string => !!tag)
   .map((tag) => getSlug(tag))
   .sort();
 ---
