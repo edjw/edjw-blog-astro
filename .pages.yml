@@ -57,29 +57,28 @@ content:
         sort: pubDate
         order: desc
   
-  - name: stuff
-    label: Stuff
-    type: collection
-    path: src/content/stuff
+  - name: stuff-coding
+    label: Coding Stuff
+    type: file
+    path: src/content/stuff/coding.json
     format: json
     fields:
-      - name: name
-        label: Name
-        type: string
-        required: true
-      - name: url
-        label: URL
-        type: string
-        description: "Optional URL"
-        pattern: { regex: "^(https?:\\/\\/)?([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\\/?$", message: "Please enter a valid URL" }
-      - name: description
-        label: Description
-        type: string
-        required: true
-    view:
-      fields: [name, description]
-      primary: name
-      sort: [name]
-      default:
-        sort: name
-        order: asc
+      - name: content
+        label: Coding Items
+        type: code
+        description: "Array of coding-related items"
+        options:
+          language: json
+          
+  - name: stuff-hobbies
+    label: Hobbies Stuff
+    type: file
+    path: src/content/stuff/hobbies.json
+    format: json
+    fields:
+      - name: content
+        label: Hobby Items
+        type: code
+        description: "Array of hobby-related items"
+        options:
+          language: json
