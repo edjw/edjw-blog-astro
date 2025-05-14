@@ -10,16 +10,10 @@ import type { CollectionEntry } from "astro:content";
 const codingStuff = await getEntry("stuff", "coding");
 const hobbyStuff = await getEntry("stuff", "hobbies");
 
-type StuffItem = {
-  name: string;
-  url?: string;
-  description: string;
-};
-
 type stuffObject = {
   name: string;
   description?: string; // Can be markdown
-  items: StuffItem[];
+  data: CollectionEntry<"stuff">["data"];
 };
 
 const allStuff: stuffObject[] = [
@@ -27,11 +21,11 @@ const allStuff: stuffObject[] = [
     name: "Coding",
     description:
       "I do a lot of different coding projects. Here are some of them roughly ordered with the most recent first.",
-    items: codingStuff?.data.items || [],
+    data: codingStuff?.data || [],
   },
   {
     name: "Hobbies",
-    items: hobbyStuff?.data.items || [],
+    data: hobbyStuff?.data || [],
   },
 ];
 ---
@@ -74,7 +68,7 @@ const allStuff: stuffObject[] = [
     <li>
       <a href="https://mastodon.social/@_edjw" rel="me">Mastodon</a>
     </li>
-    <li><a href="https://www.more-onion.com">More Onion – my employer</a></li>
+    <li><a href="https://www.more-onion.com">More Onion – my employer</a></li>
   </ul>
 
   <h3>Here are some other things I've done</h3>
@@ -97,8 +91,8 @@ const allStuff: stuffObject[] = [
             )}
 
             <div class="mt-12 flex flex-col gap-y-8">
-              {stuff.items &&
-                stuff.items.map(({ url, name, description }) => (
+              {stuff.data &&
+                stuff.data.map(({ url, name, description }) => (
                   <section class="prose dark:prose-invert dark:bg-stone-900">
                     {url ? (
                       <a href={url}>

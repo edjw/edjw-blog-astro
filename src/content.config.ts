@@ -22,7 +22,7 @@ const blogCollection = defineCollection({
     .strict(),
 });
 
-const StuffItemSchema = z
+const StuffSchema = z
   .object({
     name: z.string(),
     url: z.optional(z.string().url()),
@@ -30,17 +30,9 @@ const StuffItemSchema = z
   })
   .strict();
 
-const StuffCollectionSchema = z
-  .object({
-    title: z.string(),
-    description: z.string(),
-    items: z.array(StuffItemSchema)
-  })
-  .strict();
-
 const stuffCollection = defineCollection({
   type: "data",
-  schema: StuffCollectionSchema,
+  schema: z.array(StuffSchema),
 });
 
 export const collections = {
