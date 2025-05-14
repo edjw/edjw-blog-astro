@@ -1,6 +1,6 @@
 ---
 title: A simplistic post on quick trade agreements
-pubDate: 2017-07-10T14:14
+pubDate: 2017-07-10T14:14:00Z
 socialDescription: You shouldn't aim for speed in trade agreements with big trading blocs
 tags:
   - politics

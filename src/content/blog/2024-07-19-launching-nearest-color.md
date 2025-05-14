@@ -1,6 +1,6 @@
 ---
 title: Launching Nearest Color
-pubDate: 2024-07-19T20:29
+pubDate: 2024-07-19T20:29:00Z
 socialDescription: I made an app that matches any colour to popular colour palettes
 tags:
   - tauri

@@ -1,6 +1,6 @@
 ---
 title: "New website: Find the nearest Tailwind Colour"
-pubDate: 2021-01-02T10:02
+pubDate: 2021-01-02T10:02:00Z
 socialDescription: A tool to find the nearest colour from the Tailwind colour palette
 tags:
   - new-website

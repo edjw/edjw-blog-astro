@@ -1,6 +1,6 @@
 ---
 title: "New website: Making it easy to get thumbnails of YouTube videos"
-pubDate: 2018-08-26T14:00
+pubDate: 2018-08-26T14:00:00Z
 socialDescription: I made a web app that makes it easy to download thumbnails for YouTube videos
 tags:
   - new-website

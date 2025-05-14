@@ -1,6 +1,6 @@
 ---
 title: Announcing "Draft One" – a new text editor
-pubDate: 2023-02-02T20:19
+pubDate: 2023-02-02T20:19:00Z
 socialDescription: I built a new app called Draft One, and I’m really excited about it.
 tags:
   - new-app

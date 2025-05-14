@@ -1,6 +1,6 @@
 ---
 title: I've set up a microblog that uses Github Issues as a CMS
-pubDate: 2023-02-16T10:11
+pubDate: 2023-02-16T10:11:00Z
 tags:
   - new-website
   - astro

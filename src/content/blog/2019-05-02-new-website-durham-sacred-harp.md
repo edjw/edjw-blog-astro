@@ -1,6 +1,6 @@
 ---
 title: "New website: Durham Sacred Harp"
-pubDate: 2018-01-22T18:55
+pubDate: 2018-01-22T18:55:00Z
 socialDescription: I made a new website for Durham Sacred Harp
 tags:
   - new-website

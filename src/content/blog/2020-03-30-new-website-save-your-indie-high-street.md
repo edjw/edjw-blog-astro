@@ -1,6 +1,6 @@
 ---
 title: "New website: Save Your Indie High Street"
-pubDate: 2020-03-30T21:23
+pubDate: 2020-03-30T21:23:00Z
 socialDescription: A website to help your local small businesses make it through the coronavirus
 tags:
   - new-website
