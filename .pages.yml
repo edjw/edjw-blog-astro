@@ -1,3 +1,7 @@
+media:
+  input: src/images
+  output: /images
+
 content:
   - name: blog
     label: Blog Posts
@@ -14,11 +18,10 @@ content:
         label: Publication Date
         type: date
         description: "The date when the blog post was published."
+        required: true
         options:
           time: true
-          # format: dd-MM-yyyy HH:mm
-          format: yyyy-MM-dd'T'HH:mm
-
+          format: yyyy-MM-dd'T'HH:mm:ss'Z'
       - name: tags
         label: Tags
         type: string
@@ -31,14 +34,14 @@ content:
         description: "A short description for social media platforms. Max 155 characters."
         options:
           maxlength: 155
-      # - name: image
-      #   label: Image
-      #   type: image
-      #   description: "An optional URL to the image for the blog post."
-      #   options:
-      #     input: src/images
-      #     output: images
-      #     path: src/images
+      - name: image
+        label: Image
+        type: image
+        description: "An optional URL to the image for the blog post."
+        options:
+          input: src/images
+          output: /images
+          path: src/images
       - name: featured
         label: Featured Post
         type: boolean
@@ -53,3 +56,30 @@ content:
       default:
         sort: pubDate
         order: desc
+  
+  - name: stuff
+    label: Stuff
+    type: collection
+    path: src/content/stuff
+    format: json
+    fields:
+      - name: name
+        label: Name
+        type: string
+        required: true
+      - name: url
+        label: URL
+        type: string
+        description: "Optional URL"
+        pattern: { regex: "^(https?:\\/\\/)?([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\\/?$", message: "Please enter a valid URL" }
+      - name: description
+        label: Description
+        type: string
+        required: true
+    view:
+      fields: [name, description]
+      primary: name
+      sort: [name]
+      default:
+        sort: name
+        order: asc
