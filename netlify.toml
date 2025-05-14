@@ -14,18 +14,6 @@ from = "/.well-known/webfinger"
 status = 200
 to = "https://mastodon.social/.well-known/webfinger?resource=acct:_edjw@mastodon.social"
 
-[[redirects]]
-force = true
-from = "https://edjohnsonwilliams.co.uk/js/script.js"
-status = 200
-to = "https://plausible.io/js/script.js"
-
-[[redirects]]
-force = true
-from = "https://edjohnsonwilliams.co.uk/api/event"
-status = 200
-to = "https://plausible.io/api/event"
-
 [[headers]]
 for = "/*"
 [headers.values]
@@ -200,26 +188,3 @@ to = "/blog/2021-01-02-new-website-find-the-nearest-tailwind-colour"
 from = "/2021/01/13/re-written-website-get-youtube-thumbnails"
 status = 301
 to = "/blog/2021-01-13-re-written-website-get-youtube-thumbnails"
-
-# [[plugins]]
-# package = "netlify-plugin-rss"
-#   [plugins.inputs]
-#   # required configs, customize as needed
-#   dirToScan = "/blog" # a subfolder to scan. "/" to scan all
-#   authorName = "Ed Johnson-Williams"
-#   site_url = "https://edjohnsonwilliams.co.uk"
-#   title = "Ed Johnson-Williams"
-#   rssDescription = "Ed Johnson-Williams' website"
-#   categories = []
-
-#   language = "en"
-#   pubDate = "new Date().toUTCString(),"
-
-# # cheerio selectors for extractMetadataFromFile
-# # defaults shown
-# contentSelector = ".e-content"
-# descriptionSelector = "meta[name=description]" # probably no need to change
-# titleSelector = "title"# probably no need to change
-
-# # developer configs
-# debugMode = false # (for development) turn true for extra diagnostic logging
