@@ -61,40 +61,10 @@ content:
     label: Coding Projects
     type: file
     path: src/content/stuff/coding.json
-    format: json
-    fields:
-      - name: title
-        label: Title
-        type: string
-        description: "Collection title for coding projects"
-      - name: description
-        label: Description
-        type: string
-        description: "Brief description of this collection"
-      - name: items
-        label: Coding Projects
-        type: code
-        description: "List of coding projects"
-        options:
-          language: json
+    format: code
     
   - name: hobbies
     label: Hobbies
     type: file
     path: src/content/stuff/hobbies.json
-    format: json
-    fields:
-      - name: title
-        label: Title
-        type: string
-        description: "Collection title for hobbies"
-      - name: description
-        label: Description
-        type: string
-        description: "Brief description of this collection"
-      - name: items
-        label: Hobby Items
-        type: code
-        description: "List of hobbies"
-        options:
-          language: json
+    format: code
