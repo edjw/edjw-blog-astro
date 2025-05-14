@@ -1,6 +1,6 @@
 ---
 title: "New website: Newcastle Sacred Harp"
-pubDate: 2019-05-02T19:38
+pubDate: 2019-05-02T19:38:00Z
 socialDescription: I made a new website for Newcastle Sacred Harp.
 tags:
   - new-website

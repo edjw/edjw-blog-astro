@@ -1,6 +1,6 @@
 ---
 title: Big UK mountains
-pubDate: 2022-11-02T20:11
+pubDate: 2022-11-02T20:11:00Z
 socialDescription: Not all high mountains are rewarding to climb. Here are the most interesting ones.
 
 tags:

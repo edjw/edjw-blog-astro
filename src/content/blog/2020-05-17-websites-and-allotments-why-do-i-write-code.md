@@ -1,6 +1,6 @@
 ---
 title: "Websites and allotments: why do I write code?"
-pubDate: 2020-05-17T12:42
+pubDate: 2020-05-17T12:42:00Z
 socialDescription: Farmers don't have allotments.
 tags:
   - tech

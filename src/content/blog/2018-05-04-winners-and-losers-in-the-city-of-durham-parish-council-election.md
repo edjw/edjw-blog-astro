@@ -1,6 +1,6 @@
 ---
 title: Winners and Losers in the City of Durham Parish Council Election
-pubDate: 2018-05-04T00:00
+pubDate: 2018-05-04T00:00:00Z
 socialDescription: Analysing the results of the City of Durham Parish Council Election 2018
 tags:
   - politics

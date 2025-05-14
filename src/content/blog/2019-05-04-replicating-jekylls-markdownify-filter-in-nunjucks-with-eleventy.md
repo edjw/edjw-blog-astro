@@ -1,6 +1,6 @@
 ---
 title: Replicating Jekyll's `markdownify` filter in Nunjucks with Eleventy
-pubDate: 2019-05-04T20:11
+pubDate: 2019-05-04T20:11:00Z
 socialDescription: Converting Markdown strings to HTML with Nunjucks and Eleventy
 tags:
   - eleventy

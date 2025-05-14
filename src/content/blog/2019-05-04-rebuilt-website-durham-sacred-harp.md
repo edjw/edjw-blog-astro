@@ -1,6 +1,6 @@
 ---
 title: "Rebuilt website: Durham Sacred Harp"
-pubDate: 2019-05-04T20:40
+pubDate: 2019-05-04T20:40:00Z
 socialDescription: I rebuilt this site in Eleventy which brought some nice advantages
 tags:
   - new-website

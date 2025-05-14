@@ -1,7 +1,7 @@
 ---
 title: Twitter's political ads ban has an accurate definition of political but
   campaign groups won't like it (eventually)
-pubDate: 2019-11-02T11:02
+pubDate: 2019-11-02T11:02:00Z
 socialDescription: Twitter's political ads ban has an accurate definition of
   political but campaign groups won't like it (eventually)
 tags:

@@ -1,6 +1,6 @@
 ---
 title: Deploy Laravel 11 for free on Vercel in 2024
-pubDate: 2024-06-04T21:31
+pubDate: 2024-06-04T21:31:00Z
 socialDescription: How to deploy Laravel on Vercel
 tags:
   - laravel
