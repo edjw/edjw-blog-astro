@@ -57,28 +57,14 @@ content:
         sort: pubDate
         order: desc
   
-  - name: stuff-coding
+  - name: coding
     label: Coding Stuff
     type: file
     path: src/content/stuff/coding.json
     format: json
-    fields:
-      - name: content
-        label: Coding Items
-        type: code
-        description: "Array of coding-related items"
-        options:
-          language: json
-          
-  - name: stuff-hobbies
-    label: Hobbies Stuff
+    
+  - name: hobbies
+    label: Hobbies
     type: file
     path: src/content/stuff/hobbies.json
     format: json
-    fields:
-      - name: content
-        label: Hobby Items
-        type: code
-        description: "Array of hobby-related items"
-        options:
-          language: json
