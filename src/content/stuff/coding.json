@@ -1,57 +1,61 @@
-[
-  {
-    "name": "Doughnut Reader",
-    "url": "https://doughnut-reader.edjohnsonwilliams.co.uk",
-    "description": "My own Hacker News reader. I use this several times every day. Actually a rewrite of an old project I had"
-  },
-  {
-    "name": "Gotcha",
-    "url": "https://github.com/edjw/gotcha",
-    "description": "Dipping my toes into Go/Golang. I've made a stack for web development that uses Go, Templ for templating, Tailwind for CSS, Chi for routing, HTMX for fetching server state as HTML and updating the DOM, and Alpine for clientside Javascript in your HTML. Need to spend some more time building with it. Leans into the whole server-side templating, HTML-first approach"
-  },
-  {
-    "name": "AHAT Stack",
-    "url": "https://github.com/edjw/ahat-stack",
-    "description": "The version of `gotcha` that I'd be comfortable using today! Use Astro, HTMX for fetching server state as HTML and updating the DOM, Alpine for clientside Javascript in your HTML, and Tailwind for CSS. Like Gotcha, it leans into the whole server-side templating, HTML-first approach which Astro is good for even though it's in the Javascript-y world…kind of"
-  },
-  {
-    "name": "Cool Todo Manager",
-    "url": "https://cool-todo-manager.edjohnsonwilliams.co.uk",
-    "description": "Made my own todo manager. Ridiculous. Lets you mark your todos as to do done today and keeps track of how many times you marked it as to be done todo. I rely on this. No user accounts or syncing on purpose."
-  },
-  {
-    "name": "5-by-5",
-    "url": "https://5-by-5.edjohnsonwilliams.co.uk",
-    "description": "Experimenting with rules for 'grown-up' versions of tic-tac-toe/noughts and crosses. Working on this with my dad which is fun :-)"
-  },
-  {
-    "name": "Microblog",
-    "url": "https://microblog.edjohnsonwilliams.co.uk",
-    "description": "My microblog uses Github issues as a CMS which is actually great. Github's made it harder to use images and videos that you upload since I started using this so there are some funky things to make that work. It's kind of my own social media unlike this site which is usually a bit more long-form."
-  },
-  {
-    "name": "Draft One",
-    "url": "https://draft-one.com",
-    "description": "I made my own text editor and marketing website to go with it. You can't delete anything you write. You can export out later. It's a perfection avoidance tool."
-  },
-  {
-    "name": "Find Nearest Tailwind Colour",
-    "url": "https://find-nearest-tailwind-colour.edjohnsonwilliams.co.uk",
-    "description": "I made a tool to find the nearest colour in the Tailwind colour palettes to any given hex code. Probably my most popular tool based on the stars it's got on Github"
-  },
-  {
-    "name": "Newcastle Sacred Harp",
-    "url": "https://newcastlesacredharp.co.uk",
-    "description": "I've made a few sites for [Sacred Harp groups](https://en.wikipedia.org/wiki/Sacred_Harp). This one is an Astro site that uses a Wordpress.com site as the CMS to make it easy enough for people to update."
-  },
-  {
-    "name": "Stop Targeting Ads at Me",
-    "url": "https://stop-targeting-ads-me.netlify.app",
-    "description": "This was a site I made that is almost certainly now out of date. It gave instructions on how to opt out of personalised advertising on lots of different services."
-  },
-  {
-    "name": "Save Your Indie High Street",
-    "url": "https://web.archive.org/web/20220127034931/https://saveyourindiehighstreet.uk",
-    "description": "A site I made during Covid lockdowns to help promote local independent shops that were delivering goods. Used an Airtable database and form as the backend so people could add shops in their area. Seemed to get decent pickup. It's offline now."
-  }
-]
+{
+  "items": [
+    {
+      "name": "Doughnut Reader",
+      "url": "https://doughnut-reader.edjohnsonwilliams.co.uk",
+      "description": "My own Hacker News reader. I use this several times every day. Actually a rewrite of an old project I had"
+    },
+    {
+      "name": "Gotcha",
+      "url": "https://github.com/edjw/gotcha",
+      "description": "Dipping my toes into Go/Golang. I've made a stack for web development that uses Go, Templ for templating, Tailwind for CSS, Chi for routing, HTMX for fetching server state as HTML and updating the DOM, and Alpine for clientside Javascript in your HTML. Need to spend some more time building with it. Leans into the whole server-side templating, HTML-first approach"
+    },
+    {
+      "name": "AHAT Stack",
+      "url": "https://github.com/edjw/ahat-stack",
+      "description": "The version of `gotcha` that I'd be comfortable using today! Use Astro, HTMX for fetching server state as HTML and updating the DOM, Alpine for clientside Javascript in your HTML, and Tailwind for CSS. Like Gotcha, it leans into the whole server-side templating, HTML-first approach which Astro is good for even though it's in the Javascript-y world…kind of"
+    },
+    {
+      "name": "Cool Todo Manager",
+      "url": "https://cool-todo-manager.edjohnsonwilliams.co.uk",
+      "description": "Made my own todo manager. Ridiculous. Lets you mark your todos as to do done today and keeps track of how many times you marked it as to be done todo. I rely on this. No user accounts or syncing on purpose."
+    },
+    {
+      "name": "5-by-5",
+      "url": "https://5-by-5.edjohnsonwilliams.co.uk",
+      "description": "Experimenting with rules for 'grown-up' versions of tic-tac-toe/noughts and crosses. Working on this with my dad which is fun :-)"
+    },
+    {
+      "name": "Microblog",
+      "url": "https://microblog.edjohnsonwilliams.co.uk",
+      "description": "My microblog uses Github issues as a CMS which is actually great. Github's made it harder to use images and videos that you upload since I started using this so there are some funky things to make that work. It's kind of my own social media unlike this site which is usually a bit more long-form."
+    },
+    {
+      "name": "Draft One",
+      "url": "https://draft-one.com",
+      "description": "I made my own text editor and marketing website to go with it. You can't delete anything you write. You can export out later. It's a perfection avoidance tool."
+    },
+    {
+      "name": "Find Nearest Tailwind Colour",
+      "url": "https://find-nearest-tailwind-colour.edjohnsonwilliams.co.uk",
+      "description": "I made a tool to find the nearest colour in the Tailwind colour palettes to any given hex code. Probably my most popular tool based on the stars it's got on Github"
+    },
+    {
+      "name": "Newcastle Sacred Harp",
+      "url": "https://newcastlesacredharp.co.uk",
+      "description": "I've made a few sites for [Sacred Harp groups](https://en.wikipedia.org/wiki/Sacred_Harp). This one is an Astro site that uses a Wordpress.com site as the CMS to make it easy enough for people to update."
+    },
+    {
+      "name": "Stop Targeting Ads at Me",
+      "url": "https://stop-targeting-ads-me.netlify.app",
+      "description": "This was a site I made that is almost certainly now out of date. It gave instructions on how to opt out of personalised advertising on lots of different services."
+    },
+    {
+      "name": "Save Your Indie High Street",
+      "url": "https://web.archive.org/web/20220127034931/https://saveyourindiehighstreet.uk",
+      "description": "A site I made during Covid lockdowns to help promote local independent shops that were delivering goods. Used an Airtable database and form as the backend so people could add shops in their area. Seemed to get decent pickup. It's offline now."
+    }
+  ],
+  "title": "Coding Projects",
+  "description": "A collection of my coding projects and websites."
+}

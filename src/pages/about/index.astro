@@ -10,10 +10,16 @@ import type { CollectionEntry } from "astro:content";
 const codingStuff = await getEntry("stuff", "coding");
 const hobbyStuff = await getEntry("stuff", "hobbies");
 
+type StuffItem = {
+  name: string;
+  url?: string;
+  description: string;
+};
+
 type stuffObject = {
   name: string;
   description?: string; // Can be markdown
-  data: CollectionEntry<"stuff">["data"];
+  items: StuffItem[];
 };
 
 const allStuff: stuffObject[] = [
@@ -21,11 +27,11 @@ const allStuff: stuffObject[] = [
     name: "Coding",
     description:
       "I do a lot of different coding projects. Here are some of them roughly ordered with the most recent first.",
-    data: codingStuff?.data || [],
+    items: codingStuff?.data.items || [],
   },
   {
     name: "Hobbies",
-    data: hobbyStuff?.data || [],
+    items: hobbyStuff?.data.items || [],
   },
 ];
 ---
@@ -91,8 +97,8 @@ const allStuff: stuffObject[] = [
             )}
 
             <div class="mt-12 flex flex-col gap-y-8">
-              {stuff.data &&
-                stuff.data.map(({ url, name, description }) => (
+              {stuff.items &&
+                stuff.items.map(({ url, name, description }) => (
                   <section class="prose dark:prose-invert dark:bg-stone-900">
                     {url ? (
                       <a href={url}>

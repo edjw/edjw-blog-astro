@@ -58,34 +58,43 @@ content:
         order: desc
   
   - name: coding
-    label: Coding Stuff
+    label: Coding Projects
     type: file
     path: src/content/stuff/coding.json
-    format: datagrid
+    format: json
     fields:
-      - name: name
-        label: Name
+      - name: title
+        label: Title
         type: string
-        required: true
-      - name: url
-        label: URL
-        type: string
+        description: "Collection title for coding projects"
       - name: description
         label: Description
         type: string
-        required: true
+        description: "Brief description of this collection"
+      - name: items
+        label: Coding Projects
+        type: code
+        description: "List of coding projects"
+        options:
+          language: json
     
   - name: hobbies
     label: Hobbies
     type: file
     path: src/content/stuff/hobbies.json
-    format: datagrid
+    format: json
     fields:
-      - name: name
-        label: Name
+      - name: title
+        label: Title
         type: string
-        required: true
+        description: "Collection title for hobbies"
       - name: description
         label: Description
         type: string
-        required: true
+        description: "Brief description of this collection"
+      - name: items
+        label: Hobby Items
+        type: code
+        description: "List of hobbies"
+        options:
+          language: json
