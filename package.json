@@ -13,25 +13,27 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/rss": "^4.0.11",
-    "@astrojs/sitemap": "^3.2.1",
-    "@astrojs/tailwind": "^5.1.4",
-    "@tailwindcss/typography": "^0.5.15",
+    "@astrojs/sitemap": "^3.4.0",
+    "@tailwindcss/typography": "^0.5.16",
     "@types/markdown-it": "^12.2.3",
     "@types/sanitize-html": "^2.13.0",
-    "astro": "^5.1.6",
+    "astro": "^5.7.13",
     "markdown-it": "^13.0.2",
     "mdast-util-to-string": "^3.2.0",
     "prettier": "^3.4.1",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.6.9",
+    "prettier-plugin-tailwindcss": "^0.6.11",
     "reading-time": "^1.5.0",
     "remark": "^14.0.3",
     "remark-html": "^15.0.2",
     "sanitize-html": "^2.13.1",
-    "sharp": "^0.33.5",
+    "sharp": "^0.34.1",
     "slugify": "^1.6.6",
-    "tailwindcss": "^3.4.16",
+    "tailwindcss": "^4.1.6",
     "title-case": "^3.0.3",
-    "typescript": "^5.7.2"
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.6"
   }
 }
