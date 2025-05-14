@@ -61,10 +61,31 @@ content:
     label: Coding Stuff
     type: file
     path: src/content/stuff/coding.json
-    format: json
+    format: datagrid
+    fields:
+      - name: name
+        label: Name
+        type: string
+        required: true
+      - name: url
+        label: URL
+        type: string
+      - name: description
+        label: Description
+        type: string
+        required: true
     
   - name: hobbies
     label: Hobbies
     type: file
     path: src/content/stuff/hobbies.json
-    format: json
+    format: datagrid
+    fields:
+      - name: name
+        label: Name
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: string
+        required: true
