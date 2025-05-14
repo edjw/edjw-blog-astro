@@ -1,5 +1,10 @@
 [
   {
+    "name": "Nearest Color",
+    "url": "https://nearest-color.com",
+    "description": "A tool to help designers find the exact matching colour name from standard design palettes like Tailwind when they have a specific colour code,"
+  },
+  {
     "name": "Doughnut Reader",
     "url": "https://doughnut-reader.edjohnsonwilliams.co.uk",
     "description": "My own Hacker News reader. I use this several times every day. Actually a rewrite of an old project I had"
