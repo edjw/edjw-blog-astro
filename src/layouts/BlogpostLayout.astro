@@ -4,7 +4,9 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import type { CollectionEntry } from "astro:content";
 import { getSlug } from "@/utils/getSlug";
 
-type Props = CollectionEntry<"blog">;
+type Props = {
+  entry: CollectionEntry<"blog">;
+};
 const { entry } = Astro.props;
 
 const { title, pubDate, socialDescription, tags } = entry.data;

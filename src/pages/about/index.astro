@@ -11,139 +11,124 @@ const codingStuff = await getEntry("stuff", "coding");
 const hobbyStuff = await getEntry("stuff", "hobbies");
 
 type stuffObject = {
-	name: string;
-	description?: string; // Can be markdown
-	data: CollectionEntry<"stuff">["data"];
+  name: string;
+  description?: string; // Can be markdown
+  data: CollectionEntry<"stuff">["data"];
 };
 
 const allStuff: stuffObject[] = [
-	{
-		name: "Coding",
-		description:
-			"I do a lot of different coding projects. Here are some of them roughly ordered with the most recent first.",
-		data: codingStuff.data,
-	},
-	{
-		name: "Hobbies",
-		data: hobbyStuff.data,
-	},
+  {
+    name: "Coding",
+    description:
+      "I do a lot of different coding projects. Here are some of them roughly ordered with the most recent first.",
+    data: codingStuff?.data || [],
+  },
+  {
+    name: "Hobbies",
+    data: hobbyStuff?.data || [],
+  },
 ];
 ---
 
-<PageLayout
-	title={title}
-	socialDescription={socialDescription}
->
-	<p>I'm Ed Johnson-Williams. This is my personal website.</p>
+<PageLayout title={title} socialDescription={socialDescription}>
+  <p>I'm Ed Johnson-Williams. This is my personal website.</p>
 
-	<h3>What I do</h3>
-	<p>
-		I work at More Onion where I help charities and campaign groups in the UK,
-		Austria and Germany to campaign and raise money online.
-	</p>
-	<p>
-		I sing <a href="https://en.wikipedia.org/wiki/Sacred_Harp">Sacred Harp</a>
-		 and <a href="https://en.wikipedia.org/wiki/The_Christian_Harmony">other</a>
-		<a href="https://en.wikipedia.org/wiki/Shape_note">shapenote music</a>.
-	</p>
+  <h3>What I do</h3>
+  <p>
+    I work at More Onion where I help charities and campaign groups in the UK,
+    Austria and Germany to campaign and raise money online.
+  </p>
+  <p>
+    I sing <a href="https://en.wikipedia.org/wiki/Sacred_Harp">Sacred Harp</a>
+    and <a href="https://en.wikipedia.org/wiki/The_Christian_Harmony">other</a>
+    <a href="https://en.wikipedia.org/wiki/Shape_note">shapenote music</a>.
+  </p>
 
-	<h3>Where I live</h3>
-	<p>I live in Southampton in the south of England in the UK.</p>
+  <h3>Where I live</h3>
+  <p>I live in Southampton in the south of England in the UK.</p>
 
-	<h3>What I used to do</h3>
-	<p>
-		I used to work as a campaigner on trade, poverty, and human rights at <a
-			href="https://traidcraftexchange.org">Traidcraft Exchange</a
-		>. Before that, I worked as a campaigner on human rights in relation to
-		digital technology at <a href="https://www.openrightsgroup.org"
-			>Open Rights Group</a
-		>.
-	</p>
+  <h3>What I used to do</h3>
+  <p>
+    I used to work as a campaigner on trade, poverty, and human rights at <a
+      href="https://traidcraftexchange.org">Traidcraft Exchange</a
+    >. Before that, I worked as a campaigner on human rights in relation to
+    digital technology at <a href="https://www.openrightsgroup.org"
+      >Open Rights Group</a
+    >.
+  </p>
 
-	<h3>Links</h3>
-	<ul>
-		<li>
-			<a
-				href="https://github.com/edjw"
-				rel="me"
-				>GitHub</a
-			>
-		</li>
-		<li>
-			<a
-				href="https://twitter.com/_edjw"
-				rel="me"
-				>Twitter</a
-			>
-		</li>
-		<li>
-			<a
-				href="https://mastodon.social/@_edjw"
-				rel="me"
-				>Mastodon</a
-			>
-		</li>
-		<li><a href="https://www.more-onion.com">More Onion – my employer</a></li>
-	</ul>
+  <h3>Links</h3>
+  <ul>
+    <li>
+      <a href="https://github.com/edjw" rel="me">GitHub</a>
+    </li>
+    <li>
+      <a href="https://twitter.com/_edjw" rel="me">Twitter</a>
+    </li>
+    <li>
+      <a href="https://mastodon.social/@_edjw" rel="me">Mastodon</a>
+    </li>
+    <li><a href="https://www.more-onion.com">More Onion – my employer</a></li>
+  </ul>
 
-	<h3>Here are some other things I've done</h3>
-	<div class="flex flex-col gap-y-8">
-		{
-			allStuff.map((stuff, index) => {
-				const id = `${stuff.name.toLowerCase()}-${String(index + 1)}`;
-				return (
-					<details
-						class="border-t-8 border-yellow-200 p-8 px-4 py-4 shadow-lg dark:prose-invert dark:bg-stone-900"
-						id={id}
-						name="project"
-					>
-						<summary class="cursor-pointer select-none bg-white text-lg font-semibold text-gray-900 dark:bg-stone-900 dark:text-white">
-							{stuff.name}
-						</summary>
+  <h3>Here are some other things I've done</h3>
+  <div class="flex flex-col gap-y-8">
+    {
+      allStuff.map((stuff, index) => {
+        const id = `${stuff.name.toLowerCase()}-${String(index + 1)}`;
+        return (
+          <details
+            class="border-t-8 border-yellow-200 p-8 px-4 py-4 shadow-lg dark:prose-invert dark:bg-stone-900"
+            id={id}
+            name="project"
+          >
+            <summary class="cursor-pointer select-none bg-white text-lg font-semibold text-gray-900 dark:bg-stone-900 dark:text-white">
+              {stuff.name}
+            </summary>
 
-						{stuff.description && (
-							<p set:html={parser.render(stuff.description)} />
-						)}
+            {stuff.description && (
+              <p set:html={parser.render(stuff.description)} />
+            )}
 
-						<div class="mt-12 flex flex-col gap-y-8">
-							{stuff.data &&
-								stuff.data.map(({ url, name, description }) => (
-									<section class="prose dark:prose-invert dark:bg-stone-900">
-										{url ? (
-											<a href={url}>
-												<h3 class="mt-1">{name}</h3>
-											</a>
-										) : (
-											<h3 class="mt-1">{name}</h3>
-										)}
-										<p set:html={parser.render(description)} />
-									</section>
-								))}
-						</div>
-						<div class="mt-4">
-							<button class="close-button border-b">Close this section</button>
-						</div>
-					</details>
-				);
-			})
-		}
-	</div>
+            <div class="mt-12 flex flex-col gap-y-8">
+              {stuff.data &&
+                stuff.data.map(({ url, name, description }) => (
+                  <section class="prose dark:prose-invert dark:bg-stone-900">
+                    {url ? (
+                      <a href={url}>
+                        <h3 class="mt-1">{name}</h3>
+                      </a>
+                    ) : (
+                      <h3 class="mt-1">{name}</h3>
+                    )}
+                    <p set:html={parser.render(description)} />
+                  </section>
+                ))}
+            </div>
+            <div class="mt-4">
+              <button class="close-button border-b">Close this section</button>
+            </div>
+          </details>
+        );
+      })
+    }
+  </div>
 
-	<script>
-		const closeButtons: HTMLButtonElement[] = Array.from(
-			document.querySelectorAll("button.close-button")
-		);
+  <script>
+    const closeButtons: HTMLButtonElement[] = Array.from(
+      document.querySelectorAll("button.close-button"),
+    );
 
-		closeButtons.forEach((button) => {
-			button.addEventListener("click", function (event) {
-				if (event.target !== null) {
-					const targetElement = event.target as Element;
-					const detailsElement = targetElement.closest("details");
-					if (detailsElement !== null) {
-						detailsElement.removeAttribute("open");
-					}
-				}
-			});
-		});
-	</script>
+    closeButtons.forEach((button) => {
+      button.addEventListener("click", function (event) {
+        if (event.target !== null) {
+          const targetElement = event.target as Element;
+          const detailsElement = targetElement.closest("details");
+          if (detailsElement !== null) {
+            detailsElement.removeAttribute("open");
+          }
+        }
+      });
+    });
+  </script>
 </PageLayout>
