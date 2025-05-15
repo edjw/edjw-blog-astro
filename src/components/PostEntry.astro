@@ -14,14 +14,12 @@ const formattedDate = new Intl.DateTimeFormat("en-GB", {
 ---
 
 <section
-  class="prose my-10 border-t-8 border-yellow-200 p-8 shadow-lg dark:prose-invert dark:bg-stone-900"
+  class="my-10 border-t-8 border-yellow-200 p-8 shadow-lg dark:bg-stone-900"
 >
   <p class="m-0 text-base">
     {formattedDate}
   </p>
-  <h3 class="mt-1">
-    <a class="cursor-pointer" href={`/blog/${post.id}`} rel="prefetch"
-      >{post.data.title}</a
-    >
+  <h3 class="mt-1" transition:name={post.data.title}>
+    <a href={`/blog/${post.id}`}>{post.data.title}</a>
   </h3>
 </section>

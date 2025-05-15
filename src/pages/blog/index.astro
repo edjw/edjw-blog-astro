@@ -11,7 +11,7 @@ const allPosts: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
 ---
 
 <BaseLayout pageTitle="All posts" description="Ed Johnson-Williams' blogposts">
-  <div class="prose dark:prose-invert">
+  <div>
     <h2 class="-mb-4" transition:name="pageSubtitle">All blogposts</h2>
     <PostList posts={allPosts} showYears={true} />
   </div>

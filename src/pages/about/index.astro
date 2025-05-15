@@ -78,11 +78,11 @@ const allStuff: stuffObject[] = [
         const id = `${stuff.name.toLowerCase()}-${String(index + 1)}`;
         return (
           <details
-            class="border-t-8 border-yellow-200 p-8 px-4 py-4 shadow-lg dark:prose-invert dark:bg-stone-900"
+            class="border-t-8 border-yellow-200 p-8 px-4 py-4 shadow-lg dark:bg-stone-900"
             id={id}
             name="project"
           >
-            <summary class="cursor-pointer select-none bg-white text-lg font-semibold text-gray-900 dark:bg-stone-900 dark:text-white">
+            <summary class="cursor-pointer bg-white text-lg font-semibold text-gray-900 select-none dark:bg-stone-900 dark:text-white">
               {stuff.name}
             </summary>
 
@@ -93,7 +93,7 @@ const allStuff: stuffObject[] = [
             <div class="mt-12 flex flex-col gap-y-8">
               {stuff.data &&
                 stuff.data.map(({ url, name, description }) => (
-                  <section class="prose dark:prose-invert dark:bg-stone-900">
+                  <section class="dark:bg-stone-900">
                     {url ? (
                       <a href={url}>
                         <h3 class="mt-1">{name}</h3>

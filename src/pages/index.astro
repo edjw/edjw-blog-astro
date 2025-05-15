@@ -7,49 +7,37 @@ const socialDescription = "Ed Johnson Williams' website";
 import { getCollection } from "astro:content";
 
 const featuredPosts = (await getCollection("blog"))
-	.filter((post) => post.data.featured === true)
-	.sort(
-		(a, b) =>
-			new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
-	);
+  .filter((post) => post.data.featured === true)
+  .sort(
+    (a, b) =>
+      new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
+  );
 ---
 
-<PageLayout
-	title={title}
-	socialDescription={socialDescription}
->
-	<section
-		class="prose border-b-4 border-yellow-200 bg-yellow-50 px-8 py-4 shadow-lg dark:prose-invert dark:border-stone-900 dark:bg-stone-800"
-	>
-		<p>My personal site</p>
+<PageLayout title={title} socialDescription={socialDescription}>
+  <section
+    class="border-b-4 border-yellow-200 bg-yellow-50 px-8 py-4 shadow-lg dark:border-stone-900 dark:bg-stone-800"
+  >
+    <p>My personal site</p>
 
-		<p>Some tech, some politics, some shapenote music</p>
-	</section>
+    <p>Some tech, some politics, some shapenote music</p>
+  </section>
 
-	<div class="mt-10">
-		<h2 transition:name="pageSubtitle">A few blogposts I like</h2>
+  <div class="mt-10">
+    <h2 transition:name="pageSubtitle">A few blogposts I like</h2>
 
-		<p>
-			A selection of my blogposts. You can also <a
-				rel="prefetch"
-				href="/blog"
-				class="font-semibold"
-				>see all blogposts</a
-			>.
-		</p>
+    <p>
+      A selection of my blogposts. You can also <a
+        rel="prefetch"
+        href="/blog"
+        class="font-semibold">see all blogposts</a
+      >.
+    </p>
 
-		<PostList
-			posts={featuredPosts}
-			showYears={false}
-		/>
+    <PostList posts={featuredPosts} showYears={false} />
 
-		<p>
-			<a
-				rel="prefetch"
-				href="/blog"
-				class="font-semibold"
-				>See all blogposts</a
-			>
-		</p>
-	</div>
+    <p>
+      <a rel="prefetch" href="/blog" class="font-semibold">See all blogposts</a>
+    </p>
+  </div>
 </PageLayout>

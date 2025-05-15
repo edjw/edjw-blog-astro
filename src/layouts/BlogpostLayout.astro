@@ -1,8 +1,8 @@
 ---
-import { titleCase } from "title-case";
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import type { CollectionEntry } from "astro:content";
 import { getSlug } from "@/utils/getSlug";
+import type { CollectionEntry } from "astro:content";
+import { titleCase } from "title-case";
 
 type Props = {
   entry: CollectionEntry<"blog">;
@@ -21,26 +21,14 @@ const currentURL = Astro.request.url;
 ---
 
 <BaseLayout pageTitle={title} description={socialDescription}>
-  <article class="h-entry prose dark:prose-invert">
+  <article class="h-entry">
     <!-- h-entry things -->
     <div class="hidden">
-      <a href={currentURL}></a>
+      <a href={currentURL} u-url></a>
 
       <time class="dt-published">{new Date(pubDate).toUTCString()}</time>
 
-      <!-- TODO: fix tags -->
-      <!--
-            {
-(tags.length > 0 ) &&
-{tags.map((tag) =>
-<a href={`/tags/${getSlug(tag)}`}>
-{titleCase(tag)}
-</a>
-)}
-            }
-            -->
-
-      <a rel="author" href="https://edjohnsonwilliams.co.uk"
+      <a rel="author" p-author href="https://edjohnsonwilliams.co.uk"
         >Ed Johnson-Williams
       </a>
     </div>
@@ -51,7 +39,7 @@ const currentURL = Astro.request.url;
     </h2>
 
     <section>
-      <p class="my-1" transition:name={`${title}-${pubDate}`}>
+      <p class="my-1">
         <span>Published:</span>
         <time>{formattedDate}</time>
       </p>
