@@ -6,7 +6,6 @@ tags:
   - redwoodsdk
   - cloudflare
   - javascript
-  - tech
 featured: false
 ---
 
@@ -26,7 +25,7 @@ But it is definitely rare to offer database, queues, storage, realtime etc in a 
 
 By accepting vendor lock-in, RedwoodSDK – a very new project – has added many of the things you get from a batteries-included framework like Laravel at launch.
 
-You get this little bits of this with the [new Svelte CLI](https://svelte.dev/blog/sv-the-svelte-cli) which offers simple scaffolding for a database ORM and auth. Rich Harris (the maker of Svelte) [has talked about JS frameworks needing to offer more things like Laravel and Rails](https://www.smashingmagazine.com/2025/01/svelte-5-future-frameworks-chat-rich-harris): "There are too many things that you need to learn in order to build a full stack application today using JavaScript."
+You get little bits of this with the [new Svelte CLI](https://svelte.dev/blog/sv-the-svelte-cli) which offers simple scaffolding for a database ORM and auth. Rich Harris (the maker of Svelte) [has talked about JS frameworks needing to offer more things like Laravel and Rails](https://www.smashingmagazine.com/2025/01/svelte-5-future-frameworks-chat-rich-harris): "There are too many things that you need to learn in order to build a full stack application today using JavaScript."
 
 ## The criticism they're accepting
 
