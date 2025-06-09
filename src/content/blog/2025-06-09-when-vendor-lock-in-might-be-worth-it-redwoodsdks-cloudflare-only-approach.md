@@ -21,7 +21,7 @@ But RedwoodSDK is saying: "We're building for Cloudflare and we're happy to comp
 
 It's not that platform-agnostic frameworks can't have batteries included – [Laravel](https://laravel.com/) and [Rails](https://rubyonrails.org/) obviously do this. [Adonis.js](https://adonisjs.com/) shows it's possible in JavaScript.
 
-But it is definitely rare to offer database, queues, storage, realtime etc in a convention-based way within the JS ecosystem.
+But it is definitely rare to offer database, queues, storage, auth, realtime etc in a convention-based way within the JS ecosystem.
 
 By accepting vendor lock-in, RedwoodSDK – a very new project – has added many of the things you get from a batteries-included framework like Laravel at launch.
 
