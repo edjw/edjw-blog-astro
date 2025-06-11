@@ -22,7 +22,7 @@ The LLMs didn't do any better when researchers provided the complete solution fo
 
 Gary Marcus – a critic of AI hype – [writes this up as "truly embarrassing" and a "knockout blow" for LLMs](https://garymarcus.substack.com/p/a-knockout-blow-for-llms).
 
-I'm not an AI expert. I can't explain why LLMs are bad at chess or Tower of Hanoi. And I get why you might want to be sceptical of the AI model companies marketing around "reasoning".
+I'm not an AI expert. I can't explain why LLMs are bad at chess or Tower of Hanoi. And I get why you might want to be sceptical of the AI model companies' marketing around "reasoning".
 
 But for practical purposes for people who're trying to use the models, there's a thing that's being missed here I think.
 
