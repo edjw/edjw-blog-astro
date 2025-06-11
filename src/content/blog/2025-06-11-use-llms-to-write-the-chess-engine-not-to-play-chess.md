@@ -1,5 +1,5 @@
 ---
-title: Maybe LLMs don't need to reason
+title: Use LLMs to write the chess engine, not to play chess
 pubDate: 2025-06-11T20:57:05.245Z
 socialDescription: "Apple's research shows LLMs can't reason through Tower of Hanoi - but maybe that's not what we should be asking them to do"
 tags:
