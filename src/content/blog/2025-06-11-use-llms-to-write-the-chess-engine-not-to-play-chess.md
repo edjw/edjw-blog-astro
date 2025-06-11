@@ -38,10 +38,10 @@ We should avoid using LLMs as the runtime – the system that solves problems. W
 
 I haven't used [Claude Code](https://www.anthropic.com/claude-code) for very many projects yet. But I spent 20 minutes building a Tower of Hanoi solver to see what would happen if I treated Claude as a builder rather than asking it to reason through the puzzle directly.
 
-You don't need to watch this but this is what it looks like.
+You don't need to watch this, but this is what it looks like.
 
 <div class="w-9/12 mx-auto">
-<video controls width="100%" muted controls>
+<video controls width="100%" muted>
  <source src="/files/tower-of-hanoi/tower-of-hanoi-screenrecording.mp4" type="video/mp4">
  <p>Screen recording of an app solving Tower of Hanoi with 3 starting pieces then with 8 starting pieces</p>
 </video>
@@ -57,10 +57,10 @@ I gave the whole thing quite strict guidelines to follow. I repurposed [Ryan Car
 
 ## LLMs should build chess engines, not play chess
 
-I've tried playing chess against LLMs before – using an LLM a chess-playing runtime. They've always been terrible at it and forget where the pieces are whenever I've played ([though recent OpenAI models seem to be getting good](https://maxim-saplin.github.io/llm_chess/)). I suspect Claude would be quite good at building a chess application that integrates something like the [Stockfish](https://en.wikipedia.org/wiki/Stockfish_(chess)) chess engine. **The LLM wouldn't be making chess moves. It would be building the thing that can make chess moves properly.**
+I've tried playing chess against LLMs before – using an LLM as a chess-playing runtime. They've always been terrible at it and forget where the pieces are whenever I've played ([though recent OpenAI models seem to be getting good](https://maxim-saplin.github.io/llm_chess)). I suspect Claude would be quite good at building a chess application that integrates something like the [Stockfish](https://en.wikipedia.org/wiki/Stockfish_(chess)) chess engine. **The LLM wouldn't be making chess moves. It would be building the thing that can make chess moves properly.**
 
 This probably applies to other areas too like data analysis and maths.
 
-I'm also finding that asking LLMs to use command line tools is more reliable than MCP versions of those tools. [Netlify's MCP](https://docs.netlify.com/welcome/build-with-ai/netlify-mcp-server/) seems to fail a lot for me. Using Claude with Desktop Commander to run commands from [Netlify's CLI](https://docs.netlify.com/cli/get-started/) works very reliably. This feels like something that's related to this point above.
+I'm also finding that asking LLMs to use command line tools is more reliable than MCP versions of those tools. [Netlify's MCP](https://docs.netlify.com/welcome/build-with-ai/netlify-mcp-server/) seems to fail a lot for me. Using [Claude Desktop](https://claude.ai/download) with [Desktop Commander](https://github.com/wonderwhy-er/DesktopCommanderMCP) to run commands from [Netlify's CLI](https://docs.netlify.com/cli/get-started/) works very reliably. This feels like something that's related to this point above.
 
 Maybe LLMs don't have to be brilliant reasoners. It's just that we have to use them for the things they're good for – **creating deterministic code rather than asking them to solve problems themselves**.
