@@ -2,20 +2,12 @@
 import Navigation from "@/components/Navigation.astro";
 import ThemeSwitcher from "@/components/ThemeSwitcher.astro";
 import siteData from "@/data/siteconfig";
-const {
-  title: siteTitle,
-  url,
-  author: { twitterUsername },
-  repository,
-  RSSFeed,
-  sitemap,
-  contentLicence,
-} = siteData;
+const { title: siteTitle } = siteData;
 ---
 
 <header>
   <div class="flex items-center">
-    <h1 class="prose mr-6 text-4xl dark:prose-invert">
+    <h1 class="prose dark:prose-invert mr-6 text-4xl">
       <a
         href="/"
         class="h-card border-b-8 border-yellow-200 text-4xl leading-relaxed no-underline hover:border-transparent"

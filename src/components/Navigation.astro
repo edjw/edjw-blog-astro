@@ -6,7 +6,7 @@ import { navigationItems } from "@/data/navigationItems.js";
   class="prose dark:prose-invert mt-8 mb-4 flex items-center justify-start gap-x-2 sm:gap-x-8"
 >
   {
-    navigationItems.map(({ url, text, attribute }, index) => {
+    navigationItems.map(({ url, text, attribute }, _index) => {
       return (
         <a
           href={url}
