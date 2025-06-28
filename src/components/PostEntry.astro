@@ -13,9 +13,7 @@ const formattedDate = new Intl.DateTimeFormat("en-GB", {
 }).format(new Date(post.data.pubDate));
 ---
 
-<section
-  class="my-10 border-t-8 border-yellow-200 p-8 shadow-lg dark:bg-stone-900"
->
+<section class="my-10 border-t-8 p-8 shadow-lg dark:bg-stone-900">
   <p class="my-0! text-base">
     {formattedDate}
   </p>

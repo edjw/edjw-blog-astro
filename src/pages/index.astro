@@ -10,13 +10,13 @@ const featuredPosts = (await getCollection("blog"))
   .filter((post) => post.data.featured === true)
   .sort(
     (a, b) =>
-      new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
+      new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
   );
 ---
 
 <PageLayout title={title} socialDescription={socialDescription}>
   <section
-    class="border-b-4 border-yellow-200 bg-yellow-50 px-8 py-4 shadow-lg dark:border-stone-900 dark:bg-stone-800"
+    class="border-b-4 px-8 py-4 shadow-lg dark:border-stone-900 dark:bg-stone-800"
   >
     <p>My personal site</p>
 

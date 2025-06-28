@@ -4,6 +4,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
+
   /* Base link styling */
   a {
     @apply border-b-2 border-transparent font-normal no-underline;
@@ -13,7 +14,7 @@
   p,
   li,
   blockquote,
-  p > code {
+  p>code {
     @apply text-lg;
   }
 
@@ -33,12 +34,12 @@
   /* Special styling for navigation links */
   nav a,
   header a {
-    @apply border-yellow-200;
+    @apply ;
   }
 
   /* Link hover effects */
   a:hover {
-    @apply border-b-2 border-yellow-200 bg-yellow-100 text-black no-underline transition-all;
+    @apply border-b-2 text-black no-underline transition-all;
   }
 
   /* Dark mode styles */
@@ -47,7 +48,7 @@
   }
 
   .dark a:hover {
-    @apply border-yellow-200 bg-yellow-900 transition-colors;
+    @apply transition-colors;
   }
 
   .dark h1,
@@ -73,10 +74,10 @@
   }
 
   .dark .prose a:hover {
-    @apply border-yellow-200 bg-yellow-900 transition-colors;
+    @apply transition-colors;
   }
 
-  .prose p > code {
+  .prose p>code {
     @apply break-words;
   }
 
