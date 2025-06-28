@@ -1,9 +1,7 @@
 import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
-// @ts-ignore
 import sanitizeHtml from "sanitize-html";
-// @ts-ignore
 import MarkdownIt from "markdown-it";
 const parser = new MarkdownIt();
 

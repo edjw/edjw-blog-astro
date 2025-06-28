@@ -47,7 +47,7 @@ const currentURL = Astro.request.url;
       .matches
       ? "dark"
       : "light";
-    let currentTheme = localStorage.getItem("theme") || defaultTheme;
+    const currentTheme = localStorage.getItem("theme") || defaultTheme;
 
     if (currentTheme === "light") {
       document.documentElement.classList.remove("dark");

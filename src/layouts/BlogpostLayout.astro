@@ -24,6 +24,7 @@ const currentURL = Astro.request.url;
   <article class="h-entry">
     <!-- h-entry things -->
     <div class="hidden">
+      // eslint-disable-next-line astro/jsx-a11y/anchor-has-content
       <a href={currentURL} u-url></a>
 
       <time class="dt-published">{new Date(pubDate).toUTCString()}</time>
