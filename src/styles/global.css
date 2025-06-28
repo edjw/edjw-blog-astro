@@ -4,7 +4,6 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
-
   /* Base link styling */
   a {
     @apply border-b-2 border-transparent font-normal no-underline;
@@ -14,7 +13,7 @@
   p,
   li,
   blockquote,
-  p>code {
+  p > code {
     @apply text-lg;
   }
 
@@ -34,7 +33,7 @@
   /* Special styling for navigation links */
   nav a,
   header a {
-    @apply ;
+    @apply;
   }
 
   /* Link hover effects */
@@ -77,7 +76,7 @@
     @apply transition-colors;
   }
 
-  .prose p>code {
+  .prose p > code {
     @apply break-words;
   }
 

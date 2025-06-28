@@ -10,7 +10,7 @@ const featuredPosts = (await getCollection("blog"))
   .filter((post) => post.data.featured === true)
   .sort(
     (a, b) =>
-      new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+      new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
   );
 ---
 

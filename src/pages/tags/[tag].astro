@@ -16,7 +16,8 @@ export async function getStaticPaths() {
 
   let allUniqueTags = [
     ...new Set(allPosts.map((post) => post.data.tags).flat()),
-  ].filter((tag): tag is string => !!tag)
+  ]
+    .filter((tag): tag is string => !!tag)
     .map((tag) => getSlug(tag));
 
   return allUniqueTags.map((tag) => {
@@ -31,7 +32,10 @@ const { tag } = Astro.props;
 
 const tagPosts: CollectionEntry<"blog">[] = (
   await getCollection("blog")
-).filter((post) => post.data.tags && post.data.tags.some(t => t && getSlug(t) === tag));
+).filter(
+  (post) =>
+    post.data.tags && post.data.tags.some((t) => t && getSlug(t) === tag),
+);
 
 const tagName = titleCase(tag).replace(/-/g, " ");
 ---
