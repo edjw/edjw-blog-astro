@@ -77,14 +77,8 @@ const allStuff: stuffObject[] = [
       allStuff.map((stuff, index) => {
         const id = `${stuff.name.toLowerCase()}-${String(index + 1)}`;
         return (
-          <details
-            class="border-t-8 p-8 px-4 py-4 shadow-lg dark:bg-stone-900"
-            id={id}
-            name="project"
-          >
-            <summary class="cursor-pointer bg-white text-lg font-semibold text-gray-900 select-none dark:bg-stone-900 dark:text-white">
-              {stuff.name}
-            </summary>
+          <details id={id} name="project">
+            <summary>{stuff.name}</summary>
 
             {stuff.description && (
               <p set:html={parser.render(stuff.description)} />

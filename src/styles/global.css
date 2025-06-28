@@ -4,76 +4,15 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
-  /* Base link styling */
-  a {
-    @apply border-b-2 border-transparent font-normal no-underline;
-  }
-
-  /* Text sizing */
-  p,
-  li,
-  blockquote,
-  p > code {
-    @apply text-lg;
-  }
-
-  /* Clear heading hierarchy */
-  h1 {
-    @apply mt-6 mb-4 text-3xl font-bold;
-  }
-
-  h2 {
-    @apply mt-5 mb-3 text-2xl font-semibold;
-  }
-
-  h3 {
-    @apply mt-4 mb-2 text-xl font-medium;
-  }
-
-  /* Special styling for navigation links */
-  nav a,
-  header a {
-    @apply;
-  }
-
-  /* Link hover effects */
-  a:hover {
-    @apply border-b-2 text-black no-underline transition-all;
-  }
-
-  /* Dark mode styles */
-  .dark a {
-    @apply border-transparent text-gray-100;
-  }
-
-  .dark a:hover {
-    @apply transition-colors;
-  }
-
-  .dark h1,
-  .dark h2,
-  .dark h3 {
-    @apply text-white;
-  }
-
-  /* Remove code quotes */
-  code::before,
-  code::after {
-    content: "";
+  button,
+  summary {
+    @apply cursor-pointer;
   }
 }
 
 @layer utilities {
   .prose a {
-    @apply font-normal break-words;
-  }
-
-  .dark .prose a {
-    @apply text-gray-100;
-  }
-
-  .dark .prose a:hover {
-    @apply transition-colors;
+    @apply break-words;
   }
 
   .prose p > code {
@@ -82,5 +21,10 @@
 
   .prose pre {
     @apply max-w-[90vw];
+  }
+
+  /* Remove code quotes */
+  :where(.prose code):is(::before, ::after) {
+    content: "";
   }
 }

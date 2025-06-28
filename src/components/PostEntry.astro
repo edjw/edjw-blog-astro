@@ -13,8 +13,8 @@ const formattedDate = new Intl.DateTimeFormat("en-GB", {
 }).format(new Date(post.data.pubDate));
 ---
 
-<section class="my-10 border-t-8 p-8 shadow-lg dark:bg-stone-900">
-  <p class="my-0! text-base">
+<section>
+  <p class="text-base">
     {formattedDate}
   </p>
   <h3 class="mt-1" transition:name={post.data.title}>
