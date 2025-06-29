@@ -4,10 +4,15 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
+
   button,
   summary {
     @apply cursor-pointer;
   }
+}
+
+a {
+  @apply decoration-[#D92A1C] !;
 }
 
 @layer utilities {
@@ -15,7 +20,7 @@
     @apply break-words;
   }
 
-  .prose p > code {
+  .prose p>code {
     @apply break-words;
   }
 
