@@ -12,7 +12,7 @@ const featuredPosts = (await getCollection("blog"))
   .filter((post) => post.data.featured === true)
   .sort(
     (a, b) =>
-      new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+      new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
   );
 ---
 
@@ -25,9 +25,7 @@ const featuredPosts = (await getCollection("blog"))
         a mix of coding and tech, politics, and some shapenote music.
       </p>
       <p class="mt-0 mb-0 hidden sm:block">
-        <a href="/about" class="font-semibold underline"
-          >Find out more about me →</a
-        >
+        <a href="/about" class="font-semibold">Find out more about me →</a>
       </p>
     </div>
     <div class="flex-shrink-0" transition-name="headshot">
@@ -41,9 +39,7 @@ const featuredPosts = (await getCollection("blog"))
       />
     </div>
     <p class="mt-0 mb-0 sm:hidden">
-      <a href="/about" class="font-semibold underline"
-        >Find out more about me →</a
-      >
+      <a href="/about" class="font-semibold">Find out more about me →</a>
     </p>
   </section>
 

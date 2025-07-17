@@ -20,7 +20,7 @@ const { posts, showYears } = Astro.props;
 
 const sortedPosts: CollectionEntry<"blog">[] = posts.sort(
   (a, b) =>
-    new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+    new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
 );
 ---
 
