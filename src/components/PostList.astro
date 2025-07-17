@@ -20,20 +20,26 @@ const { posts, showYears } = Astro.props;
 
 const sortedPosts: CollectionEntry<"blog">[] = posts.sort(
   (a, b) =>
-    new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
+    new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
 );
 ---
 
-{
-  sortedPosts.map((post) => (
-    <div>
-      {showYears && setCurrentPostYear(post.data.pubDate)}
-      {showYears && year != "" && year != currentPostYear && (
-        <p class="mt-10 -mb-6 text-lg font-bold">{currentPostYear}</p>
-      )}
-      {showYears && setYear(post.data.pubDate)}
+<div class="flex flex-col gap-y-8">
+  {
+    sortedPosts.map((post) => (
+      <div>
+        {showYears && setCurrentPostYear(post.data.pubDate)}
+        {showYears && year != "" && year != currentPostYear && (
+          <p class="mt-16 mb-8 text-3xl font-bold text-[#DA291C]">
+            {currentPostYear}
+          </p>
+        )}
+        {showYears && setYear(post.data.pubDate)}
 
-      <PostEntry post={post} />
-    </div>
-  ))
-}
+        <div class="border-l py-2 pl-4">
+          <PostEntry post={post} />
+        </div>
+      </div>
+    ))
+  }
+</div>
