@@ -6,7 +6,7 @@ tags:
   - new-website
   - tailwind
   - svelte
-featured: true
+featured: false
 ---
 
 I've made a new tool called **[Find the nearest Tailwind colour](https://find-nearest-tailwind-colour.netlify.app/)**.

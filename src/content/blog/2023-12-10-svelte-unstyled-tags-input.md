@@ -4,7 +4,7 @@ pubDate: 2023-12-10T22:33:00Z
 tags:
   - svelte
 socialDescription: I made a Svelte component and published it
-featured: true
+featured: false
 ---
 
 I've made a tags input component for Svelte. It comes completely unstyled but with lots of classes, ids and data attributes for hooking in with your own styles. And same for passing in your own classes to specific parts of the components too. There are plenty of configuration options for things like showing the input label, customising button text, placeholders etc.
