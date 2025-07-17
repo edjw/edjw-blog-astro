@@ -8,18 +8,15 @@
 }
 
 @layer base {
-
   button,
   summary {
     @apply cursor-pointer;
   }
 
   a {
-    @apply decoration-[#DA291C] decoration-[4px] underline-offset-[6px] no-underline hover:underline;
+    @apply no-underline decoration-[#DA291C] decoration-[4px] underline-offset-[6px] hover:underline;
   }
 }
-
-
 
 @layer utilities {
   .prose {
@@ -31,10 +28,10 @@
   }
 
   .prose a {
-    @apply break-words underline decoration-2 underline-offset-2;
+    @apply break-words underline decoration-[#DA291C] decoration-2 underline-offset-2;
   }
 
-  .prose p>code {
+  .prose p > code {
     @apply break-words;
   }
 

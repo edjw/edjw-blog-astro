@@ -18,7 +18,9 @@ const formattedDate = new Intl.DateTimeFormat("en-GB", {
     {formattedDate}
   </p>
   <h3 class="mt-0 mb-0" transition:name={post.data.title}>
-    <a href={`/blog/${post.id}`} class="text-2xl font-bold text-stone-900"
+    <a
+      href={`/blog/${post.id}`}
+      class="text-2xl font-bold text-stone-900 no-underline! hover:underline!"
       >{post.data.title}</a
     >
   </h3>
