@@ -1,0 +1,40 @@
+<p class="prose dark:prose-invert flex gap-x-4 text-lg leading-loose">
+  <button
+    id="dark"
+    class="cursor-pointer no-underline transition-all dark:cursor-auto dark:text-stone-700 dark:hover:bg-transparent"
+  >
+    Dark</button
+  >
+  <span class="invisible sm:visible">/</span>
+  <button
+    id="light"
+    class="cursor-auto text-gray-200 no-underline transition-all hover:bg-transparent dark:cursor-pointer dark:dark:hover:text-stone-700"
+  >
+    Light</button
+  >
+</p>
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const darkModeButton = document.querySelector("button#dark");
+
+    const lightModeButton = document.querySelector("button#light");
+
+    if (!darkModeButton) {
+      return;
+    }
+
+    if (!lightModeButton) {
+      return;
+    }
+
+    darkModeButton.addEventListener("click", () => {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    });
+
+    lightModeButton.addEventListener("click", () => {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    });
+  });
+</script>
