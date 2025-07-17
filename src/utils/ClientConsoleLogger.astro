@@ -1,0 +1,135 @@
+---
+// Client Console Logger - Development-only logging component
+//
+// This component patches console methods to send logs to a server-side API endpoint
+// for development debugging. Should be set up to only render in development mode like `{isDev && <ClientConsoleLogger />}` at the very top of the <head> of your base layout before anything else.
+//
+// Requirements:
+// - Must be paired with an API route like src/pages/api/log.ts in Astro but could be used with api routes on other frameworks
+// - Include once in your base layout (e.g., BaseLayout.astro)
+// - API route handles log persistence and rotation
+---
+
+<script type="module">
+  (function () {
+    // Server-side guard
+    if (typeof window === "undefined") return;
+
+    /**
+     * @typedef {Object} LogEntry
+     * @property {"info" | "warn" | "error" | "debug"} level
+     * @property {string} message
+     * @property {"client"} source
+     * @property {string} timestamp
+     */
+
+    // Store original console methods
+    const originalConsole = {
+      log: console.log.bind(console),
+      warn: console.warn.bind(console),
+      error: console.error.bind(console),
+      debug: console.debug.bind(console),
+    };
+
+    /**
+     * @param {LogEntry["level"]} level
+     * @param {any[]} args
+     * @returns {LogEntry}
+     */
+    function formatLogEntry(level, args) {
+      const message = args
+        .map((arg) => {
+          if (typeof arg === "string") return arg;
+          if (arg instanceof Error) return `${arg.name}: ${arg.message}`;
+          try {
+            return JSON.stringify(arg);
+          } catch {
+            return String(arg);
+          }
+        })
+        .join(" ");
+
+      return {
+        level,
+        message,
+        source: "client",
+        timestamp: new Date().toISOString(),
+      };
+    }
+
+    /**
+     * @param {LogEntry} log
+     */
+    async function sendLogToServer(log) {
+      try {
+        await fetch("/api/log", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ logs: [log] }),
+        });
+      } catch {
+        // Silently fail - don't spam console with server errors
+      }
+    }
+
+    /**
+     * @param {LogEntry["level"]} level
+     * @param {any[]} args
+     */
+    function queueLog(level, args) {
+      const entry = formatLogEntry(level, args);
+
+      // Skip Vite connection debug messages
+      const viteDebugMessages = [
+        "[vite] connected",
+        "[vite] connecting",
+        "[vite] server connection lost",
+        "[vite] hot updated",
+      ];
+      if (
+        viteDebugMessages.some((viteMsg) => entry.message.includes(viteMsg))
+      ) {
+        return;
+      }
+
+      sendLogToServer(entry);
+    }
+
+    // Patch console methods
+    console.log = (...args) => {
+      originalConsole.log(...args);
+      queueLog("info", args);
+    };
+
+    console.warn = (...args) => {
+      originalConsole.warn(...args);
+      queueLog("warn", args);
+    };
+
+    console.error = (...args) => {
+      originalConsole.error(...args);
+      queueLog("error", args);
+    };
+
+    console.debug = (...args) => {
+      originalConsole.debug(...args);
+      queueLog("debug", args);
+    };
+
+    // Capture unhandled errors
+    window.addEventListener("error", (event) => {
+      queueLog("error", [
+        `Unhandled Error: ${event.error?.message || event.message}`,
+        { filename: event.filename, lineno: event.lineno, colno: event.colno },
+      ]);
+    });
+
+    // Capture unhandled promise rejections
+    window.addEventListener("unhandledrejection", (event) => {
+      queueLog("error", [
+        `Unhandled Promise Rejection: ${event.reason}`,
+        { type: "unhandledrejection" },
+      ]);
+    });
+  })();
+</script>
