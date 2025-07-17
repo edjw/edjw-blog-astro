@@ -3,21 +3,35 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme inline {
+  --font-sans: var(--font-jost);
+}
+
 @layer base {
 
   button,
   summary {
     @apply cursor-pointer;
   }
+
+  a {
+    @apply decoration-[#DA291C] decoration-[4px] underline-offset-[6px] no-underline hover:underline;
+  }
 }
 
-a {
-  @apply decoration-[#D92A1C] !;
-}
+
 
 @layer utilities {
+  .prose {
+    @apply text-lg;
+  }
+
+  .prose h2 {
+    margin-bottom: 0.25em;
+  }
+
   .prose a {
-    @apply break-words;
+    @apply break-words underline;
   }
 
   .prose p>code {
