@@ -63,3 +63,15 @@ This is an Astro-based personal blog site for Ed Johnson-Williams (edjohnsonwill
 
 - Netlify deployment with extensive redirect rules for URL migration
 - Security headers configured in netlify.toml
+
+## Claude Code Integration
+
+### Automatic Error Detection
+
+This project includes Claude Code hooks for automatic Vite dev server and client-side error detection. The system works automatically when using Claude Code, but requires proper logging setup:
+
+**For Claude Code users:** Use `mkdir -p logs && pnpm dev > logs/vite-dev.log 2>&1 & echo $! > dev.pid` to start the dev server with proper logging.
+
+**Error monitoring covers:**
+- Server-side errors: Build failures, runtime errors, module resolution (in `logs/vite-dev.log`)
+- Client-side errors: JavaScript errors, unhandled rejections (in `logs/client.log` if using the UniversalLogger component)

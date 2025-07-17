@@ -1,32 +1,18 @@
 ---
 import Navigation from "@/components/Navigation.astro";
-import ThemeSwitcher from "@/components/ThemeSwitcher.astro";
+// import ThemeSwitcher from "@/components/ThemeSwitcher.astro";
 import siteData from "@/data/siteconfig";
-const {
-  title: siteTitle,
-  url,
-  author: { twitterUsername },
-  repository,
-  RSSFeed,
-  sitemap,
-  contentLicence,
-} = siteData;
+const { title: siteTitle } = siteData;
 ---
 
-<header>
-  <div class="flex items-center">
-    <h1 class="prose mr-6 text-4xl dark:prose-invert">
-      <a
-        href="/"
-        class="h-card border-b-8 border-yellow-200 text-4xl leading-relaxed no-underline hover:border-transparent"
-        rel="me"
-      >
+<header class="mb-8">
+  <div class="mb-6 flex items-center justify-between gap-x-8">
+    <h1 class="text-4xl font-bold">
+      <a href="/" class="h-card text-stone-900" rel="me">
         {siteTitle}
       </a>
     </h1>
-    <div class="pt-4">
-      <ThemeSwitcher />
-    </div>
+    <!-- <ThemeSwitcher /> -->
   </div>
 
   <Navigation />

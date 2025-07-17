@@ -1,7 +1,7 @@
 ---
 import siteData from "@/data/siteconfig";
 const {
-  author: { twitterUsername },
+  author: { blueskyUsername, githubUsername, mastodonUsername },
   repository,
   RSSFeed,
   sitemap,
@@ -9,58 +9,58 @@ const {
 } = siteData;
 ---
 
-<footer class="prose dark:prose-invert mt-12 border-t-8 border-yellow-200">
-  <div class="leading-loose">
-    <h3 class="mt-4 mb-1 pb-0">Links</h3>
-    <div class="flex gap-x-4">
+<div class="border-t border-stone-200 pt-4">
+  <div>
+    <div class="mt-4 flex gap-x-4">
       <p>
-        <a href=`https://twitter.com/${twitterUsername}` rel="me">Twitter</a>
+        <a href=`https://github.com/${githubUsername}` rel="me">GitHub</a>
       </p>
       <p>
-        <a href="https://mastodon.social/@_edjw" rel="me">Mastodon</a>
+        <a href=`https://bsky.app/profile/${blueskyUsername}`>Blue Sky</a>
       </p>
       <p>
-        <a href="https://github.com/edjw" rel="me">GitHub</a>
+        <a href=`https://mastodon.social/@${mastodonUsername}`>Mastodon</a>
       </p>
     </div>
   </div>
-  {
-    repository && (
-      <p class="my-2 pl-0">
-        <a class="underline" href={`https://github.com/${repository}`}>
-          See the code for this site
-        </a>
-      </p>
-    )
-  }
+  <div class="mt-4 flex flex-col gap-y-1">
+    {
+      repository && (
+        <p class="my-2 pl-0">
+          <a class="underline" href={`https://github.com/${repository}`}>
+            See the code for this site
+          </a>
+        </p>
+      )
+    }
+    {
+      RSSFeed && (
+        <p class="my-2 pl-0">
+          <a class="underline" data-astro-reload href="/feed.xml">
+            See the RSS feed for this site
+          </a>
+        </p>
+      )
+    }
+  </div>
+</div>
 
-  {
-    RSSFeed && (
-      <p class="my-2 pl-0">
-        <a class="underline" data-astro-reload href="/feed.xml">
-          See the RSS feed for this site
-        </a>
-      </p>
-    )
-  }
+{
+  sitemap && (
+    <p class="hidden">
+      <a href="/sitemap.xml">Sitemap</a>
+    </p>
+  )
+}
 
-  {
-    sitemap && (
-      <p class="hidden">
-        <a href="/sitemap.xml">Sitemap</a>
-      </p>
-    )
-  }
-
-  {
-    contentLicence && (
-      <p class="mt-6 text-sm">
-        Content on this website is licenced as
-        <a href={contentLicence.link}>{contentLicence.text}</a>. That means you
-        can copy, adapt, and redistribute any content on this site for any
-        purpose providing you give credit, provide a link to the licence, and
-        indicate if you made changes.
-      </p>
-    )
-  }
-</footer>
+{
+  contentLicence && (
+    <p class="mt-6 mb-8 text-sm">
+      Content on this website is licenced as
+      <a href={contentLicence.link}>{contentLicence.text}</a>. That means you
+      can copy, adapt, and redistribute any content on this site for any purpose
+      providing you give credit, provide a link to the licence, and indicate if
+      you made changes.
+    </p>
+  )
+}

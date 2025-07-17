@@ -1,17 +1,12 @@
 ---
 import { ClientRouter } from "astro:transitions";
+import { Font } from "astro:assets";
 
 import siteData from "@/data/siteconfig.js";
 
 const {
   title: siteTitle,
-  description,
-  url,
   author: { twitterUsername },
-  repository,
-  RSSFeed,
-  sitemap,
-  contentLicence,
 } = siteData;
 
 const { title: pageTitle, description: pageDescription } = Astro.props;
@@ -45,15 +40,18 @@ const currentURL = Astro.request.url;
   href="/rss.xml"
 />
 
+<Font cssVariable="--font-jost" preload />
+
 <ClientRouter />
 
+<!--
 <script is:inline>
   function handleTheme() {
     const defaultTheme = window.matchMedia("(prefers-color-scheme: dark)")
       .matches
       ? "dark"
       : "light";
-    let currentTheme = localStorage.getItem("theme") || defaultTheme;
+    const currentTheme = localStorage.getItem("theme") || defaultTheme;
 
     if (currentTheme === "light") {
       document.documentElement.classList.remove("dark");
@@ -70,4 +68,4 @@ const currentURL = Astro.request.url;
   document.addEventListener("astro:after-swap", () => {
     handleTheme();
   });
-</script>
+</script> -->

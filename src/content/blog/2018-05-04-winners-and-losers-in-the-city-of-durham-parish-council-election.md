@@ -49,13 +49,13 @@ The quirks of the system are clearest in the Neville's Cross ward.
     </th>
   </tr>
   <tr class="border border-black">
-    <td class="overflow-hidden border border-black bg-yellow-200">LD</td>
-    <td class="overflow-hidden border border-black bg-yellow-200">7098</td>
-    <td class="overflow-hidden border border-black bg-yellow-200">4</td>
-    <td class="overflow-hidden border border-black bg-yellow-200">8</td>
-    <td class="overflow-hidden border border-black bg-yellow-200">887</td>
-    <td class="overflow-hidden border border-black bg-yellow-200">41.5</td>
-    <td class="overflow-hidden border border-black bg-yellow-200">50</td>
+    <td class="overflow-hidden border border-black">LD</td>
+    <td class="overflow-hidden border border-black">7098</td>
+    <td class="overflow-hidden border border-black">4</td>
+    <td class="overflow-hidden border border-black">8</td>
+    <td class="overflow-hidden border border-black">887</td>
+    <td class="overflow-hidden border border-black">41.5</td>
+    <td class="overflow-hidden border border-black">50</td>
   </tr>
   <tr class="border border-black">
     <td class="overflow-hidden border border-black bg-red-600 text-white">

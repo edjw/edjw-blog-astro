@@ -3,84 +3,47 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme inline {
+  --font-sans: var(--font-jost);
+}
+
 @layer base {
-  /* Base link styling */
+
+  button,
+  summary {
+    @apply cursor-pointer;
+  }
+
   a {
-    @apply border-b-2 border-transparent font-normal no-underline;
-  }
-
-  /* Text sizing */
-  p,
-  li,
-  blockquote,
-  p > code {
-    @apply text-lg;
-  }
-
-  /* Clear heading hierarchy */
-  h1 {
-    @apply mt-6 mb-4 text-3xl font-bold;
-  }
-
-  h2 {
-    @apply mt-5 mb-3 text-2xl font-semibold;
-  }
-
-  h3 {
-    @apply mt-4 mb-2 text-xl font-medium;
-  }
-
-  /* Special styling for navigation links */
-  nav a,
-  header a {
-    @apply border-yellow-200;
-  }
-
-  /* Link hover effects */
-  a:hover {
-    @apply border-b-2 border-yellow-200 bg-yellow-100 text-black no-underline transition-all;
-  }
-
-  /* Dark mode styles */
-  .dark a {
-    @apply border-transparent text-gray-100;
-  }
-
-  .dark a:hover {
-    @apply border-yellow-200 bg-yellow-900 transition-colors;
-  }
-
-  .dark h1,
-  .dark h2,
-  .dark h3 {
-    @apply text-white;
-  }
-
-  /* Remove code quotes */
-  code::before,
-  code::after {
-    content: "";
+    @apply decoration-[#DA291C] decoration-[4px] underline-offset-[6px] no-underline hover:underline;
   }
 }
 
+
+
 @layer utilities {
+  .prose {
+    @apply text-lg;
+  }
+
+  .prose h2 {
+    margin-bottom: 0.25em;
+  }
+
   .prose a {
-    @apply font-normal break-words;
+    @apply break-words underline;
   }
 
-  .dark .prose a {
-    @apply text-gray-100;
-  }
-
-  .dark .prose a:hover {
-    @apply border-yellow-200 bg-yellow-900 transition-colors;
-  }
-
-  .prose p > code {
+  .prose p>code {
     @apply break-words;
   }
 
   .prose pre {
     @apply max-w-[90vw];
+  }
+
+  /* Remove code quotes */
+  :where(.prose code):is(::before, ::after) {
+    content: "";
   }
 }

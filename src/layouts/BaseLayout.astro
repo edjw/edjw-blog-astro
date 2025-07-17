@@ -3,25 +3,30 @@ import BaseHead from "@/components/BaseHead.astro";
 import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
 import "@/styles/global.css";
+import ClientConsoleLogger from "@/utils/ClientConsoleLogger.astro";
 
 const { pageTitle, description: pageDescription } = Astro.props;
+const isDev = import.meta.env.DEV;
 ---
 
 <html lang="en" class="dark" style="scrollbar-gutter: stable;">
   <head>
+    {isDev && <ClientConsoleLogger />}
     <BaseHead title={pageTitle} description={pageDescription} />
   </head>
-  <body class="bg-white transition-colors dark:bg-stone-800">
+  <body class="bg-white">
     <div
-      class="container mx-auto grid h-screen max-w-4xl grid-rows-[auto_1fr_auto] px-4 py-4"
+      class="container mx-auto grid h-screen max-w-4xl grid-rows-[auto_1fr_auto] px-6 py-8"
     >
       <Header />
 
-      <main class="prose dark:prose-invert mt-8 transition-colors">
+      <main class="mt-0">
         <slot />
       </main>
 
-      <Footer />
+      <footer class="mt-12 mb-8">
+        <Footer />
+      </footer>
     </div>
   </body>
 </html>

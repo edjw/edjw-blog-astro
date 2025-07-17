@@ -24,6 +24,9 @@ const currentURL = Astro.request.url;
   <article class="h-entry">
     <!-- h-entry things -->
     <div class="hidden">
+      // eslint-disable-next-line astro/jsx-a11y/anchor-has-content,
+      astro/jsx-a11y/anchor-has-content // eslint-disable-next-line
+      astro/jsx-a11y/anchor-has-content
       <a href={currentURL} u-url></a>
 
       <time class="dt-published">{new Date(pubDate).toUTCString()}</time>
@@ -34,11 +37,14 @@ const currentURL = Astro.request.url;
     </div>
     <!-- End of h-entry things -->
 
-    <h2 class="p-name -mt-0" transition:name={title}>
+    <h2
+      class="p-name mt-0 mb-6 text-3xl font-bold"
+      transition:name="pageSubtitle"
+    >
       {title}
     </h2>
 
-    <section>
+    <section class="mb-4">
       <p class="my-1">
         <span>Published:</span>
         <time>{formattedDate}</time>
@@ -60,7 +66,7 @@ const currentURL = Astro.request.url;
       }
     </section>
 
-    <div class="e-content">
+    <div class="e-content prose">
       <slot />
     </div>
   </article>

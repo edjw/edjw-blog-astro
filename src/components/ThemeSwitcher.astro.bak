@@ -1,14 +1,14 @@
 <p class="prose dark:prose-invert flex gap-x-4 text-lg leading-loose">
   <button
     id="dark"
-    class="cursor-pointer no-underline transition-all hover:bg-yellow-200 dark:cursor-auto dark:text-stone-700 dark:hover:bg-transparent"
+    class="cursor-pointer no-underline transition-all dark:cursor-auto dark:text-stone-700 dark:hover:bg-transparent"
   >
     Dark</button
   >
   <span class="invisible sm:visible">/</span>
   <button
     id="light"
-    class="cursor-auto text-gray-200 no-underline transition-all hover:bg-transparent dark:cursor-pointer dark:hover:bg-yellow-200 dark:hover:text-stone-700"
+    class="cursor-auto text-gray-200 no-underline transition-all hover:bg-transparent dark:cursor-pointer dark:dark:hover:text-stone-700"
   >
     Light</button
   >
