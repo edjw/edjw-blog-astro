@@ -14,10 +14,10 @@ const siteData = {
     mastodonUsername: "@_edjw",
     microblogUsername: "edjw",
     instagramUsername: "_edjw",
+    blueskyUsername: "edjohnsonwilliams.co.uk",
   },
   indieauth: true,
   micropub: true,
-  netlifyCMS: true,
   RSSFeed: true,
   sitemap: true,
 };
