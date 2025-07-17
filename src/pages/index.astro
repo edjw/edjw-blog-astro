@@ -1,6 +1,8 @@
 ---
 import PageLayout from "@/layouts/PageLayout.astro";
 import PostList from "@/components/PostList.astro";
+import { Image } from "astro:assets";
+import headshot from "../images/headshot-crop.png";
 const title = "Ed Johnson Williams' website";
 const socialDescription = "Ed Johnson Williams' website";
 
@@ -10,21 +12,47 @@ const featuredPosts = (await getCollection("blog"))
   .filter((post) => post.data.featured === true)
   .sort(
     (a, b) =>
-      new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
+      new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
   );
 ---
 
 <PageLayout title={title} socialDescription={socialDescription}>
-  <section>
-    <p>My personal site</p>
-
-    <p>Some tech, some politics, some shapenote music</p>
+  <section class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-x-6">
+    <div class="flex flex-col gap-y-4">
+      <p class="mt-0 mb-0 text-lg">Hi, I'm Ed.</p>
+      <p class="mt-0 mb-0 text-lg">
+        This is my personal site about the things I'm interested in. It's mostly
+        a mix of coding and tech, politics, and some shapenote music.
+      </p>
+      <p class="mt-0 mb-0 hidden sm:block">
+        <a href="/about" class="font-semibold underline"
+          >Find out more about me →</a
+        >
+      </p>
+    </div>
+    <div class="flex-shrink-0" transition-name="headshot">
+      <Image
+        src={headshot}
+        alt="Ed Johnson-Williams headshot"
+        class="mt-0 mb-0 h-32 w-32 object-cover sm:h-48 sm:w-48"
+        width={500}
+        height={500}
+        quality={90}
+      />
+    </div>
+    <p class="mt-0 mb-0 sm:hidden">
+      <a href="/about" class="font-semibold underline"
+        >Find out more about me →</a
+      >
+    </p>
   </section>
 
-  <div class="mt-10">
-    <h2 transition:name="pageSubtitle">A few blogposts I like</h2>
+  <div class="mt-8">
+    <h2 class="mb-4 text-3xl font-bold" transition:name="pageSubtitle">
+      A few blogposts I like
+    </h2>
 
-    <p>
+    <p class="mb-8">
       A selection of my blogposts. You can also <a
         rel="prefetch"
         href="/blog"
@@ -34,7 +62,7 @@ const featuredPosts = (await getCollection("blog"))
 
     <PostList posts={featuredPosts} showYears={false} />
 
-    <p>
+    <p class="mt-8">
       <a rel="prefetch" href="/blog" class="font-semibold">See all blogposts</a>
     </p>
   </div>

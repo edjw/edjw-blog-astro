@@ -1,5 +1,7 @@
 ---
 import PageLayout from "@/layouts/PageLayout.astro";
+import { Image } from "astro:assets";
+import headshot from "../../images/headshot-crop.png";
 const title = "About me";
 const socialDescription = "My 'About me' page";
 import MarkdownIt from "markdown-it";
@@ -31,21 +33,65 @@ const allStuff: stuffObject[] = [
 ---
 
 <PageLayout title={title} socialDescription={socialDescription}>
-  <p>I'm Ed Johnson-Williams. This is my personal website.</p>
+  <div class="mb-8">
+    <!-- Mobile: stacked layout -->
+    <div class="block space-y-4 sm:hidden h-card">
+      <p class="text-lg">
+        I'm <span class="p-name">Ed Johnson-Williams</span>. This is my personal website.
+      </p>
+      <div class="flex justify-center" transition-name="headshot">
+        <Image
+          src={headshot}
+          alt="Ed Johnson-Williams headshot"
+          class="mt-0 mb-0 h-32 w-32 object-cover u-photo"
+          width={500}
+          height={500}
+          quality={90}
+        />
+      </div>
+    </div>
 
-  <h3>What I do</h3>
-  <p>
-    I work at More Onion where I help charities and campaign groups in the UK,
-    Austria and Germany to campaign and raise money online.
-  </p>
-  <p>
-    I sing <a href="https://en.wikipedia.org/wiki/Sacred_Harp">Sacred Harp</a>
-    and <a href="https://en.wikipedia.org/wiki/The_Christian_Harmony">other</a>
-    <a href="https://en.wikipedia.org/wiki/Shape_note">shapenote music</a>.
-  </p>
+    <!-- Desktop: flowing text layout -->
+    <div class="hidden sm:block h-card" transition-name="headshot">
+      <Image
+        src={headshot}
+        alt="Ed Johnson-Williams headshot"
+        class="float-right mb-4 ml-8 h-48 w-48 object-cover u-photo"
+        width={500}
+        height={500}
+        quality={90}
+      />
+      <p class="text-lg">
+        I'm <span class="p-name">Ed Johnson-Williams</span>. This is my personal website.
+      </p>
 
-  <h3>Where I live</h3>
-  <p>I live in Southampton in the south of England in the UK.</p>
+      <section class="space-y-4">
+        <div>
+          <h3>What I do</h3>
+          <p>
+            I work at <span class="p-org">More Onion</span> where I help charities and campaign groups in
+            the UK, Austria and Germany to campaign and raise money online.
+          </p>
+          <p>
+            I sing <a href="https://en.wikipedia.org/wiki/Sacred_Harp"
+              >Sacred Harp</a
+            >
+            and <a href="https://en.wikipedia.org/wiki/The_Christian_Harmony"
+              >other</a
+            >
+            <a href="https://en.wikipedia.org/wiki/Shape_note"
+              >shapenote music</a
+            >.
+          </p>
+        </div>
+
+        <div>
+          <h3>Where I live</h3>
+          <p>I live in <span class="p-locality">Southampton</span> in the south of <span class="p-country-name">England</span> in the <span class="p-country-name">UK</span>.</p>
+        </div>
+      </section>
+    </div>
+  </div>
 
   <h3>What I used to do</h3>
   <p>
@@ -56,20 +102,6 @@ const allStuff: stuffObject[] = [
       >Open Rights Group</a
     >.
   </p>
-
-  <h3>Links</h3>
-  <ul>
-    <li>
-      <a href="https://github.com/edjw" rel="me">GitHub</a>
-    </li>
-    <li>
-      <a href="https://twitter.com/_edjw" rel="me">Twitter</a>
-    </li>
-    <li>
-      <a href="https://mastodon.social/@_edjw" rel="me">Mastodon</a>
-    </li>
-    <li><a href="https://www.more-onion.com">More Onion – my employer</a></li>
-  </ul>
 
   <h3>Here are some other things I've done</h3>
   <div class="flex flex-col gap-y-8">
@@ -87,7 +119,7 @@ const allStuff: stuffObject[] = [
             <div class="mt-12 flex flex-col gap-y-8">
               {stuff.data &&
                 stuff.data.map(({ url, name, description }) => (
-                  <section class="dark:bg-stone-900">
+                  <section>
                     {url ? (
                       <a href={url}>
                         <h3 class="mt-1">{name}</h3>
@@ -108,9 +140,20 @@ const allStuff: stuffObject[] = [
     }
   </div>
 
+  <h3>Links</h3>
+  <ul>
+    <li>
+      <a href="https://github.com/edjw" rel="me">GitHub</a>
+    </li>
+    <li>
+      <a href="https://mastodon.social/@_edjw" rel="me">Mastodon</a>
+    </li>
+    <li><a href="https://www.more-onion.com">More Onion – my employer</a></li>
+  </ul>
+
   <script>
     const closeButtons: HTMLButtonElement[] = Array.from(
-      document.querySelectorAll("button.close-button"),
+      document.querySelectorAll("button.close-button")
     );
 
     closeButtons.forEach((button) => {
