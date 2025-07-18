@@ -12,7 +12,7 @@ const featuredPosts = (await getCollection("blog"))
   .filter((post) => post.data.featured === true)
   .sort(
     (a, b) =>
-      new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
+      new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
   );
 ---
 
@@ -36,6 +36,7 @@ const featuredPosts = (await getCollection("blog"))
         width={500}
         height={500}
         quality={90}
+        loading="eager"
       />
     </div>
     <p class="mt-0 mb-0 sm:hidden">

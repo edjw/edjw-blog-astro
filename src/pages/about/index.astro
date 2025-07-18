@@ -48,6 +48,7 @@ const allStuff: stuffObject[] = [
           width={500}
           height={500}
           quality={90}
+          loading="eager"
         />
       </div>
     </div>
@@ -152,7 +153,7 @@ const allStuff: stuffObject[] = [
 
   <script>
     const closeButtons: HTMLButtonElement[] = Array.from(
-      document.querySelectorAll("button.close-button"),
+      document.querySelectorAll("button.close-button")
     );
 
     closeButtons.forEach((button) => {
