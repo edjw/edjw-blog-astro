@@ -52,15 +52,16 @@ const {
     </p>
   )
 }
-
-{
-  contentLicence && (
-    <p class="mt-6 mb-8 text-sm">
-      Content on this website is licenced as
-      <a href={contentLicence.link}>{contentLicence.text}</a>. That means you
-      can copy, adapt, and redistribute any content on this site for any purpose
-      providing you give credit, provide a link to the licence, and indicate if
-      you made changes.
-    </p>
-  )
-}
+<div>
+  {
+    contentLicence && (
+      <p class="mt-6 mb-8 text-sm">
+        Content on this website is licenced as
+        <a href={contentLicence.link}>{contentLicence.text}</a>. That means you
+        can copy, adapt, and redistribute any content on this site for any
+        purpose providing you give credit, provide a link to the licence, and
+        indicate if you made changes.
+      </p>
+    )
+  }
+</div>

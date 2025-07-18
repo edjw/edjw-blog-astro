@@ -15,12 +15,35 @@
 
   a {
     @apply no-underline decoration-[#DA291C] decoration-[4px] underline-offset-[6px] hover:underline;
+
+    /* https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/ */
+    /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    /* -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto; */
+
+    /* Going away from CSS Tricks here */
+    -ms-hyphens: none;
+    -moz-hyphens: none;
+    -webkit-hyphens: none;
+    hyphens: none;
   }
 }
 
 @layer utilities {
   .prose {
-    @apply text-lg;
+    @apply text-lg text-pretty;
   }
 
   .prose h2 {
@@ -37,6 +60,10 @@
 
   .prose pre {
     @apply max-w-[90vw];
+  }
+
+  .prose h3 {
+    line-height: 1.2;
   }
 
   /* Remove code quotes */
