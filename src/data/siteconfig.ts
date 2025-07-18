@@ -18,7 +18,8 @@ const siteData = {
     blueskyUsername: "edjohnsonwilliams.co.uk",
   },
   seo: {
-    defaultDescription: "Ed Johnson-Williams' blog about web development and technology",
+    defaultDescription:
+      "Ed Johnson-Williams' blog about web development and technology",
     locale: "en_GB",
     themeColor: "#ffffff",
     defaultImage: "/og-image.jpg",

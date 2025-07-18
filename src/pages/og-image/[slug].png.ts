@@ -9,10 +9,10 @@ import { titleCase } from "title-case";
 import siteData from "@/data/siteconfig";
 
 const jostRegularFontFile = readFileSync(
-  `${process.cwd()}/public/fonts/Jost-Regular.ttf`
+  `${process.cwd()}/public/fonts/Jost-Regular.ttf`,
 );
 const jostBoldFontFile = readFileSync(
-  `${process.cwd()}/public/fonts/Jost-Bold.ttf`
+  `${process.cwd()}/public/fonts/Jost-Bold.ttf`,
 );
 
 export async function getStaticPaths() {
@@ -106,8 +106,12 @@ export async function getStaticPaths() {
   });
 
   // Get all unique tags
-  const postsWithTags = allPosts.filter((post) => post.data.tags && post.data.tags.length > 0);
-  const allUniqueTags = [...new Set(postsWithTags.map((post) => post.data.tags).flat())]
+  const postsWithTags = allPosts.filter(
+    (post) => post.data.tags && post.data.tags.length > 0,
+  );
+  const allUniqueTags = [
+    ...new Set(postsWithTags.map((post) => post.data.tags).flat()),
+  ]
     .filter((tag): tag is string => !!tag)
     .map((tag) => getSlug(tag));
 
@@ -148,9 +152,13 @@ export async function GET({ params, props }: APIContext) {
     });
   }
 
-  const blogPostHtml = pageType === "blogpost" ? '<div class="text-gray-600 text-xl mt-2">Blog post</div>' : '';
+  const blogPostHtml =
+    pageType === "blogpost"
+      ? '<div class="text-gray-600 text-xl mt-2">Blog post</div>'
+      : "";
 
-  const markup = html(`<div style="background: white; display: flex; flex-direction: column; width: 100%; height: 100%; font-family: Jost, sans-serif;">
+  const markup =
+    html(`<div style="background: white; display: flex; flex-direction: column; width: 100%; height: 100%; font-family: Jost, sans-serif;">
     <div style="display: flex; flex-direction: column; width: 100%; height: 80%; padding: 60px; justify-content: center;">
       <div style="font-size: 64px; font-weight: 700; line-height: 1; color: #1a1a1a; margin-bottom: 20px;">${title}</div>
       <div style="color: #666; font-size: 24px; margin-bottom: 4px;">${date}</div>
@@ -161,7 +169,7 @@ export async function GET({ params, props }: APIContext) {
         <span style="color: #1a1a1a; font-weight: 600; font-size: 28px;">${siteData.author.name}</span>
       </div>
       <div style="display: flex; align-items: center;">
-        <span style="font-size: 20px; color: #666;">${siteData.url.replace('https://', '')}</span>
+        <span style="font-size: 20px; color: #666;">${siteData.url.replace("https://", "")}</span>
       </div>
     </div>
   </div>`);

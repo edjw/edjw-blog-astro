@@ -13,7 +13,7 @@ export async function GET(context: { site: any }) {
     title: siteData.title,
     description: siteData.description,
     site: context.site,
-    customData: `<language>${siteData.seo.locale.toLowerCase().replace('_', '-')}</language>`,
+    customData: `<language>${siteData.seo.locale.toLowerCase().replace("_", "-")}</language>`,
     items: blog.map((post) => ({
       link: `/blog/${post.id}/`,
       title: post.data.title,

@@ -44,9 +44,7 @@ const currentURL = Astro.request.url;
 
       <time class="dt-published">{new Date(pubDate).toUTCString()}</time>
 
-      <a rel="author" p-author href={siteData.url}
-        >{siteData.author.name}
-      </a>
+      <a rel="author" p-author href={siteData.url}>{siteData.author.name} </a>
     </div>
     <!-- End of h-entry things -->
 
