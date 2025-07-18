@@ -11,6 +11,13 @@ const { entry } = Astro.props;
 
 const { title, pubDate, socialDescription, tags } = entry.data;
 
+// Prepare article metadata for SEO
+const articleData = {
+  publishedTime: pubDate.toISOString(),
+  authors: ["Ed Johnson-Williams"],
+  tags: tags || [],
+};
+
 const formattedDate = new Intl.DateTimeFormat("en-GB", {
   day: "numeric",
   month: "long",
@@ -20,7 +27,12 @@ const formattedDate = new Intl.DateTimeFormat("en-GB", {
 const currentURL = Astro.request.url;
 ---
 
-<BaseLayout pageTitle={title} description={socialDescription}>
+<BaseLayout
+  pageTitle={title}
+  description={socialDescription || undefined}
+  articleData={articleData}
+  pageType="article"
+>
   <article class="h-entry">
     <!-- h-entry things -->
     <div class="hidden">
