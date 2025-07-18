@@ -9,7 +9,7 @@ const { pageTitle, description: pageDescription } = Astro.props;
 const isDev = import.meta.env.DEV;
 ---
 
-<html lang="en" class="dark" style="scrollbar-gutter: stable;">
+<html lang="en" style="scrollbar-gutter: stable;">
   <head>
     {isDev && <ClientConsoleLogger />}
     <BaseHead title={pageTitle} description={pageDescription} />
