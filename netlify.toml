@@ -20,6 +20,13 @@ X-Content-Type-Options = "nosniff"
 X-Frame-Options = "DENY"
 X-XSS-Protection = "1; mode=block"
 
+[[headers]]
+for = "/og-image/*"
+[headers.values]
+Referrer-Policy = "same-origin"
+X-Content-Type-Options = "nosniff"
+X-XSS-Protection = "1; mode=block"
+
 # Redirecting from old site urls to new site urls
 
 [[redirects]]
