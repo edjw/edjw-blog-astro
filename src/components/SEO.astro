@@ -14,31 +14,31 @@ const {
 // Generate OG image URL based on current path
 const getOgImageSlug = (pathname: string): string => {
   const path = pathname.replace(/\/$/, "") || "/"; // normalize trailing slash
-  
+
   // Static pages
   const staticPages: Record<string, string> = {
     "/": "index",
-    "/about": "about", 
+    "/about": "about",
     "/now": "now",
     "/blog": "blog",
-    "/tags": "tags"
+    "/tags": "tags",
   };
-  
+
   if (staticPages[path]) {
     return staticPages[path];
   }
-  
+
   // Dynamic pages
   if (path.startsWith("/tags/")) {
     const tagName = path.split("/tags/")[1];
     return tagName ? `tag-${tagName}` : "tags";
   }
-  
+
   if (path.startsWith("/blog/")) {
     const blogSlug = path.split("/blog/")[1];
     return blogSlug || "blog";
   }
-  
+
   return "index"; // fallback
 };
 
@@ -72,17 +72,16 @@ const structuredData: StructuredData = {
             author: {
               "@type": "Person" as const,
               name: siteData.author.name,
-              url: siteData.author.url || siteData.url,
+              url: siteData.url,
             },
             datePublished: articleData.publishedTime || "",
-            dateModified: articleData.modifiedTime || articleData.publishedTime || "",
             publisher: {
               "@type": "Person" as const,
               name: siteData.author.name,
-              url: siteData.author.url || siteData.url,
+              url: siteData.url,
             },
             mainEntityOfPage: {
-              "@type": "WebPage",
+              "@type": "WebPage" as const,
               "@id": Astro.url.href,
             },
             keywords: articleData.tags?.join(", ") || "",

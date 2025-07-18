@@ -35,14 +35,22 @@ export interface StructuredDataArticle {
   "@type": "Article";
   headline: string;
   description: string;
+  image: string;
+  url: string;
   author: {
     "@type": "Person";
     name: string;
+    url?: string;
   };
   datePublished: string;
   publisher: {
     "@type": "Person";
     name: string;
+    url?: string;
+  };
+  mainEntityOfPage: {
+    "@type": "WebPage";
+    "@id": string;
   };
   keywords: string;
 }
