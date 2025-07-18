@@ -16,6 +16,15 @@ const siteData = {
     instagramUsername: "_edjw",
     blueskyUsername: "edjohnsonwilliams.co.uk",
   },
+  seo: {
+    defaultDescription: "Ed Johnson-Williams' blog about web development and technology",
+    locale: "en_GB",
+    themeColor: "#ffffff",
+    defaultImage: "/og-image.jpg",
+    twitter: {
+      site: "@_edjw",
+    },
+  },
   indieauth: true,
   micropub: true,
   RSSFeed: true,

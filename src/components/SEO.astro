@@ -1,0 +1,119 @@
+---
+import { SEO as AstroSEO } from "astro-seo";
+import siteData from "@/data/siteconfig";
+import type { SEOProps, StructuredData } from "@/types/seo";
+
+const {
+  pageTitle,
+  description,
+  articleData,
+  pageType = "website",
+  image,
+} = Astro.props as SEOProps;
+
+// Generate structured data
+const structuredData: StructuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      name: siteData.title,
+      url: siteData.url,
+      description: siteData.description,
+      publisher: {
+        "@type": "Person",
+        name: siteData.author.name,
+      },
+    },
+    // Add Article schema for blog posts
+    ...(pageType === "article" && articleData
+      ? [
+          {
+            "@type": "Article" as const,
+            headline: pageTitle || siteData.title,
+            description: description || siteData.seo.defaultDescription,
+            author: {
+              "@type": "Person" as const,
+              name: siteData.author.name,
+            },
+            datePublished: articleData.publishedTime || "",
+            publisher: {
+              "@type": "Person" as const,
+              name: siteData.author.name,
+            },
+            keywords: articleData.tags?.join(", ") || "",
+          },
+        ]
+      : []),
+  ],
+};
+---
+
+<meta charset="utf-8" />
+
+<AstroSEO
+  title={pageTitle || siteData.title}
+  description={description || siteData.seo.defaultDescription}
+  canonical={Astro.url.href}
+  openGraph={{
+    basic: {
+      title: pageTitle || siteData.title,
+      type: pageType,
+      image: image || siteData.seo.defaultImage,
+      url: Astro.url.href,
+    },
+    optional: {
+      description: description || siteData.seo.defaultDescription,
+      locale: siteData.seo.locale,
+      siteName: siteData.title,
+    },
+    image: {
+      url: image || siteData.seo.defaultImage,
+      width: 1200,
+      height: 630,
+      alt: `${pageTitle || siteData.title}`,
+    },
+    ...(pageType === "article" && articleData
+      ? {
+          article: {
+            ...(articleData.publishedTime && {
+              publishedTime: articleData.publishedTime,
+            }),
+            authors: articleData.authors || [siteData.author.name],
+            tags: articleData.tags || [],
+          },
+        }
+      : {}),
+  }}
+  twitter={{
+    card: "summary_large_image",
+    site: siteData.seo.twitter.site,
+    creator: siteData.author.twitterUsername,
+    title: pageTitle || siteData.title,
+    description: description || siteData.seo.defaultDescription,
+    image: image || siteData.seo.defaultImage,
+    imageAlt: `${pageTitle || siteData.title}`,
+  }}
+  extend={{
+    meta: [
+      { name: "theme-color", content: siteData.seo.themeColor },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+    ],
+    link: [
+      { rel: "shortcut icon", href: "/favicon.svg", type: "image/svg+xml" },
+      { rel: "me", href: "https://mastodon.social/@_edjw" },
+      {
+        rel: "alternate",
+        type: "application/rss+xml",
+        title: "RSS feed for Ed Johnson-Williams' blog",
+        href: "/rss.xml",
+      },
+    ],
+  }}
+/>
+
+<script
+  type="application/ld+json"
+  set:html={JSON.stringify(structuredData)}
+  is:inline
+/>
