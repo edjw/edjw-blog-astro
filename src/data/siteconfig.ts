@@ -12,6 +12,7 @@ const siteData = {
     githubUsername: "edjw",
     twitterUsername: "@_edjw",
     mastodonUsername: "@_edjw",
+    mastodonUrl: "https://mastodon.social/@_edjw",
     microblogUsername: "edjw",
     instagramUsername: "_edjw",
     blueskyUsername: "edjohnsonwilliams.co.uk",
