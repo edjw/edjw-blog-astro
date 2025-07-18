@@ -67,14 +67,23 @@ const structuredData: StructuredData = {
             "@type": "Article" as const,
             headline: pageTitle || siteData.title,
             description: description || siteData.seo.defaultDescription,
+            image: finalImage,
+            url: Astro.url.href,
             author: {
               "@type": "Person" as const,
               name: siteData.author.name,
+              url: siteData.author.url || siteData.url,
             },
             datePublished: articleData.publishedTime || "",
+            dateModified: articleData.modifiedTime || articleData.publishedTime || "",
             publisher: {
               "@type": "Person" as const,
               name: siteData.author.name,
+              url: siteData.author.url || siteData.url,
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": Astro.url.href,
             },
             keywords: articleData.tags?.join(", ") || "",
           },
