@@ -10,7 +10,9 @@
       "mcp__serena__get_symbols_overview",
       "mcp__serena__write_memory",
       "mcp__Astro_docs__search_astro_docs",
-      "Bash(pgrep:*)"
+      "Bash(pgrep:*)",
+      "WebFetch(domain:www.npmjs.com)",
+      "Bash(grep:*)"
     ],
     "deny": []
   }
