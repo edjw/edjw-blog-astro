@@ -23,3 +23,5 @@ pnpm-debug.log*
 .vscode/settings.json
 .astro
 dev.pid
+test-results
+playwright-report

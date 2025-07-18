@@ -14,13 +14,18 @@
     "post": "./post.sh",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:debug": "playwright test --debug",
+    "test:e2e:verbose": "playwright test --reporter=list > logs/playwright-output.log 2>&1 || (cat logs/playwright-output.log && exit 1)"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/netlify": "^6.5.1",
     "@astrojs/rss": "^4.0.12",
     "@astrojs/sitemap": "^3.4.1",
+    "@playwright/test": "^1.54.1",
     "@tailwindcss/typography": "^0.5.16",
     "@types/markdown-it": "^12.2.3",
     "@types/sanitize-html": "^2.13.0",
