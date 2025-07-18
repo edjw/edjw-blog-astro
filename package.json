@@ -11,7 +11,10 @@
     "format": "prettier -w 'src/**/*.{astro,css,html,json,md,mdx,js,jsx,ts,tsx}'",
     "lint": "eslint . --ext .js,.ts,.astro",
     "link:fix": "eslint --fix . --ext .js,.ts,.astro",
-    "post": "./post.sh"
+    "post": "./post.sh",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
