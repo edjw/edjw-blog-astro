@@ -12,31 +12,37 @@ const {
 } = Astro.props as SEOProps;
 
 // Generate OG image URL based on current path
-const currentPath = Astro.url.pathname;
-let ogImageSlug = "index"; // default
-
-if (currentPath === "/") {
-  ogImageSlug = "index";
-} else if (currentPath === "/about/" || currentPath === "/about") {
-  ogImageSlug = "about";
-} else if (currentPath === "/now/" || currentPath === "/now") {
-  ogImageSlug = "now";
-} else if (currentPath === "/blog/" || currentPath === "/blog") {
-  ogImageSlug = "blog";
-} else if (currentPath === "/tags/" || currentPath === "/tags") {
-  ogImageSlug = "tags";
-} else if (currentPath.startsWith("/tags/")) {
-  const tagName = currentPath.split("/tags/")[1]?.replace(/\/$/, "");
-  if (tagName) {
-    ogImageSlug = `tag-${tagName}`;
+const getOgImageSlug = (pathname: string): string => {
+  const path = pathname.replace(/\/$/, "") || "/"; // normalize trailing slash
+  
+  // Static pages
+  const staticPages: Record<string, string> = {
+    "/": "index",
+    "/about": "about", 
+    "/now": "now",
+    "/blog": "blog",
+    "/tags": "tags"
+  };
+  
+  if (staticPages[path]) {
+    return staticPages[path];
   }
-} else if (currentPath.startsWith("/blog/")) {
-  const blogSlug = currentPath.split("/blog/")[1]?.replace(/\/$/, "");
-  if (blogSlug) {
-    ogImageSlug = blogSlug;
+  
+  // Dynamic pages
+  if (path.startsWith("/tags/")) {
+    const tagName = path.split("/tags/")[1];
+    return tagName ? `tag-${tagName}` : "tags";
   }
-}
+  
+  if (path.startsWith("/blog/")) {
+    const blogSlug = path.split("/blog/")[1];
+    return blogSlug || "blog";
+  }
+  
+  return "index"; // fallback
+};
 
+const ogImageSlug = getOgImageSlug(Astro.url.pathname);
 const ogImageUrl = `${siteData.url}/og-image/${ogImageSlug}.png`;
 const finalImage = image || ogImageUrl;
 

@@ -17,7 +17,7 @@ const jostBoldFontFile = readFileSync(
 
 export async function getStaticPaths() {
   const allPaths = [];
-  
+
   // Home page
   const homePath = {
     params: { slug: "index" },
@@ -148,30 +148,23 @@ export async function GET({ params, props }: APIContext) {
     });
   }
 
-  let typeIndicator = "";
-  if (pageType === "blogpost") {
-    typeIndicator = '<div class="flex text-gray-500 text-xl mt-2">Blog post</div>';
-  }
+  const blogPostHtml = pageType === "blogpost" ? '<div class="text-gray-600 text-xl mt-2">Blog post</div>' : '';
 
-  const markup = html`<div class="bg-white flex flex-col w-full h-full">
-    <div class="flex flex-col w-full h-4/5 p-10 justify-center">
-      <div class="flex text-6xl w-full font-bold leading-tight text-gray-900">${title}</div>
-      <div class="flex text-gray-600 text-2xl mt-4">${date}</div>
-      ${typeIndicator}
+  const markup = html(`<div style="background: white; display: flex; flex-direction: column; width: 100%; height: 100%; font-family: Jost, sans-serif;">
+    <div style="display: flex; flex-direction: column; width: 100%; height: 80%; padding: 60px; justify-content: center;">
+      <div style="font-size: 64px; font-weight: 700; line-height: 1; color: #1a1a1a; margin-bottom: 20px;">${title}</div>
+      <div style="color: #666; font-size: 24px; margin-bottom: 4px;">${date}</div>
+      ${blogPostHtml}
     </div>
-    <div
-      class="w-full h-1/5 border-t border-gray-200 flex p-10 flex-col text-2xl"
-    >
-      <div class="flex items-center">
-        <span class="text-gray-900 font-semibold">${siteData.author.name}</span>
+    <div style="width: 100%; height: 20%; border-top: 4px solid #DA291C; display: flex; padding: 60px; flex-direction: column; justify-content: center; background: #f8f9fa;">
+      <div style="display: flex; align-items: center; margin-bottom: 16px;">
+        <span style="color: #1a1a1a; font-weight: 600; font-size: 28px;">${siteData.author.name}</span>
       </div>
-      <div class="flex items-center mt-1">
-        <span class="text-base text-gray-600"
-          >${siteData.url.replace('https://', '')}</span
-        >
+      <div style="display: flex; align-items: center;">
+        <span style="font-size: 20px; color: #666;">${siteData.url.replace('https://', '')}</span>
       </div>
     </div>
-  </div>`;
+  </div>`);
 
   const svg = await satori(markup, {
     width: 1200,
