@@ -11,6 +11,35 @@ const {
   image,
 } = Astro.props as SEOProps;
 
+// Generate OG image URL based on current path
+const currentPath = Astro.url.pathname;
+let ogImageSlug = "index"; // default
+
+if (currentPath === "/") {
+  ogImageSlug = "index";
+} else if (currentPath === "/about/" || currentPath === "/about") {
+  ogImageSlug = "about";
+} else if (currentPath === "/now/" || currentPath === "/now") {
+  ogImageSlug = "now";
+} else if (currentPath === "/blog/" || currentPath === "/blog") {
+  ogImageSlug = "blog";
+} else if (currentPath === "/tags/" || currentPath === "/tags") {
+  ogImageSlug = "tags";
+} else if (currentPath.startsWith("/tags/")) {
+  const tagName = currentPath.split("/tags/")[1]?.replace(/\/$/, "");
+  if (tagName) {
+    ogImageSlug = `tag-${tagName}`;
+  }
+} else if (currentPath.startsWith("/blog/")) {
+  const blogSlug = currentPath.split("/blog/")[1]?.replace(/\/$/, "");
+  if (blogSlug) {
+    ogImageSlug = blogSlug;
+  }
+}
+
+const ogImageUrl = `${siteData.url}/og-image/${ogImageSlug}.png`;
+const finalImage = image || ogImageUrl;
+
 // Generate structured data
 const structuredData: StructuredData = {
   "@context": "https://schema.org",
@@ -59,7 +88,7 @@ const structuredData: StructuredData = {
     basic: {
       title: pageTitle || siteData.title,
       type: pageType,
-      image: image || siteData.seo.defaultImage,
+      image: finalImage,
       url: Astro.url.href,
     },
     optional: {
@@ -68,7 +97,7 @@ const structuredData: StructuredData = {
       siteName: siteData.title,
     },
     image: {
-      url: image || siteData.seo.defaultImage,
+      url: finalImage,
       width: 1200,
       height: 630,
       alt: `${pageTitle || siteData.title}`,
@@ -91,7 +120,7 @@ const structuredData: StructuredData = {
     creator: siteData.author.twitterUsername,
     title: pageTitle || siteData.title,
     description: description || siteData.seo.defaultDescription,
-    image: image || siteData.seo.defaultImage,
+    image: finalImage,
     imageAlt: `${pageTitle || siteData.title}`,
   }}
   extend={{
