@@ -65,7 +65,8 @@
   }
 
   /* Remove code quotes */
-  :where(.prose code):is(::before, ::after) {
+  :where(.prose code)::before,
+  :where(.prose code)::after {
     content: "";
   }
 }
