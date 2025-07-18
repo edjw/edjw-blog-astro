@@ -1,4 +1,3 @@
 - add og image generation like on microblog
 - merge microblog into blog
 - work out how to make a post that can be either a microblog or a blog post
-- improve now page and about page. maybe make about page on the front page

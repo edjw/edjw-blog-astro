@@ -3,6 +3,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import { getSlug } from "@/utils/getSlug";
 import type { CollectionEntry } from "astro:content";
 import { titleCase } from "title-case";
+import siteData from "@/data/siteconfig";
 
 type Props = {
   entry: CollectionEntry<"blog">;
@@ -10,6 +11,13 @@ type Props = {
 const { entry } = Astro.props;
 
 const { title, pubDate, socialDescription, tags } = entry.data;
+
+// Prepare article metadata for SEO
+const articleData = {
+  publishedTime: pubDate.toISOString(),
+  authors: [siteData.author.name],
+  tags: tags || [],
+};
 
 const formattedDate = new Intl.DateTimeFormat("en-GB", {
   day: "numeric",
@@ -20,7 +28,12 @@ const formattedDate = new Intl.DateTimeFormat("en-GB", {
 const currentURL = Astro.request.url;
 ---
 
-<BaseLayout pageTitle={title} description={socialDescription}>
+<BaseLayout
+  pageTitle={title}
+  description={socialDescription || undefined}
+  articleData={articleData}
+  pageType="article"
+>
   <article class="h-entry">
     <!-- h-entry things -->
     <div class="hidden">
@@ -31,8 +44,8 @@ const currentURL = Astro.request.url;
 
       <time class="dt-published">{new Date(pubDate).toUTCString()}</time>
 
-      <a rel="author" p-author href="https://edjohnsonwilliams.co.uk"
-        >Ed Johnson-Williams
+      <a rel="author" p-author href={siteData.url}
+        >{siteData.author.name}
       </a>
     </div>
     <!-- End of h-entry things -->

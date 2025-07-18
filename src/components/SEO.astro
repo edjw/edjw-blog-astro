@@ -1,0 +1,162 @@
+---
+import { SEO as AstroSEO } from "astro-seo";
+import siteData from "@/data/siteconfig";
+import type { SEOProps, StructuredData } from "@/types/seo";
+
+const {
+  pageTitle,
+  description,
+  articleData,
+  pageType = "website",
+  image,
+} = Astro.props as SEOProps;
+
+// Generate OG image URL based on current path
+const getOgImageSlug = (pathname: string): string => {
+  const path = pathname.replace(/\/$/, "") || "/"; // normalize trailing slash
+
+  // Static pages
+  const staticPages: Record<string, string> = {
+    "/": "index",
+    "/about": "about",
+    "/now": "now",
+    "/blog": "blog",
+    "/tags": "tags",
+  };
+
+  if (staticPages[path]) {
+    return staticPages[path];
+  }
+
+  // Dynamic pages
+  if (path.startsWith("/tags/")) {
+    const tagName = path.split("/tags/")[1];
+    return tagName ? `tag-${tagName}` : "tags";
+  }
+
+  if (path.startsWith("/blog/")) {
+    const blogSlug = path.split("/blog/")[1];
+    return blogSlug || "blog";
+  }
+
+  return "index"; // fallback
+};
+
+const ogImageSlug = getOgImageSlug(Astro.url.pathname);
+const ogImageUrl = `${siteData.url}/og-image/${ogImageSlug}.png`;
+const finalImage = image || ogImageUrl;
+
+// Generate structured data
+const structuredData: StructuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      name: siteData.title,
+      url: siteData.url,
+      description: siteData.description,
+      publisher: {
+        "@type": "Person",
+        name: siteData.author.name,
+      },
+    },
+    // Add Article schema for blog posts
+    ...(pageType === "article" && articleData
+      ? [
+          {
+            "@type": "Article" as const,
+            headline: pageTitle || siteData.title,
+            description: description || siteData.seo.defaultDescription,
+            image: finalImage,
+            url: Astro.url.href,
+            author: {
+              "@type": "Person" as const,
+              name: siteData.author.name,
+              url: siteData.url,
+            },
+            datePublished: articleData.publishedTime || "",
+            publisher: {
+              "@type": "Person" as const,
+              name: siteData.author.name,
+              url: siteData.url,
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage" as const,
+              "@id": Astro.url.href,
+            },
+            keywords: articleData.tags?.join(", ") || "",
+          },
+        ]
+      : []),
+  ],
+};
+---
+
+<meta charset="utf-8" />
+
+<AstroSEO
+  title={pageTitle || siteData.title}
+  description={description || siteData.seo.defaultDescription}
+  canonical={Astro.url.href}
+  openGraph={{
+    basic: {
+      title: pageTitle || siteData.title,
+      type: pageType,
+      image: finalImage,
+      url: Astro.url.href,
+    },
+    optional: {
+      description: description || siteData.seo.defaultDescription,
+      locale: siteData.seo.locale,
+      siteName: siteData.title,
+    },
+    image: {
+      url: finalImage,
+      width: 1200,
+      height: 630,
+      alt: `${pageTitle || siteData.title}`,
+    },
+    ...(pageType === "article" && articleData
+      ? {
+          article: {
+            ...(articleData.publishedTime && {
+              publishedTime: articleData.publishedTime,
+            }),
+            authors: articleData.authors || [siteData.author.name],
+            tags: articleData.tags || [],
+          },
+        }
+      : {}),
+  }}
+  twitter={{
+    card: "summary_large_image",
+    site: siteData.seo.twitter.site,
+    creator: siteData.author.twitterUsername,
+    title: pageTitle || siteData.title,
+    description: description || siteData.seo.defaultDescription,
+    image: finalImage,
+    imageAlt: `${pageTitle || siteData.title}`,
+  }}
+  extend={{
+    meta: [
+      { name: "theme-color", content: siteData.seo.themeColor },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+    ],
+    link: [
+      { rel: "shortcut icon", href: "/favicon.svg", type: "image/svg+xml" },
+      { rel: "me", href: siteData.author.mastodonUrl },
+      {
+        rel: "alternate",
+        type: "application/rss+xml",
+        title: "RSS feed for Ed Johnson-Williams' blog",
+        href: "/rss.xml",
+      },
+    ],
+  }}
+/>
+
+<script
+  type="application/ld+json"
+  set:html={JSON.stringify(structuredData)}
+  is:inline
+/>

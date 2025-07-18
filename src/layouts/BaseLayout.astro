@@ -1,18 +1,29 @@
 ---
-import BaseHead from "@/components/BaseHead.astro";
+import SEO from "@/components/SEO.astro";
 import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
 import "@/styles/global.css";
 import ClientConsoleLogger from "@/utils/ClientConsoleLogger.astro";
+import { ClientRouter } from "astro:transitions";
+import { Font } from "astro:assets";
 
-const { pageTitle, description: pageDescription } = Astro.props;
+
+const { pageTitle, description: pageDescription, articleData, pageType, image } = Astro.props;
 const isDev = import.meta.env.DEV;
 ---
 
 <html lang="en" style="scrollbar-gutter: stable;">
   <head>
     {isDev && <ClientConsoleLogger />}
-    <BaseHead title={pageTitle} description={pageDescription} />
+    <SEO
+      pageTitle={pageTitle}
+      description={pageDescription}
+      articleData={articleData}
+      pageType={pageType}
+      image={image}
+    />
+    <Font cssVariable="--font-jost" preload />
+    <ClientRouter />
   </head>
   <body class="bg-white">
     <div
