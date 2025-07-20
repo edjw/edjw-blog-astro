@@ -14,7 +14,7 @@ featured: true
 
 [Tower of Hanoi](https://en.wikipedia.org/wiki/Tower_of_Hanoi) is a puzzle with three rods and multiple discs of different sizes, where you have to move all the discs from one rod to another while never placing a larger disc on top of a smaller one.
 
-![Tower of Hanoi puzzle with wooden discs on three pegs](@/images/tower-of-hanoi.jpeg)
+![Tower of Hanoi puzzle with wooden discs on three pegs](./tower-of-hanoi.jpeg)
 
 <p class="text-sm -mt-8">Image: <a href="https://commons.wikimedia.org/wiki/File:Tower_of_Hanoi.jpeg">Tower of Hanoi</a> by <a href="https://commons.wikimedia.org/wiki/User:Evanherk">User:Evanherk</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></p>
 
