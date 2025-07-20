@@ -37,6 +37,7 @@ const currentURL = Astro.request.url;
   <article class="h-entry">
     <!-- h-entry things -->
     <div class="hidden">
+      {/* Intentionally empty anchor for h-entry microformat u-url */}
       {/* eslint-disable-next-line astro/jsx-a11y/anchor-has-content */}
       <a href={currentURL} u-url></a>
 
