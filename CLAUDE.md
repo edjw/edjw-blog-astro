@@ -12,7 +12,7 @@ This is an Astro-based personal blog site for Ed Johnson-Williams (edjohnsonwill
 - `pnpm run dev` - Start local development server at localhost:3000
 - `pnpm run build` - Build production site to ./dist/
 - `pnpm run format` - Format files using Prettier with Astro and Tailwind plugins
-- `pnpm run post "Your post title"` - Create new blog post (uses ./post.sh script)
+- `pnpm run post "Your post title"` - Create new blog post with folder structure (uses ./post.sh script)
 
 ## Content Management Architecture
 
@@ -21,7 +21,7 @@ This is an Astro-based personal blog site for Ed Johnson-Williams (edjohnsonwill
 - Uses `newmd` library for blog post scaffolding
 - Blog posts created via `pnpm run post "title"` which calls `./post.sh`
 - Posts automatically get date prefix (YYYY-MM-DD-slug format)
-- All blog posts stored in `src/content/blog/` as Markdown files
+- All posts use folder structure with `index.md` to support co-located images
 
 ### Content Schema & Validation
 
@@ -34,6 +34,8 @@ This is an Astro-based personal blog site for Ed Johnson-Williams (edjohnsonwill
 ### Content Structure
 
 - **Blog collection**: Markdown files with frontmatter validation
+  - All posts use folder structure: `YYYY-MM-DD-title/index.md`
+  - Images are co-located in the same folder as the post
 - **Stuff collection**: JSON data files for coding projects and hobbies
 - Uses Astro's glob loader pattern for content discovery
 
@@ -55,7 +57,9 @@ This is an Astro-based personal blog site for Ed Johnson-Williams (edjohnsonwill
 
 ### Asset Management
 
-- Images stored in `src/images/` with various chart/graph assets
+- Blog images co-located with posts in their folders (e.g., `src/content/blog/post-name/image.png`)
+- Shared images (like headshots) remain in `src/images/`
+- Images in blog posts referenced with relative paths: `![Alt](./image.png)`
 - Public files include admin interface for Netlify CMS and downloadable datasets
 - Sharp for image optimisation
 

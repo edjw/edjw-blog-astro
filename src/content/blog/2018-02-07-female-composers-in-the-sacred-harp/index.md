@@ -238,7 +238,7 @@ tags:
   are more popular than that.
 </p>
 
-![Image](@/images/pc_all_songs_by_song_number_.png)
+![Image](./pc_all_songs_by_song_number_.png)
 
 <p>
   Here are the songs by female composers sorted by the percentage of all songs
@@ -392,7 +392,7 @@ tags:
   every 21 songs was by a female composer.
 </p>
 
-![Image](@/images/pc_all_songs_led_by_female_composer_.png)
+![Image](./pc_all_songs_led_by_female_composer_.png)
 
 <h2 id="toc_8">
   Which songs by female composers have changed the most in the popularity over
@@ -436,7 +436,7 @@ tags:
   <strong>+2.84%</strong> – <strong>466</strong> Haynes Creek – Joyce Harrison
 </p>
 
-![Image](@/images/biggest_increase_popularity.png)
+![Image](./biggest_increase_popularity.png)
 
 <p>
   The four songs that have decreased the most in popularity in that timeframe
@@ -461,7 +461,7 @@ tags:
   Parkerson
 </p>
 
-![Image](@/images/biggest_decrease_popularity.png)
+![Image](./biggest_decrease_popularity.png)
 
 <h2 id="toc_7">How I attributed gender to composers</h2>
 

@@ -14,7 +14,7 @@ Update (19.12.2023): I've allowed my Apple developer certificate lapse and the d
 
 [**Draft One**](https://draft-one.com) is a new app I've built. I'm calling it _a text editor for focused first drafts_. It's a simple app, but I think it's going to be really useful for people.
 
-[![A screenshot of the starting screen of Draft One with the words 'Draft One – For focused first drafts' above it](@/images/draft-one-screenshots/1.png)](https://draft-one.com)
+[![A screenshot of the starting screen of Draft One with the words 'Draft One – For focused first drafts' above it](./1.png)](https://draft-one.com)
 
 If you ever find yourself double-guessing yourself when you're writing – and therefore slowing down – this app might be for you.
 
@@ -32,13 +32,13 @@ And I'm working on getting a Windows version out soon.
 
 **Here're some more marketing screenshots** that I uploaded to the [**Mac App Store**](https://apps.apple.com/gb/app/draft-one/id1660388186)
 
-![A screenshot of Draft One with the words 'Ignore self-doubt and typos. Write now. Edit later.' above it. The editor contains the text 'Draft One won't let you edit, delete or undo text. Here's why...1. Making lots of edits and fixing typos flips your brain out of flow state and into a critical mindset. 2. Draft One helps you focus on simply converting your thoughts into text. 3. That way you can stay focused and leave your editing for later'](@/images/draft-one-screenshots/2.png)
+![A screenshot of Draft One with the words 'Ignore self-doubt and typos. Write now. Edit later.' above it. The editor contains the text 'Draft One won't let you edit, delete or undo text. Here's why...1. Making lots of edits and fixing typos flips your brain out of flow state and into a critical mindset. 2. Draft One helps you focus on simply converting your thoughts into text. 3. That way you can stay focused and leave your editing for later'](./2.png)
 
-![A screenshot of Draft One with the words 'Stick to the basics, A few simple formatting options' above it. The editor shows various formating options including headings, bold, italic, and bulletpoint and numbered lists](@/images/draft-one-screenshots/3.png)
+![A screenshot of Draft One with the words 'Stick to the basics, A few simple formatting options' above it. The editor shows various formating options including headings, bold, italic, and bulletpoint and numbered lists](./3.png)
 
-![A screenshot of Draft One showing the warning when you try to delete text](@/images/draft-one-screenshots/4.png)
+![A screenshot of Draft One showing the warning when you try to delete text](./4.png)
 
-![A screenshot of Draft One and of Google Docs with the same text in both editors. The text 'Edit later in other apps. Stay in flow in Draft One' is above the screenshots.'](@/images/draft-one-screenshots/5.png)
+![A screenshot of Draft One and of Google Docs with the same text in both editors. The text 'Edit later in other apps. Stay in flow in Draft One' is above the screenshots.'](./5.png)
 
 **There's loads more to say about the technical side.**
 

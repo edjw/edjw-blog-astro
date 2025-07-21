@@ -41,7 +41,7 @@ White has 36 pawns. White wins by checkmating Black's king. Black wins by captur
 
 White's pawns on the first and second rows can move forward 2 squares. Black's pawns can't capture White's first row pawns have moved two squares by en passant.
 
-![The starting position for Horde chess. Black is normal. White has 32 pawns](@/images/horde-chess.jpeg)
+![The starting position for Horde chess. Black is normal. White has 32 pawns](./horde-chess.jpeg)
 
 Read some [very in-depth strategy advice on Horde chess](https://docs.google.com/document/d/136BCRPzm1QH_OBK3qjKwlmK3MIji7ZmLZPMYgDpmOCU)
 
@@ -57,7 +57,7 @@ Normal rules of chess but…
 
 - Black wins if the White king cannot escape check in two moves. To do that, Black has to control a 5x5 square around White's king, not just the 3x3 square as in normal chess.
 
-![The starting position for Monster chess. Black is normal. White has a Kings and 4 pawns in files 3 to 6](@/images/monster-chess.png)
+![The starting position for Monster chess. Black is normal. White has a Kings and 4 pawns in files 3 to 6](./monster-chess.png)
 
 ## Rifle chess
 
@@ -67,7 +67,7 @@ Rules are the same as normal chess. But after capturing a piece, the attacker st
 
 All rules the same but only four columns wide and you start with a king, bishop, knight, and rook. You castle by moving the King 2 spaces as usual.
 
-![A normal chess board but only four columns wide. King, bishop, knight, rook, and four pawns in front for white. Black mirrors.](@/images/demi-chess.png)
+![A normal chess board but only four columns wide. King, bishop, knight, rook, and four pawns in front for white. Black mirrors.](./demi-chess.png)
 
 ## Synchronistic chess
 
