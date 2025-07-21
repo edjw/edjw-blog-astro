@@ -92,8 +92,11 @@ export default defineConfig({
     {
       name: "console-forward-astro",
       hooks: {
-        "astro:config:setup": ({ injectScript }) => {
-          injectScript("head-inline", getConsoleForwardingScript());
+        "astro:config:setup": ({ injectScript, command }) => {
+          // Only inject the script in dev mode
+          if (command === "dev") {
+            injectScript("head-inline", getConsoleForwardingScript());
+          }
         }
       }
     }
