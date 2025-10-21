@@ -9,7 +9,7 @@ This is an Astro-based personal blog site for Ed Johnson-Williams (edjohnsonwill
 ## Essential Commands
 
 - `pnpm install` - Install dependencies
-- `pnpm run dev` - Start local development server at localhost:3000
+- `pnpm run dev` - Start local development server at localhost:4321 (or next available port)
 - `pnpm run build` - Build production site to ./dist/
 - `pnpm run format` - Format files using Prettier with Astro and Tailwind plugins
 - `pnpm run post "Your post title"` - Create new blog post with folder structure (uses ./post.sh script)
@@ -70,12 +70,11 @@ This is an Astro-based personal blog site for Ed Johnson-Williams (edjohnsonwill
 
 ## Claude Code Integration
 
-### Automatic Error Detection
+### Development Server Management
 
-This project includes Claude Code hooks for automatic Vite dev server and client-side error detection. The system works automatically when using Claude Code, but requires proper logging setup:
+This project works with the global dev server management commands:
 
-**For Claude Code users:** Use `mkdir -p logs && pnpm dev > logs/vite-dev.log 2>&1 & echo $! > dev.pid` to start the dev server with proper logging.
-
-**Error monitoring covers:**
-- Server-side errors: Build failures, runtime errors, module resolution (in `logs/vite-dev.log`)
-- Client-side errors: JavaScript errors, unhandled rejections (in `logs/client.log` if using the UniversalLogger component)
+- **Start**: `/dev-start` - Automatically detects Astro and starts on port 4321 (or next available)
+- **Status**: `/dev-status` - Shows server status and port usage
+- **Logs**: `/dev-logs` - Access server logs
+- **Stop**: `/dev-stop` - Clean shutdown with process cleanup
