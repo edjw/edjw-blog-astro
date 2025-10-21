@@ -1,0 +1,92 @@
+---
+import PageLayout from "@/layouts/PageLayout.astro";
+import { titleCase } from "title-case";
+
+const title = "Shapenote Compositions";
+const socialDescription = "Ed Johnson-Williams' shapenote compositions";
+
+interface CompositionPdf {
+  name: string;
+  filename: string;
+  lastUpdated: Date;
+  url: string;
+}
+
+// Get all PDF files from the shapenote-compositions directory
+const pdfFiles = import.meta.glob<string>(
+  "/public/files/shapenote-compositions/*.pdf",
+  {
+    query: "?url",
+    import: "default",
+    eager: true,
+  }
+);
+
+// Parse filenames to extract song name and date, then sort by most recent
+const compositions: CompositionPdf[] = Object.entries(pdfFiles)
+  .map(([path, url]) => {
+    const filename = path.split("/").pop() || "";
+    // Extract name and date from pattern: name_YYYY-MM-DD.pdf
+    const match = filename.match(/^(.+)_(\d{4})-(\d{2})-(\d{2})\.pdf$/);
+    if (!match) return null;
+
+    // Destructure with index 0 for full match, then capture groups
+    const name = match[1]!;
+    const year = match[2]!;
+    const month = match[3]!;
+    const day = match[4]!;
+
+    const lastUpdated = new Date(
+      parseInt(year),
+      parseInt(month) - 1,
+      parseInt(day)
+    );
+
+    // Remove /public from path since public files are served at root
+    const publicUrl = `/files/shapenote-compositions/${filename}`;
+
+    return {
+      name,
+      filename,
+      lastUpdated,
+      url: publicUrl,
+    };
+  })
+  .filter((item): item is CompositionPdf => item !== null)
+  .sort((a, b) => b.lastUpdated.getTime() - a.lastUpdated.getTime());
+
+// Format date as "21 October 2025"
+function formatDate(date: Date): string {
+  return date.toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+}
+---
+
+<PageLayout title={title} socialDescription={socialDescription}>
+  <p>
+    These are my shapenote compositions, with the most recently updated first.
+  </p>
+
+  <ul class="mt-6 flex list-none flex-col gap-4">
+    {
+      compositions.map((composition) => (
+        <li class="flex flex-col gap-0.5">
+          <a
+            href={composition.url}
+            class="font-semibold hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {titleCase(composition.name.replace(/-/g, " "))}
+          </a>
+          <span class="text-sm text-gray-600 dark:text-gray-400">
+            {formatDate(composition.lastUpdated)}
+          </span>
+        </li>
+      ))
+    }
+  </ul>
+</PageLayout>
