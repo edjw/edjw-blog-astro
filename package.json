@@ -21,15 +21,15 @@
     "test:e2e:verbose": "playwright test --reporter=list > logs/playwright-output.log 2>&1 || (cat logs/playwright-output.log && exit 1)"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.4",
+    "@astrojs/check": "^0.9.5",
     "@astrojs/rss": "^4.0.12",
-    "@astrojs/sitemap": "^3.4.1",
+    "@astrojs/sitemap": "^3.6.0",
     "@playwright/test": "^1.54.1",
     "@tailwindcss/typography": "^0.5.16",
     "@types/markdown-it": "^12.2.3",
     "@types/sanitize-html": "^2.13.0",
     "@vitest/ui": "^3.2.4",
-    "astro": "^5.12.0",
+    "astro": "^5.14.7",
     "astro-eslint-parser": "^1.2.2",
     "eslint": "^9.30.0",
     "eslint-config-prettier": "^10.1.5",
@@ -60,8 +60,7 @@
     "@tailwindcss/vite": "^4.1.6",
     "astro-seo": "^0.8.4",
     "satori": "^0.15.2",
-    "satori-html": "^0.3.2",
-    "vite-console-forward-plugin": "^2.0.1"
+    "satori-html": "^0.3.2"
   },
   "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39"
 }
