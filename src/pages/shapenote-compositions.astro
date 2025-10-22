@@ -24,7 +24,7 @@ const pdfFiles = import.meta.glob<string>(
 
 // Parse filenames to extract song name and date, then sort by most recent
 const compositions: CompositionPdf[] = Object.entries(pdfFiles)
-  .map(([path, url]) => {
+  .map(([path]) => {
     const filename = path.split("/").pop() || "";
     // Extract name and date from pattern: name_YYYY-MM-DD.pdf
     const match = filename.match(/^(.+)_(\d{4})-(\d{2})-(\d{2})\.pdf$/);
