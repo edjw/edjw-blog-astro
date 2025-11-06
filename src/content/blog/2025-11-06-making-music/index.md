@@ -9,7 +9,7 @@ image: ''
 featured: true
 ---
 
-I've been writing [shapenote tunes](/shapenote-compositions) in the Sacred Harp/Christian Harmony style. I've also been making [electronic music](https://edjw.bandcamp.com/album/-) – mostly techno sort of thing but I also tried making some drum-and-bass. It's been great.
+I've been writing [shapenote tunes](/shapenote-compositions) in the Sacred Harp/Christian Harmony style. I've also been making [electronic music](https://edjw.bandcamp.com/album/-) – mostly techno things but I also tried making some drum-and-bass. It's been great.
 
 This is quite new for me to compose music. It does take quite a lot of time and effort to build confidence in doing it. I can tell it's one of those you never finish learning kind of things.
 
