@@ -9,7 +9,7 @@ This is my now page – it's about what I'm focused on or interested in at the m
 ### Personal
 
 1. Writing [shapenote tunes](/shapenote-compositions)
-1. Learning to make and making [electronic music](https://edjw.bandcamp.com/album/-) with Ableton etc
+1. Learning to make and making electronic music with Ableton etc. ([Bandcamp](https://edjw.bandcamp.com/album/-), [Soundcloud](https://soundcloud.com/edjw))
 1. Learning to swim
 1. Getting ready for my longest run ever – a half marathon around Southampton
 
