@@ -20,14 +20,14 @@ type stuffObject = {
 
 const allStuff: stuffObject[] = [
   {
+    name: "Hobbies",
+    data: hobbyStuff?.data || [],
+  },
+  {
     name: "Coding",
     description:
       "I do a lot of different coding projects. Here are some of them roughly ordered with the most recent first.",
     data: codingStuff?.data || [],
-  },
-  {
-    name: "Hobbies",
-    data: hobbyStuff?.data || [],
   },
 ];
 ---
