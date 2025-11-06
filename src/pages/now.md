@@ -8,14 +8,13 @@ This is my now page – it's about what I'm focused on or interested in at the m
 
 ### Personal
 
+1. Writing [shapenote tunes](/shapenote-compositions)
+1. Learning to make and making [electronic music](https://edjw.bandcamp.com/album/-) with Ableton etc
+1. Learning to swim
 1. Getting ready for my longest run ever – a half marathon around Southampton
-2. Learning to swim
-3. Learning to boulder
-4. Building [Nearest Color](https://nearest-color.com) – finds the nearest colour to a given colour from a colour palette
-5. Learning [Laravel](https://laravel.com) – a web framework for PHP
 
 ---
 
-Last updated: 14 January 2025
+Last updated: 6 November 2025
 
 [**What's a now page?**](https://nownownow.com/about)
