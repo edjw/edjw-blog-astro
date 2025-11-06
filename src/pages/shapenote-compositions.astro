@@ -19,7 +19,7 @@ const pdfFiles = import.meta.glob<string>(
     query: "?url",
     import: "default",
     eager: true,
-  }
+  },
 );
 
 // Parse filenames to extract song name and date, then sort by most recent
@@ -39,7 +39,7 @@ const compositions: CompositionPdf[] = Object.entries(pdfFiles)
     const lastUpdated = new Date(
       parseInt(year),
       parseInt(month) - 1,
-      parseInt(day)
+      parseInt(day),
     );
 
     // Remove /public from path since public files are served at root
@@ -67,7 +67,12 @@ function formatDate(date: Date): string {
 
 <PageLayout title={title} socialDescription={socialDescription}>
   <p>
-    These are my shapenote compositions, with the most recently updated first.
+    These are my <a href="https://en.wikipedia.org/wiki/Shape_note">shapenote</a
+    >
+    compositions, with the most recently updated first. You can get the <a
+      href="https://github.com/edjw/shapenote-compositions/tree/main/compositions/finished"
+      >Lilypond files here</a
+    >.
   </p>
 
   <ul class="mt-6 flex list-none flex-col gap-4">
