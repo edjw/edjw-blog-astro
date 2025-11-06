@@ -6,7 +6,7 @@ layout: "@/layouts/PageLayout.astro"
 
 This is my now page – it's about what I'm focused on or interested in at the moment.
 
-### Personal
+## Personal
 
 1. Writing [shapenote tunes](/shapenote-compositions)
 1. Learning to make and making [electronic music](https://edjw.bandcamp.com/album/-) with Ableton etc
