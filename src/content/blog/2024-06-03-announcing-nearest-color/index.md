@@ -2,7 +2,7 @@
 title: Announcing Nearest Color
 pubDate: 2024-06-03T21:49:00Z
 socialDescription: A desktop tool to find the nearest colour from your palette
-featured: true
+featured: false
 ---
 
 I'm making [a new tool called Nearest Color](https://nearest-color.com) to help you find the nearest colour from your palette. It's still a work in progress but I'm sharing progress. It'll be an app for macOS and Windows.
