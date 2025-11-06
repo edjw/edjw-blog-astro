@@ -72,8 +72,11 @@ fi
 # Move the created file to index.md in the new folder
 if [ -f "$TEMP_PATH" ]; then
     mv "$TEMP_PATH" "${FOLDER_PATH}/index.md"
-    echo "✓ Created new blog post: ${FOLDER_PATH}/index.md"
-    echo "  You can now add images directly to: ${FOLDER_PATH}/"
+    echo ""
+    echo "Created new blog post: ${FOLDER_PATH}/index.md"
+    echo ""
+    echo "Add any images to: ${FOLDER_PATH}/"
+    echo ""
 else
     echo "Error: Expected file not created: ${TEMP_PATH}"
     # Clean up - use rm -rf for robust cleanup
