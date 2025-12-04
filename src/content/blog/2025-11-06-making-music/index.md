@@ -4,6 +4,7 @@ pubDate: 2025-11-06T23:12:59.031Z
 tags:
   - music
   - art
+  - shapenote
 socialDescription: "I've been making music recently."
 image: ''
 featured: true
