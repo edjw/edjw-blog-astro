@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from "astro/zod";
 import existingTags from "../../tags-so-far.json";
 
 const kebabCaseRegex = new RegExp(/^([a-z][a-z0-9]*)(-[a-z0-9]+)*$/);
