@@ -6,6 +6,10 @@
 }
 
 @layer base {
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-stone-900;
+  }
+
   button,
   summary {
     @apply cursor-pointer;
