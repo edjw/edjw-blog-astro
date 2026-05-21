@@ -1,4 +1,4 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect } from "vite-plus/test";
 import { blogSchema, newmdBlogSchema } from "./blog";
 
 describe("blogSchema", () => {
@@ -96,9 +96,7 @@ describe("blogSchema", () => {
       // Assert
       expect(result.success).toBe(false);
       if (!result.success) {
-        expect(result.error.issues[0].message).toContain(
-          "Use lower case and kebab case",
-        );
+        expect(result.error.issues[0].message).toContain("Use lower case and kebab case");
       }
     });
 
@@ -116,9 +114,7 @@ describe("blogSchema", () => {
       // Assert
       expect(result.success).toBe(false);
       if (!result.success) {
-        expect(result.error.issues[0].message).toContain(
-          "Use lower case and kebab case",
-        );
+        expect(result.error.issues[0].message).toContain("Use lower case and kebab case");
       }
     });
 
@@ -252,9 +248,7 @@ describe("newmdBlogSchema", () => {
     // Assert
     expect(result.success).toBe(false);
     if (!result.success) {
-      expect(result.error.issues[0].message).toContain(
-        "Use lower case and kebab case",
-      );
+      expect(result.error.issues[0].message).toContain("Use lower case and kebab case");
     }
   });
 });

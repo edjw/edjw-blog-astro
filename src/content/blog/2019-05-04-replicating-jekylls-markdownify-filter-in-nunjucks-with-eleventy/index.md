@@ -18,9 +18,7 @@ module.exports = function (eleventyConfig) {
     linkify: true,
   });
 
-  eleventyConfig.addNunjucksFilter("markdownify", (markdownString) =>
-    md.render(markdownString),
-  );
+  eleventyConfig.addNunjucksFilter("markdownify", (markdownString) => md.render(markdownString));
 };
 ```
 

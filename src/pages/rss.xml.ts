@@ -7,7 +7,7 @@ import siteData from "@/data/siteconfig";
 
 const parser = new MarkdownIt();
 
-export async function GET(context: { site: any }) {
+export async function GET(context: { site: URL }) {
   const blog: CollectionEntry<"blog">[] = await getCollection("blog");
   const response = await rss({
     title: siteData.title,

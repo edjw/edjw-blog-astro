@@ -21,7 +21,9 @@ export const blogSchema = z
           tags.forEach((tag) => {
             if (!existingTags.includes(tag)) {
               // Add a warning (not an error) for new tags
-              console.warn(`Warning: New tag "${tag}" is not in tags-so-far.json. Consider adding it to maintain consistency.`);
+              console.warn(
+                `Warning: New tag "${tag}" is not in tags-so-far.json. Consider adding it to maintain consistency.`,
+              );
             }
           });
         }
@@ -39,8 +41,7 @@ export const newmdBlogSchema = z.object({
   tags: z
     .array(
       z.string().regex(kebabCaseRegex, {
-        message:
-          "Use lower case and kebab case for tags: eg 'my-tag' but not 'My Tag' or 'myTag'",
+        message: "Use lower case and kebab case for tags: eg 'my-tag' but not 'My Tag' or 'myTag'",
       }),
     )
     .optional()
@@ -49,7 +50,9 @@ export const newmdBlogSchema = z.object({
         tags.forEach((tag) => {
           if (!existingTags.includes(tag)) {
             // Add a warning (not an error) for new tags
-            console.warn(`Warning: New tag "${tag}" is not in tags-so-far.json. Consider adding it to maintain consistency.`);
+            console.warn(
+              `Warning: New tag "${tag}" is not in tags-so-far.json. Consider adding it to maintain consistency.`,
+            );
           }
         });
       }

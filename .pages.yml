@@ -56,13 +56,13 @@ content:
       default:
         sort: pubDate
         order: desc
-  
+
   - name: coding
     label: Coding Projects
     type: file
     path: src/content/stuff/coding.json
     format: code
-    
+
   - name: hobbies
     label: Hobbies
     type: file

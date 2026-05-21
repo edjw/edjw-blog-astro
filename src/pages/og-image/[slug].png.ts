@@ -8,12 +8,8 @@ import { getSlug } from "@/utils/getSlug";
 import { titleCase } from "title-case";
 import siteData from "@/data/siteconfig";
 
-const jostRegularFontFile = readFileSync(
-  `${process.cwd()}/public/fonts/Jost-Regular.ttf`,
-);
-const jostBoldFontFile = readFileSync(
-  `${process.cwd()}/public/fonts/Jost-Bold.ttf`,
-);
+const jostRegularFontFile = readFileSync(`${process.cwd()}/public/fonts/Jost-Regular.ttf`);
+const jostBoldFontFile = readFileSync(`${process.cwd()}/public/fonts/Jost-Bold.ttf`);
 
 export async function getStaticPaths() {
   const allPaths = [];
@@ -106,12 +102,8 @@ export async function getStaticPaths() {
   });
 
   // Get all unique tags
-  const postsWithTags = allPosts.filter(
-    (post) => post.data.tags && post.data.tags.length > 0,
-  );
-  const allUniqueTags = [
-    ...new Set(postsWithTags.map((post) => post.data.tags).flat()),
-  ]
+  const postsWithTags = allPosts.filter((post) => post.data.tags && post.data.tags.length > 0);
+  const allUniqueTags = [...new Set(postsWithTags.map((post) => post.data.tags).flat())]
     .filter((tag): tag is string => !!tag)
     .map((tag) => getSlug(tag));
 
@@ -153,9 +145,7 @@ export async function GET({ params, props }: APIContext) {
   }
 
   const blogPostHtml =
-    pageType === "blogpost"
-      ? '<div class="text-gray-600 text-xl mt-2">Blog post</div>'
-      : "";
+    pageType === "blogpost" ? '<div class="text-gray-600 text-xl mt-2">Blog post</div>' : "";
 
   const markup =
     html(`<div style="background: white; display: flex; flex-direction: column; width: 100%; height: 100%; font-family: Jost, sans-serif;">
