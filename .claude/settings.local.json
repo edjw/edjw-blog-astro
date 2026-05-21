@@ -1,20 +1,19 @@
 {
   "permissions": {
     "allow": [
-      "mcp__serena__initial_instructions",
-      "mcp__serena__check_onboarding_performed",
-      "mcp__serena__onboarding",
-      "mcp__serena__list_dir",
-      "mcp__serena__read_file",
-      "mcp__serena__search_for_pattern",
-      "mcp__serena__get_symbols_overview",
-      "mcp__serena__write_memory",
-      "mcp__Astro_docs__search_astro_docs",
+      "mcp__serena__*",
+      "mcp__Astro_docs__*",
+      "mcp__playwright__*",
+      "mcp__sequential_thinking__*",
       "Bash(pgrep:*)",
       "WebFetch(domain:www.npmjs.com)",
-      "Bash(grep:*)",
-      "mcp__playwright__browser_evaluate",
-      "mcp__sequential_thinking__sequentialthinking"
+      "Bash(chmod +x:*)",
+      "mcp__astro-docs__search_astro_docs",
+      "Bash(node:*)",
+      "Bash(npm view:*)",
+      "Bash(vp check:*)",
+      "Bash(vp lint:*)",
+      "Bash(vp list:*)"
     ],
     "deny": []
   }

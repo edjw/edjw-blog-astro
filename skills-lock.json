@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "astro-dev": {
+      "source": "gigio1023/astro-dev-skill",
+      "sourceType": "github",
+      "computedHash": "0539fbb5ca3b4e49c51967634e56c7aeb623dd97f1e65628c2291aa82add4e89"
+    }
+  }
+}
