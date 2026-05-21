@@ -26,3 +26,6 @@ dev.pid
 test-results
 playwright-report
 logs
+
+# btca
+.btca
