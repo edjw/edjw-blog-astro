@@ -22,7 +22,7 @@ const pdfFiles = import.meta.glob<string>(
   },
 );
 
-// Parse filenames to extract song name and date, then sort by most recent
+// Parse filenames to extract song name and composition month, then sort newest first
 const compositions: CompositionPdf[] = Object.entries(pdfFiles)
   .map(([path]) => {
     const filename = path.split("/").pop() || "";
@@ -53,10 +53,21 @@ const compositions: CompositionPdf[] = Object.entries(pdfFiles)
     };
   })
   .filter((item): item is CompositionPdf => item !== null)
-  .sort((a, b) => b.lastUpdated.getTime() - a.lastUpdated.getTime());
+  .sort(
+    (a, b) =>
+      b.lastUpdated.getTime() - a.lastUpdated.getTime() ||
+      a.name.localeCompare(b.name),
+  );
 
-// Format date as "21 October 2025"
+// The workflow stores month-level composition dates as the first day of the month.
 function formatDate(date: Date): string {
+  if (date.getDate() === 1) {
+    return date.toLocaleDateString("en-GB", {
+      month: "long",
+      year: "numeric",
+    });
+  }
+
   return date.toLocaleDateString("en-GB", {
     day: "numeric",
     month: "long",
@@ -69,7 +80,7 @@ function formatDate(date: Date): string {
   <p>
     These are my <a href="https://en.wikipedia.org/wiki/Shape_note">shapenote</a
     >
-    compositions, with the most recently updated first. You can get the <a
+    compositions, with the newest composition dates first. You can get the <a
       href="https://github.com/edjw/shapenote-compositions/tree/main/compositions/finished"
       >Lilypond files here</a
     >.
