@@ -8,7 +8,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : 4,
   reporter: [["html"], ["json", { outputFile: "logs/playwright-results.json" }], ["list"]],
   use: {
-    baseURL: "http://localhost:4321",
+    baseURL: "http://localhost:4322",
     trace: "on-first-retry",
     screenshot: "only-on-failure",
     video: "retain-on-failure",
@@ -20,9 +20,10 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: "pnpm dev",
-    url: "http://localhost:4321",
-    reuseExistingServer: !process.env.CI,
+    command:
+      "vp exec astro dev stop >/dev/null 2>&1 || true; vp run dev --host 127.0.0.1 --port 4322",
+    url: "http://localhost:4322",
+    reuseExistingServer: false,
     timeout: 120000, // 2 minutes for dev server startup
     stdout: "pipe",
     stderr: "pipe",
