@@ -2,6 +2,17 @@ import { z } from "astro/zod";
 import existingTags from "../../tags-so-far.json";
 
 const kebabCaseRegex = new RegExp(/^([a-z][a-z0-9]*)(-[a-z0-9]+)*$/);
+const tagError = "Use lower case and kebab case for tags: eg 'my-tag' but not 'My Tag' or 'myTag'";
+
+function warnForNewTags(tags: string[] | undefined) {
+  tags?.forEach((tag) => {
+    if (!existingTags.includes(tag)) {
+      console.warn(
+        `Warning: New tag "${tag}" is not in tags-so-far.json. Consider adding it to maintain consistency.`,
+      );
+    }
+  });
+}
 
 // Schema for Astro content collections
 export const blogSchema = z
@@ -11,23 +22,11 @@ export const blogSchema = z
     tags: z
       .array(
         z.string().regex(kebabCaseRegex, {
-          message:
-            "Use lower case and kebab case for tags: eg 'my-tag' but not 'My Tag' or 'myTag'",
+          message: tagError,
         }),
       )
       .optional()
-      .superRefine((tags) => {
-        if (tags) {
-          tags.forEach((tag) => {
-            if (!existingTags.includes(tag)) {
-              // Add a warning (not an error) for new tags
-              console.warn(
-                `Warning: New tag "${tag}" is not in tags-so-far.json. Consider adding it to maintain consistency.`,
-              );
-            }
-          });
-        }
-      }),
+      .superRefine(warnForNewTags),
     socialDescription: z.string().max(155).optional(),
     image: z.string().optional(),
     featured: z.boolean().optional(),
@@ -41,22 +40,11 @@ export const newmdBlogSchema = z.object({
   tags: z
     .array(
       z.string().regex(kebabCaseRegex, {
-        message: "Use lower case and kebab case for tags: eg 'my-tag' but not 'My Tag' or 'myTag'",
+        message: tagError,
       }),
     )
     .optional()
-    .superRefine((tags) => {
-      if (tags) {
-        tags.forEach((tag) => {
-          if (!existingTags.includes(tag)) {
-            // Add a warning (not an error) for new tags
-            console.warn(
-              `Warning: New tag "${tag}" is not in tags-so-far.json. Consider adding it to maintain consistency.`,
-            );
-          }
-        });
-      }
-    }),
+    .superRefine(warnForNewTags),
   socialDescription: z.string().max(155).optional(),
   image: z.string().optional(),
   featured: z.boolean().optional(),

@@ -51,4 +51,5 @@ export default defineConfig({
     customLogger: logger,
     plugins: [removeVitePlusIncompatibleConfig(), tailwindcss()],
   },
+  compressHTML: true,
 });

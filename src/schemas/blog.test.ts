@@ -65,7 +65,9 @@ describe("blogSchema", () => {
       // Assert
       expect(result.success).toBe(false);
       if (!result.success) {
-        expect(result.error.issues[0].path).toContain("title");
+        const firstIssue = result.error.issues[0];
+        expect(firstIssue).toBeDefined();
+        expect(firstIssue?.path).toContain("title");
       }
     });
 
@@ -96,7 +98,9 @@ describe("blogSchema", () => {
       // Assert
       expect(result.success).toBe(false);
       if (!result.success) {
-        expect(result.error.issues[0].message).toContain("Use lower case and kebab case");
+        const firstIssue = result.error.issues[0];
+        expect(firstIssue).toBeDefined();
+        expect(firstIssue?.message).toContain("Use lower case and kebab case");
       }
     });
 
@@ -114,7 +118,9 @@ describe("blogSchema", () => {
       // Assert
       expect(result.success).toBe(false);
       if (!result.success) {
-        expect(result.error.issues[0].message).toContain("Use lower case and kebab case");
+        const firstIssue = result.error.issues[0];
+        expect(firstIssue).toBeDefined();
+        expect(firstIssue?.message).toContain("Use lower case and kebab case");
       }
     });
 
@@ -148,7 +154,9 @@ describe("blogSchema", () => {
       // Assert
       expect(result.success).toBe(false);
       if (!result.success) {
-        expect(result.error.issues[0].path).toContain("socialDescription");
+        const firstIssue = result.error.issues[0];
+        expect(firstIssue).toBeDefined();
+        expect(firstIssue?.path).toContain("socialDescription");
       }
     });
 
@@ -248,7 +256,9 @@ describe("newmdBlogSchema", () => {
     // Assert
     expect(result.success).toBe(false);
     if (!result.success) {
-      expect(result.error.issues[0].message).toContain("Use lower case and kebab case");
+      const firstIssue = result.error.issues[0];
+      expect(firstIssue).toBeDefined();
+      expect(firstIssue?.message).toContain("Use lower case and kebab case");
     }
   });
 });

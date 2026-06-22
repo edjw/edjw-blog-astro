@@ -11,7 +11,7 @@ const blogCollection = defineCollection({
 const StuffSchema = z
   .object({
     name: z.string(),
-    url: z.optional(z.string().url()),
+    url: z.optional(z.url()),
     description: z.string(),
   })
   .strict();
