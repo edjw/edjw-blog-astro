@@ -59,13 +59,27 @@ const compositions: CompositionPdf[] = Object.entries(pdfFiles)
       a.name.localeCompare(b.name),
   );
 
+let currentCompositionMonth = "";
+let compositionMonth = "";
+
+const getMonthYear = (date: Date) =>
+  date.toLocaleDateString("en-GB", {
+    month: "long",
+    year: "numeric",
+  });
+
+const setCurrentCompositionMonth = (date: Date) => {
+  currentCompositionMonth = getMonthYear(date);
+};
+
+const setCompositionMonth = (date: Date) => {
+  compositionMonth = getMonthYear(date);
+};
+
 // The workflow stores month-level composition dates as the first day of the month.
 function formatDate(date: Date): string {
   if (date.getDate() === 1) {
-    return date.toLocaleDateString("en-GB", {
-      month: "long",
-      year: "numeric",
-    });
+    return getMonthYear(date);
   }
 
   return date.toLocaleDateString("en-GB", {
@@ -89,18 +103,28 @@ function formatDate(date: Date): string {
   <ul class="mt-6 flex list-none flex-col gap-4">
     {
       compositions.map((composition) => (
-        <li class="flex flex-col gap-0.5">
-          <a
-            href={composition.url}
-            class="font-semibold hover:underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {titleCase(composition.name.replace(/-/g, " "))}
-          </a>
-          <span class="text-sm text-gray-600 dark:text-gray-400">
-            {formatDate(composition.lastUpdated)}
-          </span>
+        <li>
+          {setCurrentCompositionMonth(composition.lastUpdated)}
+          {compositionMonth !== currentCompositionMonth && (
+            <p class="mt-16 mb-8 text-3xl font-bold text-[#DA291C] first:mt-0">
+              {currentCompositionMonth}
+            </p>
+          )}
+          {setCompositionMonth(composition.lastUpdated)}
+
+          <div class="flex flex-col gap-0.5 border-l py-2 pl-4">
+            <a
+              href={composition.url}
+              class="font-semibold hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {titleCase(composition.name.replace(/-/g, " "))}
+            </a>
+            <span class="text-sm text-gray-600 dark:text-gray-400">
+              {formatDate(composition.lastUpdated)}
+            </span>
+          </div>
         </li>
       ))
     }
