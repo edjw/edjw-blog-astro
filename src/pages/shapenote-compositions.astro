@@ -1,5 +1,6 @@
 ---
 import PageLayout from "@/layouts/PageLayout.astro";
+import getMonthYear from "@/utils/getMonthYear";
 import { titleCase } from "title-case";
 
 const title = "Shapenote Compositions";
@@ -61,12 +62,6 @@ const compositions: CompositionPdf[] = Object.entries(pdfFiles)
 
 let currentCompositionMonth = "";
 let compositionMonth = "";
-
-const getMonthYear = (date: Date) =>
-  date.toLocaleDateString("en-GB", {
-    month: "long",
-    year: "numeric",
-  });
 
 const setCurrentCompositionMonth = (date: Date) => {
   currentCompositionMonth = getMonthYear(date);
