@@ -1,6 +1,5 @@
 ---
 import PageLayout from "@/layouts/PageLayout.astro";
-import getMonthYear from "@/utils/getMonthYear";
 import { titleCase } from "title-case";
 
 const title = "Shapenote Compositions";
@@ -60,28 +59,35 @@ const compositions: CompositionPdf[] = Object.entries(pdfFiles)
       a.name.localeCompare(b.name),
   );
 
-let currentCompositionMonth = "";
-let compositionMonth = "";
+const compositionsWithDateHeaders = compositions.map((composition, index) => {
+  const year = composition.lastUpdated.getFullYear().toString();
+  const month = composition.lastUpdated.toLocaleDateString("en-GB", {
+    month: "long",
+  });
+  const previousComposition = compositions[index - 1];
+  const previousYear = previousComposition?.lastUpdated
+    .getFullYear()
+    .toString();
+  const previousMonth = previousComposition?.lastUpdated.toLocaleDateString(
+    "en-GB",
+    { month: "long" },
+  );
 
-const setCurrentCompositionMonth = (date: Date) => {
-  currentCompositionMonth = getMonthYear(date);
-};
-
-const setCompositionMonth = (date: Date) => {
-  compositionMonth = getMonthYear(date);
-};
+  return {
+    ...composition,
+    year,
+    month,
+    isFirstComposition: index === 0,
+    showYearHeader: year !== previousYear,
+    showMonthHeader: month !== previousMonth || year !== previousYear,
+  };
+});
 
 // The workflow stores month-level composition dates as the first day of the month.
-function formatDate(date: Date): string {
-  if (date.getDate() === 1) {
-    return getMonthYear(date);
-  }
+function formatCompositionDay(date: Date): string {
+  if (date.getDate() === 1) return "";
 
-  return date.toLocaleDateString("en-GB", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
+  return date.toLocaleDateString("en-GB", { day: "numeric" });
 }
 ---
 
@@ -97,15 +103,26 @@ function formatDate(date: Date): string {
 
   <ul class="mt-6 flex list-none flex-col gap-4">
     {
-      compositions.map((composition) => (
+      compositionsWithDateHeaders.map((composition) => (
         <li>
-          {setCurrentCompositionMonth(composition.lastUpdated)}
-          {compositionMonth !== currentCompositionMonth && (
-            <p class="mt-16 mb-8 text-3xl font-bold text-[#DA291C] first:mt-0">
-              {currentCompositionMonth}
+          {composition.showYearHeader && (
+            <p
+              class={`mb-4 text-3xl font-bold text-[#DA291C] ${
+                composition.isFirstComposition ? "mt-0" : "mt-16"
+              }`}
+            >
+              {composition.year}
             </p>
           )}
-          {setCompositionMonth(composition.lastUpdated)}
+          {composition.showMonthHeader && (
+            <p
+              class={`mb-3 text-xl font-bold ${
+                composition.showYearHeader ? "mt-0" : "mt-8"
+              }`}
+            >
+              {composition.month}
+            </p>
+          )}
 
           <div class="flex flex-col gap-0.5 border-l py-2 pl-4">
             <a
@@ -116,9 +133,11 @@ function formatDate(date: Date): string {
             >
               {titleCase(composition.name.replace(/-/g, " "))}
             </a>
-            <span class="text-sm text-gray-600 dark:text-gray-400">
-              {formatDate(composition.lastUpdated)}
-            </span>
+            {formatCompositionDay(composition.lastUpdated) && (
+              <span class="text-sm text-gray-600 dark:text-gray-400">
+                {formatCompositionDay(composition.lastUpdated)}
+              </span>
+            )}
           </div>
         </li>
       ))
