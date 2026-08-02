@@ -1,8 +1,8 @@
 [
   {
-    "name": "blackwater-24-7-26",
-    "filename": "blackwater-24-7-26_2026-07-01.pdf",
-    "url": "/files/shapenote-compositions/blackwater-24-7-26_2026-07-01.pdf",
+    "name": "blackwater",
+    "filename": "blackwater_2026-07-01.pdf",
+    "url": "/files/shapenote-compositions/blackwater_2026-07-01.pdf",
     "compositionMonth": "2026-07",
     "displayDate": "July 2026",
     "sourcePath": "compositions/finished/blackwater-24-7-26/blackwater-24-7-26.pdf"
@@ -22,14 +22,6 @@
     "compositionMonth": "2026-07",
     "displayDate": "July 2026",
     "sourcePath": "compositions/finished/deep-dene-6-6-26/deep-dene.pdf"
-  },
-  {
-    "name": "ed-johnson-williams-blackwater",
-    "filename": "ed-johnson-williams-blackwater_2026-07-01.pdf",
-    "url": "/files/shapenote-compositions/ed-johnson-williams-blackwater_2026-07-01.pdf",
-    "compositionMonth": "2026-07",
-    "displayDate": "July 2026",
-    "sourcePath": "compositions/finished/blackwater-24-7-26/ed-johnson-williams-blackwater.pdf"
   },
   {
     "name": "holly-blue",
@@ -64,9 +56,9 @@
     "sourcePath": "compositions/finished/skirrid-19-7-26/skirrid.pdf"
   },
   {
-    "name": "sugar-loaf-22-7-26",
-    "filename": "sugar-loaf-22-7-26_2026-07-01.pdf",
-    "url": "/files/shapenote-compositions/sugar-loaf-22-7-26_2026-07-01.pdf",
+    "name": "sugar-loaf",
+    "filename": "sugar-loaf_2026-07-01.pdf",
+    "url": "/files/shapenote-compositions/sugar-loaf_2026-07-01.pdf",
     "compositionMonth": "2026-07",
     "displayDate": "July 2026",
     "sourcePath": "compositions/finished/sugar-loaf-22-7-26/sugar-loaf-22-7-26.pdf"
