@@ -46,6 +46,21 @@ test.describe("Static Pages", () => {
     await expect(page.locator("main h2").first()).toContainText("Tags");
   });
 
+  test("should show the shapenote compositions licence", async ({ page }) => {
+    // Arrange & Act
+    await page.goto("/shapenote-compositions");
+
+    // Assert
+    const licenceLink = page.getByRole("link", {
+      name: "Creative Commons Attribution 4.0 International licence",
+    });
+    await expect(licenceLink).toBeVisible();
+    await expect(licenceLink).toHaveAttribute(
+      "href",
+      "https://creativecommons.org/licenses/by/4.0/",
+    );
+  });
+
   test("should have no console errors on static pages", async ({ page }) => {
     // Arrange
     const consoleErrors: string[] = [];
