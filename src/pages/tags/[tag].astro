@@ -2,14 +2,14 @@
 import { titleCase } from "title-case";
 import PageLayout from "@/layouts/PageLayout.astro";
 import PostList from "@/components/PostList.astro";
-import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 
+import { getPublishedBlogPosts } from "@/utils/blogPosts";
 import { getSlug } from "@/utils/getSlug";
 
 export async function getStaticPaths() {
   const allPosts: CollectionEntry<"blog">[] = (
-    await getCollection("blog")
+    await getPublishedBlogPosts()
   ).filter((post) => {
     return post.data.tags && post.data.tags.length > 0;
   });
@@ -31,7 +31,7 @@ export async function getStaticPaths() {
 const { tag } = Astro.props;
 
 const tagPosts: CollectionEntry<"blog">[] = (
-  await getCollection("blog")
+  await getPublishedBlogPosts()
 ).filter(
   (post) =>
     post.data.tags && post.data.tags.some((t) => t && getSlug(t) === tag),

@@ -30,6 +30,7 @@ export const blogSchema = z
     socialDescription: z.string().max(155).optional(),
     image: z.string().optional(),
     featured: z.boolean().optional(),
+    draft: z.boolean().default(false),
   })
   .strict();
 
@@ -48,4 +49,5 @@ export const newmdBlogSchema = z.object({
   socialDescription: z.string().max(155).optional(),
   image: z.string().optional(),
   featured: z.boolean().optional(),
+  draft: z.boolean().default(false),
 });

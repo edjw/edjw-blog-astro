@@ -5,9 +5,9 @@ const title = "Tags";
 const description = "Tags from my blog posts";
 import { getSlug } from "@/utils/getSlug";
 
-import { getCollection } from "astro:content";
+import { getPublishedBlogPosts } from "@/utils/blogPosts";
 
-const allPosts = (await getCollection("blog")).filter((post) => {
+const allPosts = (await getPublishedBlogPosts()).filter((post) => {
   return post.data.tags && post.data.tags.length > 0;
 });
 

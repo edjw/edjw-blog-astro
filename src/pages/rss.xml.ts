@@ -1,14 +1,14 @@
 import rss from "@astrojs/rss";
-import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import sanitizeHtml from "sanitize-html";
 import MarkdownIt from "markdown-it";
 import siteData from "@/data/siteconfig";
+import { getPublishedBlogPosts } from "@/utils/blogPosts";
 
 const parser = new MarkdownIt();
 
 export async function GET(context: { site: URL }) {
-  const blog: CollectionEntry<"blog">[] = await getCollection("blog");
+  const blog: CollectionEntry<"blog">[] = await getPublishedBlogPosts();
   const response = await rss({
     title: siteData.title,
     description: siteData.description,

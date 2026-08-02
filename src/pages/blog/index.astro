@@ -2,12 +2,12 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import PostList from "@/components/PostList.astro";
 
-import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
+import { getPublishedBlogPosts } from "@/utils/blogPosts";
 
-const allPosts: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
-  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
-);
+const allPosts: CollectionEntry<"blog">[] = (
+  await getPublishedBlogPosts()
+).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
 ---
 
 <BaseLayout pageTitle="All posts" description="Ed Johnson-Williams' blogposts">

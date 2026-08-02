@@ -3,7 +3,7 @@ import { html } from "satori-html";
 import sharp from "sharp";
 import { readFileSync } from "fs";
 import type { APIContext } from "astro";
-import { getCollection } from "astro:content";
+import { getPreviewableBlogPosts } from "@/utils/blogPosts";
 import { getSlug } from "@/utils/getSlug";
 import { titleCase } from "title-case";
 import siteData from "@/data/siteconfig";
@@ -85,7 +85,7 @@ export async function getStaticPaths() {
   };
 
   // Get all blog posts
-  const allPosts = await getCollection("blog");
+  const allPosts = await getPreviewableBlogPosts();
   const allPostsPaths = allPosts.map((post) => {
     return {
       params: { slug: post.id },

@@ -6,9 +6,9 @@ import headshot from "../images/headshot-crop.png";
 const title = "Ed Johnson Williams' website";
 const socialDescription = "Ed Johnson Williams' website";
 
-import { getCollection } from "astro:content";
+import { getPublishedBlogPosts } from "@/utils/blogPosts";
 
-const featuredPosts = (await getCollection("blog"))
+const featuredPosts = (await getPublishedBlogPosts())
   .filter((post) => post.data.featured === true)
   .sort(
     (a, b) =>
