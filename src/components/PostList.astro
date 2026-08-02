@@ -29,7 +29,7 @@ const sortedPosts: CollectionEntry<"blog">[] = posts.sort(
     sortedPosts.map((post) => (
       <div>
         {showYears && setCurrentPostYear(post.data.pubDate)}
-        {showYears && year != "" && year != currentPostYear && (
+        {showYears && year != currentPostYear && (
           <p class="mt-16 mb-8 text-3xl font-bold text-[#DA291C]">
             {currentPostYear}
           </p>
