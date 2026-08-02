@@ -4,110 +4,117 @@ pubDate: 2026-08-02T20:28:25Z
 tags:
   - music
   - shapenote
-socialDescription: Why shapenote music is copyright by default, what each Creative Commons licence allows, and why I chose Creative Commons Attribution.
+socialDescription: I chose Creative Commons Attribution for my shapenote compositions. Here is what that allows, and why I ruled out the alternatives.
 draft: true
 ---
 
-I think Creative Commons Attribution is probably the right choice for most new shapenote compositions. The point of writing music in this tradition is usually that people sing it. Letting people print, share, record and put a tune in a songbook without asking removes a barrier. They still have to name the composer.
+I've put my [shapenote compositions](/shapenote-compositions) under a Creative Commons Attribution licence. People can sing them, print them, record them, change them and put them in songbooks, including books that are sold. They have to name me as the composer and say if they changed anything.
 
-I am not an intellectual property lawyer. I have not spoken to any songbook publishers about how they treat Creative Commons music. This post is my understanding from reading the [Creative Commons guidance](https://creativecommons.org/share-your-work/cclicenses/), not legal advice. If you are worried about signing over your copyright later, check with a lawyer and the publishers you might approach before choosing a licence.
+That is probably the right licence for quite a lot of new shapenote music. I write tunes, and I don't want anything to get in the way of people singing them. Needing permission to change a key or move a syllable to the right note could do that.
 
-## Copyright is already there
+There are good reasons to choose differently, though. A publisher might later want to be the only organisation allowed to publish the tune. A Creative Commons licence would mean other people could still publish the original version under its terms, which may make the tune less attractive to the publisher.
 
-In the UK, [copyright protection is automatic](https://www.gov.uk/copyright). You do not need to register a composition or put a copyright symbol on it. Writing an original tune is enough.
+I am not an intellectual property lawyer, and I haven't spoken to songbook publishers about how they treat Creative Commons music. This is what I understand from the [Creative Commons guidance](https://creativecommons.org/share-your-work/cclicenses/), not legal advice. If you think you might later sign over your copyright, talk to a lawyer and any publishers you are considering first.
 
-That means a composition is "all rights reserved" by default. Putting a PDF online does not by itself give everyone permission to copy it, edit it or add it to a songbook. People may need to ask first.
+## A tune has copyright as soon as you write it
 
-A Creative Commons licence works with that copyright. It does not get rid of it. You keep the copyright but give everyone permission in advance to use the work in particular ways.
+In the UK, [copyright protection is automatic](https://www.gov.uk/copyright). You don't have to register a composition or put a copyright symbol on it.
 
-## Why keep all rights reserved?
+So putting a PDF on a website doesn't give other people permission to copy it, edit it or publish it in a songbook. The composition is all rights reserved unless you say otherwise, and people may need to ask before using it.
 
-There are reasons not to add a Creative Commons licence. You might want to approve every arrangement, edit or publication, or charge publishers to use the tune. The composition might still be a draft. There might also be several people who own parts of the work, which means you cannot make the decision alone.
+Creative Commons gives you a standard way to say otherwise. You keep the copyright, but give people permission in advance to use the work under stated conditions.
 
-One possible concern is a publisher asking you to sign over the copyright. This isn't entirely hypothetical. Although I haven't checked with the company, I'm pretty sure the Sacred Harp Publishing Company asked composers whose tunes were accepted for _The Sacred Harp: 2025 Edition_ to sign over their copyright. I don't know how common that is.
+## Reasons to keep all rights reserved
+
+You may want to approve every arrangement or publication, or charge a publisher for using the tune. Perhaps the composition is still a draft. If several people own different parts of it, you can't choose a licence on your own anyway.
+
+A trickier question is what happens if a publisher wants the copyright. I think the Sacred Harp Publishing Company asked composers accepted for _The Sacred Harp: 2025 Edition_ to assign theirs, although I haven't confirmed this with the company. I don't know how common the practice is elsewhere.
 
 <!-- TODO before publishing: Ask people familiar with The Sacred Harp: 2025 Edition whether accepted composers assigned their copyright, and ask songbook publishers whether prior Creative Commons licensing affects acceptance. Update or remove the unconfirmed claim above. -->
 
-If it happened after you had released a tune under Creative Commons, you could transfer the copyright, but [the licence would not disappear](https://creativecommons.org/faq/#what-if-i-change-my-mind-about-using-a-cc-license). The publisher could own the copyright, but it couldn't have exclusive control over the work. People could keep using and sharing the Creative Commons version because those permissions cannot be taken back.
+You can transfer copyright after releasing a tune under Creative Commons, but [the existing licence doesn't disappear](https://creativecommons.org/faq/#what-if-i-change-my-mind-about-using-a-cc-license). Anyone who already has the tune can carry on using it under those terms. The new owner therefore won't have exclusive control over the original version.
 
-A publisher that insists on exclusive rights may not want the tune. If this concerns you, keep all rights reserved until you have spoken to a publisher.
+A publisher that requires exclusivity may decide it doesn't want the tune. If that possibility matters to you, it would be safer to keep all rights reserved until you've spoken to the publisher.
 
-Making a new version does not wipe the slate clean. A substantial rewrite or arrangement may have its own copyright in the new material, which you could sign over. The original tune would still be available under Creative Commons, and the publisher would only have exclusive control over the new work. You should not assume that changing the key, correcting the notation or rewriting a few notes is enough to create a separate work.
+Producing a new edition may not get around this. A substantial rewrite or arrangement may have its own copyright, which you could transfer, but that copyright would cover only the new material. The original tune would remain available under Creative Commons. Changing the key, correcting the notation or rewriting a few notes may not add enough new material to create a separate copyright at all.
 
-Keeping all the rights gives you the most control. It also means more admin for everyone. A singing that wants to print copies, or an editor who wants to include the tune in a songbook, may have to find you and wait for an answer. Some will probably choose another tune instead.
+Keeping all rights reserved gives you more control, but it gives everyone more admin as well. In theory, a singing that wants to print copies has to find you. So does an editor who wants the tune for a songbook. Some might just use another tune rather than wait for an answer.
 
-For most shapenote music, I do not think that trade is worth it. I am writing tunes because I want people to sing them. Photocopies, convention handouts, recordings and songbooks are how the music moves around.
+For my music, that didn't seem like a good trade. Photocopies, handouts, recordings and songbooks are how these tunes get around.
 
-## The parts of a Creative Commons licence
+## What BY, SA, NC and ND mean in Creative Commons
 
-[Creative Commons has six licences](https://creativecommons.org/share-your-work/cclicenses/). Every one includes Attribution, shown as **BY**. Anyone using the work must name its creator.
+[Creative Commons offers six licences](https://creativecommons.org/share-your-work/cclicenses/). They all require Attribution, or **BY**, which means the person using the work must name its creator.
 
-The other letters add restrictions:
+The other conditions are:
 
-- **SA** means ShareAlike. Anyone who shares an adapted version must use the same or a compatible licence.
-- **NC** means NonCommercial. The work cannot be used mainly for commercial advantage or payment.
-- **ND** means NoDerivatives. People can make changes privately, but cannot share an adapted version.
+- **SA**, or ShareAlike: anyone publishing an adapted version must use the same or a compatible licence.
+- **NC**, or NonCommercial: nobody may use the work mainly for commercial advantage or payment.
+- **ND**, or NoDerivatives: people may change the work for their own use, but may not publish or share the changed version.
 
-Different combinations suit different aims.
+The six licences combine these conditions in different ways.
 
-### Creative Commons Attribution
+## Creative Commons Attribution
 
-[Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) allows copying, performances, recordings, commercial use and adaptations. Anyone using it must name the composer, link to the licence and say if they made changes.
+[Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) allows people to copy, perform, record, sell and adapt the work. People using the work must name the composer, link to the licence and identify any changes they have made.
 
-This is the simplest fit if you want a tune to spread while keeping your name attached to it. A songbook can include the tune and charge for the book. An editor can alter the notation, key, text underlay, harmony or voice leading. They do not need to find you first.
+This is the licence I chose. A publisher can include one of my tunes in a songbook, change the key, notation, harmony, one of the voice parts or where the words sit under the notes, and charge for the finished book. They don't need to ask me first. They need to name me as the composer, print the licence address (probably in the book's credits), and say that they changed it.
 
-That freedom includes changes you might dislike. Attribution lets people know which version was yours, but it does not give you control over later versions.
+Of course, somebody could also make changes I hate. They would have to name me as the composer of the original tune, say that they had changed it and avoid suggesting that I approved their version. If their changes were original enough, they could own copyright in those changes. I would still own copyright in the original composition, but I would not own or control everything they added.
 
-### Creative Commons Attribution-ShareAlike
+I am happy with that risk, though I can understand another composer deciding otherwise.
 
-[Creative Commons Attribution-ShareAlike](https://creativecommons.org/licenses/by-sa/4.0/) allows the same copying, commercial use and adaptation. The difference is that adapted versions must stay under the same or a compatible licence.
+## ShareAlike
 
-Choose this if you want people to build on the tune but also want their versions to remain available on similar terms. It helps create a shared pool of music. The extra condition can make reuse more complicated where another publication uses a different licence.
+[Creative Commons Attribution-ShareAlike](https://creativecommons.org/licenses/by-sa/4.0/) adds one condition to Attribution: published adaptations must have the same or a compatible licence.
 
-### Creative Commons Attribution-NoDerivatives
+That is useful if you want later versions of the tune to stay available on similar terms. I didn't choose it because an editor who publishes an adapted version would have to use the same or a compatible ShareAlike licence for that version. The rest of the songbook could still use different terms.
 
-[Creative Commons Attribution-NoDerivatives](https://creativecommons.org/licenses/by-nd/4.0/) allows people to copy and share the unaltered work, including commercially. They cannot share a changed version.
+## NoDerivatives
 
-This is the closest fit if you want people to print, sing and republish the composition as written, but want editors to ask before publishing changes. For shapenote music, those changes might include a new key, revised notation, different text underlay or altered voice leading.
+[Creative Commons Attribution-NoDerivatives](https://creativecommons.org/licenses/by-nd/4.0/) lets people copy and share the work, even commercially, but not publish an adapted version.
 
-That can be quite a restriction. Songbook editors often need to make small changes to fit their notation and house style. NoDerivatives means they need separate permission before they distribute that edited score.
+A publisher could include the tune in a paid-for songbook without asking me. They could resize or reformat the score to fit the page, but they would have to name me as the composer, print the licence address and leave the composition unchanged.
 
-### Creative Commons Attribution-NonCommercial
+They would need my permission before publishing any changes to the music. There isn't a fixed list of changes that count as an adaptation, and the answer may depend on which country's law applies. UK law treats an arrangement or transcription as an adaptation. US law uses the term derivative work and includes musical arrangements. Neither gives a neat answer for every small editorial change.
 
-[Creative Commons Attribution-NonCommercial](https://creativecommons.org/licenses/by-nc/4.0/) allows sharing and adaptation, but not commercial use.
+Changes to the notes or harmony are likely to count. Changing only the title or page layout probably doesn't. A simple key change is less clear. So is converting Aikin seven-shape notation to four-shape: the pitches stay the same, but the new notation might count as a transcription.
 
-Choose this if you are happy for singings and individuals to use the music but want publishers or commercial recordings to ask first. The boundary is not always as obvious as it sounds. A paid-for songbook or recording may need separate permission, and an editor may avoid the tune rather than work out whether their use counts as commercial.
+Songbook editors often need to make small changes to match their notation and house style, so that licence was more restrictive than I wanted.
 
-### Creative Commons Attribution-NonCommercial-ShareAlike
+## NonCommercial
 
-[Creative Commons Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/) combines both conditions. Adaptations must use the same or a compatible licence, and nobody can use the work commercially without asking you.
+[Creative Commons Attribution-NonCommercial](https://creativecommons.org/licenses/by-nc/4.0/) allows sharing and adaptation, but not commercial use. A singing or an individual could use the music, while a commercial recording or paid-for songbook might need permission.
 
-This suits someone who wants non-commercial sharing and adaptation, with those adaptations kept open too. It is less useful if easy inclusion in any songbook or recording is the main aim.
+The boundary isn't always obvious. Rather than work out whether a particular use is commercial, an editor may leave the tune out. I don't want the licence to limit who can sing my tunes or where, so I ruled this one out too.
 
-### Creative Commons Attribution-NonCommercial-NoDerivatives
+The two remaining licences combine NonCommercial with another restriction:
 
-[Creative Commons Attribution-NonCommercial-NoDerivatives](https://creativecommons.org/licenses/by-nc-nd/4.0/) is the most restrictive Creative Commons licence. People can share the composition unchanged and for non-commercial purposes. Commercial use and shared adaptations both need separate permission.
+- [Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/) requires published adaptations to use the same or a compatible licence.
+- [Attribution-NonCommercial-NoDerivatives](https://creativecommons.org/licenses/by-nc-nd/4.0/) only allows people to share the unchanged composition for non-commercial purposes.
 
-Choose this if you want to allow straightforward sharing between singers but keep control over editing and publication. It removes less friction than the other licences.
+They make sense if you want informal sharing but want commercial users to contact you. The NoDerivatives version also keeps published edits under your control. Neither fitted what I wanted to do.
 
-## There is also Creative Commons Zero
+## Creative Commons Zero
 
-[Creative Commons Zero](https://creativecommons.org/public-domain/cc0/) is a public domain dedication rather than one of the six licences. It gives up as many rights as the law allows. People can copy, change and sell the work without having to name you.
+[Creative Commons Zero](https://creativecommons.org/public-domain/cc0/) sits outside the six licences. It puts the work into the public domain as far as the law allows. Anybody can copy, change or sell the work, and they don't have to name you.
 
-This makes reuse as easy as possible. It might suit someone who cares more about a tune surviving and changing than about being formally recognised as its composer.
+I can see the appeal for shapenote music. A tune can survive, move around and change without anybody having to trace the composer. I still wanted to be credited for mine, so I didn't go this far.
 
-A publisher can still publish a Creative Commons Zero tune, but it cannot publish it exclusively. Everyone else has the same right to use it. There may be no copyright in the original composition left to sign over. A new arrangement could have its own copyright if it contains enough original work, but the publisher would only have exclusive control over that new material. Everyone else could continue using the Creative Commons Zero composition.
+A publisher can publish a Creative Commons Zero tune, but can't stop other people publishing it too. There may be no copyright left in the original composition to transfer. A sufficiently original new arrangement could have its own copyright, but that would only cover the new material.
 
-## Only licence what you own
+## The licence only covers your work
 
-A licence can only cover rights you own or have permission to licence. If you write both the music and words, you can apply the same licence to both. If you set somebody else's hymn text, your licence does not give away their rights.
+You can only license rights that you own or have permission to license. If you wrote both the music and the words, the same licence can cover both. If you set somebody else's hymn text, your licence can't give away their rights.
 
-Old hymn texts may already be in the public domain. Newer ones may still be protected by copyright. It is worth saying clearly that the licence covers the music only when the words have a different copyright status. A recording also has rights belonging to its performers and whoever made the recording, separate from the composition itself.
+An old hymn text may be in the public domain, while a newer one may still have copyright. Where the words and music have different copyright positions, say clearly that your licence covers the music only.
 
-## Why I chose Creative Commons Attribution
+Recordings are separate again. The performers and the person or organisation that made the recording may have rights in it, whatever licence you put on the underlying composition.
 
-I chose [Creative Commons Attribution 4.0 International for my shapenote compositions](/shapenote-compositions). People can sing them, print them, record them, edit them and put them in songbooks, including songbooks that are sold. They need to name me as the composer and say what they changed.
+## Where I ended up
 
-That feels like the right trade for this music. If an editor needs to change a key or tidy some text underlay, I would rather they did that than left the tune out. I care about being named as the composer. I am less interested in controlling every copy.
+Creative Commons Attribution asks people to name me as the composer without making them ask before they use or edit a tune. If an editor needs to change a key or move words that sit awkwardly under the notes, I'd rather they did it than left the tune out.
 
-Creative Commons licences are not revocable for people already using the work under their terms, so it is worth choosing carefully. They are also non-exclusive. You can still give somebody extra permission separately if the licence you chose does not cover what they want to do.
+I can't withdraw the licence from people already using the work under its terms, and a publisher may later want exclusive rights I can no longer offer.
+
+The licence is non-exclusive, so I can still give somebody separate permission for a use it doesn't cover. For the way I hope my music will be used, Attribution seems about right.
