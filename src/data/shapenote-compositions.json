@@ -1,5 +1,13 @@
 [
   {
+    "name": "blackwater-24-7-26",
+    "filename": "blackwater-24-7-26_2026-07-01.pdf",
+    "url": "/files/shapenote-compositions/blackwater-24-7-26_2026-07-01.pdf",
+    "compositionMonth": "2026-07",
+    "displayDate": "July 2026",
+    "sourcePath": "compositions/finished/blackwater-24-7-26/blackwater-24-7-26.pdf"
+  },
+  {
     "name": "brockenhurst",
     "filename": "brockenhurst_2026-07-01.pdf",
     "url": "/files/shapenote-compositions/brockenhurst_2026-07-01.pdf",
@@ -16,12 +24,28 @@
     "sourcePath": "compositions/finished/deep-dene-6-6-26/deep-dene.pdf"
   },
   {
+    "name": "ed-johnson-williams-blackwater",
+    "filename": "ed-johnson-williams-blackwater_2026-07-01.pdf",
+    "url": "/files/shapenote-compositions/ed-johnson-williams-blackwater_2026-07-01.pdf",
+    "compositionMonth": "2026-07",
+    "displayDate": "July 2026",
+    "sourcePath": "compositions/finished/blackwater-24-7-26/ed-johnson-williams-blackwater.pdf"
+  },
+  {
     "name": "holly-blue",
     "filename": "holly-blue_2026-07-01.pdf",
     "url": "/files/shapenote-compositions/holly-blue_2026-07-01.pdf",
     "compositionMonth": "2026-07",
     "displayDate": "July 2026",
     "sourcePath": "compositions/finished/holly-blue-11-6-26/holly-blue.pdf"
+  },
+  {
+    "name": "itchen",
+    "filename": "itchen_2026-07-01.pdf",
+    "url": "/files/shapenote-compositions/itchen_2026-07-01.pdf",
+    "compositionMonth": "2026-07",
+    "displayDate": "July 2026",
+    "sourcePath": "compositions/finished/itchen-9-7-26/itchen.pdf"
   },
   {
     "name": "safe-in-the-promised-land",
@@ -32,12 +56,36 @@
     "sourcePath": "compositions/finished/safe-in-the-promised-land-15-7-26/safe-in-the-promised-land.pdf"
   },
   {
+    "name": "skirrid",
+    "filename": "skirrid_2026-07-01.pdf",
+    "url": "/files/shapenote-compositions/skirrid_2026-07-01.pdf",
+    "compositionMonth": "2026-07",
+    "displayDate": "July 2026",
+    "sourcePath": "compositions/finished/skirrid-19-7-26/skirrid.pdf"
+  },
+  {
+    "name": "sugar-loaf-22-7-26",
+    "filename": "sugar-loaf-22-7-26_2026-07-01.pdf",
+    "url": "/files/shapenote-compositions/sugar-loaf-22-7-26_2026-07-01.pdf",
+    "compositionMonth": "2026-07",
+    "displayDate": "July 2026",
+    "sourcePath": "compositions/finished/sugar-loaf-22-7-26/sugar-loaf-22-7-26.pdf"
+  },
+  {
     "name": "sunlight",
     "filename": "sunlight_2026-07-01.pdf",
     "url": "/files/shapenote-compositions/sunlight_2026-07-01.pdf",
     "compositionMonth": "2026-07",
     "displayDate": "July 2026",
     "sourcePath": "compositions/finished/sunlight-10-6-26/sunlight.pdf"
+  },
+  {
+    "name": "the-day",
+    "filename": "the-day_2026-07-01.pdf",
+    "url": "/files/shapenote-compositions/the-day_2026-07-01.pdf",
+    "compositionMonth": "2026-07",
+    "displayDate": "July 2026",
+    "sourcePath": "compositions/finished/the-day-30-7-26/the-day.pdf"
   },
   {
     "name": "belvedere",
