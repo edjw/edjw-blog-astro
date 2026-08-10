@@ -48,9 +48,9 @@ fi
 # Create the folder
 mkdir -p "$FOLDER_PATH"
 
-# Check if npx/newmd is available
-if ! command -v npx &> /dev/null; then
-    echo "Error: npx not found. Please ensure npm is installed."
+# Check if pnpm is available
+if ! command -v pnpm &> /dev/null; then
+    echo "Error: pnpm not found. Please install pnpm."
     rm -rf "$FOLDER_PATH"
     exit 1
 fi
@@ -63,7 +63,7 @@ TEMP_PATH="${BLOG_DIR}/${TEMP_NAME}.md"
 cd "${SCRIPT_DIR}/src"
 
 # Create the post
-if ! npx newmd blog --slug "${TEMP_NAME}" "$TITLE" 2>/dev/null; then
+if ! pnpm exec newmd blog --slug "${TEMP_NAME}" "$TITLE" 2>/dev/null; then
     echo "Error: Failed to create blog post with newmd"
     rm -rf "$FOLDER_PATH"
     exit 1

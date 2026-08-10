@@ -9,7 +9,9 @@ Using Astro
 | Command                           | Action                                      |
 | :-------------------------------- | :------------------------------------------ |
 | `pnpm install`                    | Installs dependencies                       |
-| `pnpm run dev`                    | Starts local dev server at `localhost:3000` |
+| `pnpm run dev`                    | Starts local dev server at `localhost:4321` |
 | `pnpm run build`                  | Build your production site to `./dist/`     |
-| `pnpm run format`                 | Format files using prettier                 |
+| `pnpm run check`                  | Run type and lint checks                    |
+| `pnpm test`                       | Run the unit tests                          |
+| `pnpm run format`                 | Format source files using Prettier          |
 | `pnpm run post "Your post title"` | Create a new blog post with the given title |

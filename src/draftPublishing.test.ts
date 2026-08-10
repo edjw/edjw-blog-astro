@@ -1,4 +1,4 @@
-import { afterAll, beforeAll, describe, expect, test } from "vite-plus/test";
+import { afterAll, beforeAll, describe, expect, test } from "vitest";
 import { execFile } from "node:child_process";
 import { access, mkdtemp, readFile, rm } from "node:fs/promises";
 import { join } from "node:path";
@@ -7,7 +7,8 @@ import { promisify } from "node:util";
 
 const execFileAsync = promisify(execFile);
 
-const draftSlug = "2026-08-02-choosing-a-creative-commons-licence-for-shapenote-music";
+const draftSlug =
+  "2026-08-02-choosing-a-creative-commons-licence-for-shapenote-music";
 const draftTitle = "Choosing a Creative Commons licence for shapenote music";
 
 let temporaryDirectory: string;
@@ -24,10 +25,14 @@ beforeAll(async () => {
     PATH: process.env.PATH,
   };
 
-  await execFileAsync("vp", ["run", "build", "--force", "--outDir", outputDirectory.pathname], {
-    cwd: process.cwd(),
-    env: buildEnvironment,
-  });
+  await execFileAsync(
+    "pnpm",
+    ["run", "build", "--force", "--outDir", outputDirectory.pathname],
+    {
+      cwd: process.cwd(),
+      env: buildEnvironment,
+    },
+  );
 }, 120_000);
 
 afterAll(async () => {
@@ -36,7 +41,10 @@ afterAll(async () => {
 
 describe("draft publishing", () => {
   test("keeps drafts out of the production site", async () => {
-    const blogIndex = await readFile(new URL("blog/index.html", outputDirectory), "utf8");
+    const blogIndex = await readFile(
+      new URL("blog/index.html", outputDirectory),
+      "utf8",
+    );
     const rssFeed = await readFile(new URL("rss.xml", outputDirectory), "utf8");
 
     expect(blogIndex).not.toContain(draftTitle);
