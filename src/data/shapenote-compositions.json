@@ -1,5 +1,13 @@
 [
   {
+    "name": "consultation",
+    "filename": "consultation_2026-08-01.pdf",
+    "url": "/files/shapenote-compositions/consultation_2026-08-01.pdf",
+    "compositionMonth": "2026-08",
+    "displayDate": "August 2026",
+    "sourcePath": "compositions/finished/consultation-3-8-26/consultation.pdf"
+  },
+  {
     "name": "blackwater",
     "filename": "blackwater_2026-07-01.pdf",
     "url": "/files/shapenote-compositions/blackwater_2026-07-01.pdf",
@@ -61,7 +69,7 @@
     "url": "/files/shapenote-compositions/sugar-loaf_2026-07-01.pdf",
     "compositionMonth": "2026-07",
     "displayDate": "July 2026",
-    "sourcePath": "compositions/finished/sugar-loaf-22-7-26/sugar-loaf-22-7-26.pdf"
+    "sourcePath": "compositions/finished/sugar-loaf-22-7-26/sugar-loaf.pdf"
   },
   {
     "name": "sunlight",
