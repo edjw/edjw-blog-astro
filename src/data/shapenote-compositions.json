@@ -1,11 +1,43 @@
 [
   {
-    "name": "consultation",
-    "filename": "consultation_2026-08-01.pdf",
-    "url": "/files/shapenote-compositions/consultation_2026-08-01.pdf",
+    "name": "obscuration",
+    "filename": "obscuration_2026-08-01.pdf",
+    "url": "/files/shapenote-compositions/obscuration_2026-08-01.pdf",
     "compositionMonth": "2026-08",
     "displayDate": "August 2026",
-    "sourcePath": "compositions/finished/consultation-3-8-26/consultation.pdf"
+    "sourcePath": "compositions/finished/obscuration-12-8-26/obscuration.pdf"
+  },
+  {
+    "name": "pateley-bridge",
+    "filename": "pateley-bridge_2026-08-01.pdf",
+    "url": "/files/shapenote-compositions/pateley-bridge_2026-08-01.pdf",
+    "compositionMonth": "2026-08",
+    "displayDate": "August 2026",
+    "sourcePath": "compositions/finished/pateley-bridge-22-8-26/pateley-bridge.pdf"
+  },
+  {
+    "name": "sharow",
+    "filename": "sharow_2026-08-01.pdf",
+    "url": "/files/shapenote-compositions/sharow_2026-08-01.pdf",
+    "compositionMonth": "2026-08",
+    "displayDate": "August 2026",
+    "sourcePath": "compositions/finished/sharow-18-8-26/sharow.pdf"
+  },
+  {
+    "name": "studley-roger",
+    "filename": "studley-roger_2026-08-01.pdf",
+    "url": "/files/shapenote-compositions/studley-roger_2026-08-01.pdf",
+    "compositionMonth": "2026-08",
+    "displayDate": "August 2026",
+    "sourcePath": "compositions/finished/studley-roger-22-8-26/studley-roger.pdf"
+  },
+  {
+    "name": "take-it-to-the-lord",
+    "filename": "take-it-to-the-lord_2026-08-01.pdf",
+    "url": "/files/shapenote-compositions/take-it-to-the-lord_2026-08-01.pdf",
+    "compositionMonth": "2026-08",
+    "displayDate": "August 2026",
+    "sourcePath": "compositions/finished/take-it-to-the-lord-3-8-26/take-it-to-the-lord.pdf"
   },
   {
     "name": "blackwater",
